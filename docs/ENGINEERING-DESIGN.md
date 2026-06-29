@@ -183,6 +183,16 @@ completion is a single append, the History view is an index query, and each stor
 - This satisfies the PRD's "no forced accounts" feel while giving us accounts and
   cross-device portability the moment a user signs in.
 
+**IndexedDB is not user-aware** — it is a single per-origin store shared by every
+visitor on that browser. We scope it ourselves:
+- **`meta.user_id`** records whose data is currently cached.
+- **On sign-in:** fetch that user's `saves`, `history`, and quiz content from Supabase
+  and populate IndexedDB.
+- **On sign-out (or user switch):** **clear** the `quizzes`, `saves`, `history`, and
+  `outbox` stores before the next user can access the device — otherwise user B would
+  see user A's cached data. A simple "wipe on sign-out" guard covers this; it's
+  straightforward but must not be omitted.
+
 ---
 
 ## 7. Offline & Sync
