@@ -96,15 +96,12 @@ create table profiles (
 -- QUIZ TABLE (catalog content; one row per park quiz)
 create table quizzes (
   id             uuid primary key default gen_random_uuid(),
-  slug           text unique,                -- 'grand-canyon'
-  title          text not null,              -- 'Grand Canyon Trivia'
-  park_name      text,
-  state          text,
+  slug           text unique,
+  title          text not null,
   question_count int  default 20,
   difficulty     text,
   questions      jsonb not null,             -- [{id, prompt, options[4], correct_index}]
-  source         text default 'curated',     -- 'curated' | 'ai' | 'user' (V1)
-  created_by     uuid references profiles(id),-- null for official catalog (V1 authoring)
+  created_by     uuid references profiles(id),
   created_at     timestamptz default now(),
   updated_at     timestamptz default now()
 );
@@ -124,8 +121,7 @@ create table history (
   user_id      uuid references profiles(id) on delete cascade,
   quiz_id      uuid references quizzes(id) on delete cascade,
   score        int  not null,
-  total        int  not null default 20,
-  answers      jsonb,                         -- optional per-question answers for review
+  question_count int  not null default 20,
   completed_at timestamptz default now()
 );
 
@@ -137,8 +133,7 @@ create index saves_user_time   on saves   (user_id, saved_at desc);
 **Row-Level Security (RLS):** enabled on all tables.
 - `profiles`, `saves`, `history`: a user can read/write only rows where
   `user_id = auth.uid()`.
-- `quizzes`: official catalog (`source='curated'`) is readable by everyone; user/AI
-  quizzes (V1) are restricted to their `created_by` owner (or a `is_public` flag).
+- `quizzes`: readable by everyone; user-authored quizzes (V1) can be restricted to their `created_by` owner via an `is_public` flag.
 
 > "User information about a quiz" (saved? best score? last played?) is derived from
 > `saves` + `history`. If we want it as one row per user×quiz, expose a **`user_quiz`
@@ -154,7 +149,7 @@ IndexedDB holds **only what the user saved or completed** — never the whole ca
 db: roadtrip-trivia (v1)
   quizzes   { quizId (key), ...content }     // content for saved OR completed quizzes
   saves     { quizId (key), is_offline, saved_at }
-  history   { id (key), quizId, score, total, completed_at, answers? }
+  history   { id (key), quizId, score, question_count, completed_at }
   outbox    { id (key), op, table, payload, queuedAt }  // writes made offline, to sync
   meta      { key, value }                   // user_id, sync cursors, lastSyncedAt
 ```
@@ -237,8 +232,7 @@ and encourage PWA install to maximize offline retention on iOS.
 ## 9. Extensibility (toward V1)
 
 The schema is built to grow without rewrites:
-- **AI generation:** an Edge Function calls the LLM and inserts a `quizzes` row with
-  `source='ai'`, `created_by=user`. Same shape as catalog quizzes → no client changes.
+- **AI generation:** an Edge Function calls the LLM and inserts a `quizzes` row with `created_by=user`. Same shape as any other quiz → no client changes.
 - **User-authored / marketplace:** `created_by` + an `is_public` flag + a `quiz_tags`
   table enable the Explore marketplace (categories, featured, badges).
 - **Gamification:** add `xp`/`level`/`streak` to `profiles` or a `user_stats` table;
