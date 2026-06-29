@@ -142,8 +142,8 @@ export function QuizPlayer({ quiz }: Props) {
         </h2>
       </div>
 
-      {/* Answer options on a light panel */}
-      <div className="flex flex-1 flex-col gap-2.5 rounded-t-3xl bg-white px-3.5 pt-4 pb-4">
+      {/* Answer options on a cream panel (matches the app background) */}
+      <div className="flex flex-1 flex-col gap-2.5 rounded-t-3xl bg-[#FFF8EC] px-3.5 pt-4 pb-4">
         {question.options.map((option, i) => {
           const isCorrect = i === question.correct_index;
           const isPicked = i === selectedIndex;
