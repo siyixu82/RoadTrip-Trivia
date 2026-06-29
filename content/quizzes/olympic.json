@@ -1,0 +1,227 @@
+{
+  "slug": "olympic",
+  "title": "Olympic Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "ol-1",
+      "prompt": "In which U.S. state is Olympic National Park located?",
+      "options": [
+        "Idaho",
+        "Oregon",
+        "Washington",
+        "Alaska"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ol-2",
+      "prompt": "Besides glaciated peaks and old-growth rainforest, Olympic protects what third ecosystem?",
+      "options": [
+        "Rugged Pacific coastline",
+        "Tundra plains",
+        "Tropical reef",
+        "Desert dunes"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ol-3",
+      "prompt": "Which famous temperate rainforest is in the park?",
+      "options": [
+        "Congaree",
+        "Hoh Rain Forest",
+        "Muir Woods",
+        "Everglades"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ol-4",
+      "prompt": "What is the highest peak in the park?",
+      "options": [
+        "Denali",
+        "Mount Olympus",
+        "Mount Rainier",
+        "Mount Hood"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ol-5",
+      "prompt": "In what year was Olympic established as a national park?",
+      "options": [
+        "1872",
+        "1938",
+        "1916",
+        "1980"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ol-6",
+      "prompt": "The park occupies which peninsula?",
+      "options": [
+        "Olympic Peninsula",
+        "Baja Peninsula",
+        "Cape Cod",
+        "The Florida Keys"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ol-7",
+      "prompt": "Which large elk subspecies, named for a president, lives here?",
+      "options": [
+        "Reindeer",
+        "Roosevelt elk",
+        "Caribou",
+        "Moose"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ol-8",
+      "prompt": "Which coastal beach is known for its dramatic sea stacks?",
+      "options": [
+        "Cocoa Beach",
+        "Bar Harbor",
+        "Ruby Beach",
+        "Venice Beach"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ol-9",
+      "prompt": "About how much rain does the Hoh Rain Forest receive each year?",
+      "options": [
+        "Over 12 feet",
+        "About 5 inches",
+        "About 40 inches",
+        "About 1 inch"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ol-10",
+      "prompt": "Which hot springs area is found in the park?",
+      "options": [
+        "Mammoth",
+        "Sol Duc",
+        "Hot Creek",
+        "Calistoga"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ol-11",
+      "prompt": "Which large, deep, glacially-carved lake lies in the park?",
+      "options": [
+        "Jenny Lake",
+        "Lake Crescent",
+        "Crater Lake",
+        "Lake Tahoe"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ol-12",
+      "prompt": "Which ocean borders the park?",
+      "options": [
+        "Gulf of Mexico",
+        "Arctic Ocean",
+        "Atlantic Ocean",
+        "Pacific Ocean"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ol-13",
+      "prompt": "Which moss-draped tree is iconic in the Hoh Rain Forest?",
+      "options": [
+        "Saguaro cactus",
+        "Joshua tree",
+        "Bigleaf maple",
+        "Palm"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ol-14",
+      "prompt": "Olympic carries which UNESCO designation?",
+      "options": [
+        "Naval base",
+        "City park",
+        "World Heritage Site",
+        "Ski resort"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ol-15",
+      "prompt": "Hurricane Ridge is popular for mountain views and what?",
+      "options": [
+        "Desert hiking",
+        "Surfing",
+        "Winter snow",
+        "Swamp tours"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ol-16",
+      "prompt": "Most of the park is designated as what?",
+      "options": [
+        "Industrial zone",
+        "Farmland",
+        "Wilderness",
+        "Urban land"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ol-17",
+      "prompt": "About how many visitors does Olympic receive each year?",
+      "options": [
+        "About 50 million",
+        "About 100",
+        "About 1,000",
+        "About 3 million"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ol-18",
+      "prompt": "The park's tidepools are home to which creatures?",
+      "options": [
+        "Sea stars and anemones",
+        "Cacti",
+        "Tropical parrots",
+        "Penguins"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ol-19",
+      "prompt": "The Elwha River is famous for a major what?",
+      "options": [
+        "Dam removal and river restoration",
+        "Gold rush",
+        "Dam expansion",
+        "Diversion to cities"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ol-20",
+      "prompt": "The park's peaks belong to which mountain range?",
+      "options": [
+        "Appalachians",
+        "Rocky Mountains",
+        "Olympic Mountains",
+        "Sierra Nevada"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "bryce-canyon",
+  "title": "Bryce Canyon Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "br-1",
+      "prompt": "In which U.S. state is Bryce Canyon National Park located?",
+      "options": [
+        "Nevada",
+        "Colorado",
+        "Arizona",
+        "Utah"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "br-2",
+      "prompt": "Bryce is famous for spire-shaped rock formations called what?",
+      "options": [
+        "Arches",
+        "Geysers",
+        "Hoodoos",
+        "Glaciers"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "br-3",
+      "prompt": "Bryce Canyon is technically not a canyon but a series of what?",
+      "options": [
+        "Volcanoes",
+        "Caves",
+        "Natural amphitheaters",
+        "Fjords"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "br-4",
+      "prompt": "What is the main, largest amphitheater called?",
+      "options": [
+        "Grand Bowl",
+        "Inspiration Hollow",
+        "Sunset Basin",
+        "Bryce Amphitheater"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "br-5",
+      "prompt": "Hoodoos are formed mainly by which process?",
+      "options": [
+        "Glaciers carving",
+        "Frost wedging and erosion",
+        "Meteor impact",
+        "Volcanic eruption"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "br-6",
+      "prompt": "The rock's red, orange, and white colors come mostly from what?",
+      "options": [
+        "Paint",
+        "Algae",
+        "Iron and manganese minerals",
+        "Copper only"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "br-7",
+      "prompt": "In what year was Bryce Canyon established as a national park?",
+      "options": [
+        "1950",
+        "1990",
+        "1928",
+        "1872"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "br-8",
+      "prompt": "Compared with nearby Zion, Bryce sits at what elevation?",
+      "options": [
+        "Below sea level",
+        "Sea level",
+        "Higher elevation",
+        "Lower elevation"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "br-9",
+      "prompt": "Which is a famous Bryce viewpoint?",
+      "options": [
+        "Bryce Point",
+        "Logan Pass",
+        "Artist Point",
+        "Glacier Point"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "br-10",
+      "prompt": "The park is named after whom?",
+      "options": [
+        "A river",
+        "A pioneer named Ebenezer Bryce",
+        "A U.S. president",
+        "A general"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "br-11",
+      "prompt": "Bryce's clear, dark skies make it especially famous for what?",
+      "options": [
+        "Surfing",
+        "Stargazing",
+        "Ski racing",
+        "Whale watching"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "br-12",
+      "prompt": "Which well-known hoodoo is named after a Norse god's tool?",
+      "options": [
+        "The Watchman",
+        "Delicate Arch",
+        "Half Dome",
+        "Thor's Hammer"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "br-13",
+      "prompt": "Which popular trail descends among the hoodoos?",
+      "options": [
+        "Mist Trail",
+        "The Narrows",
+        "Angels Landing",
+        "Navajo Loop"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "br-14",
+      "prompt": "Bryce is part of which group of Utah parks?",
+      "options": [
+        "The Cascades",
+        "The Great Lakes",
+        "The 'Mighty 5'",
+        "The Tetons"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "br-15",
+      "prompt": "Which ancient, long-lived trees grow along the rim?",
+      "options": [
+        "Mangroves",
+        "Palm trees",
+        "Bristlecone pines",
+        "Giant sequoias"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "br-16",
+      "prompt": "The elevation at the rim is roughly what?",
+      "options": [
+        "About 1,000 feet",
+        "Sea level",
+        "About 14,000 feet",
+        "About 8,000–9,000 feet"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "br-17",
+      "prompt": "About how many visitors does Bryce receive each year?",
+      "options": [
+        "About 200",
+        "About 1,000",
+        "About 50 million",
+        "About 2 million"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "br-18",
+      "prompt": "Which protected animal lives in the Bryce area?",
+      "options": [
+        "Llama",
+        "Kangaroo",
+        "Utah prairie dog",
+        "Penguin"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "br-19",
+      "prompt": "At what time of day do the hoodoos glow most vividly?",
+      "options": [
+        "During rain",
+        "Midnight",
+        "Sunrise",
+        "Noon"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "br-20",
+      "prompt": "Bryce Canyon sits along the edge of which plateau?",
+      "options": [
+        "A river delta",
+        "The Paunsaugunt Plateau",
+        "A glacier",
+        "An ocean"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

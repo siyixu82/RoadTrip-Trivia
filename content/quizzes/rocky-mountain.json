@@ -1,0 +1,227 @@
+{
+  "slug": "rocky-mountain",
+  "title": "Rocky Mountain Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "rm-1",
+      "prompt": "In which state is Rocky Mountain National Park located?",
+      "options": [
+        "Utah",
+        "Colorado",
+        "Wyoming",
+        "Montana"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rm-2",
+      "prompt": "Which park road is among the highest continuous paved roads in the U.S.?",
+      "options": [
+        "Skyline Drive",
+        "Trail Ridge Road",
+        "Tioga Road",
+        "Going-to-the-Sun Road"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rm-3",
+      "prompt": "What is the highest peak in the park?",
+      "options": [
+        "Mount Elbert",
+        "Longs Peak",
+        "Pikes Peak",
+        "Mount Evans"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rm-4",
+      "prompt": "Which major geographic line crosses the park?",
+      "options": [
+        "The Prime Meridian",
+        "The Equator",
+        "The Continental Divide",
+        "The Tropic of Cancer"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rm-5",
+      "prompt": "Which large animal is commonly heard bugling in the park each fall?",
+      "options": [
+        "Elk",
+        "Alligator",
+        "Camel",
+        "Penguin"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "rm-6",
+      "prompt": "Which town is the main eastern gateway to the park?",
+      "options": [
+        "Jackson",
+        "Springdale",
+        "Moab",
+        "Estes Park"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "rm-7",
+      "prompt": "In what year was the park established?",
+      "options": [
+        "1915",
+        "1934",
+        "1872",
+        "1950"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "rm-8",
+      "prompt": "Much of the park lies above tree line in what ecosystem?",
+      "options": [
+        "Desert",
+        "Wetland",
+        "Alpine tundra",
+        "Rainforest"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rm-9",
+      "prompt": "Trail Ridge Road climbs to over what elevation?",
+      "options": [
+        "5,000 feet",
+        "12,000 feet",
+        "20,000 feet",
+        "8,000 feet"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rm-10",
+      "prompt": "Which nearby historic hotel is said to have inspired 'The Shining'?",
+      "options": [
+        "Old Faithful Inn",
+        "Stanley Hotel",
+        "El Tovar",
+        "The Ahwahnee"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rm-11",
+      "prompt": "Which popular alpine lake is a trailhead hub in the park?",
+      "options": [
+        "Jenny Lake",
+        "Bear Lake",
+        "Crater Lake",
+        "Lake Tahoe"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rm-12",
+      "prompt": "About how many peaks above 12,000 feet does the park contain?",
+      "options": [
+        "Around 60 or more",
+        "Exactly one",
+        "Around five",
+        "None"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "rm-13",
+      "prompt": "Which major U.S. river has its headwaters in the park?",
+      "options": [
+        "Snake River",
+        "Mississippi River",
+        "Rio Grande",
+        "Colorado River"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "rm-14",
+      "prompt": "Which small alpine mammal of the talus does not hibernate?",
+      "options": [
+        "Koala",
+        "Penguin",
+        "Manatee",
+        "Pika"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "rm-15",
+      "prompt": "Which animal is the park's emblem?",
+      "options": [
+        "Polar bear",
+        "Flamingo",
+        "Bighorn sheep",
+        "Camel"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rm-16",
+      "prompt": "The park's peaks are part of which range?",
+      "options": [
+        "Appalachians",
+        "The Front Range of the Rockies",
+        "Sierra Nevada",
+        "Cascades"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rm-17",
+      "prompt": "About how many visitors does the park receive each year?",
+      "options": [
+        "About 1,000",
+        "About 50 million",
+        "About 4 million",
+        "About 100,000"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rm-18",
+      "prompt": "Trail Ridge Road typically closes during which season?",
+      "options": [
+        "Spring",
+        "Winter",
+        "It never closes",
+        "Summer"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rm-19",
+      "prompt": "The park is designated an international what?",
+      "options": [
+        "Marine sanctuary",
+        "National seashore",
+        "City park",
+        "Biosphere Reserve"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "rm-20",
+      "prompt": "Old Fall River Road is notable as the park's what?",
+      "options": [
+        "Cave",
+        "River",
+        "Railroad",
+        "Original road into the high country"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

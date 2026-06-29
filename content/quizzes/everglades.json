@@ -1,0 +1,227 @@
+{
+  "slug": "everglades",
+  "title": "Everglades Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "ev-1",
+      "prompt": "In which U.S. state is Everglades National Park located?",
+      "options": [
+        "Louisiana",
+        "Georgia",
+        "Florida",
+        "Texas"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ev-2",
+      "prompt": "The Everglades is often described as a slow-moving what?",
+      "options": [
+        "Sea of Sand",
+        "Forest of Stone",
+        "River of Grass",
+        "Valley of Fire"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ev-3",
+      "prompt": "Which apex reptile predator is native to the park?",
+      "options": [
+        "Komodo dragon",
+        "Nile crocodile",
+        "Anaconda",
+        "American alligator"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ev-4",
+      "prompt": "The Everglades is the only place where alligators coexist with which animal?",
+      "options": [
+        "Penguin",
+        "American crocodile",
+        "Hippopotamus",
+        "Polar bear"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ev-5",
+      "prompt": "Which endangered big cat lives in the park?",
+      "options": [
+        "Snow leopard",
+        "Florida panther",
+        "Jaguar",
+        "Bengal tiger"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ev-6",
+      "prompt": "In what year was Everglades established as a national park?",
+      "options": [
+        "1980",
+        "1916",
+        "1872",
+        "1947"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ev-7",
+      "prompt": "The park protects a vast example of which environment?",
+      "options": [
+        "Subtropical wetland",
+        "Desert",
+        "Alpine tundra",
+        "Boreal forest"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ev-8",
+      "prompt": "Manatees, gentle aquatic mammals here, are nicknamed what?",
+      "options": [
+        "Sea cows",
+        "Otters",
+        "Sea lions",
+        "Seals"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ev-9",
+      "prompt": "Which grass dominates the Everglades marshes?",
+      "options": [
+        "Sawgrass",
+        "Bamboo",
+        "Kelp",
+        "Wheat"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ev-10",
+      "prompt": "Which salt-tolerant coastal tree with stilt-like roots grows here?",
+      "options": [
+        "Saguaro",
+        "Birch",
+        "Mangrove",
+        "Redwood"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ev-11",
+      "prompt": "Water flows into the Everglades largely from which lake?",
+      "options": [
+        "Lake Okeechobee",
+        "Crater Lake",
+        "Lake Tahoe",
+        "Great Salt Lake"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ev-12",
+      "prompt": "Along with World Heritage status, the park is recognized as a wetland of what?",
+      "options": [
+        "Industrial Value",
+        "International Importance",
+        "Military Use",
+        "Private Ownership"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ev-13",
+      "prompt": "Which invasive snake now threatens the Everglades?",
+      "options": [
+        "Bison",
+        "Gray wolf",
+        "Moose",
+        "Burmese python"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ev-14",
+      "prompt": "What is a popular way to tour the shallow sawgrass waters?",
+      "options": [
+        "Gondola",
+        "Ski lift",
+        "Subway",
+        "Airboat"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ev-15",
+      "prompt": "Which pink-feathered wading bird is seen in the park?",
+      "options": [
+        "Roseate spoonbill",
+        "Penguin",
+        "Ostrich",
+        "Toucan"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ev-16",
+      "prompt": "The southern Everglades drains into which body of water?",
+      "options": [
+        "Florida Bay",
+        "Chesapeake Bay",
+        "Hudson Bay",
+        "San Francisco Bay"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ev-17",
+      "prompt": "About how many visitors does Everglades receive each year?",
+      "options": [
+        "About 50 million",
+        "About 100",
+        "About 1 million",
+        "About 20 million"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ev-18",
+      "prompt": "The Anhinga Trail is famous for close-up views of what?",
+      "options": [
+        "Birds and alligators",
+        "Bighorn sheep",
+        "Whales",
+        "Bears"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ev-19",
+      "prompt": "The Everglades is the largest tropical wilderness in which region?",
+      "options": [
+        "The United States",
+        "Asia",
+        "Europe",
+        "Africa"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ev-20",
+      "prompt": "Which conservationist wrote 'The Everglades: River of Grass'?",
+      "options": [
+        "Theodore Roosevelt",
+        "Marjory Stoneman Douglas",
+        "John Muir",
+        "Ansel Adams"
+      ],
+      "correct_index": 1
+    }
+  ]
+}
