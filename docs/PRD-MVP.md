@@ -85,8 +85,9 @@ V1.
 ### 5.4 Quiz
 - **Header:** position (e.g. "Q 4/20"), quiz name, progress bar.
 - **Question:** text plus four large A–D options.
-- **Feedback:** on answer, the correct option turns **green ✓** and a wrong pick
-  **red ✕**; tap **Next** to continue.
+- **Feedback & advance:** on answer, the correct option turns **green ✓** and a
+  wrong pick **red ✕**; after a brief (~1s) pause the quiz **auto-advances** to the
+  next question — no Next button.
 - **Completion:** after Q20 a summary shows the **score (X/20)** with **Retry** and
   **Home**; the attempt is recorded to History.
 
