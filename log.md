@@ -34,6 +34,22 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 - Note: Zustand (named in the stack) not added — the lightweight
   `useSyncExternalStore` store covers Phase-4 needs dependency-free.
 
+### Phase 5b — PWA app-shell offline boot ✅
+- Chose a **hand-written service worker** (`public/sw.js`) over Serwist: `@serwist/next`
+  injects a webpack plugin that's incompatible with this project's Turbopack build,
+  so a small dependency-free SW avoids changing the build pipeline.
+- Strategies: navigations → network-first w/ cached fallback (offline boot); hashed
+  `/_next/static` + assets → cache-first; other same-origin GETs → stale-while-revalidate.
+  Supabase/cross-origin requests are skipped (so live data still hits the network).
+- `public/manifest.webmanifest` + `public/icon.svg` (amber map-pin) → installable PWA;
+  `layout.tsx` wires `manifest`, `themeColor`, and apple-web-app metadata.
+- SW registered from `AppInit` in **production only** (a dev SW fights Turbopack HMR).
+- Verified live: built + `next start`, drove Chromium **offline** — the app shell boots
+  from cache (`serviceWorker.controller` set; header + bottom nav render; offline nav to
+  `/saved` works), with no runtime errors. Catalog shows "Loading…" offline (by design).
+- Phase 5 now complete (5a data layer + 5b PWA). Remaining live steps are operational:
+  `supabase db push` + enable anonymous sign-ins in the Supabase dashboard.
+
 ### Phase 5a — Accounts + offline data layer ✅ (code; live sync needs a real Supabase project)
 - **Anonymous auth** (`src/lib/auth/authStore.ts`): signs in anonymously on first
   visit → `user_id`; reactive `useUser()`; `ensureProfile` upsert; `signOut()`

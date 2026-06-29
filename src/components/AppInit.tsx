@@ -29,5 +29,13 @@ export function AppInit() {
     return () => window.removeEventListener("online", onOnline);
   }, []);
 
+  // Register the app-shell service worker (production only — a dev SW fights
+  // Turbopack HMR). Enables offline boot.
+  useEffect(() => {
+    if (process.env.NODE_ENV !== "production") return;
+    if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) return;
+    navigator.serviceWorker.register("/sw.js").catch(() => {});
+  }, []);
+
   return null;
 }

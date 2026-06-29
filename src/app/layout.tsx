@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { AppChrome } from "@/components/AppChrome";
@@ -18,6 +18,20 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "RoadTrip Trivia",
   description: "Place-based trivia for travelers.",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: "RoadTrip Trivia",
+    statusBarStyle: "default",
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#F5A623",
 };
 
 export default function RootLayout({
