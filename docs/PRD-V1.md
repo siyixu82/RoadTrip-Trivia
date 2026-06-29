@@ -1,7 +1,7 @@
 # RoadTrip Trivia — V1 (Post-MVP) Product Requirements Document
 
 > **Status:** Post-MVP roadmap / full product vision. The **MVP** is defined
-> separately in [`../PRD.md`](../PRD.md) and ships a focused static subset
+> separately in [`PRD-MVP.md`](PRD-MVP.md) and ships a focused static subset
 > (pre-generated national-park quizzes, 20-question play, completed history, and
 > save/download for offline). **This document holds the full feature set** — the
 > features moved out of MVP into **V1**.
