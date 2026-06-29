@@ -31,6 +31,7 @@ export interface Database {
           created_at?: string;
         };
         Update: Partial<Database["public"]["Tables"]["profiles"]["Insert"]>;
+        Relationships: [];
       };
       quizzes: {
         Row: {
@@ -56,6 +57,7 @@ export interface Database {
           updated_at?: string;
         };
         Update: Partial<Database["public"]["Tables"]["quizzes"]["Insert"]>;
+        Relationships: [];
       };
       saves: {
         Row: {
@@ -71,6 +73,7 @@ export interface Database {
           saved_at?: string;
         };
         Update: Partial<Database["public"]["Tables"]["saves"]["Insert"]>;
+        Relationships: [];
       };
       history: {
         Row: {
@@ -90,6 +93,7 @@ export interface Database {
           completed_at?: string;
         };
         Update: Partial<Database["public"]["Tables"]["history"]["Insert"]>;
+        Relationships: [];
       };
     };
     Views: Record<string, never>;

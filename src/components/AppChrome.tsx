@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { BottomNav } from "@/components/BottomNav";
+import { AppInit } from "@/components/AppInit";
 
 /**
  * App shell: renders the three-tab bottom nav on the main screens and hides it
@@ -14,6 +15,7 @@ export function AppChrome({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-full flex-1 justify-center">
+      <AppInit />
       {/* Cream app column on the warm-gray page canvas — soft shadow + faint
           side border separate it from the background on wide viewports. */}
       <div

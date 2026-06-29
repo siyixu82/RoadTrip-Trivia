@@ -24,8 +24,8 @@ Day-to-day progress notes live in [log.md](log.md); this file is the high-level 
 | 1 | Database schema + RLS + 3 sample quizzes | ✅ Done |
 | 2 | Core quiz play loop | ✅ Done (PR #5) |
 | 3 | Bulk content (curated batch + pipeline) | ✅ Done (PR #6) |
-| 4 | Home / Explore / Saved tabs | ⏳ Next |
-| 5 | Accounts (anonymous auth) + offline (IndexedDB/PWA) | ⬜ Planned |
+| 4 | Home / Explore / Saved tabs | ✅ Done |
+| 5 | Accounts (anonymous auth) + offline (IndexedDB/PWA) | 🟡 Data layer done (5a); PWA service worker pending (5b) |
 | 6 | Polish + ship | ⬜ Planned |
 
 ---

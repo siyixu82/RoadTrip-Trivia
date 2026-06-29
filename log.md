@@ -34,6 +34,37 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 - Note: Zustand (named in the stack) not added — the lightweight
   `useSyncExternalStore` store covers Phase-4 needs dependency-free.
 
+### Phase 5a — Accounts + offline data layer ✅ (code; live sync needs a real Supabase project)
+- **Anonymous auth** (`src/lib/auth/authStore.ts`): signs in anonymously on first
+  visit → `user_id`; reactive `useUser()`; `ensureProfile` upsert; `signOut()`
+  wipes IndexedDB (shared-device safety). Degrades to local-only if Supabase env
+  is missing or anon sign-in is disabled.
+- **Migration** `…_profiles_autocreate.sql`: trigger to create a `profiles` row
+  on new `auth.users` (FK target for saves/history). Client `ensureProfile`
+  upsert is a belt-and-suspenders fallback. **Needs `supabase db push` + the
+  "Enable anonymous sign-ins" toggle in the Supabase dashboard.**
+- **IndexedDB** (`src/lib/db/idb.ts`, via `idb`): stores `quizzes` (content),
+  `saves`, `history`, `outbox`, `meta`. Fully guarded — no-ops where IndexedDB is
+  absent (SSR/tests).
+- **Library reworked** (`src/lib/library/library.ts`): same UI surface
+  (`useSaves`/`useHistory`/`toggleSave`/`recordCompletion`/…), now optimistic
+  in-memory cache → write-through to IndexedDB + Supabase, with an **outbox** for
+  offline writes flushed on reconnect; `initLibrary` hydrates from IndexedDB then
+  pulls remote; pure join helpers in `derive.ts` (unit-tested).
+- **Offline replay:** `quizRepository.getQuizBySlug` caches fetched quizzes and
+  falls back to the IndexedDB cache on network failure.
+- **Bootstrap:** `AppInit` (mounted in `AppChrome`) runs sign-in, hydration, and
+  an `online` listener that flushes the outbox.
+- Fixed a typing gap: added `Relationships: []` to each table in the hand-written
+  `Database` type (required by this `@supabase/supabase-js` version for
+  insert/upsert/maybeSingle).
+- Verified: `tsc`/ESLint clean, 10 Vitest tests pass (added `derive.test.ts`),
+  `next build` succeeds. Playwright smoke (real Chromium IndexedDB, Supabase
+  unreachable = local-only): Save persists to IndexedDB and re-hydrates across
+  reload, Saved tab lists it, **no runtime errors**.
+- **Deferred to 5b:** Serwist PWA service worker (app-shell precache for offline
+  boot) — has Next 16/Turbopack compatibility risk and needs live testing.
+
 ### Phase 4 — UI pass: follow the exported wireframe design ✅
 - Pulled the source design from the repo's `RoadTrip Trivia.zip` (exported Claude
   Design wireframes + `design-canvas.jsx`) and restyled every screen to match it.

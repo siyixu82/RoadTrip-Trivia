@@ -3,121 +3,245 @@
 /**
  * Personal library — saved quizzes + completion history.
  *
- * PHASE 4 PLACEHOLDER: backed by `localStorage` on the device, with no auth.
- * The UI imports only from this module, so Phase 5 can swap the internals for
- * Supabase (source of truth) + IndexedDB (offline cache) without touching any
- * component — same shape as the `quizRepository` abstraction.
+ * Phase 5: Supabase is the source of truth; IndexedDB is a per-device offline
+ * mirror; an outbox buffers writes made offline and is flushed on reconnect.
+ * The UI imports only the hooks/actions below — same surface as the Phase-4
+ * localStorage placeholder, so no component changed when the backend did.
  *
- * Reactivity is via `useSyncExternalStore`: writes update an in-memory cache,
- * persist to localStorage, and notify subscribers. A `storage` listener keeps
- * other tabs in sync.
+ * Reactivity: an in-memory cache feeds `useSyncExternalStore`. Actions update
+ * the cache optimistically (synchronously, never throwing), then persist to
+ * IndexedDB + Supabase in the background (falling back to the outbox).
  */
 
 import { useSyncExternalStore } from "react";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import { getSupabaseClient } from "@/lib/supabase/client";
+import type { Database } from "@/lib/supabase/types";
 import type { QuizSummary } from "@/lib/types";
+import {
+  buildHistory,
+  buildSaved,
+  type HistoryEntry,
+  type SavedQuiz,
+} from "@/lib/library/derive";
+import {
+  dequeue,
+  enqueue,
+  getAllCachedQuizzes,
+  getHistory,
+  getMeta,
+  getOutbox,
+  getSaves,
+  mergeHistory,
+  putHistory,
+  putQuiz,
+  putSave,
+  replaceSaves,
+  setMeta,
+  wipe,
+  deleteSave as idbDeleteSave,
+  type CachedQuiz,
+  type HistoryRow,
+  type OutboxOp,
+  type SaveRow,
+} from "@/lib/db/idb";
 
-/** A bookmarked quiz. `is_offline` is the PRD "Download" pin. */
-export interface SavedQuiz {
-  id: string;
-  slug: string | null;
-  title: string;
-  question_count: number;
-  is_offline: boolean;
-  saved_at: string; // ISO
-}
+export type { SavedQuiz, HistoryEntry };
 
-/** One completed attempt (append-only, newest first). */
-export interface HistoryEntry {
-  id: string;
-  quiz_id: string;
-  slug: string | null;
-  title: string;
-  score: number;
-  question_count: number;
-  completed_at: string; // ISO
-}
+// --- in-memory state -------------------------------------------------------
 
-const SAVES_KEY = "rtt.saves.v1";
-const HISTORY_KEY = "rtt.history.v1";
+let currentUserId: string | null = null;
+let hydrated = false;
 
-type Listener = () => void;
-
-/**
- * A localStorage-backed, reactive list under one key. Snapshots are cached so
- * `useSyncExternalStore` sees a stable reference until the data actually
- * changes (required to avoid render loops).
- */
-function createCollection<T>(key: string, empty: readonly T[]) {
-  let cache: T[] | null = null;
-  const listeners = new Set<Listener>();
-
-  function read(): T[] {
-    if (cache) return cache;
-    if (typeof window === "undefined") return empty as T[];
-    try {
-      const raw = window.localStorage.getItem(key);
-      cache = raw ? (JSON.parse(raw) as T[]) : [];
-    } catch {
-      cache = [];
-    }
-    return cache;
-  }
-
-  function write(next: T[]): void {
-    cache = next;
-    try {
-      window.localStorage.setItem(key, JSON.stringify(next));
-    } catch {
-      // storage full / unavailable (private mode): keep the in-memory copy.
-    }
-    listeners.forEach((l) => l());
-  }
-
-  function subscribe(l: Listener): () => void {
-    listeners.add(l);
-    const onStorage = (e: StorageEvent) => {
-      if (e.key === key || e.key === null) {
-        cache = null; // re-read lazily on next snapshot
-        l();
-      }
-    };
-    window.addEventListener("storage", onStorage);
-    return () => {
-      listeners.delete(l);
-      window.removeEventListener("storage", onStorage);
-    };
-  }
-
-  return { read, write, subscribe };
-}
+let saveRows: SaveRow[] = [];
+let historyRows: HistoryRow[] = [];
+let metaMap = new Map<string, CachedQuiz>();
 
 const EMPTY_SAVES: readonly SavedQuiz[] = [];
 const EMPTY_HISTORY: readonly HistoryEntry[] = [];
+let derivedSaves: SavedQuiz[] = [];
+let derivedHistory: HistoryEntry[] = [];
 
-const saves = createCollection<SavedQuiz>(SAVES_KEY, EMPTY_SAVES);
-const history = createCollection<HistoryEntry>(HISTORY_KEY, EMPTY_HISTORY);
+const listeners = new Set<() => void>();
 
-function uuid(): string {
-  if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
-    return crypto.randomUUID();
-  }
-  return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+function recompute() {
+  derivedSaves = buildSaved(saveRows, metaMap);
+  derivedHistory = buildHistory(historyRows, metaMap);
+  listeners.forEach((l) => l());
 }
 
-// --- Hooks (read) ----------------------------------------------------------
+function rememberMeta(quiz: CachedQuiz) {
+  metaMap.set(quiz.id, quiz);
+  void putQuiz(quiz);
+}
+
+// --- Supabase helpers ------------------------------------------------------
+
+type Client = SupabaseClient<Database>;
+
+function clientOrNull(): Client | null {
+  try {
+    return getSupabaseClient();
+  } catch {
+    return null;
+  }
+}
+
+/** Push one mutation to Supabase. Returns false if it couldn't be applied. */
+async function pushOp(op: OutboxOp): Promise<boolean> {
+  const client = clientOrNull();
+  const uid = currentUserId;
+  if (!client || !uid) return false;
+  try {
+    if (op.kind === "save_upsert") {
+      const { error } = await client.from("saves").upsert(
+        {
+          user_id: uid,
+          quiz_id: op.row.quiz_id,
+          is_offline: op.row.is_offline,
+          saved_at: op.row.saved_at,
+        },
+        { onConflict: "user_id,quiz_id" },
+      );
+      return !error;
+    }
+    if (op.kind === "save_delete") {
+      const { error } = await client
+        .from("saves")
+        .delete()
+        .eq("user_id", uid)
+        .eq("quiz_id", op.quiz_id);
+      return !error;
+    }
+    const { error } = await client.from("history").insert({
+      id: op.row.id,
+      user_id: uid,
+      quiz_id: op.row.quiz_id,
+      score: op.row.score,
+      question_count: op.row.question_count,
+      completed_at: op.row.completed_at,
+    });
+    return !error;
+  } catch {
+    return false;
+  }
+}
+
+/** Try to push; on failure, queue for later. */
+async function pushOrQueue(op: OutboxOp): Promise<void> {
+  if (!(await pushOp(op))) await enqueue(op);
+}
+
+/** Flush queued writes in order; stop at the first failure (retry later). */
+export async function flushOutbox(): Promise<void> {
+  const items = await getOutbox();
+  for (const item of items) {
+    if (!(await pushOp(item.op))) break;
+    await dequeue(item.localId);
+  }
+}
+
+/** Pull the user's saves + history (and referenced quiz meta) from Supabase. */
+async function pullRemote(): Promise<void> {
+  const client = clientOrNull();
+  const uid = currentUserId;
+  if (!client || !uid) return;
+
+  const [{ data: saveData, error: se }, { data: histData, error: he }] =
+    await Promise.all([
+      client.from("saves").select("quiz_id, is_offline, saved_at"),
+      client
+        .from("history")
+        .select("id, quiz_id, score, question_count, completed_at"),
+    ]);
+  if (se || he) return;
+
+  const remoteSaves = (saveData ?? []) as SaveRow[];
+  const remoteHistory = (histData ?? []) as HistoryRow[];
+
+  const ids = [
+    ...new Set([
+      ...remoteSaves.map((r) => r.quiz_id),
+      ...remoteHistory.map((r) => r.quiz_id),
+    ]),
+  ];
+  if (ids.length) {
+    const { data: quizData } = await client
+      .from("quizzes")
+      .select("id, slug, title, question_count, difficulty")
+      .in("id", ids);
+    for (const q of quizData ?? []) {
+      const cq: CachedQuiz = {
+        id: q.id,
+        slug: q.slug,
+        title: q.title,
+        question_count: q.question_count,
+        difficulty: q.difficulty,
+        questions: metaMap.get(q.id)?.questions,
+      };
+      metaMap.set(q.id, cq);
+      void putQuiz(cq);
+    }
+  }
+
+  saveRows = remoteSaves;
+  historyRows = remoteHistory;
+  await replaceSaves(saveRows);
+  await mergeHistory(historyRows);
+  recompute();
+}
+
+// --- lifecycle (called by AppInit) -----------------------------------------
+
+/** Hydrate from IndexedDB (instant/offline), then sync with Supabase. */
+export async function initLibrary(userId: string | null): Promise<void> {
+  if (hydrated && userId === currentUserId) return;
+  currentUserId = userId;
+  hydrated = true;
+
+  // Shared-device safety: if the cache belongs to a different user, wipe it.
+  const cachedUid = await getMeta<string>("user_id");
+  if (userId && cachedUid && cachedUid !== userId) await wipe();
+  if (userId) await setMeta("user_id", userId);
+
+  saveRows = await getSaves();
+  historyRows = await getHistory();
+  metaMap = new Map((await getAllCachedQuizzes()).map((q) => [q.id, q]));
+  recompute();
+
+  await flushOutbox();
+  await pullRemote();
+}
+
+/** Clear in-memory state on sign-out (IndexedDB wipe happens in signOut). */
+export function resetLibrary(): void {
+  currentUserId = null;
+  hydrated = false;
+  saveRows = [];
+  historyRows = [];
+  metaMap = new Map();
+  recompute();
+}
+
+// --- hooks (read) ----------------------------------------------------------
+
+function subscribe(cb: () => void): () => void {
+  listeners.add(cb);
+  return () => listeners.delete(cb);
+}
 
 export function useSaves(): SavedQuiz[] {
   return useSyncExternalStore(
-    saves.subscribe,
-    saves.read,
+    subscribe,
+    () => derivedSaves,
     () => EMPTY_SAVES as SavedQuiz[],
   );
 }
 
 export function useHistory(): HistoryEntry[] {
   return useSyncExternalStore(
-    history.subscribe,
-    history.read,
+    subscribe,
+    () => derivedHistory,
     () => EMPTY_HISTORY as HistoryEntry[],
   );
 }
@@ -126,38 +250,52 @@ export function useIsSaved(quizId: string): boolean {
   return useSaves().some((s) => s.id === quizId);
 }
 
-// --- Actions (write) -------------------------------------------------------
+// --- actions (write) -------------------------------------------------------
 
-/** Add a bookmark if absent, or remove it if already saved. */
 export function toggleSave(quiz: QuizSummary): void {
-  const list = saves.read();
-  if (list.some((s) => s.id === quiz.id)) {
-    saves.write(list.filter((s) => s.id !== quiz.id));
+  if (saveRows.some((s) => s.quiz_id === quiz.id)) {
+    removeSave(quiz.id);
     return;
   }
-  const entry: SavedQuiz = {
+  const row: SaveRow = {
+    quiz_id: quiz.id,
+    is_offline: false,
+    saved_at: new Date().toISOString(),
+  };
+  rememberMeta({
     id: quiz.id,
     slug: quiz.slug,
     title: quiz.title,
     question_count: quiz.question_count,
-    is_offline: false,
-    saved_at: new Date().toISOString(),
-  };
-  saves.write([entry, ...list]);
+    difficulty: quiz.difficulty,
+  });
+  saveRows = [row, ...saveRows];
+  recompute();
+  void putSave(row);
+  void pushOrQueue({ kind: "save_upsert", row });
 }
 
 export function removeSave(quizId: string): void {
-  saves.write(saves.read().filter((s) => s.id !== quizId));
+  saveRows = saveRows.filter((s) => s.quiz_id !== quizId);
+  recompute();
+  void idbDeleteSave(quizId);
+  void pushOrQueue({ kind: "save_delete", quiz_id: quizId });
 }
 
-/** Toggle the "Download" (offline) pin on a saved quiz. */
 export function setDownloaded(quizId: string, value: boolean): void {
-  saves.write(
-    saves.read().map((s) => (s.id === quizId ? { ...s, is_offline: value } : s)),
-  );
+  let updated: SaveRow | undefined;
+  saveRows = saveRows.map((s) => {
+    if (s.quiz_id !== quizId) return s;
+    updated = { ...s, is_offline: value };
+    return updated;
+  });
+  if (!updated) return;
+  recompute();
+  void putSave(updated);
+  void pushOrQueue({ kind: "save_upsert", row: updated });
+  if (value) void cacheQuizContent(quizId); // pull full questions for offline
 }
 
-/** Append a completed attempt to history. */
 export function recordCompletion(input: {
   quizId: string;
   slug: string | null;
@@ -165,14 +303,49 @@ export function recordCompletion(input: {
   score: number;
   questionCount: number;
 }): void {
-  const entry: HistoryEntry = {
+  const row: HistoryRow = {
     id: uuid(),
     quiz_id: input.quizId,
-    slug: input.slug,
-    title: input.title,
     score: input.score,
     question_count: input.questionCount,
     completed_at: new Date().toISOString(),
   };
-  history.write([entry, ...history.read()]);
+  if (!metaMap.has(input.quizId)) {
+    rememberMeta({
+      id: input.quizId,
+      slug: input.slug,
+      title: input.title,
+      question_count: input.questionCount,
+      difficulty: null,
+    });
+  }
+  historyRows = [row, ...historyRows];
+  recompute();
+  void putHistory(row);
+  void pushOrQueue({ kind: "history_insert", row });
+}
+
+/** Best-effort: fetch a quiz's questions and cache them for offline play. */
+async function cacheQuizContent(quizId: string): Promise<void> {
+  const client = clientOrNull();
+  if (!client) return;
+  try {
+    const { data, error } = await client
+      .from("quizzes")
+      .select("id, slug, title, question_count, difficulty, questions")
+      .eq("id", quizId)
+      .maybeSingle();
+    if (error || !data) return;
+    rememberMeta(data as CachedQuiz);
+    recompute();
+  } catch {
+    // offline / not found — fine, the pin still records intent.
+  }
+}
+
+function uuid(): string {
+  if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
+    return crypto.randomUUID();
+  }
+  return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
