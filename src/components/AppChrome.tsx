@@ -13,9 +13,17 @@ export function AppChrome({ children }: { children: React.ReactNode }) {
   const showNav = !pathname.startsWith("/quiz");
 
   return (
-    <div className={`flex min-h-full flex-1 flex-col ${showNav ? "pb-16" : ""}`}>
-      {children}
-      {showNav && <BottomNav />}
+    <div className="flex min-h-full flex-1 justify-center">
+      {/* Cream app column on the warm-gray page canvas — soft shadow + faint
+          side border separate it from the background on wide viewports. */}
+      <div
+        className={`relative flex w-full max-w-xl flex-col border-x border-black/5 bg-[#FFF8EC] shadow-[0_0_60px_rgba(0,0,0,0.08)] ${
+          showNav ? "pb-16" : ""
+        }`}
+      >
+        {children}
+        {showNav && <BottomNav />}
+      </div>
     </div>
   );
 }

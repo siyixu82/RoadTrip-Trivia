@@ -28,7 +28,9 @@
 }
 
 body {
-  background: var(--background);
+  /* Warm-gray canvas behind the centered app column, so the cream column reads
+     as a distinct panel on wide (desktop) viewports. */
+  background: var(--canvas);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }

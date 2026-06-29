@@ -54,8 +54,10 @@ export function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-10 border-t border-[#1a1a1a]/10 bg-white/95 backdrop-blur">
-      <ul className="mx-auto flex w-full max-w-xl">
+    <nav className="fixed inset-x-0 bottom-0 z-10">
+      {/* Bar is constrained to the app column width and bordered on all sides
+          so it lines up with the cream column on wide viewports. */}
+      <ul className="mx-auto flex w-full max-w-xl border-x border-t border-black/5 border-t-[#1a1a1a]/10 bg-white/95 backdrop-blur">
         {TABS.map((tab) => {
           const active =
             tab.href === "/" ? pathname === "/" : pathname.startsWith(tab.href);
