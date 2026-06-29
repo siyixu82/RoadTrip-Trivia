@@ -1,252 +1,287 @@
-# RoadTrip Trivia — Product Requirements Document
+# RoadTrip Trivia — MVP Product Requirements Document
 
 > **Status: Draft — open for review.** Leave inline comments on any line in this
 > PR's "Files changed" tab and I'll respond and revise here. Open questions are
-> collected in §8.
-
-_Derived from the exported Claude Design wireframes (`project/RoadTrip Wireframes.html`) and the design chat transcript (`chats/chat1.md`)._
-
----
-
-## 1. Product Overview
-
-RoadTrip Trivia is a mobile trivia app built for people on road trips. It serves trivia
-questions that are tied to where the user is, and it is designed to be **safe and usable
-while driving** — questions can be read aloud so the driver can keep their eyes on the road
-and simply tap (or listen) to play.
-
-The app has two ways to get a quiz: the user can **type any topic they like**, or **pick a
-place** and let the app generate a location-based quiz. Beyond playing, users can browse a
-**marketplace of quizzes**, and keep a record of what they've **played and saved**.
-
-### Goals
-- Make trivia genuinely playable by a driver without compromising road safety.
-- Let users start a quiz in seconds — by topic or by location.
-- Give passengers a self-paced, quiet alternative.
-- Provide a library to discover new quizzes and revisit past ones.
-
-### Target users
-- **Drivers** who want hands-light, eyes-on-road entertainment.
-- **Passengers** who want self-paced quizzes.
-- **New users** with no history, who should still get relevant suggestions immediately.
-- **Returning users** who have an in-progress quiz and play history.
+> collected in §12.
+>
+> **Scope note:** This document defines the **MVP**. All previously-specified
+> features (AI quiz generation, location awareness, read-aloud/driver mode, the
+> Explore marketplace, gamified results, settings/accessibility, etc.) have been
+> moved to **V1** and are captured in [`docs/PRD-V1.md`](docs/PRD-V1.md).
 
 ---
 
-## 2. Design Language & Tone
+## 1. MVP Overview
 
-These are product-level look-and-feel requirements, not implementation details.
+RoadTrip Trivia is a mobile trivia app for people on road trips. The **MVP** proves
+the core loop with a focused, fully static product: a library of **pre-generated
+quizzes for the U.S. National Parks**, the ability to **play a 20-question quiz**,
+and lightweight personal organization — a **history of completed quizzes with
+scores**, and the ability to **save and download quizzes for offline use**.
 
-- **Style:** hand-drawn, friendly "wireframe sketch" aesthetic — rounded corners, dashed
-  dividers, a casual handwritten display font paired with a monospace font for small labels.
-- **Primary brand color:** warm amber/orange (`#F5A623`), used for the main calls-to-action,
-  highlights, and the quiz experience.
-- **Supporting colors:** warm cream backgrounds (`#FFF8EC`), off-white canvas (`#f0eee9`),
-  warm dark brown (`#2D1A00`) for phone framing, and a dark charcoal (`#1a1a1a` / `#222`)
-  panel used for quiz answers and in-progress banners.
-- **Feedback colors:** green for correct answers, red for incorrect.
-- **Frame:** every screen is presented inside a phone shell (notch, status bar showing
-  "9:41", rounded body). Target form factor is a single mobile phone screen (~320×640).
-- **No-scroll principle:** core screens (Home, Mode Select) should fit within the phone
-  frame **without scrolling**. List-heavy screens (Explore, Saved, Settings, Results) may
+The MVP deliberately ships **no AI generation, no location/GPS, no read-aloud, and
+no marketplace**. Those are V1. The goal is to validate that users will pick a
+park quiz, play it through, and come back — and that offline saving matters for the
+road-trip context (where connectivity is unreliable).
+
+### MVP Goals
+- Ship a complete, playable trivia experience with **zero backend AI dependency**.
+- Let a user go from open → pick a park quiz → finish 20 questions in one sitting.
+- Make quizzes **usable offline** so a dead-zone on the highway doesn't break play.
+- Keep a simple record of what the user has **completed** (with scores) and **saved**.
+
+### What the MVP validates
+- Do users engage with **pre-authored, place-based** quizzes (national parks)?
+- Is the **20-question** length right for a road-trip session?
+- Do users value **offline download** enough to use it?
+- Does **completion history with scores** drive replay?
+
+### Target users (MVP)
+- **Road trippers** (driver's passengers and solo travelers at rest stops) who want
+  a quick, self-paced quiz tied to where they're headed.
+- All users are treated the same in MVP — **no accounts, no personalization beyond
+  the device's own saved/completed data.**
+
+---
+
+## 2. MVP Scope at a Glance
+
+**In scope (MVP):**
+1. Pre-generated quizzes for all U.S. National Parks (20 questions each).
+2. Main page showing recommended quizzes (= the full pre-generated library).
+3. Quiz experience: select a quiz and complete its 20 questions.
+4. Completed page: history of completed quizzes and scores.
+5. Saved & Downloaded page: save quizzes and download them for offline play.
+
+**Out of scope (→ V1):** AI/topic quiz generation, location awareness & GPS,
+Read-Aloud / TTS / Driver Mode, Mode Select, the Explore marketplace, gamified
+results (XP/streak/share/next-up), the Settings/Profile screen, resume-in-progress,
+accounts/auth/cloud sync, multiplayer/social, payments. See §11 and `docs/PRD-V1.md`.
+
+---
+
+## 3. Design Language & Tone
+
+The MVP keeps the established brand identity (full detail in `docs/PRD-V1.md` §2):
+
+- **Style:** hand-drawn, friendly "wireframe sketch" aesthetic — rounded corners,
+  dashed dividers, a casual handwritten display font with a monospace font for
+  small labels.
+- **Primary brand color:** warm amber/orange (`#F5A623`) for primary actions and the
+  quiz experience; warm cream (`#FFF8EC`) backgrounds; dark charcoal (`#1a1a1a`)
+  answer panels.
+- **Feedback colors:** green for correct, red for incorrect.
+- **Frame:** every screen sits inside a phone shell (~320×640). Core screens should
+  fit without scrolling; list-heavy screens (Main, Saved & Downloaded, Completed) may
   scroll.
 
 ---
 
-## 3. Global Navigation
+## 4. Global Navigation
 
-A persistent **bottom navigation bar** appears on the main screens with exactly four tabs:
+A persistent **bottom navigation bar** with **three tabs** (the V1 EXPLORE and
+PROFILE tabs are deferred):
 
-1. **HOME**
-2. **EXPLORE**
-3. **SAVED**
-4. **PROFILE**
+1. **HOME** — the main page / recommended quizzes.
+2. **SAVED** — Saved & Downloaded quizzes.
+3. **COMPLETED** — history of completed quizzes and scores.
 
-> Note: An earlier "RANKS" tab was explicitly removed. Results are reached by finishing a
-> quiz, not via a nav tab.
-
-The active tab is highlighted in amber; inactive tabs are muted gray.
+The active tab is amber; inactive tabs are muted gray. The Quiz screen is reached
+by selecting a quiz (no nav tab) and hides the nav bar while playing.
 
 ---
 
-## 4. Screens & Requirements
+## 5. Features & Screens
 
-The product comprises **seven screens**.
+### 5.1 Pre-Generated National Park Quizzes (content)
+The MVP ships a fixed, **pre-generated** (human-curated / pre-authored) quiz library.
 
-### 4.1 Home — New User (`1a`)
-For a user with no play history; emphasizes onboarding and getting started fast.
+Requirements:
+- **Coverage:** one quiz for **every U.S. National Park** (63 designated parks as of
+  2026 — see Open Questions on exact scope).
+- **Length:** each quiz has **exactly 20 questions**.
+- **Question format:** single-answer **multiple choice**, four options labeled A–D,
+  with one correct answer and a short explanation per question.
+- **Content mix:** questions cover the park's geography, wildlife/flora, history,
+  landmarks, and notable trivia.
+- **Static & bundled:** quiz content ships with the app (no server generation). It is
+  versioned with the build; there is no AI generation in MVP.
+- **Metadata per quiz:** park name, location (state/region, display only), a question
+  count (20), and a difficulty label (optional, display only).
+
+### 5.2 Main Page — Recommended (`HOME`)
+The entry screen. In MVP, "recommended" simply surfaces the **entire pre-generated
+library**.
 
 Must include:
-- **Header:** app name "RoadTrip Trivia" with a map pin glyph, a current-location pill
-  (e.g. "📍 SEDONA, AZ"), and a profile avatar icon.
-- **Search bar:** a passive "Search quizzes, topics…" field.
-- **Generate-a-quiz card** (the primary onboarding affordance) with **two ways to start**:
-  1. **Type any topic** — a free-text field with a "Go" action.
-  2. **Pick a place** — a location selector (showing the nearby place, e.g. "Sedona, AZ")
-     that the user can change, separated from option 1 by an "OR PICK A PLACE" divider.
-- **"Recommended For You"** list — quiz suggestions seeded by location even with no history,
-  with a subtitle like "Based on your Sedona location" (e.g. Red Rock Flora, Route 66
-  History, Arizona Legends).
+- **Header:** app name "RoadTrip Trivia" with the map-pin glyph.
+- **"Recommended For You"** (or "All Park Quizzes") — a scrollable list/grid of quiz
+  cards covering all national-park quizzes. Each card shows: park name, an
+  icon/thumbnail, "20 questions", a **Save (♡)** control, and a **Play** action.
+- An optional **simple text filter** to find a park by name (plain string match — no
+  AI, no remote search).
 - Bottom navigation (HOME active).
-- Entire screen fits without scrolling.
 
-### 4.2 Home — Returning User (`1b`)
-For a user who already has activity. Same structure as new-user home, plus:
-- **In-progress banner** at the top: a dark card showing the quiz currently underway
-  (e.g. "Grand Canyon Trivia"), a progress bar, and a **Resume** action.
-- The same generate-a-quiz card and "Recommended For You" list.
-- Bottom navigation (HOME active).
-- Fits without scrolling.
+> Note: location-seeded / personalized recommendations are **V1**. MVP recommends the
+> full catalog, in a stable order (e.g. alphabetical, or a curated featured order).
 
-### 4.3 Mode Select (`2`)
-Shown **after the user taps a quiz, before it starts**. Lets the user choose how they want
-to play this ride.
+### 5.3 Quiz Experience (`QUIZ`)
+The core gameplay, reached by tapping **Play** on any quiz.
 
 Must include:
-- **Back control** and the **quiz title** (e.g. "Grand Canyon Trivia").
-- **Quiz meta** summary: number of questions, difficulty, and approximate duration
-  (e.g. 10 questions · Medium · ~5m).
-- A prompt: "How do you want to play?"
-- **Two mode choices:**
-  - **Read Aloud** — visually highlighted as the **recommended / driver-safe** default.
-    Describes that questions are spoken aloud so the driver keeps eyes on the road and just
-    taps. Carries supporting tags (e.g. "Driver safe", "Auto-narrated", "Tap to answer") and
-    a primary "Start with Read Aloud" action.
-  - **Quiet Mode** — self-paced, no audio, "great for passengers." Secondary styling with a
-    "Start Quiet" action.
-- Both mode cards fit on screen **without scrolling**.
+- **Header zone:** current position (e.g. "Q 4/20"), the quiz/park name, and a
+  **progress bar**. (A timer is optional in MVP.)
+- **Question card:** the question text, large and centered, plus four answer options
+  A–D as large, thumb-friendly tap targets.
+- **Immediate feedback (graded state):** when an option is chosen, the **correct**
+  option turns **green with ✓** and a **wrong** pick turns **red with ✕**, with a
+  short explanation strip for the correct answer.
+- **Advance:** after answering, the user advances to the next question via a **Next**
+  control (manual advance in MVP; auto-advance / no-skip driver behavior is V1).
+- **Completion:** after Q20, a **completion summary** shows the final **score (X/20)**
+  and offers **Retry** and **Back to Home**. Completing a quiz **records an entry in
+  Completed history** (§5.4).
 
-### 4.4 Explore (`3`)
-A marketplace for discovering quizzes.
+> Note: Read-Aloud / TTS narration, Mode Select (Read Aloud vs Quiet), and the
+> gamified results screen (score ring, streak, XP, share, "Play Next") are **V1**.
+> MVP completion is a simple score summary.
 
-Must include:
-- Title "Explore" with a subtitle ("Discover quizzes for every road trip").
-- A **search field** (by topic, place, keyword).
-- A horizontally scrollable row of **category chips** (e.g. Parks, Food, Music, History,
-  Nature, Route 66); the first/active chip is highlighted.
-- A **featured banner** ("Featured This Week") on a dark card with a title, meta line, and a
-  "Play Now" action. Editorial pick that rotates weekly.
-- An **"All Quizzes" list** of quiz rows, each with a tag/badge (TRENDING, NEW, POPULAR,
-  STAFF PICK, etc.), question count, a **save (♡)** control, and a **Play** action.
-- Bottom navigation (EXPLORE active).
-
-### 4.5 Saved & History (`4`)
-The user's personal library of past and saved quizzes.
+### 5.4 Completed Page (`COMPLETED`)
+The user's record of finished quizzes and how they did.
 
 Must include:
-- Title "Saved & History".
-- A **toggle** between two views: **History** and **Saved**.
-- **History / "Recently Played"** list: each row shows the quiz, when it was played
-  (Today, Yesterday, a date), the **score** earned (e.g. 7/10), and a **Retry** action.
-- **Saved Quizzes** list: each row shows the quiz, its question count, a **remove (✕)**
-  control, and a **Play** action.
+- Title "Completed" (or "Recently Played").
+- A **list of completed attempts**, each row showing: the quiz/park name, **when it
+  was completed** (Today, Yesterday, or a date), and the **score earned** (e.g.
+  16/20), plus a **Retry** action.
+- Persisted **locally on the device** so the list survives app restarts (no account).
+- Bottom navigation (COMPLETED active).
+
+### 5.5 Saved & Downloaded Page (`SAVED`)
+The user's personal library for quizzes they want to keep and play offline.
+
+Must include:
+- Title "Saved & Downloaded".
+- **Saved quizzes:** quizzes the user bookmarked (via the ♡ on the main page or quiz
+  card). Each row shows the quiz, its question count (20), a **Play** action, a
+  **Download** control, and a **remove (✕)** control.
+- **Downloaded quizzes:** quizzes the user has explicitly **downloaded for offline
+  use**. Each shows a **Downloaded ✓** state, supports **Play offline** (works with
+  no connection), and a **remove download** control. An optional storage-used hint
+  may be shown.
+- **Offline behavior:** a downloaded quiz is fully playable with no network. (Because
+  MVP content is static/bundled, "download" persists the quiz to local storage and
+  marks it available offline — see Open Questions on bundled-vs-fetched.)
 - Bottom navigation (SAVED active).
 
-### 4.6 Quiz / Driver Mode (`5`)
-The core gameplay screen, optimized for driving.
+---
 
-Must include:
-- **Amber header zone** with: current question position (e.g. "Q 4/10"), the quiz name
-  (e.g. "Grand Canyon"), an elapsed **timer**, and a **progress bar**.
-- **Question card** (white bubble) containing:
-  - A **read-aloud / TTS bar**: a speaker control, an audio **waveform** indicator, and a
-    **mute** toggle. The question is auto-read on load; tapping the speaker replays it.
-  - The **question text**, large and centered.
-- **Answer options** on a dark panel for night/glare comfort. Four large, thumb-friendly
-  options (minimum ~56px tap targets), each labeled A–D.
-- **Answer feedback (graded state):** when an answer is chosen, the **correct** option turns
-  **green with a ✓** and a **wrong** pick turns **red with a ✕**. There are **no Skip or
-  Next buttons** — after answering, the quiz **auto-advances** to the next question.
-- A **feedback strip** below the options explaining the correct answer
-  (e.g. "Correct answer: A — The Grand Canyon is about 1 mile deep…").
-- A subtle "Auto-advances to next question…" hint.
-- Mute toggle must let the user silence/enable narration at any time.
+## 6. Key Flows (MVP)
 
-### 4.7 Results (`6`)
-Shown when a quiz is completed.
-
-Must include:
-- A celebratory header (trophy, "Quiz Complete!", the quiz name).
-- A **score ring** showing the result (e.g. 7/10 correct).
-- A **stats row**: time taken, streak, and XP earned.
-- A **"Review Answers"** list: each answered question marked correct (✅) or incorrect (❌),
-  showing the user's answer and, when wrong, the correct answer. (Wrong rows can expand to a
-  full explanation.)
-- A **"Play Next"** suggestion set, seeded by current location and history.
-- Primary **Play Again** and secondary **Share Score** actions.
-- Bottom navigation.
-
-### 4.8 Settings / Profile (`7`)
-Account and accessibility preferences.
-
-Must include:
-- A **profile card**: avatar, name (e.g. "Road Tripper"), level / XP, and an **Edit** action.
-- **Audio & Accessibility** section — central to driver use:
-  - Toggle: Read Questions Aloud.
-  - Toggle: Auto-Mute on Answer.
-  - Setting: Voice Speed (e.g. 1.0× — Normal).
-  - Setting: Voice (e.g. "Samantha (US English)").
-- **Driver Mode** section: a highlighted card describing the mode (large tap targets,
-  auto-read, skip gestures) with a clear on/off control showing current state.
-- **Quiz Preferences** section: Location (auto-detect), Default Difficulty, Time Limit per
-  Question (toggle), Notifications (toggle).
-- **Account** section: My Stats & History, Achievements, Sign Out.
-- Bottom navigation (PROFILE active).
+1. **Play a recommended quiz:** Home → tap **Play** on a park quiz → answer 20
+   questions → completion summary → recorded in Completed.
+2. **Save for later:** Home (or quiz card) → tap **♡ Save** → quiz appears under
+   Saved & Downloaded.
+3. **Download for offline:** Saved & Downloaded → tap **Download** on a saved quiz →
+   quiz becomes playable offline.
+4. **Play offline:** (no connection) Saved & Downloaded → **Play offline** on a
+   downloaded quiz → complete → recorded in Completed.
+5. **Review history:** Completed → see past quizzes with scores → **Retry** any.
+6. **Replay:** Completed (Retry) or Saved (Play) → Quiz → new Completed entry.
 
 ---
 
-## 5. Key Flows
+## 7. Functional Requirements (MVP)
 
-1. **Start by topic:** Home → type a topic → Go → Mode Select → Quiz → Results.
-2. **Start by location:** Home → pick a place → Mode Select → Quiz → Results.
-3. **Resume:** Returning Home → Resume in-progress banner → Quiz.
-4. **Discover:** Explore → pick a quiz (or featured) → Mode Select → Quiz → Results.
-5. **Replay from library:** Saved & History → Retry (history) or Play (saved) → Mode Select
-   → Quiz → Results.
-6. **Choose how to play:** any quiz entry point → Mode Select → Read Aloud or Quiet → Quiz.
-7. **Play loop:** Quiz auto-advances through all questions → Results → Play Again / Play Next.
-
----
-
-## 6. Functional Requirements
-
-- **FR-1 — Two-path quiz generation:** Users can start a quiz by typing a free-text topic or
-  by selecting a location.
-- **FR-2 — Location awareness:** The app surfaces a current/nearby location and seeds
-  recommendations from it, even for users with no history. The location is changeable.
-- **FR-3 — Mode selection:** Before any quiz starts, the user chooses Read Aloud or Quiet
-  mode, with Read Aloud recommended as the driver-safe default.
-- **FR-4 — Read-aloud narration:** In Read Aloud mode, questions are spoken automatically;
-  the user can replay narration and mute/unmute at any time.
-- **FR-5 — Driver-friendly gameplay:** Large tap targets, dark answer panel, no manual
-  Next/Skip; the quiz auto-advances after each answer.
-- **FR-6 — Immediate answer feedback:** On answering, the correct option shows green/✓ and a
-  wrong selection shows red/✕, with an explanation of the correct answer.
-- **FR-7 — Scoring & results:** On completion the app shows score, time, streak, XP, a
-  per-question review, and next-quiz suggestions.
-- **FR-8 — Explore marketplace:** Users can browse, search, filter by category, and play
-  quizzes; featured content is highlighted.
-- **FR-9 — Save & history:** Users can save quizzes, see recently played quizzes with scores,
-  retry past quizzes, and remove saved ones.
-- **FR-10 — Accessibility & preferences:** Users can configure narration (voice, speed,
-  auto-mute), toggle Driver Mode, and set quiz defaults from Settings.
+- **MFR-1 — Pre-generated park quizzes:** Ship static, pre-authored quizzes for all
+  U.S. National Parks, each with exactly **20 multiple-choice questions**.
+- **MFR-2 — Recommended catalog:** The main page presents the full pre-generated
+  library as recommended quizzes, browsable and selectable.
+- **MFR-3 — Quiz play:** Users can select a quiz, answer 20 questions with immediate
+  correct/incorrect feedback and an explanation, and reach a completion score.
+- **MFR-4 — Completed history & scores:** Completing a quiz records it with the date
+  and score; the Completed page lists past attempts and supports retry. Persisted
+  locally.
+- **MFR-5 — Save:** Users can save/bookmark quizzes and see them in Saved &
+  Downloaded; saves persist locally.
+- **MFR-6 — Download & offline play:** Users can download saved quizzes for offline
+  use and play them with no network connection; downloads can be removed.
+- **MFR-7 — Local persistence:** Saved quizzes, downloads, and completed history
+  persist on-device across sessions with **no account or cloud sync**.
 
 ---
 
-## 7. Out of Scope (for this design)
+## 8. Data & Persistence (MVP)
 
-- Real backend, accounts/auth, or persistence — the wireframes show static example data.
-- Real text-to-speech engine integration (the read-aloud UI is represented, not wired to a
-  voice engine).
-- Real maps/GPS — location is represented at the UI level.
-- Multiplayer, leaderboards, or social features (the RANKS tab was intentionally removed).
-- Payments / monetization of marketplace quizzes.
+- **Content:** quiz catalog is static and shipped with the app build.
+- **User state:** three local collections — **Saved** (quiz IDs), **Downloaded**
+  (quiz IDs + cached content/availability flag), and **Completed** (per-attempt
+  records: quiz ID, completed-at timestamp, score, optionally per-question answers).
+- **Storage:** on-device local storage only (e.g. app storage / local DB). No
+  accounts, no auth, no remote sync in MVP.
 
 ---
 
-## 8. Open Questions
+## 9. Out of Scope (MVP)
 
-- Should Read Aloud vs Quiet be remembered per user as a default, or asked every time?
-- How are quizzes authored/sourced for the marketplace, and who curates "Featured This Week"?
-- What exactly is the "in-progress" resume state preserving (position, timer, answers)?
-- Does Driver Mode (Settings) change behavior beyond what Read Aloud already provides?
+- AI / two-path quiz generation (type-a-topic, location-generated quizzes).
+- Location awareness, GPS, and location-seeded recommendations.
+- Read-Aloud / TTS narration, Mode Select, and Driver Mode.
+- Explore marketplace (categories, featured, badges, marketplace search).
+- Gamified results: score ring, streak, XP, Share Score, "Play Next" suggestions.
+- Settings / Profile screen and accessibility preferences.
+- Resume of an in-progress quiz.
+- Accounts, authentication, cloud sync, multiplayer/social, payments.
+
+All of the above are planned for **V1** — see §11 and `docs/PRD-V1.md`.
+
+---
+
+## 10. Success Metrics (MVP)
+
+- **Quiz completion rate:** % of started quizzes finished through Q20.
+- **Replay rate:** % of users who complete ≥2 quizzes.
+- **Download adoption:** % of active users who download ≥1 quiz for offline use.
+- **Return rate:** % of users who return and view Completed history.
+
+---
+
+## 11. V1 — Post-MVP Roadmap (moved from the previous PRD)
+
+Everything previously specified that is **not** in the MVP is deferred to **V1** and
+documented in full in [`docs/PRD-V1.md`](docs/PRD-V1.md). Summary of what moves:
+
+- **AI / two-path quiz generation** — type any topic or pick a place and generate a
+  quiz on demand (replaces MVP's static-only catalog).
+- **Location awareness** — current/nearby location, changeable location, and
+  location-seeded recommendations.
+- **Mode Select + Read-Aloud / Driver Mode** — choose Read Aloud (driver-safe,
+  auto-narrated, auto-advance) vs Quiet; TTS narration with mute/replay.
+- **Explore marketplace** — category chips, "Featured This Week," badges
+  (TRENDING/NEW/POPULAR/STAFF PICK), marketplace search.
+- **Gamified results** — score ring, time/streak/XP stats, per-question review with
+  explanations, "Play Next" suggestions, Play Again / Share Score.
+- **Settings / Profile** — profile card, Audio & Accessibility (voice, speed,
+  auto-mute), Driver Mode controls, quiz preferences, account section.
+- **Returning-user resume** — in-progress banner with progress + Resume.
+- **Accounts & sync** — user accounts and cross-device persistence.
+
+The **HOME**, **SAVED**, and **COMPLETED** concepts exist in both MVP and V1; V1
+re-introduces the **EXPLORE** and **PROFILE** tabs and the richer behaviors above.
+
+---
+
+## 12. Open Questions (MVP)
+
+- **Park scope:** "all national parks" = the **63 designated National Parks**, or a
+  broader set (national monuments, historic sites, recreation areas)?
+- **Authoring & QA:** who authors/curates the pre-generated questions, and what's the
+  accuracy-review process before ship?
+- **Download semantics:** if all content is bundled with the app, what does "download"
+  add — is the catalog actually fetched remotely and cached, or is "download" a
+  product affordance over already-bundled content?
+- **History granularity:** does Completed store **every attempt**, or only the **best
+  (or latest) score** per quiz?
+- **Recommended order:** what order does the main page use (alphabetical, curated,
+  random)? Any lightweight "featured" concept without the full V1 marketplace?
+- **Persistence limits:** expected storage budget for downloads and history caps.
