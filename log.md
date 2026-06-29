@@ -66,3 +66,20 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
   feedback, ~1s auto-advance, score screen), write `history` on completion.
 - Build against these 3 sample quizzes; freeze the questions JSON shape before Phase 3
   bulk content.
+
+### Phase 3 — Catalog content pipeline + curated batch ✅ (PR pending)
+- Chosen approach: **curated batch + pipeline** (per-park JSON + service-role loader).
+- `content/quizzes/*.json` — **12 parks, 240 questions** (Grand Canyon, Yellowstone,
+  Yosemite, Zion, Great Smoky Mountains, Rocky Mountain, Acadia, Glacier, Arches,
+  Bryce Canyon, Olympic, Everglades). Files are the source of truth.
+- `scripts/load-quizzes.mjs` — validates (20 Q, 4 options, correct_index 0–3, unique
+  ids/slugs) and **upserts by slug** using `SUPABASE_SERVICE_ROLE_KEY` (sb_secret_…).
+- `scripts/shuffle-options.mjs` — deterministic, idempotent answer-position spread.
+  Final distribution {0:67, 1:61, 2:60, 3:52}.
+- Loaded to remote; **verified 12 quizzes readable via anon** (count 0-11/12);
+  shuffled answers intact (Zion Q1 → Utah).
+- Note: service-role key lives only in `.env.local` (git-ignored), never in Vercel.
+
+### Next: Phase 4 — Home / Explore / Saved tabs
+- Real three-tab nav; Explore search/filter; Saved (saves + history) — history view
+  arrives with auth (Phase 5).
