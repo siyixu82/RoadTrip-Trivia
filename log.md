@@ -61,8 +61,18 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
   RLS confirmed — `profiles`/`saves`/`history` anon reads return `[]`, anon quiz insert
   denied (42501). Connectivity badge now reads "connected · quizzes table found".
 
-### Next: Phase 2 — Core play loop
-- Repository layer (hides Supabase vs IndexedDB), Quiz screen (20 Q, A–D, green/red
-  feedback, ~1s auto-advance, score screen), write `history` on completion.
-- Build against these 3 sample quizzes; freeze the questions JSON shape before Phase 3
-  bulk content.
+### Phase 2 — Core play loop ✅ (PR #5)
+- **Repository layer** `src/lib/repository/quizRepository.ts` (`listQuizzes`,
+  `getQuizBySlug`) — UI talks only to this; IndexedDB/offline slots in here later.
+- **Home** `/` lists catalog quizzes with Play (minimal; real Home/Explore is Phase 4).
+- **Quiz player** `/quiz/[slug]` — 20 Q, A–D options, correct→green / wrong→red,
+  ~1.1s auto-advance, progress bar, score screen with Retry/Home.
+- **History persistence deferred to Phase 5** (auth): RLS needs an authenticated
+  `user_id`. Score shows but isn't saved yet. Marked with a NOTE at the finish handler.
+- Removed Phase 0 `SupabaseStatus` (catalog list now proves connectivity).
+- Verified: `tsc` clean, `next build` passes, routes 200 locally; Vercel preview READY.
+- Decision pending: freeze the questions JSON shape before Phase 3 bulk content.
+
+### Next: Phase 3 — Bulk content (full National Park catalog)
+- Generate the remaining parks once the questions shape is frozen; load via a
+  service-role script (the 3 sample quizzes remain or are replaced).
