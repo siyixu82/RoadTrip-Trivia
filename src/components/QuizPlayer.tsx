@@ -142,15 +142,15 @@ export function QuizPlayer({ quiz }: Props) {
         </h2>
       </div>
 
-      {/* Answer options on a dark panel */}
-      <div className="flex flex-1 flex-col gap-2.5 rounded-t-3xl bg-[#1a1a1a] px-3.5 pt-4 pb-4">
+      {/* Answer options on a light panel */}
+      <div className="flex flex-1 flex-col gap-2.5 rounded-t-3xl bg-white px-3.5 pt-4 pb-4">
         {question.options.map((option, i) => {
           const isCorrect = i === question.correct_index;
           const isPicked = i === selectedIndex;
 
           let stateClasses =
-            "bg-[#2a2a2a] border-[#3a3a3a] text-white/90 hover:bg-[#333]";
-          let badgeClasses = "bg-white/10 text-white/70";
+            "bg-white border-[#1a1a1a]/12 text-[#1a1a1a] shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:border-[#F5A623]";
+          let badgeClasses = "bg-[#1a1a1a]/8 text-[#1a1a1a]/60";
           let mark: string | null = null;
           if (answered) {
             if (isCorrect) {
@@ -162,7 +162,8 @@ export function QuizPlayer({ quiz }: Props) {
               badgeClasses = "bg-white/25 text-white";
               mark = "✕";
             } else {
-              stateClasses = "bg-[#2a2a2a] border-[#2a2a2a] text-white/40";
+              stateClasses =
+                "bg-[#1a1a1a]/[0.04] border-[#1a1a1a]/8 text-[#1a1a1a]/40";
             }
           }
 
@@ -187,7 +188,7 @@ export function QuizPlayer({ quiz }: Props) {
         })}
 
         {answered && (
-          <p className="pt-2 text-center font-mono text-[10px] uppercase tracking-widest text-white/30">
+          <p className="pt-2 text-center font-mono text-[10px] uppercase tracking-widest text-[#1a1a1a]/35">
             Auto-advances to next question…
           </p>
         )}
