@@ -1,0 +1,227 @@
+{
+  "slug": "great-smoky-mountains",
+  "title": "Great Smoky Mountains Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "gs-1",
+      "prompt": "Great Smoky Mountains National Park straddles which two states?",
+      "options": [
+        "Tennessee and North Carolina",
+        "North and South Carolina",
+        "Georgia and Alabama",
+        "Virginia and Kentucky"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gs-2",
+      "prompt": "Among U.S. national parks, Great Smoky Mountains is notable for being what?",
+      "options": [
+        "The most visited",
+        "The least visited",
+        "The newest",
+        "The smallest"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gs-3",
+      "prompt": "The park's signature 'smoke' is actually what?",
+      "options": [
+        "Air pollution",
+        "Constant wildfire smoke",
+        "Sea spray",
+        "Natural fog and vapor released by plants"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-4",
+      "prompt": "What is the highest peak in the park?",
+      "options": [
+        "Brasstown Bald",
+        "Mount Washington",
+        "Mount Mitchell",
+        "Clingmans Dome"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-5",
+      "prompt": "Which scenic valley loop is famous for wildlife and historic cabins?",
+      "options": [
+        "Yosemite Valley",
+        "Jackson Hole",
+        "Cades Cove",
+        "Lamar Valley"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-6",
+      "prompt": "The park is sometimes called the 'Salamander Capital' for its many what?",
+      "options": [
+        "Sharks",
+        "Camels",
+        "Salamanders",
+        "Penguins"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-7",
+      "prompt": "Which long-distance trail runs through the park?",
+      "options": [
+        "Continental Divide Trail",
+        "Pacific Crest Trail",
+        "John Muir Trail",
+        "Appalachian Trail"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-8",
+      "prompt": "In what year was the park established?",
+      "options": [
+        "1950",
+        "1916",
+        "1934",
+        "1972"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-9",
+      "prompt": "Which insect draws crowds for its synchronous early-summer display?",
+      "options": [
+        "Fireflies",
+        "Mosquitoes",
+        "Bees",
+        "Locusts"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gs-10",
+      "prompt": "Which large mammal, numbering around 1,900, is a park symbol?",
+      "options": [
+        "Moose",
+        "American black bear",
+        "Bison",
+        "Grizzly bear"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-11",
+      "prompt": "In addition to being a World Heritage Site, the park is an international what?",
+      "options": [
+        "National seashore",
+        "Biosphere Reserve",
+        "Marine sanctuary",
+        "Naval base"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-12",
+      "prompt": "For most of its history, the park was notable for having what?",
+      "options": [
+        "Ferry-only access",
+        "A timed lottery",
+        "The highest entrance fee",
+        "No entrance fee"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-13",
+      "prompt": "Elk were reintroduced in 2001 to which valley in the park?",
+      "options": [
+        "Cataloochee",
+        "Gatlinburg",
+        "Cades Cove",
+        "Newfound Gap"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gs-14",
+      "prompt": "Which main road crosses the park over the state-line gap?",
+      "options": [
+        "Skyline Drive",
+        "Going-to-the-Sun Road",
+        "Tioga Road",
+        "Newfound Gap Road"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-15",
+      "prompt": "Which Tennessee town is a major gateway to the park?",
+      "options": [
+        "Moab",
+        "Gatlinburg",
+        "Estes Park",
+        "Springdale"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-16",
+      "prompt": "What kind of forest dominates the park?",
+      "options": [
+        "Tundra",
+        "Temperate deciduous forest",
+        "Desert scrub",
+        "Tropical rainforest"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-17",
+      "prompt": "About how many visitors does the park receive each year?",
+      "options": [
+        "About 1 million",
+        "About 12 million",
+        "About 100,000",
+        "About 100 million"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-18",
+      "prompt": "Which once-dominant tree was devastated by an introduced blight?",
+      "options": [
+        "Coast redwood",
+        "American chestnut",
+        "Saguaro",
+        "Joshua tree"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-19",
+      "prompt": "Clingmans Dome is topped by a famous what?",
+      "options": [
+        "Observation tower",
+        "Glacier",
+        "Geyser",
+        "Lighthouse"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gs-20",
+      "prompt": "The Smokies are part of which mountain system?",
+      "options": [
+        "Rocky Mountains",
+        "Cascades",
+        "Appalachian Mountains",
+        "Sierra Nevada"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "glacier",
+  "title": "Glacier Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "gl-1",
+      "prompt": "In which U.S. state is Glacier National Park located?",
+      "options": [
+        "Montana",
+        "Wyoming",
+        "Washington",
+        "Idaho"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gl-2",
+      "prompt": "What is the park's famous scenic mountain road called?",
+      "options": [
+        "Going-to-the-Sun Road",
+        "Trail Ridge Road",
+        "Tioga Road",
+        "Skyline Drive"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gl-3",
+      "prompt": "With Canada's Waterton Lakes, Glacier forms the world's first what?",
+      "options": [
+        "International Peace Park",
+        "Naval base",
+        "Hydro project",
+        "Marine reserve"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gl-4",
+      "prompt": "In what year was Glacier established as a national park?",
+      "options": [
+        "1950",
+        "1872",
+        "1934",
+        "1910"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gl-5",
+      "prompt": "Which large bear species inhabits the park?",
+      "options": [
+        "Sun bear",
+        "Polar bear",
+        "Grizzly bear",
+        "Panda"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gl-6",
+      "prompt": "Which sure-footed white animal is a symbol of the park?",
+      "options": [
+        "Camel",
+        "Flamingo",
+        "Mountain goat",
+        "Manatee"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gl-7",
+      "prompt": "The park's dramatic landscape was carved mainly by what?",
+      "options": [
+        "Volcanoes",
+        "Wind",
+        "Rivers alone",
+        "Glaciers"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gl-8",
+      "prompt": "Logan Pass sits astride which geographic feature?",
+      "options": [
+        "The coastline",
+        "The Continental Divide",
+        "The Equator",
+        "The Tropic of Cancer"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gl-9",
+      "prompt": "What is the largest lake in the park?",
+      "options": [
+        "Crater Lake",
+        "Lake Tahoe",
+        "Lake McDonald",
+        "Jenny Lake"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gl-10",
+      "prompt": "What has been happening to the park's namesake glaciers?",
+      "options": [
+        "They are shrinking",
+        "They are growing rapidly",
+        "They are doubling",
+        "They are unchanged"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gl-11",
+      "prompt": "The Hidden Lake Overlook trail begins at which spot?",
+      "options": [
+        "Bar Harbor",
+        "Logan Pass",
+        "Springdale",
+        "Estes Park"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gl-12",
+      "prompt": "Going-to-the-Sun Road is typically fully open only in which season?",
+      "options": [
+        "Winter",
+        "Spring",
+        "Summer",
+        "It is open year-round"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gl-13",
+      "prompt": "The park lies within which mountain range?",
+      "options": [
+        "Cascades",
+        "Rocky Mountains",
+        "Appalachians",
+        "Sierra Nevada"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gl-14",
+      "prompt": "Which Canadian park is Glacier's cross-border partner?",
+      "options": [
+        "Banff",
+        "Yoho",
+        "Jasper",
+        "Waterton Lakes"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gl-15",
+      "prompt": "Which native cold-water fish lives in the park's waters?",
+      "options": [
+        "Clownfish",
+        "Tuna",
+        "Bull trout",
+        "Piranha"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gl-16",
+      "prompt": "Which historic grand lodge is found in the park?",
+      "options": [
+        "The Ahwahnee",
+        "El Tovar",
+        "Stanley Hotel",
+        "Many Glacier Hotel"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gl-17",
+      "prompt": "About how many visitors does Glacier receive each year?",
+      "options": [
+        "About 500",
+        "About 50 million",
+        "About 100,000",
+        "About 3 million"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gl-18",
+      "prompt": "The park's ecosystem is nicknamed the 'Crown of the' what?",
+      "options": [
+        "Continent",
+        "Cascades",
+        "Rockies",
+        "World"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gl-19",
+      "prompt": "Which berry is a famous food source for the park's bears?",
+      "options": [
+        "Coconut",
+        "Pineapple",
+        "Huckleberry",
+        "Date"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gl-20",
+      "prompt": "Glacier National Park shares a border with which country?",
+      "options": [
+        "Norway",
+        "Russia",
+        "Canada",
+        "Mexico"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

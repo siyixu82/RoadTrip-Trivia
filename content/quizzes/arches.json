@@ -1,0 +1,227 @@
+{
+  "slug": "arches",
+  "title": "Arches Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "ar-1",
+      "prompt": "In which U.S. state is Arches National Park located?",
+      "options": [
+        "Utah",
+        "New Mexico",
+        "Arizona",
+        "Nevada"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ar-2",
+      "prompt": "The park has the world's largest concentration of what?",
+      "options": [
+        "Natural stone arches",
+        "Geysers",
+        "Waterfalls",
+        "Caves"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ar-3",
+      "prompt": "Which arch appears on Utah's license plate?",
+      "options": [
+        "Rainbow Bridge",
+        "Double Arch",
+        "Landscape Arch",
+        "Delicate Arch"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ar-4",
+      "prompt": "Which is the longest arch in the park?",
+      "options": [
+        "Mesa Arch",
+        "Landscape Arch",
+        "Tower Arch",
+        "Delicate Arch"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ar-5",
+      "prompt": "Which town is the gateway to Arches?",
+      "options": [
+        "Estes Park",
+        "Springdale",
+        "Moab",
+        "Bar Harbor"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ar-6",
+      "prompt": "About how many cataloged arches are in the park?",
+      "options": [
+        "About 10",
+        "About 50,000",
+        "About 100",
+        "Over 2,000"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ar-7",
+      "prompt": "The arches form mostly in which rock?",
+      "options": [
+        "Basalt",
+        "Entrada Sandstone",
+        "Marble",
+        "Granite"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ar-8",
+      "prompt": "In what year did Arches become a national park?",
+      "options": [
+        "1929",
+        "1872",
+        "1990",
+        "1971"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ar-9",
+      "prompt": "Which buried mineral layer helps shape the arches by shifting?",
+      "options": [
+        "Salt",
+        "Gold",
+        "Ice",
+        "Coal"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ar-10",
+      "prompt": "Which famous formation is literally named for being balanced?",
+      "options": [
+        "Balanced Rock",
+        "Half Dome",
+        "El Capitan",
+        "The Watchman"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ar-11",
+      "prompt": "Which river flows near the park?",
+      "options": [
+        "Missouri River",
+        "Snake River",
+        "Colorado River",
+        "Rio Grande"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ar-12",
+      "prompt": "Which formation of two arches appeared in an Indiana Jones film?",
+      "options": [
+        "Double Arch",
+        "Twin Towers",
+        "Triple Arch",
+        "The Gossips"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ar-13",
+      "prompt": "What type of ecosystem is the park?",
+      "options": [
+        "Wetland",
+        "Tundra",
+        "High (cold) desert",
+        "Tropical rainforest"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ar-14",
+      "prompt": "Which fragile living desert soil is important to protect here?",
+      "options": [
+        "Cryptobiotic soil crust",
+        "Permafrost",
+        "Lava flows",
+        "Coral"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ar-15",
+      "prompt": "The thin walls of rock that erode into arches are called what?",
+      "options": [
+        "Fins",
+        "Hoodoos",
+        "Domes",
+        "Cones"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ar-16",
+      "prompt": "Arches is one of Utah's 'Mighty 5' along with Zion, Bryce, Canyonlands, and which park?",
+      "options": [
+        "Capitol Reef",
+        "Mesa Verde",
+        "Great Basin",
+        "Yellowstone"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ar-17",
+      "prompt": "About how many visitors does Arches receive each year?",
+      "options": [
+        "About 50 million",
+        "About 1,000",
+        "About 20 million",
+        "About 1.5 million"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ar-18",
+      "prompt": "The Fiery Furnace is a maze of what?",
+      "options": [
+        "A volcano",
+        "Narrow sandstone passages",
+        "A lava cave",
+        "A geyser field"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ar-19",
+      "prompt": "When is the light usually best for photographing the arches?",
+      "options": [
+        "Noon only",
+        "Midnight",
+        "Sunrise and sunset",
+        "During eclipses"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ar-20",
+      "prompt": "The trail to Delicate Arch climbs across what kind of surface?",
+      "options": [
+        "Slickrock",
+        "A river ford",
+        "Cave stairs",
+        "A glacier"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

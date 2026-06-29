@@ -1,0 +1,227 @@
+{
+  "slug": "acadia",
+  "title": "Acadia Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "ac-1",
+      "prompt": "In which U.S. state is Acadia National Park located?",
+      "options": [
+        "New Hampshire",
+        "Vermont",
+        "Maine",
+        "Massachusetts"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ac-2",
+      "prompt": "Which peak is among the first places to see sunrise in the U.S.?",
+      "options": [
+        "Clingmans Dome",
+        "Cadillac Mountain",
+        "Mount Katahdin",
+        "Mount Washington"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ac-3",
+      "prompt": "Most of Acadia lies on which island?",
+      "options": [
+        "Long Island",
+        "Manhattan",
+        "Mount Desert Island",
+        "Block Island"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ac-4",
+      "prompt": "Which town is the famous gateway hub for Acadia?",
+      "options": [
+        "Estes Park",
+        "Portland",
+        "Springdale",
+        "Bar Harbor"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ac-5",
+      "prompt": "Which car-free crushed-stone paths were funded by the Rockefeller family?",
+      "options": [
+        "Carriage roads",
+        "Canals",
+        "Boardwalks",
+        "Subways"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ac-6",
+      "prompt": "Acadia was the first national park established where?",
+      "options": [
+        "East of the Mississippi River",
+        "On a Pacific island",
+        "In Alaska",
+        "West of the Rockies"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ac-7",
+      "prompt": "At which feature do waves boom into a rocky coastal chasm?",
+      "options": [
+        "Old Faithful",
+        "Wave Rock",
+        "Thunder Hole",
+        "The Narrows"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ac-8",
+      "prompt": "Which pond is famous for its tea house and popovers?",
+      "options": [
+        "Bear Lake",
+        "Jenny Lake",
+        "Crater Lake",
+        "Jordan Pond"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ac-9",
+      "prompt": "Which ocean borders Acadia?",
+      "options": [
+        "Gulf of Mexico",
+        "Arctic Ocean",
+        "Atlantic Ocean",
+        "Pacific Ocean"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ac-10",
+      "prompt": "Cadillac Mountain is the highest point along what?",
+      "options": [
+        "The Sierra Nevada",
+        "The U.S. East Coast",
+        "The Gulf Coast",
+        "The Rocky Mountains"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ac-11",
+      "prompt": "Which pair of rounded mountains is nicknamed 'The Bubbles'?",
+      "options": [
+        "The Bubbles",
+        "The Brothers",
+        "The Mittens",
+        "The Watchman"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ac-12",
+      "prompt": "Acadia's rounded landscape was mainly shaped by what?",
+      "options": [
+        "Earthquakes",
+        "Glaciers",
+        "A meteor impact",
+        "Volcanoes"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ac-13",
+      "prompt": "Which large mammal is commonly seen in the park?",
+      "options": [
+        "Alligator",
+        "Grizzly bear",
+        "White-tailed deer",
+        "Bison"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ac-14",
+      "prompt": "Which colorful-beaked seabird nests on nearby coastal islands?",
+      "options": [
+        "Penguin",
+        "Atlantic puffin",
+        "Flamingo",
+        "Ostrich"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ac-15",
+      "prompt": "What is the Park Loop Road primarily used for?",
+      "options": [
+        "Freight rail",
+        "Boat launching",
+        "Hiking only",
+        "Scenic driving"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ac-16",
+      "prompt": "Acadia's pink-hued bedrock is largely which rock?",
+      "options": [
+        "Basalt",
+        "Granite",
+        "Limestone",
+        "Sandstone"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ac-17",
+      "prompt": "About how many visitors does Acadia receive each year?",
+      "options": [
+        "About 4 million",
+        "About 50 million",
+        "About 500",
+        "About 100,000"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ac-18",
+      "prompt": "Which steep trail uses iron rungs and ladders along a cliff?",
+      "options": [
+        "The Narrows",
+        "Precipice Trail",
+        "Mist Trail",
+        "Angels Landing"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ac-19",
+      "prompt": "Which philanthropist donated land and built the carriage roads?",
+      "options": [
+        "John D. Rockefeller Jr.",
+        "Andrew Carnegie",
+        "Henry Ford",
+        "Walt Disney"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ac-20",
+      "prompt": "Acadia is especially popular for which seasonal display?",
+      "options": [
+        "Desert blooms",
+        "Fall foliage",
+        "Monsoon rains",
+        "Cherry blossoms"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

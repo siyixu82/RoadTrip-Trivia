@@ -1,0 +1,227 @@
+{
+  "slug": "yosemite",
+  "title": "Yosemite Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "yo-1",
+      "prompt": "In which state is Yosemite National Park located?",
+      "options": [
+        "California",
+        "Oregon",
+        "Washington",
+        "Nevada"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "yo-2",
+      "prompt": "Which ~3,000 ft granite monolith is famous with rock climbers?",
+      "options": [
+        "El Capitan",
+        "Mount Whitney",
+        "Half Dome",
+        "Denali"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "yo-3",
+      "prompt": "Which rounded granite dome is an iconic Yosemite symbol?",
+      "options": [
+        "Sentinel Dome",
+        "El Capitan",
+        "Half Dome",
+        "Lembert Dome"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "yo-4",
+      "prompt": "About how tall is Yosemite Falls, one of North America's tallest?",
+      "options": [
+        "About 2,425 feet",
+        "About 100 feet",
+        "About 500 feet",
+        "About 5,000 feet"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "yo-5",
+      "prompt": "Which naturalist is most associated with Yosemite's preservation?",
+      "options": [
+        "Aldo Leopold",
+        "John Muir",
+        "John James Audubon",
+        "Henry David Thoreau"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "yo-6",
+      "prompt": "Yosemite is famous for groves of which giant tree?",
+      "options": [
+        "Giant sequoia",
+        "Joshua tree",
+        "Douglas fir",
+        "Coast redwood"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "yo-7",
+      "prompt": "What is the famous valley at the heart of the park called?",
+      "options": [
+        "Death Valley",
+        "Napa Valley",
+        "Owens Valley",
+        "Yosemite Valley"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "yo-8",
+      "prompt": "In which mountain range is Yosemite located?",
+      "options": [
+        "Sierra Nevada",
+        "Rocky Mountains",
+        "Appalachians",
+        "Cascades"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "yo-9",
+      "prompt": "Which is the largest giant sequoia grove in Yosemite?",
+      "options": [
+        "Mariposa Grove",
+        "Muir Woods",
+        "Redwood Grove",
+        "Tuolumne Grove"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "yo-10",
+      "prompt": "The Tunnel View overlook famously frames El Capitan, Half Dome, and which waterfall?",
+      "options": [
+        "Niagara Falls",
+        "Lower Yellowstone Falls",
+        "Bridalveil Fall",
+        "Havasu Falls"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "yo-11",
+      "prompt": "Which high-country alpine meadow is popular in summer?",
+      "options": [
+        "Central Park",
+        "Lamar Valley",
+        "Hayden Valley",
+        "Tuolumne Meadows"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "yo-12",
+      "prompt": "Which 1864 act signed by Lincoln helped protect Yosemite?",
+      "options": [
+        "Homestead Act",
+        "Antiquities Act",
+        "Yosemite Grant",
+        "Wilderness Act"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "yo-13",
+      "prompt": "What is the cable-assisted final route to the top of Half Dome called?",
+      "options": [
+        "Mist Trail",
+        "The Cables Route",
+        "Angels Landing",
+        "The Nose"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "yo-14",
+      "prompt": "In what year did Yosemite become a national park?",
+      "options": [
+        "1872",
+        "1916",
+        "1864",
+        "1890"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "yo-15",
+      "prompt": "What is the natural 'firefall' phenomenon at Horsetail Fall in February?",
+      "options": [
+        "It freezes solid",
+        "It turns blue",
+        "It disappears",
+        "It glows like lava at sunset"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "yo-16",
+      "prompt": "In what year was Yosemite named a UNESCO World Heritage Site?",
+      "options": [
+        "1972",
+        "1995",
+        "1984",
+        "2001"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "yo-17",
+      "prompt": "Which photographer is famous for black-and-white images of Yosemite?",
+      "options": [
+        "Annie Leibovitz",
+        "Steve McCurry",
+        "Ansel Adams",
+        "Dorothea Lange"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "yo-18",
+      "prompt": "What is the historic luxury hotel in Yosemite Valley called?",
+      "options": [
+        "Old Faithful Inn",
+        "The Ritz",
+        "The Ahwahnee",
+        "El Tovar"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "yo-19",
+      "prompt": "Which Native American people are indigenous to Yosemite Valley?",
+      "options": [
+        "Seminole",
+        "Ahwahnechee",
+        "Cherokee",
+        "Inuit"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "yo-20",
+      "prompt": "About how many visitors does Yosemite receive each year?",
+      "options": [
+        "About 3.5 million",
+        "About 50 million",
+        "About 10,000",
+        "About 100,000"
+      ],
+      "correct_index": 0
+    }
+  ]
+}
