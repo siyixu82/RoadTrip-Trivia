@@ -6,6 +6,38 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 
 ---
 
+## 2026-06-29
+
+### Phase 4 — Home / Explore / Saved tabs ✅
+- **Three-tab shell:** `BottomNav` (Home/Explore/Saved, active-state highlight) +
+  `AppChrome` (wraps `layout.tsx`; hides nav on `/quiz/*`, pads content for the
+  fixed nav). Quiz player still takes the full screen while playing.
+- **Design language applied:** `globals.css` now sets cream `#FFF8EC` background +
+  charcoal `#1a1a1a` foreground and drops the default dark-mode override for one
+  consistent sketch aesthetic (rounded cards, dashed dividers, amber CTAs).
+- **Home** (`/`) — recommended slice (first 6) of the catalog + "Explore all N
+  parks →" link. **Explore** (`/explore`) — full catalog with name search
+  (search by title; the schema has no `state` column). Both render the shared
+  `QuizCard` (name · 20 Q · Save ♡ · Play). Catalog load extracted to
+  `useCatalog` hook over `quizRepository`.
+- **Saved** (`/saved`) — Saved ↔ History toggle. Saved: Play / Download
+  (offline pin) / Remove. History: date · score X/20 · Retry.
+- **Local library** `src/lib/library/library.ts` — reactive `localStorage` store
+  (`useSyncExternalStore`, cross-tab via `storage` event) for `saves` + `history`.
+  **Phase-4 placeholder**: UI imports only this module, so Phase 5 swaps the
+  internals for Supabase + IndexedDB with no component changes (same pattern as
+  `quizRepository`). `QuizPlayer` now calls `recordCompletion` on finish
+  (replacing the Phase-2 deferred NOTE).
+- Verified: `tsc` clean, ESLint clean, 7 Vitest tests pass, `next build` succeeds
+  (routes `/`, `/explore`, `/saved`, `/quiz/[slug]`). Playwright screenshots at
+  360×720 confirm the shell, Saved/History views, and nav render correctly.
+- Note: Zustand (named in the stack) not added — the lightweight
+  `useSyncExternalStore` store covers Phase-4 needs dependency-free.
+
+### Next: Phase 5 — Auth + offline (Supabase anon sign-in, IndexedDB, outbox sync)
+
+---
+
 ## 2026-06-28
 
 ### Recovery note (process)

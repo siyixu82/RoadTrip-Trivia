@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { recordCompletion } from "@/lib/library/library";
 import type { Quiz } from "@/lib/types";
 
 const OPTION_LETTERS = ["A", "B", "C", "D"] as const;
@@ -34,7 +35,8 @@ export function QuizPlayer({ quiz }: Props) {
 
     setSelectedIndex(optionIndex);
     const correct = optionIndex === questions[currentIndex].correct_index;
-    if (correct) setScore((s) => s + 1);
+    const nextScore = correct ? score + 1 : score;
+    if (correct) setScore(nextScore);
 
     timer.current = setTimeout(() => {
       if (currentIndex + 1 < total) {
@@ -42,9 +44,17 @@ export function QuizPlayer({ quiz }: Props) {
         setSelectedIndex(null);
       } else {
         setFinished(true);
+        // Phase 4: record the attempt to the local library (localStorage).
+        // Phase 5 swaps this for Supabase `history` once auth provides a
+        // user_id for RLS — the call site stays the same.
+        recordCompletion({
+          quizId: quiz.id,
+          slug: quiz.slug,
+          title: quiz.title,
+          score: nextScore,
+          questionCount: total,
+        });
       }
-      // NOTE: persisting the attempt to `history` lands with auth (Phase 5);
-      // RLS requires an authenticated user_id, which we don't have yet.
     }, ADVANCE_DELAY_MS);
   };
 

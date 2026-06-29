@@ -1,64 +1,48 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import { listQuizzes } from "@/lib/repository/quizRepository";
-import type { QuizSummary } from "@/lib/types";
+import { QuizCard } from "@/components/QuizCard";
+import { useCatalog } from "@/lib/useCatalog";
+
+// MVP Home draws "recommended" from the full park catalog (see PRD open
+// question). We surface a small curated-feeling slice and point to Explore for
+// the rest, so Home reads differently from the full catalog list.
+const RECOMMENDED_COUNT = 6;
 
 export default function Home() {
-  const [quizzes, setQuizzes] = useState<QuizSummary[] | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    listQuizzes()
-      .then((q) => !cancelled && setQuizzes(q))
-      .catch(
-        (e) =>
-          !cancelled &&
-          setError(e instanceof Error ? e.message : "Failed to load quizzes"),
-      );
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+  const state = useCatalog();
 
   return (
     <main className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-6 p-6">
       <header className="flex flex-col gap-1">
         <h1 className="text-3xl font-bold tracking-tight">RoadTrip Trivia</h1>
-        <p className="text-zinc-500">Pick a quiz and play.</p>
+        <p className="text-[#1a1a1a]/50">Recommended for your next trip.</p>
       </header>
 
-      {error && <p className="text-red-600">Error: {error}</p>}
-      {!error && quizzes === null && <p className="text-zinc-500">Loading…</p>}
-      {!error && quizzes?.length === 0 && (
-        <p className="text-zinc-500">No quizzes yet.</p>
+      {state.status === "error" && (
+        <p className="text-red-600">Error: {state.message}</p>
+      )}
+      {state.status === "loading" && (
+        <p className="text-[#1a1a1a]/50">Loading…</p>
       )}
 
-      <ul className="flex flex-col gap-3">
-        {quizzes?.map((quiz) => (
-          <li
-            key={quiz.id}
-            className="flex items-center justify-between gap-4 rounded-xl border border-black/10 p-4 dark:border-white/15"
-          >
-            <div className="flex flex-col">
-              <span className="font-semibold">{quiz.title}</span>
-              <span className="text-sm text-zinc-500">
-                {quiz.question_count} questions
-              </span>
-            </div>
-            {quiz.slug && (
-              <Link
-                href={`/quiz/${quiz.slug}`}
-                className="rounded-full bg-[#F5A623] px-5 py-2 font-medium text-black transition-opacity hover:opacity-90"
-              >
-                Play
-              </Link>
-            )}
-          </li>
-        ))}
-      </ul>
+      {state.status === "ready" && (
+        <>
+          <ul className="flex flex-col gap-3">
+            {state.quizzes.slice(0, RECOMMENDED_COUNT).map((quiz) => (
+              <QuizCard key={quiz.id} quiz={quiz} />
+            ))}
+          </ul>
+          {state.quizzes.length > RECOMMENDED_COUNT && (
+            <Link
+              href="/explore"
+              className="self-center rounded-full border-2 border-[#1a1a1a]/15 px-6 py-2.5 font-medium transition-colors hover:border-[#F5A623] hover:text-[#F5A623]"
+            >
+              Explore all {state.quizzes.length} parks →
+            </Link>
+          )}
+        </>
+      )}
     </main>
   );
 }
