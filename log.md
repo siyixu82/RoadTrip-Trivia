@@ -47,6 +47,22 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
   env; local uses `.env.local`.
 - Note: `next dev`/`next build` deprecation — none; build clean.
 
-### Next: Phase 1 — Schema migration + 3 sample quizzes (via Supabase CLI)
-- Write versioned SQL migration for the four tables + RLS under `supabase/migrations/`.
-- Generate 3 sample park quizzes to validate the `questions` jsonb shape end-to-end.
+### Phase 1 — Schema migration + 3 sample quizzes ✅ (via Supabase CLI)
+- `supabase init` → `supabase/config.toml` + `supabase/migrations/`.
+- **Schema migration** `20260629050327_init_schema.sql`: `profiles`, `quizzes`, `saves`,
+  `history` + indexes + RLS policies (users own their rows; `quizzes` publicly readable,
+  writes denied to anon/authenticated).
+- **Seed migration** `20260629050443_seed_sample_quizzes.sql`: Grand Canyon / Yellowstone /
+  Yosemite, 20 Q each (60 total), idempotent via `on conflict (slug)`. JSON validated
+  locally (4 options each, correct_index 0–3, no dup ids).
+- Applied to remote via `supabase db push` (user ran login/link/push; DB password stays
+  with user).
+- **Verified live (anon key):** 3 quizzes readable (count 0-2/3), Grand Canyon Q1 → Arizona;
+  RLS confirmed — `profiles`/`saves`/`history` anon reads return `[]`, anon quiz insert
+  denied (42501). Connectivity badge now reads "connected · quizzes table found".
+
+### Next: Phase 2 — Core play loop
+- Repository layer (hides Supabase vs IndexedDB), Quiz screen (20 Q, A–D, green/red
+  feedback, ~1s auto-advance, score screen), write `history` on completion.
+- Build against these 3 sample quizzes; freeze the questions JSON shape before Phase 3
+  bulk content.
