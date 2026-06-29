@@ -10,6 +10,7 @@ import {
   type HistoryEntry,
   type SavedQuiz,
 } from "@/lib/library/library";
+import { parkIcon, parkName } from "@/lib/parkIcon";
 
 type View = "saved" | "history";
 
@@ -19,20 +20,24 @@ export default function SavedPage() {
   const history = useHistory();
 
   return (
-    <main className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-5 p-6">
-      <h1 className="text-3xl font-bold tracking-tight">Saved</h1>
+    <main className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-4 p-5">
+      <h1 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
+        <span aria-hidden>♡</span> Saved &amp; History
+      </h1>
 
-      {/* Saved ↔ History toggle */}
-      <div className="flex gap-1 rounded-full border-2 border-[#1a1a1a]/15 p-1">
+      {/* Saved ↔ History segmented toggle */}
+      <div className="flex gap-1 rounded-2xl border-2 border-[#1a1a1a]/8 bg-[#f0eee9] p-1">
         <ToggleButton
           active={view === "saved"}
           onClick={() => setView("saved")}
-          label={`Saved${saves.length ? ` (${saves.length})` : ""}`}
+          label="Saved"
+          count={saves.length}
         />
         <ToggleButton
           active={view === "history"}
           onClick={() => setView("history")}
-          label={`History${history.length ? ` (${history.length})` : ""}`}
+          label="History"
+          count={history.length}
         />
       </div>
 
@@ -49,21 +54,26 @@ function ToggleButton({
   active,
   onClick,
   label,
+  count,
 }: {
   active: boolean;
   onClick: () => void;
   label: string;
+  count: number;
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
       aria-pressed={active}
-      className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${
-        active ? "bg-[#F5A623] text-black" : "text-[#1a1a1a]/50"
+      className={`flex-1 rounded-xl py-2 text-sm font-bold transition-colors ${
+        active
+          ? "bg-white text-[#1a1a1a] shadow-[0_1px_4px_rgba(0,0,0,0.08)]"
+          : "text-[#1a1a1a]/45"
       }`}
     >
       {label}
+      {count > 0 && <span className="text-[#1a1a1a]/40"> ({count})</span>}
     </button>
   );
 }
@@ -72,6 +82,7 @@ function SavedList({ saves }: { saves: SavedQuiz[] }) {
   if (saves.length === 0) {
     return (
       <EmptyState
+        icon="♡"
         message="No saved quizzes yet."
         hint="Tap the ♡ on any quiz to save it here."
       />
@@ -83,30 +94,35 @@ function SavedList({ saves }: { saves: SavedQuiz[] }) {
       {saves.map((quiz) => (
         <li
           key={quiz.id}
-          className="flex flex-col gap-3 rounded-2xl border-2 border-[#1a1a1a]/15 bg-white/50 p-4"
+          className="rounded-2xl border-2 border-[#1a1a1a]/8 bg-white p-3.5 shadow-[0_2px_10px_rgba(0,0,0,0.04)]"
         >
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex min-w-0 flex-col">
-              <span className="truncate font-semibold">{quiz.title}</span>
-              <span className="text-sm text-[#1a1a1a]/50">
+          <div className="flex items-center gap-3">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-2 border-[#F5A623]/60 bg-[#FFF8EC] text-xl">
+              {parkIcon(quiz.slug)}
+            </div>
+            <div className="min-w-0 flex-1">
+              <div className="line-clamp-2 text-[15px] font-bold leading-tight">
+                {parkName(quiz.title)}
+              </div>
+              <div className="font-mono text-[11px] uppercase tracking-wide text-[#1a1a1a]/45">
                 {quiz.question_count} questions
-              </span>
+              </div>
             </div>
             <button
               type="button"
               onClick={() => removeSave(quiz.id)}
               aria-label={`Remove ${quiz.title}`}
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-[#1a1a1a]/15 text-[#1a1a1a]/50 transition-colors hover:border-red-500 hover:text-red-500"
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-[#1a1a1a]/12 text-[#1a1a1a]/40 transition-colors hover:border-red-500 hover:text-red-500"
             >
               ✕
             </button>
           </div>
 
-          <div className="flex items-center gap-2 border-t-2 border-dashed border-[#1a1a1a]/10 pt-3">
+          <div className="mt-3 flex items-center gap-2 border-t-2 border-dashed border-[#1a1a1a]/10 pt-3">
             {quiz.slug && (
               <Link
                 href={`/quiz/${quiz.slug}`}
-                className="rounded-full bg-[#F5A623] px-5 py-2 text-sm font-medium text-black transition-opacity hover:opacity-90"
+                className="rounded-full border-2 border-[#F5A623] bg-[#FFF8EC] px-4 py-1.5 text-sm font-bold text-[#F5A623] transition-colors hover:bg-[#F5A623] hover:text-white"
               >
                 Play
               </Link>
@@ -115,10 +131,10 @@ function SavedList({ saves }: { saves: SavedQuiz[] }) {
               type="button"
               onClick={() => setDownloaded(quiz.id, !quiz.is_offline)}
               aria-pressed={quiz.is_offline}
-              className={`rounded-full border-2 px-4 py-2 text-sm font-medium transition-colors ${
+              className={`rounded-full border-2 px-4 py-1.5 text-sm font-bold transition-colors ${
                 quiz.is_offline
-                  ? "border-green-600 text-green-700"
-                  : "border-[#1a1a1a]/15 text-[#1a1a1a]/60 hover:border-[#F5A623]"
+                  ? "border-green-600 bg-green-50 text-green-700"
+                  : "border-[#1a1a1a]/15 text-[#1a1a1a]/55 hover:border-[#F5A623]"
               }`}
             >
               {quiz.is_offline ? "Downloaded ✓" : "Download"}
@@ -134,6 +150,7 @@ function HistoryList({ history }: { history: HistoryEntry[] }) {
   if (history.length === 0) {
     return (
       <EmptyState
+        icon="🏁"
         message="No completed quizzes yet."
         hint="Finish a quiz and your score lands here."
       />
@@ -145,33 +162,53 @@ function HistoryList({ history }: { history: HistoryEntry[] }) {
       {history.map((entry) => (
         <li
           key={entry.id}
-          className="flex items-center justify-between gap-3 rounded-2xl border-2 border-[#1a1a1a]/15 bg-white/50 p-4"
+          className="flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a]/8 bg-white p-3.5 shadow-[0_2px_10px_rgba(0,0,0,0.04)]"
         >
-          <div className="flex min-w-0 flex-col">
-            <span className="truncate font-semibold">{entry.title}</span>
-            <span className="text-sm text-[#1a1a1a]/50">
-              {formatDate(entry.completed_at)} · {entry.score}/
-              {entry.question_count}
-            </span>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-2 border-[#1a1a1a]/10 bg-[#f5f3ef] text-xl">
+            {parkIcon(entry.slug)}
           </div>
-          {entry.slug && (
-            <Link
-              href={`/quiz/${entry.slug}`}
-              className="shrink-0 rounded-full border-2 border-[#1a1a1a]/15 px-5 py-2 text-sm font-medium transition-colors hover:border-[#F5A623] hover:text-[#F5A623]"
-            >
-              Retry
-            </Link>
-          )}
+          <div className="min-w-0 flex-1">
+            <div className="line-clamp-2 text-[15px] font-bold leading-tight">
+              {parkName(entry.title)}
+            </div>
+            <div className="font-mono text-[11px] uppercase tracking-wide text-[#1a1a1a]/45">
+              {formatDate(entry.completed_at)}
+            </div>
+          </div>
+          <div className="flex shrink-0 flex-col items-end gap-1.5">
+            <span className="rounded-lg border-2 border-[#F5A623] bg-[#FFF8EC] px-2.5 py-0.5 text-sm font-bold text-[#F5A623]">
+              {entry.score}/{entry.question_count}
+            </span>
+            {entry.slug && (
+              <Link
+                href={`/quiz/${entry.slug}`}
+                className="rounded-full border-2 border-[#1a1a1a]/12 px-3 py-0.5 text-xs font-bold text-[#1a1a1a]/55 transition-colors hover:border-[#F5A623] hover:text-[#F5A623]"
+              >
+                Retry
+              </Link>
+            )}
+          </div>
         </li>
       ))}
     </ul>
   );
 }
 
-function EmptyState({ message, hint }: { message: string; hint: string }) {
+function EmptyState({
+  icon,
+  message,
+  hint,
+}: {
+  icon: string;
+  message: string;
+  hint: string;
+}) {
   return (
-    <div className="flex flex-1 flex-col items-center justify-center gap-1 py-16 text-center">
-      <p className="font-medium text-[#1a1a1a]/60">{message}</p>
+    <div className="flex flex-1 flex-col items-center justify-center gap-2 py-16 text-center">
+      <span className="text-4xl opacity-40" aria-hidden>
+        {icon}
+      </span>
+      <p className="font-bold text-[#1a1a1a]/60">{message}</p>
       <p className="text-sm text-[#1a1a1a]/40">{hint}</p>
     </div>
   );

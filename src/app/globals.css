@@ -1,24 +1,30 @@
 @import "tailwindcss";
 
 /*
- * Design language (CLAUDE.md):
- *   amber   #F5A623  primary / CTA
- *   cream   #FFF8EC  background
- *   charcoal #1a1a1a  text + answer panels
- * Single warm, hand-drawn "sketch" aesthetic — no dark-mode variant.
+ * Design language (PRD-V1 §2 / exported wireframes):
+ *   amber    #F5A623  primary / CTA / highlights
+ *   cream    #FFF8EC  warm accent surfaces (icon tiles, badges)
+ *   canvas   #f0eee9  off-white grouping background (segmented controls)
+ *   charcoal #1a1a1a / #222  text + quiz answer panel
+ * Handwritten-adjacent, friendly "sketch" aesthetic: rounded corners, dashed
+ * dividers, a clean sans for content paired with Space Mono for small labels.
  */
 :root {
   --background: #fff8ec;
   --foreground: #1a1a1a;
   --amber: #f5a623;
+  --cream: #fff8ec;
+  --canvas: #f0eee9;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-amber: var(--amber);
+  --color-cream: var(--cream);
+  --color-canvas: var(--canvas);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-space-mono);
 }
 
 body {

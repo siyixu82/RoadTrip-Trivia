@@ -34,6 +34,32 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 - Note: Zustand (named in the stack) not added — the lightweight
   `useSyncExternalStore` store covers Phase-4 needs dependency-free.
 
+### Phase 4 — UI pass: follow the exported wireframe design ✅
+- Pulled the source design from the repo's `RoadTrip Trivia.zip` (exported Claude
+  Design wireframes + `design-canvas.jsx`) and restyled every screen to match it.
+- **Fonts:** added **Space Mono** (`next/font`) for the small uppercase
+  labels/tags/meta; clean sans (Geist) for content — the wireframe's mono+sans
+  pairing.
+- **QuizCard:** elevated white card · cream `#FFF8EC` icon tile with amber border
+  + per-park emoji (`src/lib/parkIcon.ts`) · Space Mono amber tag
+  (`DIFFICULTY · 20 QS`) · amber-outline Play pill. Titles drop the redundant
+  " Trivia" suffix (`parkName`) and wrap to two lines (`line-clamp-2`) so long
+  names like "Great Smoky Mountains" never ellipsize.
+- **BottomNav:** clean line-icon set (home/compass/heart), filled + amber when
+  active, Space Mono labels, subtle top border.
+- **Home:** brand header + map glyph, passive search pill → Explore, "Recommended
+  for you" section. **Explore:** title/subtitle, functional search pill, result
+  count. **Saved:** segmented toggle on canvas `#f0eee9`; History rows show a
+  cream/amber score badge + Retry; Saved rows keep Play/Download/Remove.
+- **QuizPlayer (headline change):** full amber `#F5A623` header (Q badge · park
+  pill · charcoal progress bar) → white question bubble → dark `#1a1a1a` answer
+  panel with A–D badges, green ✓ / red ✕ feedback, dimmed others, and an
+  "AUTO-ADVANCES…" hint. Score screen now uses an amber **score ring**. Kept the
+  test-critical markup (`Q n/total`, `bg-green-600`/`bg-red-600`, "Quiz
+  complete!", Retry/Home) so all 7 Vitest tests still pass.
+- Verified: `tsc` clean, ESLint clean, 7 tests pass, `next build` succeeds.
+  Playwright screenshots (360×760) confirm every screen matches the wireframes.
+
 ### Next: Phase 5 — Auth + offline (Supabase anon sign-in, IndexedDB, outbox sync)
 
 ---
