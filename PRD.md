@@ -1,5 +1,9 @@
 # RoadTrip Trivia — Product Requirements Document
 
+> **Status: Draft — open for review.** Leave inline comments on any line in this
+> PR's "Files changed" tab and I'll respond and revise here. Open questions are
+> collected in §8.
+
 _Derived from the exported Claude Design wireframes (`project/RoadTrip Wireframes.html`) and the design chat transcript (`chats/chat1.md`)._
 
 ---
