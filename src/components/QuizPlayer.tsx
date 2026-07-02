@@ -12,19 +12,70 @@ const OPTION_LETTERS = ["A", "B", "C", "D"] as const;
 // this timer (so reviewing a past question never yanks them forward).
 const ADVANCE_DELAY_MS = 2500;
 
+// In-progress quiz state is persisted per quiz so it survives an iOS PWA resume
+// (which reloads the web view and would otherwise drop React state). We use
+// sessionStorage on purpose: it outlives a background/resume reload but is
+// cleared when the app is terminated — matching the "cold launch → Home"
+// behavior, so a finished-with-the-app session doesn't restore stale progress.
+const PROGRESS_PREFIX = "rtt-quiz-progress:";
+
+type Progress = {
+  answers: (number | null)[];
+  currentIndex: number;
+  finished: boolean;
+};
+
+function loadProgress(quizId: string, total: number): Progress | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.sessionStorage.getItem(PROGRESS_PREFIX + quizId);
+    if (!raw) return null;
+    const p = JSON.parse(raw) as Progress;
+    // Guard against stale/corrupt data (e.g. the quiz changed length).
+    if (!Array.isArray(p.answers) || p.answers.length !== total) return null;
+    return {
+      answers: p.answers,
+      currentIndex: Math.min(Math.max(0, p.currentIndex ?? 0), total - 1),
+      finished: !!p.finished,
+    };
+  } catch {
+    return null;
+  }
+}
+
+function saveProgress(quizId: string, p: Progress): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.sessionStorage.setItem(PROGRESS_PREFIX + quizId, JSON.stringify(p));
+  } catch {
+    // Storage full / disabled — progress persistence is best-effort.
+  }
+}
+
 type Props = { quiz: Quiz };
 
 export function QuizPlayer({ quiz }: Props) {
   const questions = quiz.questions;
   const total = questions.length;
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  // One slot per question, so answers are remembered when navigating back/forth.
-  const [answers, setAnswers] = useState<(number | null)[]>(() =>
-    Array(total).fill(null),
+  // Rehydrate any in-progress attempt (QuizPlayer mounts client-side only —
+  // the route shows "Loading…" during SSR — so reading storage here is safe).
+  const [currentIndex, setCurrentIndex] = useState(
+    () => loadProgress(quiz.id, total)?.currentIndex ?? 0,
   );
-  const [finished, setFinished] = useState(false);
+  // One slot per question, so answers are remembered when navigating back/forth.
+  const [answers, setAnswers] = useState<(number | null)[]>(
+    () => loadProgress(quiz.id, total)?.answers ?? Array(total).fill(null),
+  );
+  const [finished, setFinished] = useState(
+    () => loadProgress(quiz.id, total)?.finished ?? false,
+  );
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Persist progress whenever it changes so a resume restores the exact state.
+  useEffect(() => {
+    saveProgress(quiz.id, { answers, currentIndex, finished });
+  }, [quiz.id, answers, currentIndex, finished]);
 
   const clearTimer = useCallback(() => {
     if (timer.current) {
@@ -157,10 +208,9 @@ export function QuizPlayer({ quiz }: Props) {
           <div className="flex items-center gap-2">
             <Link
               href="/"
-              aria-label="Back to home"
-              className="flex h-8 w-8 items-center justify-center rounded-xl bg-black/15 text-base text-[#1a1a1a] transition-opacity hover:opacity-80"
+              className="rounded-xl bg-black/15 px-3 py-1.5 font-bold text-[#1a1a1a] transition-opacity hover:opacity-80"
             >
-              <span aria-hidden>🏠</span>
+              Home
             </Link>
             <span className="rounded-xl bg-black/15 px-3 py-1.5 font-mono text-sm font-bold text-[#1a1a1a]">
               Q {currentIndex + 1}/{total}

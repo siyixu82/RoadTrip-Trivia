@@ -42,7 +42,10 @@ const ADVANCE = 2500;
 const optionButtons = () => screen.getAllByTestId("option");
 const advance = () => act(() => void vi.advanceTimersByTime(ADVANCE));
 
-beforeEach(() => vi.useFakeTimers());
+beforeEach(() => {
+  vi.useFakeTimers();
+  sessionStorage.clear(); // isolate persisted quiz progress between tests
+});
 afterEach(() => {
   vi.useRealTimers();
   cleanup();
@@ -114,11 +117,27 @@ describe("QuizPlayer", () => {
     expect(screen.getByText("Q1?")).toBeInTheDocument();
   });
 
-  it("has a home link in the quiz header", () => {
+  it("has a text Home link in the quiz header", () => {
     render(<QuizPlayer quiz={quiz} />);
-    expect(
-      screen.getByRole("link", { name: "Back to home" }),
-    ).toHaveAttribute("href", "/");
+    expect(screen.getByRole("link", { name: "Home" })).toHaveAttribute(
+      "href",
+      "/",
+    );
+  });
+
+  it("restores in-progress answers when remounted (e.g. after a PWA resume)", () => {
+    const { unmount } = render(<QuizPlayer quiz={quiz} />);
+    fireEvent.click(optionButtons()[0]); // Q1 wrong pick (correct is 1)
+    fireEvent.click(screen.getByRole("button", { name: /Next/ }));
+    expect(screen.getByText("Q 2/3")).toBeInTheDocument();
+    unmount(); // simulate the web view being torn down and reloaded
+
+    render(<QuizPlayer quiz={quiz} />);
+    // Same question, and going Back shows the preserved Q1 answer.
+    expect(screen.getByText("Q 2/3")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "← Back" }));
+    expect(optionButtons()[0].className).toContain("bg-red-600");
+    expect(optionButtons()[1].className).toContain("bg-green-600");
   });
 
   it("Next advances only after an answer, without waiting for auto-advance", () => {
