@@ -3,7 +3,11 @@
 import { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { initAuth, useUser } from "@/lib/auth/authStore";
-import { flushOutbox, initLibrary } from "@/lib/library/library";
+import {
+  flushOutbox,
+  initLibrary,
+  repairOfflineContent,
+} from "@/lib/library/library";
 
 const SESSION_FLAG = "rtt-session-active";
 
@@ -52,9 +56,13 @@ export function AppInit() {
     void initLibrary(user?.id ?? null);
   }, [user?.id]);
 
-  // Sync pending writes when the device comes back online.
+  // On reconnect, flush pending writes and download any offline-marked quiz
+  // whose content isn't cached yet (e.g. a download interrupted by going offline).
   useEffect(() => {
-    const onOnline = () => void flushOutbox();
+    const onOnline = () => {
+      void flushOutbox();
+      void repairOfflineContent();
+    };
     window.addEventListener("online", onOnline);
     return () => window.removeEventListener("online", onOnline);
   }, []);

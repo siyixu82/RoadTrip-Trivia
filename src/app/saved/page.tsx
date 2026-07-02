@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import {
   removeSave,
+  retryDownload,
   setDownloaded,
   useHistory,
   useSaves,
@@ -127,23 +128,61 @@ function SavedList({ saves }: { saves: SavedQuiz[] }) {
                 Play
               </Link>
             )}
-            <button
-              type="button"
-              onClick={() => setDownloaded(quiz.id, !quiz.is_offline)}
-              aria-pressed={quiz.is_offline}
-              className={`rounded-full border-2 px-4 py-1.5 text-sm font-bold transition-colors ${
-                quiz.is_offline
-                  ? "border-green-600 bg-green-50 text-green-700"
-                  : "border-[#1a1a1a]/15 text-[#1a1a1a]/55 hover:border-[#F5A623]"
-              }`}
-            >
-              {quiz.is_offline ? "Downloaded ✓" : "Download"}
-            </button>
+            <DownloadButton quiz={quiz} />
           </div>
         </li>
       ))}
     </ul>
   );
+}
+
+function DownloadButton({ quiz }: { quiz: SavedQuiz }) {
+  const base = "rounded-full border-2 px-4 py-1.5 text-sm font-bold transition-colors";
+
+  switch (quiz.download_status) {
+    case "ready":
+      return (
+        <button
+          type="button"
+          onClick={() => setDownloaded(quiz.id, false)}
+          aria-pressed
+          className={`${base} border-green-600 bg-green-50 text-green-700`}
+        >
+          Downloaded ✓
+        </button>
+      );
+    case "downloading":
+      return (
+        <button
+          type="button"
+          disabled
+          className={`${base} cursor-default border-[#F5A623]/50 text-[#1a1a1a]/50`}
+        >
+          Downloading…
+        </button>
+      );
+    case "error":
+      return (
+        <button
+          type="button"
+          onClick={() => retryDownload(quiz.id)}
+          className={`${base} border-red-500 bg-red-50 text-red-600`}
+        >
+          Retry download
+        </button>
+      );
+    default:
+      return (
+        <button
+          type="button"
+          onClick={() => setDownloaded(quiz.id, true)}
+          aria-pressed={false}
+          className={`${base} border-[#1a1a1a]/15 text-[#1a1a1a]/55 hover:border-[#F5A623]`}
+        >
+          Download
+        </button>
+      );
+  }
 }
 
 function HistoryList({ history }: { history: HistoryEntry[] }) {

@@ -56,6 +56,8 @@ let hydrated = false;
 let saveRows: SaveRow[] = [];
 let historyRows: HistoryRow[] = [];
 let metaMap = new Map<string, CachedQuiz>();
+// Quiz ids whose offline content is currently being fetched (for honest UI).
+const downloadingIds = new Set<string>();
 
 const EMPTY_SAVES: readonly SavedQuiz[] = [];
 const EMPTY_HISTORY: readonly HistoryEntry[] = [];
@@ -65,7 +67,7 @@ let derivedHistory: HistoryEntry[] = [];
 const listeners = new Set<() => void>();
 
 function recompute() {
-  derivedSaves = buildSaved(saveRows, metaMap);
+  derivedSaves = buildSaved(saveRows, metaMap, downloadingIds);
   derivedHistory = buildHistory(historyRows, metaMap);
   listeners.forEach((l) => l());
 }
@@ -211,6 +213,19 @@ export async function initLibrary(userId: string | null): Promise<void> {
 
   await flushOutbox();
   await pullRemote();
+  await repairOfflineContent();
+}
+
+/**
+ * Ensure every quiz the user marked for offline actually has its questions
+ * cached locally. Closes the gap where `is_offline` synced from Supabase (or an
+ * interrupted download) left a device without playable content.
+ */
+export async function repairOfflineContent(): Promise<void> {
+  const missing = saveRows.filter(
+    (s) => s.is_offline && !metaMap.get(s.quiz_id)?.questions?.length,
+  );
+  await Promise.all(missing.map((s) => ensureContentCached(s.quiz_id)));
 }
 
 /** Clear in-memory state on sign-out (IndexedDB wipe happens in signOut). */
@@ -293,7 +308,32 @@ export function setDownloaded(quizId: string, value: boolean): void {
   recompute();
   void putSave(updated);
   void pushOrQueue({ kind: "save_upsert", row: updated });
-  if (value) void cacheQuizContent(quizId); // pull full questions for offline
+  // Downloading means the *content* must be cached locally — not just a flag.
+  // ensureContentCached surfaces real progress via download_status, so the
+  // badge can't claim "Downloaded" until the questions are actually stored.
+  if (value) void ensureContentCached(quizId);
+}
+
+/**
+ * Guarantee a quiz's questions are cached in IndexedDB for offline play.
+ * Idempotent: no-op if already cached. Reflects progress through the store
+ * (downloading → ready | error) so the UI never shows a false "Downloaded".
+ */
+async function ensureContentCached(quizId: string): Promise<boolean> {
+  if (metaMap.get(quizId)?.questions?.length) return true; // already offline-ready
+  downloadingIds.add(quizId);
+  recompute();
+  try {
+    return await cacheQuizContent(quizId);
+  } finally {
+    downloadingIds.delete(quizId);
+    recompute();
+  }
+}
+
+/** Re-attempt content downloads for a quiz the user marked offline. */
+export function retryDownload(quizId: string): void {
+  void ensureContentCached(quizId);
 }
 
 export function recordCompletion(input: {
@@ -325,21 +365,27 @@ export function recordCompletion(input: {
   void pushOrQueue({ kind: "history_insert", row });
 }
 
-/** Best-effort: fetch a quiz's questions and cache them for offline play. */
-async function cacheQuizContent(quizId: string): Promise<void> {
+/**
+ * Fetch a quiz's questions and cache them for offline play.
+ * Returns whether the content is now cached (false if offline / not found).
+ */
+async function cacheQuizContent(quizId: string): Promise<boolean> {
   const client = clientOrNull();
-  if (!client) return;
+  if (!client) return false;
   try {
     const { data, error } = await client
       .from("quizzes")
       .select("id, slug, title, question_count, difficulty, questions")
       .eq("id", quizId)
       .maybeSingle();
-    if (error || !data) return;
+    if (error || !data?.questions) return false;
     rememberMeta(data as CachedQuiz);
     recompute();
+    return true;
   } catch {
-    // offline / not found — fine, the pin still records intent.
+    // offline / not found — the offline intent (is_offline) still stands, so
+    // initLibrary will retry the content download on the next online launch.
+    return false;
   }
 }
 

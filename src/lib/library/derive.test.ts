@@ -2,8 +2,12 @@ import { describe, expect, it } from "vitest";
 import { buildHistory, buildSaved } from "./derive";
 import type { CachedQuiz, HistoryRow, SaveRow } from "@/lib/db/idb";
 
+const q: CachedQuiz["questions"] = [
+  { id: "1", prompt: "?", options: ["a", "b", "c", "d"], correct_index: 0 },
+];
 const meta = new Map<string, CachedQuiz>([
-  ["a", { id: "a", slug: "zion", title: "Zion Trivia", question_count: 20, difficulty: "easy" }],
+  // "a" has cached questions (offline-ready); "b" is metadata only.
+  ["a", { id: "a", slug: "zion", title: "Zion Trivia", question_count: 20, difficulty: "easy", questions: q }],
   ["b", { id: "b", slug: "arches", title: "Arches Trivia", question_count: 20, difficulty: "medium" }],
 ]);
 
@@ -28,6 +32,26 @@ describe("buildSaved", () => {
       slug: null,
       question_count: 20,
     });
+  });
+
+  it("derives download_status from cached content, intent, and progress", () => {
+    const byId = (id: string, off: boolean) =>
+      buildSaved(
+        [{ quiz_id: id, is_offline: off, saved_at: "2026-01-01T00:00:00Z" }],
+        meta,
+        new Set(["b"]), // "b" is mid-download
+      )[0].download_status;
+
+    expect(byId("a", true)).toBe("ready"); // content cached
+    expect(byId("a", false)).toBe("none"); // not marked offline
+    expect(byId("b", true)).toBe("downloading"); // in the downloading set, no content
+    // Offline-marked, no content, not downloading → needs retry.
+    expect(
+      buildSaved(
+        [{ quiz_id: "b", is_offline: true, saved_at: "2026-01-01T00:00:00Z" }],
+        meta,
+      )[0].download_status,
+    ).toBe("error");
   });
 });
 
