@@ -87,6 +87,18 @@ export function QuizPlayer({ quiz }: Props) {
   // Clean up any pending auto-advance on unmount.
   useEffect(() => clearTimer, [clearTimer]);
 
+  // Freeze the current question when the app is backgrounded: cancel the pending
+  // auto-advance so leaving mid-feedback doesn't advance the persisted position.
+  // Otherwise the timer can still fire as iOS suspends, and the user reopens on
+  // the *next* question instead of the one they left on.
+  useEffect(() => {
+    const onHide = () => {
+      if (document.visibilityState === "hidden") clearTimer();
+    };
+    document.addEventListener("visibilitychange", onHide);
+    return () => document.removeEventListener("visibilitychange", onHide);
+  }, [clearTimer]);
+
   const scoreOf = useCallback(
     (arr: (number | null)[]) =>
       arr.reduce<number>(

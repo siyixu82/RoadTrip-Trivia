@@ -49,7 +49,19 @@ beforeEach(() => {
 afterEach(() => {
   vi.useRealTimers();
   cleanup();
+  Object.defineProperty(document, "visibilityState", {
+    value: "visible",
+    configurable: true,
+  });
 });
+
+const setHidden = () => {
+  Object.defineProperty(document, "visibilityState", {
+    value: "hidden",
+    configurable: true,
+  });
+  document.dispatchEvent(new Event("visibilitychange"));
+};
 
 describe("QuizPlayer", () => {
   it("shows the first question and position", () => {
@@ -123,6 +135,15 @@ describe("QuizPlayer", () => {
       "href",
       "/",
     );
+  });
+
+  it("backgrounding cancels auto-advance so you stay on the current question", () => {
+    render(<QuizPlayer quiz={quiz} />);
+    fireEvent.click(optionButtons()[1]); // answer Q1
+    setHidden(); // app backgrounded before the 2.5s auto-advance fires
+    advance(); // 2.5s elapses
+    expect(screen.getByText("Q 1/3")).toBeInTheDocument(); // did not jump
+    expect(screen.queryByText("Q2?")).not.toBeInTheDocument();
   });
 
   it("restores in-progress answers when remounted (e.g. after a PWA resume)", () => {
