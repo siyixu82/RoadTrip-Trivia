@@ -65,14 +65,29 @@ describe("InstallPrompt", () => {
     expect(screen.queryByText(/install roadtrip trivia/i)).toBeNull();
   });
 
-  it("shows the manual Add to Home Screen hint on iOS", () => {
+  it("shows the Share → Add to Home Screen hint on iOS Safari", () => {
     Object.defineProperty(navigator, "userAgent", {
       configurable: true,
-      value: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)",
+      value:
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
     });
     render(<InstallPrompt />);
     expect(screen.getByText(/add to home screen/i)).toBeInTheDocument();
     // No native Install button on iOS.
+    expect(screen.queryByRole("button", { name: /^install$/i })).toBeNull();
+    // Safari path doesn't tell you to switch browsers.
+    expect(screen.queryByText(/open this page in/i)).toBeNull();
+  });
+
+  it("tells iOS Chrome to open in Safari", () => {
+    Object.defineProperty(navigator, "userAgent", {
+      configurable: true,
+      value:
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/120.0 Mobile/15E148 Safari/604.1",
+    });
+    render(<InstallPrompt />);
+    expect(screen.getByText(/open this page in/i)).toBeInTheDocument();
+    expect(screen.getByText(/safari/i)).toBeInTheDocument();
     expect(screen.queryByRole("button", { name: /^install$/i })).toBeNull();
   });
 });

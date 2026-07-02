@@ -20,7 +20,22 @@ function isStandalone(): boolean {
 
 function isIos(): boolean {
   if (typeof navigator === "undefined") return false;
-  return /iphone|ipad|ipod/i.test(navigator.userAgent);
+  const ua = navigator.userAgent;
+  // iPadOS 13+ reports a desktop UA but is still touch — treat as iOS too.
+  return (
+    /iphone|ipad|ipod/i.test(ua) ||
+    (/Macintosh/.test(ua) && (navigator.maxTouchPoints ?? 0) > 1)
+  );
+}
+
+/**
+ * On iOS, only Safari can install a PWA to the home screen — Chrome/Firefox/Edge
+ * (CriOS/FxiOS/EdgiOS/OPiOS) are WebKit shells that can't add a standalone app.
+ * So on those we tell the user to open the page in Safari instead.
+ */
+function isIosSafari(): boolean {
+  if (typeof navigator === "undefined") return false;
+  return !/CriOS|FxiOS|EdgiOS|OPiOS|GSA/i.test(navigator.userAgent);
 }
 
 /**
@@ -31,10 +46,11 @@ function isIos(): boolean {
  * Hidden when already installed (standalone) or previously dismissed.
  */
 // Visibility mode, decided client-side once the browser APIs are readable.
-//   hidden  → installed, dismissed, or Android before the prompt event fires
-//   ios     → iOS Safari (manual Add to Home Screen hint)
-//   android → Chromium captured a `beforeinstallprompt` (native Install button)
-type Mode = "hidden" | "ios" | "android";
+//   hidden      → installed, dismissed, or Android before the prompt event fires
+//   ios-safari  → iOS Safari (manual Add to Home Screen hint)
+//   ios-other   → iOS Chrome/Firefox/etc — can't install; point to Safari
+//   android     → Chromium captured a `beforeinstallprompt` (native Install button)
+type Mode = "hidden" | "ios-safari" | "ios-other" | "android";
 
 export function InstallPrompt() {
   const [deferred, setDeferred] = useState<BeforeInstallPromptEvent | null>(null);
@@ -48,7 +64,7 @@ export function InstallPrompt() {
     // are for; the initial "hidden" render matches the server markup.
     if (isIos()) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
-      setMode("ios");
+      setMode(isIosSafari() ? "ios-safari" : "ios-other");
       return;
     }
 
@@ -86,7 +102,6 @@ export function InstallPrompt() {
   }
 
   if (mode === "hidden") return null;
-  const showIosHint = mode === "ios";
 
   return (
     <div className="mx-auto w-full max-w-xl px-5 pt-4">
@@ -96,12 +111,21 @@ export function InstallPrompt() {
         </div>
         <div className="min-w-0 flex-1">
           <p className="text-sm font-bold leading-tight">Install RoadTrip Trivia</p>
-          {showIosHint ? (
+          {mode === "ios-safari" && (
             <p className="mt-0.5 text-[13px] leading-snug text-[#1a1a1a]/60">
               Tap <span aria-hidden>⎋</span> Share, then{" "}
               <span className="font-bold">Add to Home Screen</span> for offline play.
             </p>
-          ) : (
+          )}
+          {mode === "ios-other" && (
+            <p className="mt-0.5 text-[13px] leading-snug text-[#1a1a1a]/60">
+              On iPhone/iPad, open this page in{" "}
+              <span className="font-bold">Safari</span>, then Share →{" "}
+              <span className="font-bold">Add to Home Screen</span>. (Other iOS
+              browsers can&apos;t install apps.)
+            </p>
+          )}
+          {mode === "android" && (
             <p className="mt-0.5 text-[13px] leading-snug text-[#1a1a1a]/60">
               Add it to your home screen to play offline on the road.
             </p>
