@@ -320,14 +320,36 @@ export function setDownloaded(quizId: string, value: boolean): void {
  * (downloading → ready | error) so the UI never shows a false "Downloaded".
  */
 async function ensureContentCached(quizId: string): Promise<boolean> {
-  if (metaMap.get(quizId)?.questions?.length) return true; // already offline-ready
+  if (metaMap.get(quizId)?.questions?.length) {
+    void warmQuizRoute(metaMap.get(quizId)?.slug ?? null);
+    return true; // already offline-ready
+  }
   downloadingIds.add(quizId);
   recompute();
   try {
-    return await cacheQuizContent(quizId);
+    const ok = await cacheQuizContent(quizId);
+    if (ok) void warmQuizRoute(metaMap.get(quizId)?.slug ?? null);
+    return ok;
   } finally {
     downloadingIds.delete(quizId);
     recompute();
+  }
+}
+
+/**
+ * Pre-cache the quiz *page* itself (not just its questions) so it opens offline
+ * in an installed PWA. On the web the route was already cached from browsing;
+ * an installed iOS app has its own separate storage that starts empty, so
+ * downloading must also warm the page document into the service-worker cache.
+ * The App Router falls back to a full document load when its data fetch fails
+ * offline, and this makes that fallback hit cache instead of the network.
+ */
+async function warmQuizRoute(slug: string | null): Promise<void> {
+  if (!slug || typeof fetch === "undefined") return;
+  try {
+    await fetch(`/quiz/${slug}`, { credentials: "same-origin" });
+  } catch {
+    // best effort — the questions are cached regardless
   }
 }
 
