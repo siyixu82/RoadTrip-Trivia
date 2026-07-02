@@ -25,7 +25,7 @@ Day-to-day progress notes live in [log.md](log.md); this file is the high-level 
 | 2 | Core quiz play loop | ✅ Done (PR #5) |
 | 3 | Bulk content (curated batch + pipeline) | ✅ Done (PR #6) |
 | 4 | Home / Explore / Saved tabs | ✅ Done |
-| 5 | Accounts (anonymous auth) + offline (IndexedDB/PWA) | ✅ Done (5a data layer + 5b PWA SW); live Supabase steps operational |
+| 5 | Accounts (anonymous auth) + offline (IndexedDB/PWA) | ✅ Done (5a data + 5b PWA); anon auth enabled + migration applied; deploy branch to go live |
 | 6 | Polish + ship | ⬜ Planned |
 
 ---

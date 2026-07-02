@@ -6,6 +6,31 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 
 ---
 
+## 2026-07-02
+
+### Phase 5 — enable anonymous auth + live verification ✅
+- `supabase/config.toml`: `enable_anonymous_sign_ins = true` (tracked in-repo, not
+  just a dashboard toggle).
+- **Migration verified end-to-end** on a local Postgres 16 (stubbed `auth` schema):
+  all migrations apply in order; an `auth.users` insert fires
+  `on_auth_user_created` and creates exactly one `profiles` row; save + history
+  inserts satisfy the FK; a save for a user with no profile fails the FK (proves
+  the trigger is required); RLS enabled on all four tables with the expected
+  policies (profiles 3, history 2, saves 1, quizzes 1).
+- Added `scripts/verify-phase5.mjs` — a live check to run locally against the real
+  project (`node scripts/verify-phase5.mjs`): anonymous sign-in → profiles row →
+  save insert/readback → cleanup. Use it from the VS Code extension or any
+  terminal with a real `.env.local`.
+- **Go-live (owner, dashboard / Option A):** enabled Anonymous sign-ins and ran the
+  `handle_new_user` function + `on_auth_user_created` trigger SQL in the Supabase
+  SQL Editor. Cloud round-trip confirmation still pending (run the verify script,
+  or save a quiz once a Phase-5 build is deployed).
+- **Not yet deployed:** the Vercel production site still serves the pre-Phase-5
+  build (`main`). Merging `claude/magical-maxwell-0j6wbg` → `main` deploys Phases
+  4 + 5.
+
+---
+
 ## 2026-06-29
 
 ### Phase 4 — Home / Explore / Saved tabs ✅
