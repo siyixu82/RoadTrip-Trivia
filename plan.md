@@ -25,8 +25,8 @@ Day-to-day progress notes live in [log.md](log.md); this file is the high-level 
 | 2 | Core quiz play loop | ✅ Done (PR #5) |
 | 3 | Bulk content (curated batch + pipeline) | ✅ Done (PR #6) |
 | 4 | Home / Explore / Saved tabs | ✅ Done |
-| 5 | Accounts (anonymous auth) + offline (IndexedDB/PWA) | ✅ Done (5a data + 5b PWA); anon auth enabled + migration applied; deploy branch to go live |
-| 6 | Polish + ship | ⬜ Planned |
+| 5 | Accounts (anonymous auth) + offline (IndexedDB/PWA) | ✅ Done & live-verified (anon auth + trigger + RLS confirmed via cloud round-trip) |
+| 6 | Polish + ship | 🟡 In progress — PWA auto-update, quiz nav/resume, installed-PWA launch + offline hardening done; aesthetic/QA pass remaining |
 
 ---
 
@@ -117,14 +117,24 @@ Explore now, wire Saved/History when auth lands (or pull auth forward).
 **Done when:** a user can sign in anonymously, complete a quiz that's recorded, save a quiz,
 and replay a saved quiz offline.
 
-## Phase 6 — Polish + ship ⬜
+## Phase 6 — Polish + ship 🟡
 
 **Goal:** make it feel finished and launch-ready.
 
+**Done:**
+- ✅ **PWA auto-update on deploy** — per-build SW `VERSION` (`scripts/gen-sw.mjs`)
+  + `registration.update()` nudges so installed apps pick up new builds.
+- ✅ **Quiz UX** — header Home link, Back/Next navigation + answer review,
+  ~2.5s auto-advance, in-progress resume via `sessionStorage`, background freeze.
+- ✅ **Installed-PWA launch** — cold launch → Home; resume → current page.
+- ✅ **Offline hardening** — honest download status + auto-repair, quiz-page
+  pre-cache for the installed app, cache-first (instant) offline opens.
+
+**Remaining:**
 - Hand-drawn "wireframe sketch" aesthetic pass (amber `#F5A623`, cream `#FFF8EC`, dark panels).
 - PWA install affordance + `navigator.storage.persist()`.
 - Accessibility, loading/empty/error states, final QA + content fact-check pass.
-- Production deploy.
+- Production deploy (running continuously via Vercel on `main`).
 
 **Done when:** the MVP is visually coherent, installable, and shipped.
 

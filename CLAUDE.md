@@ -78,9 +78,9 @@ RLS: users can only read/write their own rows. Quizzes are publicly readable.
 | **Home** | Recommended quiz cards (park name, 20 Q, Save ♡, Play) |
 | **Explore** | Full catalog with search/filter by park name or state |
 | **Saved** | Toggle: Saved bookmarks (Play / Download / Remove) ↔ History (date, score X/20, Retry) |
-| **Quiz** | Q position + progress bar · four A–D options · auto-advance after ~1s feedback · score screen at Q20 |
+| **Quiz** | Home link · Q position + progress bar · four A–D options · Back/Next controls · ~2.5s auto-advance · score screen at Q20 |
 
-Quiz UX: correct answer turns green ✓, wrong pick turns red ✕, then auto-advances — no Next button.
+Quiz UX: correct answer turns green ✓, wrong pick turns red ✕, then auto-advances after ~2.5s. **Back/Next** buttons allow manual navigation and reviewing answers (which cancels auto-advance); a header **Home** link exits mid-quiz. In-progress answers persist in `sessionStorage`, so a backgrounded/resumed app restores the exact question and picks (cleared on app termination).
 
 ## What's Out of MVP (V1)
 
@@ -100,6 +100,6 @@ Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 play loop →
 
 - Park scope: 63 National Parks only, or include monuments/historic sites?
 - Who authors and QA-checks the questions?
-- Is "Download" PWA service-worker caching, or just an affordance over already-bundled content?
+- ~~Is "Download" PWA service-worker caching, or just an affordance?~~ **Resolved:** real caching — stores the quiz's questions in IndexedDB + pre-caches its page in the service worker for genuine offline play.
 - History: store every attempt, or best/latest per quiz?
 - Should Home be a curated subset vs. mirroring the full Explore catalog?

@@ -25,9 +25,71 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
   `handle_new_user` function + `on_auth_user_created` trigger SQL in the Supabase
   SQL Editor. Cloud round-trip confirmation still pending (run the verify script,
   or save a quiz once a Phase-5 build is deployed).
-- **Not yet deployed:** the Vercel production site still serves the pre-Phase-5
-  build (`main`). Merging `claude/magical-maxwell-0j6wbg` → `main` deploys Phases
-  4 + 5.
+- **Cloud round-trip confirmed (curl):** against the live project — auth health
+  200 · anonymous sign-in returns a token (`is_anonymous`) · `on_auth_user_created`
+  auto-creates the `profiles` row · RLS read of own `saves` OK · `history` insert
+  201 (FK + RLS write). Phase 5 is fully operational live.
+- **Deployed:** `claude/magical-maxwell-0j6wbg` merged to `main` (Phases 4 + 5 +
+  the Phase 6 items below); Vercel serves the current build.
+
+### Phase 6 — PWA auto-update on new deploys ✅
+- **Problem:** the hand-written SW hardcoded `VERSION = "v1"`, so every deploy
+  shipped a byte-identical `/sw.js`. Browsers/iOS only install a new worker when
+  `sw.js` changes, so installed home-screen apps never updated (stuck version).
+- **Fix:** `scripts/gen-sw.mjs` generates `public/sw.js` with a per-build
+  `VERSION` (`VERCEL_GIT_COMMIT_SHA` on Vercel, timestamp locally); wired into
+  `npm run build`; the generated file is gitignored (generator is source of truth).
+- `AppInit` nudges `registration.update()` on launch + `visibilitychange` (iOS
+  checks lazily) and reloads once the new worker takes control (guarded against
+  the first-install case + reload loops).
+
+### Phase 6 — Quiz UX: navigation, review, resume ✅
+- **Home link** in the quiz header (text, not emoji) to exit mid-quiz.
+- **Back/Next** controls (Finish on Q20); answers stored per-question so you can
+  navigate back and review picks. Auto-advance lengthened **1.1s → 2.5s** and
+  cancelled on manual Back/Next (reviewing never yanks you forward).
+- **In-progress persistence:** quiz state (answers, position, finished) saved to
+  `sessionStorage` per quiz and rehydrated on mount, so an iOS PWA resume (which
+  reloads the web view) restores the exact state. Cleared on termination.
+- **Background freeze:** cancel the pending auto-advance on
+  `visibilitychange=hidden`, so backgrounding mid-feedback doesn't advance the
+  persisted position (was landing on the *next* question on reopen).
+
+### Phase 6 — Installed-PWA launch behavior ✅
+- **(a)** Cold launch (terminated → reopened) → land on **Home**.
+- **(b)** Resume (backgrounded → reopened) → **stay** on the current page.
+- Discriminated via a `sessionStorage` flag (survives resume, cleared on
+  termination), scoped to standalone mode so browser tabs / deep links /
+  refreshes are never redirected.
+
+### Phase 6 — Offline download hardening ✅
+- **Honest download state:** "Download" was optimistic + fire-and-forget — it
+  flipped `is_offline` (badge went green) but only kicked off a background
+  fetch, so "Downloaded ✓" meant *intent*, not that questions were cached. Now
+  `download_status` (none / downloading / ready / error) is derived from whether
+  questions are actually cached; the Saved tab shows Download → Downloading… →
+  Downloaded ✓ / Retry. `ensureContentCached` tracks in-flight fetches;
+  **auto-repair** on init + reconnect downloads content for any offline-marked
+  quiz missing it (interrupted / cross-device).
+- **Installed-PWA page cache:** an installed iOS PWA has its own separate storage;
+  downloading now also pre-caches the `/quiz/<slug>` **page document**
+  (`warmQuizRoute`), not just the questions, so the App Router's offline
+  full-load fallback hits cache. (Offline worked in Safari because the page was
+  already cached from browsing; the installed app's fresh cache lacked it.)
+- **Instant offline open:** `getQuizBySlug` was network-first, so opening a
+  downloaded quiz offline hung ~10s on a doomed Supabase request before falling
+  back to cache. Now **cache-first** — return cached content immediately
+  (background revalidate), and skip the network entirely when `navigator.onLine`
+  is false. Content is effectively immutable → safe, and trims a round-trip online.
+- Resolves the PRD open question: **"Download" is real PWA/IndexedDB caching** —
+  it stores the quiz's questions + page for genuine offline play.
+
+### Verification (Phase 6 items)
+- `tsc` + ESLint clean; **16 Vitest tests pass** (added coverage for Back/Next,
+  Home link, resume-restore, background-cancel auto-advance, and
+  `download_status`); `next build` succeeds. iOS PWA lifecycle behaviors
+  confirmed on-device by the user — offline download play works in both Safari
+  and the installed home-screen app.
 
 ---
 
