@@ -3,15 +3,21 @@ import { act, fireEvent, render, screen, cleanup } from "@testing-library/react"
 import { QuizPlayer } from "./QuizPlayer";
 import type { Quiz } from "@/lib/types";
 
-// next/link → plain anchor so we can render without a router.
+// next/link → plain anchor so we can render without a router. Forward extra
+// props (e.g. aria-label) so accessible-name queries work.
 vi.mock("next/link", () => ({
   default: ({
     children,
     href,
+    ...rest
   }: {
     children: React.ReactNode;
     href: string;
-  }) => <a href={href}>{children}</a>,
+  }) => (
+    <a href={href} {...rest}>
+      {children}
+    </a>
+  ),
 }));
 
 const quiz: Quiz = {
@@ -30,8 +36,10 @@ const quiz: Quiz = {
   updated_at: "",
 };
 
-const ADVANCE = 1100;
-const optionButtons = () => screen.getAllByRole("button");
+const ADVANCE = 2500;
+// Only the answer buttons carry data-testid="option" — Back/Next/Home don't,
+// so this stays stable as the surrounding controls change.
+const optionButtons = () => screen.getAllByTestId("option");
 const advance = () => act(() => void vi.advanceTimersByTime(ADVANCE));
 
 beforeEach(() => vi.useFakeTimers());
@@ -104,5 +112,35 @@ describe("QuizPlayer", () => {
     fireEvent.click(screen.getByRole("button", { name: "Retry" }));
     expect(screen.getByText("Q 1/3")).toBeInTheDocument();
     expect(screen.getByText("Q1?")).toBeInTheDocument();
+  });
+
+  it("has a home link in the quiz header", () => {
+    render(<QuizPlayer quiz={quiz} />);
+    expect(
+      screen.getByRole("link", { name: "Back to home" }),
+    ).toHaveAttribute("href", "/");
+  });
+
+  it("Next advances only after an answer, without waiting for auto-advance", () => {
+    render(<QuizPlayer quiz={quiz} />);
+    const next = () => screen.getByRole("button", { name: /Next/ });
+    expect(next()).toBeDisabled(); // must answer first
+    fireEvent.click(optionButtons()[1]);
+    expect(next()).toBeEnabled();
+    fireEvent.click(next()); // manual advance, no timer
+    expect(screen.getByText("Q2?")).toBeInTheDocument();
+    expect(screen.getByText("Q 2/3")).toBeInTheDocument();
+  });
+
+  it("Back returns to the previous question with its answer preserved", () => {
+    render(<QuizPlayer quiz={quiz} />);
+    expect(screen.getByRole("button", { name: "← Back" })).toBeDisabled();
+    fireEvent.click(optionButtons()[0]); // Q1 wrong pick (correct is 1)
+    fireEvent.click(screen.getByRole("button", { name: /Next/ }));
+    fireEvent.click(screen.getByRole("button", { name: "← Back" }));
+    // Back on Q1: the wrong pick is still shown red, correct still green.
+    expect(screen.getByText("Q1?")).toBeInTheDocument();
+    expect(optionButtons()[0].className).toContain("bg-red-600");
+    expect(optionButtons()[1].className).toContain("bg-green-600");
   });
 });

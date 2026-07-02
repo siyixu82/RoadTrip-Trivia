@@ -7,7 +7,10 @@ import { parkIcon, parkName } from "@/lib/parkIcon";
 import type { Quiz } from "@/lib/types";
 
 const OPTION_LETTERS = ["A", "B", "C", "D"] as const;
-const ADVANCE_DELAY_MS = 1100; // brief pause to show correct/incorrect before next
+// Pause after answering so the correct/incorrect feedback is readable before we
+// auto-advance. The user can also move with the Back/Next buttons, which cancel
+// this timer (so reviewing a past question never yanks them forward).
+const ADVANCE_DELAY_MS = 2500;
 
 type Props = { quiz: Quiz };
 
@@ -16,8 +19,10 @@ export function QuizPlayer({ quiz }: Props) {
   const total = questions.length;
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [score, setScore] = useState(0);
+  // One slot per question, so answers are remembered when navigating back/forth.
+  const [answers, setAnswers] = useState<(number | null)[]>(() =>
+    Array(total).fill(null),
+  );
   const [finished, setFinished] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -31,30 +36,58 @@ export function QuizPlayer({ quiz }: Props) {
   // Clean up any pending auto-advance on unmount.
   useEffect(() => clearTimer, [clearTimer]);
 
-  const handleSelect = (optionIndex: number) => {
-    if (selectedIndex !== null) return; // already answered this question
+  const scoreOf = useCallback(
+    (arr: (number | null)[]) =>
+      arr.reduce<number>(
+        (n, a, i) => (a === questions[i].correct_index ? n + 1 : n),
+        0,
+      ),
+    [questions],
+  );
 
-    setSelectedIndex(optionIndex);
-    const correct = optionIndex === questions[currentIndex].correct_index;
-    const nextScore = correct ? score + 1 : score;
-    if (correct) setScore(nextScore);
+  const finish = useCallback(
+    (finalAnswers: (number | null)[]) => {
+      clearTimer();
+      setFinished(true);
+      // Record the attempt to the local library (repo layer hides Supabase vs
+      // IndexedDB); the call site is unchanged from Phase 4.
+      recordCompletion({
+        quizId: quiz.id,
+        slug: quiz.slug,
+        title: quiz.title,
+        score: scoreOf(finalAnswers),
+        questionCount: total,
+      });
+    },
+    [clearTimer, quiz, scoreOf, total],
+  );
+
+  const goNext = useCallback(() => {
+    clearTimer();
+    if (currentIndex + 1 < total) {
+      setCurrentIndex((i) => i + 1);
+    } else {
+      finish(answers);
+    }
+  }, [answers, clearTimer, currentIndex, finish, total]);
+
+  const goBack = useCallback(() => {
+    clearTimer();
+    setCurrentIndex((i) => Math.max(0, i - 1));
+  }, [clearTimer]);
+
+  const handleSelect = (optionIndex: number) => {
+    if (answers[currentIndex] !== null) return; // locked once answered
+
+    const next = answers.slice();
+    next[currentIndex] = optionIndex;
+    setAnswers(next);
 
     timer.current = setTimeout(() => {
       if (currentIndex + 1 < total) {
         setCurrentIndex((i) => i + 1);
-        setSelectedIndex(null);
       } else {
-        setFinished(true);
-        // Phase 4: record the attempt to the local library (localStorage).
-        // Phase 5 swaps this for Supabase `history` once auth provides a
-        // user_id for RLS — the call site stays the same.
-        recordCompletion({
-          quizId: quiz.id,
-          slug: quiz.slug,
-          title: quiz.title,
-          score: nextScore,
-          questionCount: total,
-        });
+        finish(next);
       }
     }, ADVANCE_DELAY_MS);
   };
@@ -62,12 +95,12 @@ export function QuizPlayer({ quiz }: Props) {
   const handleRetry = () => {
     clearTimer();
     setCurrentIndex(0);
-    setSelectedIndex(null);
-    setScore(0);
+    setAnswers(Array(total).fill(null));
     setFinished(false);
   };
 
   if (finished) {
+    const score = scoreOf(answers);
     const pct = Math.round((score / total) * 100);
     return (
       <div className="flex flex-1 flex-col items-center justify-center gap-6 bg-[#FFF8EC] p-6 text-center">
@@ -111,17 +144,28 @@ export function QuizPlayer({ quiz }: Props) {
   }
 
   const question = questions[currentIndex];
+  const selectedIndex = answers[currentIndex];
   const answered = selectedIndex !== null;
+  const isLast = currentIndex + 1 >= total;
   const progress = ((currentIndex + (answered ? 1 : 0)) / total) * 100;
 
   return (
     <div className="mx-auto flex w-full max-w-xl flex-1 flex-col bg-[#F5A623]">
-      {/* Amber header zone: position · quiz name · progress */}
+      {/* Amber header zone: home · position · quiz name · progress */}
       <div className="flex flex-col gap-3 px-4 pt-4 pb-4">
         <div className="flex items-center justify-between gap-2">
-          <span className="rounded-xl bg-black/15 px-3 py-1.5 font-mono text-sm font-bold text-[#1a1a1a]">
-            Q {currentIndex + 1}/{total}
-          </span>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/"
+              aria-label="Back to home"
+              className="flex h-8 w-8 items-center justify-center rounded-xl bg-black/15 text-base text-[#1a1a1a] transition-opacity hover:opacity-80"
+            >
+              <span aria-hidden>🏠</span>
+            </Link>
+            <span className="rounded-xl bg-black/15 px-3 py-1.5 font-mono text-sm font-bold text-[#1a1a1a]">
+              Q {currentIndex + 1}/{total}
+            </span>
+          </div>
           <span className="flex min-w-0 items-center gap-1.5 truncate rounded-full bg-white/40 px-4 py-1.5 text-sm font-bold text-[#1a1a1a]">
             <span aria-hidden>{parkIcon(quiz.slug)}</span>
             <span className="truncate">{parkName(quiz.title)}</span>
@@ -170,6 +214,7 @@ export function QuizPlayer({ quiz }: Props) {
           return (
             <button
               key={i}
+              data-testid="option"
               onClick={() => handleSelect(i)}
               disabled={answered}
               className={`flex min-h-[52px] items-center gap-3 rounded-2xl border-2 px-4 py-3 text-left transition-colors ${stateClasses} ${
@@ -187,11 +232,32 @@ export function QuizPlayer({ quiz }: Props) {
           );
         })}
 
-        {answered && (
-          <p className="pt-2 text-center font-mono text-[10px] uppercase tracking-widest text-[#1a1a1a]/35">
-            Auto-advances to next question…
-          </p>
-        )}
+        {/* Manual navigation — Back/Next let you review answers at your own pace */}
+        <div className="mt-auto flex items-center justify-between gap-3 pt-3">
+          <button
+            onClick={goBack}
+            disabled={currentIndex === 0}
+            className="rounded-full border-2 border-[#1a1a1a]/15 bg-white px-5 py-2 font-bold text-[#1a1a1a] transition-colors hover:border-[#1a1a1a]/30 disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            ← Back
+          </button>
+          {answered ? (
+            <span className="font-mono text-[10px] uppercase tracking-widest text-[#1a1a1a]/35">
+              {isLast ? "Tap finish" : "Auto-advancing…"}
+            </span>
+          ) : (
+            <span className="font-mono text-[10px] uppercase tracking-widest text-[#1a1a1a]/25">
+              Pick an answer
+            </span>
+          )}
+          <button
+            onClick={goNext}
+            disabled={!answered}
+            className="rounded-full border-2 border-[#1a1a1a] bg-[#F5A623] px-6 py-2 font-bold text-[#1a1a1a] transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            {isLast ? "Finish" : "Next →"}
+          </button>
+        </div>
       </div>
     </div>
   );
