@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# generated per-build service worker (source: scripts/gen-sw.mjs)
+/public/sw.js
+
 # production
 /build
 
