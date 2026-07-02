@@ -6,6 +6,136 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 
 ---
 
+## 2026-07-02
+
+### Phase 5 — enable anonymous auth + live verification ✅
+- `supabase/config.toml`: `enable_anonymous_sign_ins = true` (tracked in-repo, not
+  just a dashboard toggle).
+- **Migration verified end-to-end** on a local Postgres 16 (stubbed `auth` schema):
+  all migrations apply in order; an `auth.users` insert fires
+  `on_auth_user_created` and creates exactly one `profiles` row; save + history
+  inserts satisfy the FK; a save for a user with no profile fails the FK (proves
+  the trigger is required); RLS enabled on all four tables with the expected
+  policies (profiles 3, history 2, saves 1, quizzes 1).
+- Added `scripts/verify-phase5.mjs` — a live check to run locally against the real
+  project (`node scripts/verify-phase5.mjs`): anonymous sign-in → profiles row →
+  save insert/readback → cleanup. Use it from the VS Code extension or any
+  terminal with a real `.env.local`.
+- **Go-live (owner, dashboard / Option A):** enabled Anonymous sign-ins and ran the
+  `handle_new_user` function + `on_auth_user_created` trigger SQL in the Supabase
+  SQL Editor. Cloud round-trip confirmation still pending (run the verify script,
+  or save a quiz once a Phase-5 build is deployed).
+- **Not yet deployed:** the Vercel production site still serves the pre-Phase-5
+  build (`main`). Merging `claude/magical-maxwell-0j6wbg` → `main` deploys Phases
+  4 + 5.
+
+---
+
+## 2026-06-29
+
+### Phase 4 — Home / Explore / Saved tabs ✅
+- **Three-tab shell:** `BottomNav` (Home/Explore/Saved, active-state highlight) +
+  `AppChrome` (wraps `layout.tsx`; hides nav on `/quiz/*`, pads content for the
+  fixed nav). Quiz player still takes the full screen while playing.
+- **Design language applied:** `globals.css` now sets cream `#FFF8EC` background +
+  charcoal `#1a1a1a` foreground and drops the default dark-mode override for one
+  consistent sketch aesthetic (rounded cards, dashed dividers, amber CTAs).
+- **Home** (`/`) — recommended slice (first 6) of the catalog + "Explore all N
+  parks →" link. **Explore** (`/explore`) — full catalog with name search
+  (search by title; the schema has no `state` column). Both render the shared
+  `QuizCard` (name · 20 Q · Save ♡ · Play). Catalog load extracted to
+  `useCatalog` hook over `quizRepository`.
+- **Saved** (`/saved`) — Saved ↔ History toggle. Saved: Play / Download
+  (offline pin) / Remove. History: date · score X/20 · Retry.
+- **Local library** `src/lib/library/library.ts` — reactive `localStorage` store
+  (`useSyncExternalStore`, cross-tab via `storage` event) for `saves` + `history`.
+  **Phase-4 placeholder**: UI imports only this module, so Phase 5 swaps the
+  internals for Supabase + IndexedDB with no component changes (same pattern as
+  `quizRepository`). `QuizPlayer` now calls `recordCompletion` on finish
+  (replacing the Phase-2 deferred NOTE).
+- Verified: `tsc` clean, ESLint clean, 7 Vitest tests pass, `next build` succeeds
+  (routes `/`, `/explore`, `/saved`, `/quiz/[slug]`). Playwright screenshots at
+  360×720 confirm the shell, Saved/History views, and nav render correctly.
+- Note: Zustand (named in the stack) not added — the lightweight
+  `useSyncExternalStore` store covers Phase-4 needs dependency-free.
+
+### Phase 5b — PWA app-shell offline boot ✅
+- Chose a **hand-written service worker** (`public/sw.js`) over Serwist: `@serwist/next`
+  injects a webpack plugin that's incompatible with this project's Turbopack build,
+  so a small dependency-free SW avoids changing the build pipeline.
+- Strategies: navigations → network-first w/ cached fallback (offline boot); hashed
+  `/_next/static` + assets → cache-first; other same-origin GETs → stale-while-revalidate.
+  Supabase/cross-origin requests are skipped (so live data still hits the network).
+- `public/manifest.webmanifest` + `public/icon.svg` (amber map-pin) → installable PWA;
+  `layout.tsx` wires `manifest`, `themeColor`, and apple-web-app metadata.
+- SW registered from `AppInit` in **production only** (a dev SW fights Turbopack HMR).
+- Verified live: built + `next start`, drove Chromium **offline** — the app shell boots
+  from cache (`serviceWorker.controller` set; header + bottom nav render; offline nav to
+  `/saved` works), with no runtime errors. Catalog shows "Loading…" offline (by design).
+- Phase 5 now complete (5a data layer + 5b PWA). Remaining live steps are operational:
+  `supabase db push` + enable anonymous sign-ins in the Supabase dashboard.
+
+### Phase 5a — Accounts + offline data layer ✅ (code; live sync needs a real Supabase project)
+- **Anonymous auth** (`src/lib/auth/authStore.ts`): signs in anonymously on first
+  visit → `user_id`; reactive `useUser()`; `ensureProfile` upsert; `signOut()`
+  wipes IndexedDB (shared-device safety). Degrades to local-only if Supabase env
+  is missing or anon sign-in is disabled.
+- **Migration** `…_profiles_autocreate.sql`: trigger to create a `profiles` row
+  on new `auth.users` (FK target for saves/history). Client `ensureProfile`
+  upsert is a belt-and-suspenders fallback. **Needs `supabase db push` + the
+  "Enable anonymous sign-ins" toggle in the Supabase dashboard.**
+- **IndexedDB** (`src/lib/db/idb.ts`, via `idb`): stores `quizzes` (content),
+  `saves`, `history`, `outbox`, `meta`. Fully guarded — no-ops where IndexedDB is
+  absent (SSR/tests).
+- **Library reworked** (`src/lib/library/library.ts`): same UI surface
+  (`useSaves`/`useHistory`/`toggleSave`/`recordCompletion`/…), now optimistic
+  in-memory cache → write-through to IndexedDB + Supabase, with an **outbox** for
+  offline writes flushed on reconnect; `initLibrary` hydrates from IndexedDB then
+  pulls remote; pure join helpers in `derive.ts` (unit-tested).
+- **Offline replay:** `quizRepository.getQuizBySlug` caches fetched quizzes and
+  falls back to the IndexedDB cache on network failure.
+- **Bootstrap:** `AppInit` (mounted in `AppChrome`) runs sign-in, hydration, and
+  an `online` listener that flushes the outbox.
+- Fixed a typing gap: added `Relationships: []` to each table in the hand-written
+  `Database` type (required by this `@supabase/supabase-js` version for
+  insert/upsert/maybeSingle).
+- Verified: `tsc`/ESLint clean, 10 Vitest tests pass (added `derive.test.ts`),
+  `next build` succeeds. Playwright smoke (real Chromium IndexedDB, Supabase
+  unreachable = local-only): Save persists to IndexedDB and re-hydrates across
+  reload, Saved tab lists it, **no runtime errors**.
+- **Deferred to 5b:** Serwist PWA service worker (app-shell precache for offline
+  boot) — has Next 16/Turbopack compatibility risk and needs live testing.
+
+### Phase 4 — UI pass: follow the exported wireframe design ✅
+- Pulled the source design from the repo's `RoadTrip Trivia.zip` (exported Claude
+  Design wireframes + `design-canvas.jsx`) and restyled every screen to match it.
+- **Fonts:** added **Space Mono** (`next/font`) for the small uppercase
+  labels/tags/meta; clean sans (Geist) for content — the wireframe's mono+sans
+  pairing.
+- **QuizCard:** elevated white card · cream `#FFF8EC` icon tile with amber border
+  + per-park emoji (`src/lib/parkIcon.ts`) · Space Mono amber tag
+  (`DIFFICULTY · 20 QS`) · amber-outline Play pill. Titles drop the redundant
+  " Trivia" suffix (`parkName`) and wrap to two lines (`line-clamp-2`) so long
+  names like "Great Smoky Mountains" never ellipsize.
+- **BottomNav:** clean line-icon set (home/compass/heart), filled + amber when
+  active, Space Mono labels, subtle top border.
+- **Home:** brand header + map glyph, passive search pill → Explore, "Recommended
+  for you" section. **Explore:** title/subtitle, functional search pill, result
+  count. **Saved:** segmented toggle on canvas `#f0eee9`; History rows show a
+  cream/amber score badge + Retry; Saved rows keep Play/Download/Remove.
+- **QuizPlayer (headline change):** full amber `#F5A623` header (Q badge · park
+  pill · charcoal progress bar) → white question bubble → dark `#1a1a1a` answer
+  panel with A–D badges, green ✓ / red ✕ feedback, dimmed others, and an
+  "AUTO-ADVANCES…" hint. Score screen now uses an amber **score ring**. Kept the
+  test-critical markup (`Q n/total`, `bg-green-600`/`bg-red-600`, "Quiz
+  complete!", Retry/Home) so all 7 Vitest tests still pass.
+- Verified: `tsc` clean, ESLint clean, 7 tests pass, `next build` succeeds.
+  Playwright screenshots (360×760) confirm every screen matches the wireframes.
+
+### Next: Phase 5 — Auth + offline (Supabase anon sign-in, IndexedDB, outbox sync)
+
+---
+
 ## 2026-06-28
 
 ### Recovery note (process)

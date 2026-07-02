@@ -1,4 +1,9 @@
 import { getSupabaseClient } from "@/lib/supabase/client";
+import {
+  getQuizBySlugFromCache,
+  putQuiz,
+  type CachedQuiz,
+} from "@/lib/db/idb";
 import type { Quiz, QuizSummary } from "@/lib/types";
 
 /**
@@ -21,15 +26,51 @@ export async function listQuizzes(): Promise<QuizSummary[]> {
   return data ?? [];
 }
 
-/** Fetch one quiz (with its questions) by slug, or null if not found. */
+/**
+ * Fetch one quiz (with its questions) by slug, or null if not found.
+ *
+ * Online: read from Supabase and cache the content in IndexedDB so it can be
+ * replayed offline. Offline (or on any network error): fall back to the cache,
+ * so saved/completed quizzes still open without a connection.
+ */
 export async function getQuizBySlug(slug: string): Promise<Quiz | null> {
-  const supabase = getSupabaseClient();
-  const { data, error } = await supabase
-    .from("quizzes")
-    .select("*")
-    .eq("slug", slug)
-    .maybeSingle();
+  try {
+    const supabase = getSupabaseClient();
+    const { data, error } = await supabase
+      .from("quizzes")
+      .select("*")
+      .eq("slug", slug)
+      .maybeSingle();
+    if (error) throw error;
+    if (data) {
+      void putQuiz({
+        id: data.id,
+        slug: data.slug,
+        title: data.title,
+        question_count: data.question_count,
+        difficulty: data.difficulty,
+        questions: data.questions,
+      });
+      return data;
+    }
+  } catch {
+    // fall through to the offline cache below
+  }
 
-  if (error) throw error;
-  return data;
+  const cached = await getQuizBySlugFromCache(slug);
+  return cached?.questions ? cachedToQuiz(cached) : null;
+}
+
+function cachedToQuiz(c: CachedQuiz): Quiz {
+  return {
+    id: c.id,
+    slug: c.slug,
+    title: c.title,
+    question_count: c.question_count,
+    difficulty: c.difficulty,
+    questions: c.questions ?? [],
+    created_by: null,
+    created_at: "",
+    updated_at: "",
+  };
 }

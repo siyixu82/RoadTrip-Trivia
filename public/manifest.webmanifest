@@ -1,0 +1,19 @@
+{
+  "name": "RoadTrip Trivia",
+  "short_name": "RoadTrip",
+  "description": "Place-based trivia for travelers — play national-park quizzes online or off.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF8EC",
+  "theme_color": "#F5A623",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
