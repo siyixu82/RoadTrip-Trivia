@@ -29,36 +29,58 @@ export async function listQuizzes(): Promise<QuizSummary[]> {
 /**
  * Fetch one quiz (with its questions) by slug, or null if not found.
  *
- * Online: read from Supabase and cache the content in IndexedDB so it can be
- * replayed offline. Offline (or on any network error): fall back to the cache,
- * so saved/completed quizzes still open without a connection.
+ * Cache-first: if the quiz's content is already cached (i.e. downloaded or
+ * previously played), return it immediately and revalidate in the background.
+ * Quiz content is effectively immutable, so this is safe — and it makes offline
+ * opens instant. (Network-first previously hung ~10s on a doomed request before
+ * falling back to the cache when offline.)
+ *
+ * Not cached → fetch from Supabase and cache it for next time.
  */
 export async function getQuizBySlug(slug: string): Promise<Quiz | null> {
-  try {
-    const supabase = getSupabaseClient();
-    const { data, error } = await supabase
-      .from("quizzes")
-      .select("*")
-      .eq("slug", slug)
-      .maybeSingle();
-    if (error) throw error;
-    if (data) {
-      void putQuiz({
-        id: data.id,
-        slug: data.slug,
-        title: data.title,
-        question_count: data.question_count,
-        difficulty: data.difficulty,
-        questions: data.questions,
-      });
-      return data;
-    }
-  } catch {
-    // fall through to the offline cache below
+  const cached = await getQuizBySlugFromCache(slug);
+  if (cached?.questions?.length) {
+    revalidateQuiz(slug); // best-effort refresh, non-blocking
+    return cachedToQuiz(cached);
   }
 
-  const cached = await getQuizBySlugFromCache(slug);
-  return cached?.questions ? cachedToQuiz(cached) : null;
+  // Not cached locally. Skip the network entirely when we know we're offline so
+  // an un-downloaded quiz fails fast instead of hanging on a doomed request.
+  if (typeof navigator !== "undefined" && navigator.onLine === false) {
+    return null;
+  }
+  try {
+    return await fetchQuizFromNetwork(slug);
+  } catch {
+    return null; // offline / unreachable and not downloaded
+  }
+}
+
+/** Fetch a quiz from Supabase and cache its content. Throws on network error. */
+async function fetchQuizFromNetwork(slug: string): Promise<Quiz | null> {
+  const supabase = getSupabaseClient();
+  const { data, error } = await supabase
+    .from("quizzes")
+    .select("*")
+    .eq("slug", slug)
+    .maybeSingle();
+  if (error) throw error;
+  if (!data) return null;
+  void putQuiz({
+    id: data.id,
+    slug: data.slug,
+    title: data.title,
+    question_count: data.question_count,
+    difficulty: data.difficulty,
+    questions: data.questions,
+  });
+  return data;
+}
+
+/** Background refresh of cached content; skipped when offline, never throws. */
+function revalidateQuiz(slug: string): void {
+  if (typeof navigator !== "undefined" && navigator.onLine === false) return;
+  void fetchQuizFromNetwork(slug).catch(() => {});
 }
 
 function cachedToQuiz(c: CachedQuiz): Quiz {
