@@ -26,7 +26,7 @@ Day-to-day progress notes live in [log.md](log.md); this file is the high-level 
 | 3 | Bulk content (curated batch + pipeline) | ✅ Done (PR #6) |
 | 4 | Home / Explore / Saved tabs | ✅ Done |
 | 5 | Accounts (anonymous auth) + offline (IndexedDB/PWA) | ✅ Done & live-verified (anon auth + trigger + RLS confirmed via cloud round-trip) |
-| 6 | Polish + ship | 🟡 In progress — PWA auto-update, quiz nav/resume, installed-PWA launch + offline hardening done; aesthetic/QA pass remaining |
+| 6 | Polish + ship | 🟡 In progress — PWA auto-update, quiz nav/resume, installed-PWA launch, offline hardening, install affordance + storage persistence + offline banner done; final QA + content scale-up remaining |
 
 ---
 
@@ -129,11 +129,16 @@ and replay a saved quiz offline.
 - ✅ **Installed-PWA launch** — cold launch → Home; resume → current page.
 - ✅ **Offline hardening** — honest download status + auto-repair, quiz-page
   pre-cache for the installed app, cache-first (instant) offline opens.
+- ✅ **PWA install affordance** — `InstallPrompt` (Android `beforeinstallprompt`
+  native prompt + iOS Add-to-Home-Screen hint, dismissible) and best-effort
+  `navigator.storage.persist()` for offline durability.
+- ✅ **Offline banner** — `OfflineBanner` + `useOnline` make the offline state
+  honest (downloaded quizzes still play; full catalog needs a connection).
+- ✅ **Aesthetic + states** — wireframe-sketch pass (Phase 4) with loading /
+  empty / error states across Home, Explore, Saved.
 
 **Remaining:**
-- Hand-drawn "wireframe sketch" aesthetic pass (amber `#F5A623`, cream `#FFF8EC`, dark panels).
-- PWA install affordance + `navigator.storage.persist()`.
-- Accessibility, loading/empty/error states, final QA + content fact-check pass.
+- Final QA + independent content fact-check pass; scale toward all 63 parks.
 - Production deploy (running continuously via Vercel on `main`).
 
 **Done when:** the MVP is visually coherent, installable, and shipped.

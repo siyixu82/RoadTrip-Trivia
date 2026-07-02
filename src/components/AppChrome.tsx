@@ -3,6 +3,8 @@
 import { usePathname } from "next/navigation";
 import { BottomNav } from "@/components/BottomNav";
 import { AppInit } from "@/components/AppInit";
+import { OfflineBanner } from "@/components/OfflineBanner";
+import { InstallPrompt } from "@/components/InstallPrompt";
 
 /**
  * App shell: renders the three-tab bottom nav on the main screens and hides it
@@ -23,6 +25,8 @@ export function AppChrome({ children }: { children: React.ReactNode }) {
           showNav ? "pb-16" : ""
         }`}
       >
+        {showNav && <OfflineBanner />}
+        {showNav && <InstallPrompt />}
         {children}
         {showNav && <BottomNav />}
       </div>

@@ -6,6 +6,31 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 
 ---
 
+## 2026-07-03
+
+### Phase 6 — PWA install affordance + storage durability + offline banner ✅
+- **Install affordance** (`InstallPrompt`): a dismissible "Add to Home Screen"
+  banner that unlocks offline play + persistent storage. Two paths —
+  Chromium/Android captures `beforeinstallprompt` and drives the native prompt
+  via our own **Install** button; iOS Safari (no programmatic API) shows the
+  Share → *Add to Home Screen* hint. Hidden when already installed
+  (`display-mode: standalone` / iOS `navigator.standalone`) or previously
+  dismissed (`localStorage` flag); auto-hides on `appinstalled`.
+- **Persistent storage** (`AppInit`): best-effort `navigator.storage.persist()`
+  (guarded by a `persisted()` check) so downloaded quizzes/history resist
+  eviction — notably Safari's 7-day cap on non-persistent origins. A denial only
+  degrades offline availability (server stays source of truth).
+- **Offline banner** (`OfflineBanner` + `useOnline` hook): a slim `role=status`
+  strip shown whenever `navigator.onLine` is false, making the by-design offline
+  behavior honest ("full catalog needs a connection; downloaded quizzes still
+  play in Saved"). Reactive via `online`/`offline` events; zero footprint online.
+- Both mount only on the main screens (not `/quiz/*`), keeping the quiz
+  full-screen. Wired through `AppChrome`.
+- **Verification:** `tsc` + ESLint clean; **23 Vitest tests pass** (7 new,
+  covering the offline banner's online/offline reactivity and the install
+  prompt's Android prompt flow, dismissal persistence, and iOS hint fallback);
+  `next build` succeeds.
+
 ## 2026-07-02
 
 ### Phase 5 — enable anonymous auth + live verification ✅

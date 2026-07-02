@@ -51,6 +51,18 @@ export function AppInit() {
     void initAuth();
   }, []);
 
+  // Ask the browser to make our storage persistent, so downloaded quizzes and
+  // history survive under storage pressure / eviction (notably Safari's 7-day
+  // cap on non-persistent origins). Best-effort and idempotent: browsers grant
+  // it based on engagement/installed-PWA heuristics, and the server stays the
+  // source of truth, so a denial only affects offline availability.
+  useEffect(() => {
+    if (typeof navigator === "undefined" || !navigator.storage?.persist) return;
+    navigator.storage.persisted().then((already) => {
+      if (!already) void navigator.storage.persist().catch(() => {});
+    }).catch(() => {});
+  }, []);
+
   // (Re)hydrate the library whenever the signed-in user changes.
   useEffect(() => {
     void initLibrary(user?.id ?? null);
