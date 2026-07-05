@@ -1,0 +1,227 @@
+{
+  "slug": "glacier-bay",
+  "title": "Glacier Bay Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "gb-1",
+      "prompt": "Glacier Bay provides one of the world's most dramatic examples of what ecological process?",
+      "options": [
+        "Post-fire forest recovery",
+        "Volcanic island formation",
+        "Primary succession",
+        "Marine upwelling"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gb-2",
+      "prompt": "In 1750, Glacier Bay was almost entirely covered by ice. How far have the glaciers retreated since then?",
+      "options": [
+        "About 65 miles",
+        "About 5 miles",
+        "About 40 miles",
+        "About 20 miles"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gb-3",
+      "prompt": "What explorer visited Glacier Bay in 1880 and wrote evocatively about it, helping bring it to national attention?",
+      "options": [
+        "Robert Peary",
+        "John Muir",
+        "John Wesley Powell",
+        "Clarence King"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gb-4",
+      "prompt": "Margerie Glacier, the most-visited tidewater glacier in the park, is dramatic to watch because of what event?",
+      "options": [
+        "Calving into the sea",
+        "Thunderous cracking sounds",
+        "Spring advance into the bay",
+        "Color changes all day"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gb-5",
+      "prompt": "Why does glacial ice often appear vivid blue rather than white?",
+      "options": [
+        "Absorbs red, reflects blue",
+        "Blue sky reflects off it",
+        "Bedrock minerals stain it",
+        "Cold creates blue crystals"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gb-6",
+      "prompt": "Humpback whales are one of the highlights of Glacier Bay. What do they come here to do?",
+      "options": [
+        "Feed on krill and fish",
+        "Rest mid-migration",
+        "Molt in meltwater",
+        "Give birth"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gb-7",
+      "prompt": "How do visitors typically experience Glacier Bay, given there are almost no roads in the park?",
+      "options": [
+        "Cruise ship or charter boat",
+        "Guided glacier walks",
+        "Alaska Marine Highway ferry",
+        "Floatplane from Juneau"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gb-8",
+      "prompt": "What small town serves as the gateway to Glacier Bay, accessible only by boat or plane?",
+      "options": [
+        "Gustavus",
+        "Ketchikan",
+        "Skagway",
+        "Sitka"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gb-9",
+      "prompt": "Plant succession near the bay begins with bare rock. In roughly what order do colonizing plants appear?",
+      "options": [
+        "Spruce → alder → fireweed",
+        "Lichens → grasses → forest",
+        "Fireweed → alder → spruce",
+        "Grasses → pine → shrubs"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gb-10",
+      "prompt": "Mountain goats are visible on the steep cliffs bordering the bay. What do their hooves have that enables them to navigate near-vertical terrain?",
+      "options": [
+        "Retractable hooks",
+        "Rear-grip dewclaws",
+        "Hard rim, grippy inner pads",
+        "Suction pads"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gb-11",
+      "prompt": "The Huna Tlingit people have lived in the Glacier Bay region for thousands of years. What happened to their relationship with the land when it became a national monument?",
+      "options": [
+        "Co-managed from the start",
+        "Voluntarily relocated",
+        "Displaced from homeland",
+        "Reserved fishing rights"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gb-12",
+      "prompt": "Glacier Bay is part of a larger UNESCO World Heritage Site. What other protected areas is it grouped with?",
+      "options": [
+        "Kenai Fjords & Wrangell",
+        "Denali & Lake Clark",
+        "Sitka & Tongass Forest",
+        "Kluane, Wrangell, Tatshenshini"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gb-13",
+      "prompt": "Harbor seals in Glacier Bay use floating icebergs calved from glaciers for what purpose?",
+      "options": [
+        "Salmon ambush spots",
+        "Navigation aids",
+        "Thermoregulation",
+        "Pupping platforms"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gb-14",
+      "prompt": "Tufted puffins and horned puffins nest in the park. How do puffins catch fish?",
+      "options": [
+        "Fly underwater with wings",
+        "Dive feet-first like a gannet",
+        "Snatch from bubble nets",
+        "Surface-dip only"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gb-15",
+      "prompt": "Orcas (killer whales) appear in Glacier Bay. There are two main types that behave very differently — what distinguishes them?",
+      "options": [
+        "Large pods vs. solo travel",
+        "Year-round vs. seasonal visits",
+        "Fin shape and body size",
+        "Fish vs. marine mammal diet"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gb-16",
+      "prompt": "Glacial rebound (isostatic rebound) is occurring in Glacier Bay, meaning the land is rising as the glacial weight is removed. How fast is it rising?",
+      "options": [
+        "~1.5 inches per year",
+        "~1 mm per year",
+        "~3 feet per year",
+        "~½ inch per year"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gb-17",
+      "prompt": "Brown bears (grizzlies) live in Glacier Bay. Where are they most commonly encountered?",
+      "options": [
+        "Glacier margins, hunting seals",
+        "Mountain slopes above treeline",
+        "Beaches and stream margins",
+        "Dense spruce, Bartlett Cove"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gb-18",
+      "prompt": "Kayaking in Glacier Bay offers an intimate experience with the landscape. What unique risk must sea kayakers be aware of near tidewater glaciers?",
+      "options": [
+        "Magnetic rock, nav errors",
+        "Glacial silt clogging skirts",
+        "Mountain downdrafts",
+        "Calving waves"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gb-19",
+      "prompt": "The Fairweather Range, bordering the park to the west, contains some of the highest coastal mountains in the world. What is the tallest peak?",
+      "options": [
+        "Mt. Kennedy, 14,000 ft",
+        "Mt. Vancouver, 15,700 ft",
+        "Mt. Logan (Yukon)",
+        "Mt. Fairweather, 15,325 ft"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gb-20",
+      "prompt": "Why does the Glacier Bay area receive so much precipitation?",
+      "options": [
+        "Storm track + orographic lift",
+        "Cold bay condenses Pacific air",
+        "Aleutian Low drives storms",
+        "Mountains force air upward"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

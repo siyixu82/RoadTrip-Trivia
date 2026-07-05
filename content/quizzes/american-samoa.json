@@ -1,0 +1,227 @@
+{
+  "slug": "american-samoa",
+  "title": "American Samoa Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "ams-1",
+      "prompt": "National Park of American Samoa is the only US national park south of the equator. Which islands does it cover?",
+      "options": [
+        "Tutuila and Swains Island",
+        "Tutuila, Ta'ū, and Ofu",
+        "Savai'i and Upolu",
+        "Ofu only"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ams-2",
+      "prompt": "The park's coral reef at Ofu is considered one of the healthiest in the world. What unusual quality does it have?",
+      "options": [
+        "Bleaching-resistant corals",
+        "Unique-to-Earth coral species",
+        "Safe to walk on at low tide",
+        "Less than 10% surveyed"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ams-3",
+      "prompt": "The Samoan flying fox (a large fruit bat) is protected in the park. Why are these bats important to the forest?",
+      "options": [
+        "Insect predators",
+        "Eat invasive rats",
+        "Pollinators and seed spreaders",
+        "Sacred cultural symbol"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ams-4",
+      "prompt": "The park is unique because the land is leased from Samoan villages rather than owned by the US government. What does this reflect?",
+      "options": [
+        "A 1988 Congressional mandate",
+        "Fa'a Samoa: land can't be sold",
+        "Samoan veto over NPS decisions",
+        "Temp. purchase negotiations"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ams-5",
+      "prompt": "The Pola Island Trail on Tutuila passes through tropical rainforest. What is the primary ecosystem type in this park?",
+      "options": [
+        "Tropical rainforest",
+        "Coral atoll with barrier reef",
+        "Mangrove and dry scrub",
+        "Tropical dry forest / savanna"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ams-6",
+      "prompt": "American Samoa is one of the most remote national parks. How do visitors get to Tutuila?",
+      "options": [
+        "Private yacht only",
+        "Ferry from Western Samoa",
+        "Commercial flight",
+        "Cruise ship from Hawaii"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ams-7",
+      "prompt": "The park has a Homestay Program where visitors stay with Samoan families. What does this offer?",
+      "options": [
+        "Entry to restricted park areas",
+        "Affordable lodging alternative",
+        "Immersion in fa'a Samoa",
+        "Biodiversity research access"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ams-8",
+      "prompt": "The island of Ta'ū in the Manu'a group has a dramatic feature. What makes it special?",
+      "options": [
+        "~3,000 ft sea cliffs",
+        "Most isolated inhabited island",
+        "Only freshwater lake in Samoa",
+        "Only glacier in Samoa"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ams-9",
+      "prompt": "Fa'a Samoa is central to life in American Samoa. Which of the following best describes it?",
+      "options": [
+        "Council of village chiefs",
+        "Traditional fishing law code",
+        "Samoan dance tradition",
+        "The Samoan way of life"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ams-10",
+      "prompt": "The park's tropical forest hosts very few land mammals natively. What fills the ecological role that mammals play elsewhere?",
+      "options": [
+        "Birds",
+        "Monitor lizards and tortoises",
+        "Invasive pigs and deer",
+        "Large spiders and insects"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ams-11",
+      "prompt": "The Ofu beach in the park is considered one of the most beautiful beaches in the US National Park System. What makes it exceptional?",
+      "options": [
+        "Black sand and turquoise water",
+        "Bioluminescent waves at night",
+        "Daily sea turtle nesting",
+        "Coral reef just offshore"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ams-12",
+      "prompt": "Tsunami risk is real in American Samoa. What happened in 2009?",
+      "options": [
+        "Category 5 typhoon hit park",
+        "M8.1 earthquake and tsunami",
+        "Volcanic landslide hit harbor",
+        "Ofu reef bleached 60%"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ams-13",
+      "prompt": "The park is in the South Pacific, roughly halfway between Hawaii and New Zealand. What is the climate like?",
+      "options": [
+        "Tropical: hot, humid, cyclones",
+        "Desert — trade wind shadow",
+        "Mediterranean — dry summers",
+        "Temperate — like Hawaii"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ams-14",
+      "prompt": "The park's ocean includes some of the deepest water adjacent to any US national park. What lies just offshore?",
+      "options": [
+        "The Samoan Trench",
+        "An active underwater caldera",
+        "The Tonga Trench",
+        "Island-chain seamounts"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ams-15",
+      "prompt": "Coconut crabs live in the park — the world's largest land invertebrate. What do they eat?",
+      "options": [
+        "Coconuts, fruit, and carrion",
+        "Coral polyps",
+        "Flying foxes",
+        "Coconuts only"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ams-16",
+      "prompt": "The traditional fale (open-sided thatch building) is the Samoan architectural form. What does its open-sided design reflect?",
+      "options": [
+        "Spirits cannot cross open air",
+        "Military defensive tradition",
+        "Lack of imported timber",
+        "Climate and communal culture"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ams-17",
+      "prompt": "Green sea turtles and hawksbill sea turtles are found in the park's waters. What is a major threat they face?",
+      "options": [
+        "Tiger shark predation",
+        "Invasive fire ants",
+        "Fishing gear and hunting",
+        "Bleaching and seagrass loss"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ams-18",
+      "prompt": "The park is a relatively recent addition to the NPS. When was it established?",
+      "options": [
+        "1972",
+        "2000",
+        "1988",
+        "1960"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ams-19",
+      "prompt": "Samoans are the only Pacific Islanders who are US nationals but not US citizens at birth. What does this mean?",
+      "options": [
+        "Visa needed for mainland US",
+        "Not auto US citizens at birth",
+        "Citizens of independent Samoa",
+        "Dual US and NZ citizenship"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ams-20",
+      "prompt": "What is the most unusual thing about visiting this national park compared to most others?",
+      "options": [
+        "Permits need Samoan language",
+        "Closes 6 months per year",
+        "All hiking done barefoot",
+        "Flight to remote US territory"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

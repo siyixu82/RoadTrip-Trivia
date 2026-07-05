@@ -1,0 +1,227 @@
+{
+  "slug": "congaree",
+  "title": "Congaree Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "cg-1",
+      "prompt": "Congaree National Park protects the largest intact expanse of what type of forest in the southeastern United States?",
+      "options": [
+        "Bottomland hardwood forest",
+        "Longleaf pine savanna",
+        "White cedar swamp",
+        "Baldcypress-tupelo swamp"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cg-2",
+      "prompt": "Congaree is technically not a swamp — it's a floodplain forest. What is the key difference?",
+      "options": [
+        "Swamps have permanent water",
+        "Swamps have no current",
+        "Swamps are saltwater",
+        "Swamps have no cypress"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cg-3",
+      "prompt": "The park is home to many 'champion trees' — the tallest known examples of their species in the US. What record does the park's bald cypress hold?",
+      "options": [
+        "National champion by height",
+        "Widest trunk in North America",
+        "Most-photographed triple trunk",
+        "Oldest at 2,000+ years"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cg-4",
+      "prompt": "A spectacular natural phenomenon draws visitors to Congaree in late May and early June. What is it?",
+      "options": [
+        "Sturgeon spawning run",
+        "Wildflower bloom",
+        "Synchronous fireflies",
+        "Wood duck dawn flight"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cg-5",
+      "prompt": "The Boardwalk Loop Trail at Congaree is elevated above the forest floor. Why is the elevation necessary?",
+      "options": [
+        "Toxic mushrooms below",
+        "Protect delicate soil crust",
+        "Floods ~10 times per year",
+        "Cypress knees block paths"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cg-6",
+      "prompt": "Cypress 'knees' are distinctive wooden projections rising from the water around bald cypress trees. Scientists believe they help the tree by:",
+      "options": [
+        "Creating dry seedling islands",
+        "Deterring beaver chewing",
+        "Absorbing sunlight for roots",
+        "Support and oxygen exchange"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cg-7",
+      "prompt": "Congaree is one of the least visited national parks east of the Mississippi. What does this mean for those who go?",
+      "options": [
+        "Unmaintained trails",
+        "Near-wilderness near Columbia",
+        "No facilities at all",
+        "Visitor center weekend-only"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cg-8",
+      "prompt": "Cedar Creek Canoe Trail allows paddlers to explore the floodplain. What makes paddling here unique?",
+      "options": [
+        "Bioluminescent plankton",
+        "Old-growth canopy overhead",
+        "Tidal reversal twice daily",
+        "Passes through limestone caves"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cg-9",
+      "prompt": "What large bird, with a wingspan of nearly 5 feet, is commonly spotted fishing and roosting in Congaree's tall trees?",
+      "options": [
+        "Roseate spoonbill",
+        "Great blue heron",
+        "Wood stork",
+        "American white pelican"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cg-10",
+      "prompt": "Weston Lake, visible from the boardwalk, is what type of waterbody?",
+      "options": [
+        "Limestone spring",
+        "Oxbow lake",
+        "Tidal pool",
+        "Beaver pond"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cg-11",
+      "prompt": "River otters are present in Congaree and are most likely to be seen where?",
+      "options": [
+        "Sunning on cypress logs",
+        "Cedar Creek channels",
+        "River bank burrows",
+        "Exclusively Weston Lake"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cg-12",
+      "prompt": "Prothonotary warblers, brilliant golden-yellow birds, breed in Congaree's floodplain. What makes them unusual for warblers?",
+      "options": [
+        "Song too low to hear",
+        "Don't migrate",
+        "Nest in tree cavities",
+        "Can swim to catch fish"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cg-13",
+      "prompt": "The barred owl is extremely vocal in Congaree, often heard during day hikes. What is their distinctive call?",
+      "options": [
+        "Long mournful 'whoooo' ×3",
+        "Rapid 'hoo-hoo-hooooo'",
+        "Blood-curdling dusk scream",
+        "'Who cooks for you-all?'"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cg-14",
+      "prompt": "Flooding in Congaree, while appearing destructive, is essential to the ecosystem. How does flood pulse benefit the forest?",
+      "options": [
+        "Deposits rich sediment",
+        "Recharges the aquifer",
+        "Creates waterfowl ponds",
+        "Flushes invasive plants"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cg-15",
+      "prompt": "Wild pigs (feral hogs) are an invasive problem in Congaree. What damage do they cause?",
+      "options": [
+        "Prey on bird nests",
+        "Outcompete deer",
+        "Root up plants and soil",
+        "Dam streams"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cg-16",
+      "prompt": "The American alligator is occasionally spotted at the southern edge of Congaree. What does this tell us about the park's geography?",
+      "options": [
+        "Reintroduced by NPS",
+        "Center of gator range",
+        "Warm springs here",
+        "Near northern range limit"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cg-17",
+      "prompt": "The Congaree River, which borders the park, is the fastest-flowing river in South Carolina. Where does it eventually empty?",
+      "options": [
+        "Atlantic at Charleston",
+        "Savannah River, Augusta GA",
+        "Santee River, Cape Romain",
+        "Lake Murray reservoir"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cg-18",
+      "prompt": "What makes the mosquito situation at Congaree unusual, and what does the park recommend?",
+      "options": [
+        "Highest density; use DEET",
+        "Dragonflies control them",
+        "Active early morning only",
+        "Organic helicopter control"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cg-19",
+      "prompt": "The park was originally protected as a national monument in 1976 after a battle against proposed logging. Who led the successful effort to save it?",
+      "options": [
+        "Congaree Indian Tribe",
+        "USC biology department",
+        "Southeast Sierra Club",
+        "Local editor and citizens"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cg-20",
+      "prompt": "At night in Congaree's backcountry, what natural light source other than fireflies can visitors observe?",
+      "options": [
+        "Alligator eye glow",
+        "Stars through canopy gaps",
+        "City light reflections",
+        "Foxfire on rotting logs"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

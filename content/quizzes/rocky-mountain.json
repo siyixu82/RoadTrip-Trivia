@@ -40,10 +40,10 @@
       "id": "rm-4",
       "prompt": "Which major geographic line crosses the park?",
       "options": [
-        "The Prime Meridian",
         "The Equator",
-        "The Continental Divide",
-        "The Tropic of Cancer"
+        "Prime Meridian",
+        "Continental Divide",
+        "Tropic of Cancer"
       ],
       "correct_index": 2
     },
@@ -128,7 +128,7 @@
       "id": "rm-12",
       "prompt": "About how many peaks above 12,000 feet does the park contain?",
       "options": [
-        "Around 60 or more",
+        "60 or more",
         "Exactly one",
         "Around five",
         "None"
@@ -173,11 +173,11 @@
       "prompt": "The park's peaks are part of which range?",
       "options": [
         "Appalachians",
-        "The Front Range of the Rockies",
         "Sierra Nevada",
+        "Front Range of the Rockies",
         "Cascades"
       ],
-      "correct_index": 1
+      "correct_index": 2
     },
     {
       "id": "rm-17",
@@ -196,7 +196,7 @@
       "options": [
         "Spring",
         "Winter",
-        "It never closes",
+        "Never closes",
         "Summer"
       ],
       "correct_index": 1
@@ -219,7 +219,7 @@
         "Cave",
         "River",
         "Railroad",
-        "Original road into the high country"
+        "Original high-country road"
       ],
       "correct_index": 3
     }

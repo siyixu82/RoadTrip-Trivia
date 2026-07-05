@@ -1,0 +1,227 @@
+{
+  "slug": "petrified-forest",
+  "title": "Petrified Forest Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "pf-1",
+      "prompt": "Petrified Forest National Park in Arizona protects the world's largest concentration of petrified wood. How old are these logs?",
+      "options": [
+        "~350 million years",
+        "~10 million years",
+        "~225 million years",
+        "~65 million years"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-2",
+      "prompt": "How did these ancient trees become petrified?",
+      "options": [
+        "Baked by forest fires",
+        "Volcanic ash replacement",
+        "Silica-rich water infiltration",
+        "Sediment compression"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-3",
+      "prompt": "The brilliant colors in Petrified Forest's logs — reds, yellows, purples, whites — come from what?",
+      "options": [
+        "Colored sediment staining",
+        "Iron, manganese & silica",
+        "Bioluminescent bacteria",
+        "Natural wood pigments"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pf-4",
+      "prompt": "The Painted Desert, in the northern section of the park, gets its name from what feature?",
+      "options": [
+        "Mineral spring deposits",
+        "Colorful banded mudstone",
+        "Vivid sunset light",
+        "Canyon wall paintings"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pf-5",
+      "prompt": "What type of trees produced the petrified logs in the park?",
+      "options": [
+        "Cycads and tree ferns",
+        "Ancient sequoias",
+        "Deciduous hardwoods",
+        "Ancient conifers"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pf-6",
+      "prompt": "Removing even the smallest piece of petrified wood from the park is a federal crime. Why do rangers emphasize this so strongly?",
+      "options": [
+        "Contains radioactive minerals",
+        "Sacred to Native tribes",
+        "Depletes irreplaceable wood",
+        "Destabilizes terrain"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-7",
+      "prompt": "Puerco Pueblo, a 100-room ancestral Pueblo village in the park, was occupied around 1250–1380 CE. What does the petroglyph panel near the site depict?",
+      "options": [
+        "Trade route map",
+        "Figures & solar calendar",
+        "Inter-pueblo battle",
+        "Rain ceremony scenes"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pf-8",
+      "prompt": "The park contains significant Newspaper Rock — a panel with over 650 petroglyphs. Who created them?",
+      "options": [
+        "The Navajo Nation",
+        "Spanish missionaries",
+        "Multiple Native cultures",
+        "Paleo-Indian mammoth hunters"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-9",
+      "prompt": "The Painted Desert Inn, a National Historic Landmark in the park, was built in what style?",
+      "options": [
+        "Victorian sandstone",
+        "Mission Revival adobe",
+        "Pueblo Revival / CCC",
+        "Arts & Crafts bungalow"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-10",
+      "prompt": "Pronghorn are commonly seen in the park. What makes pronghorn extraordinary among North American mammals?",
+      "options": [
+        "Fastest in hemisphere",
+        "Can jump any fence",
+        "Fastest + longest migrant",
+        "Longest land migration"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-11",
+      "prompt": "The park spans Interstate 40, which follows the historic Route 66. What significant road does I-40 replace in this area?",
+      "options": [
+        "Butterfield Mail route",
+        "Old Spanish Trail",
+        "Historic Route 66",
+        "Santa Fe Trail"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-12",
+      "prompt": "The park experiences extreme temperature swings between seasons. What temperature range might visitors encounter?",
+      "options": [
+        "Below 0°F to 100°F+",
+        "Steady 40°F year-round",
+        "50°F to 85°F",
+        "30°F to 95°F"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pf-13",
+      "prompt": "What dinosaur-age reptile, preserved in the Chinle Formation rocks of the park, was one of the top predators 225 million years ago?",
+      "options": [
+        "Phytosaur",
+        "Rauisuchid archosaur",
+        "Coelophysis dinosaur",
+        "Revueltosaurus"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pf-14",
+      "prompt": "The park's backcountry wilderness area requires an overnight permit. What can backpackers expect to find there?",
+      "options": [
+        "Marked trail network",
+        "Guided tours only",
+        "No trails, no water",
+        "Open archaeological sites"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-15",
+      "prompt": "Roadrunners are often spotted in Petrified Forest. What makes them unusual for birds?",
+      "options": [
+        "Immune to venom",
+        "Flies backwards",
+        "Buries food in sand",
+        "Runs up to 20 mph"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pf-16",
+      "prompt": "The park protects an active prairie dog colony. What ecological term describes the prairie dog's role?",
+      "options": [
+        "Ecosystem engineer",
+        "Keystone species",
+        "Apex predator",
+        "Primary producer"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pf-17",
+      "prompt": "The Agate Bridge is a 110-foot natural bridge formed by a petrified log spanning a wash. Why is a concrete support pillar controversial?",
+      "options": [
+        "Unauthorized addition",
+        "Eyesore appearance",
+        "Prevents natural process",
+        "Cracked the log"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-18",
+      "prompt": "Why does the park lack drinking water except at the visitor centers?",
+      "options": [
+        "Too remote for pipes",
+        "No groundwater aquifer",
+        "Under 6 in. rain/year",
+        "Fluoride contamination"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pf-19",
+      "prompt": "The park expanded significantly in 2004 to include what additional landscape?",
+      "options": [
+        "Both areas combined",
+        "Rainbow Forest Wilderness",
+        "Navajo Nation corridor",
+        "Painted Desert north of I-40"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pf-20",
+      "prompt": "What nocturnal animal is commonly heard at dusk and dawn in the park's grasslands?",
+      "options": [
+        "Coyote",
+        "Great horned owl",
+        "Burrowing owl",
+        "Common nighthawk"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

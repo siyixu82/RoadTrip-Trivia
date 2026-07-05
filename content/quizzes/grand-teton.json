@@ -1,0 +1,227 @@
+{
+  "slug": "grand-teton",
+  "title": "Grand Teton Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "gt-1",
+      "prompt": "What makes the Teton Range unusual compared to most mountain ranges in North America?",
+      "options": [
+        "Entirely above treeline",
+        "Active geysers at its base",
+        "Formed by volcanism",
+        "No foothills — rises abruptly"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gt-2",
+      "prompt": "What is the name of the flat valley that stretches along the eastern base of the Teton Range?",
+      "options": [
+        "Yellowstone Basin",
+        "Jackson Hole",
+        "Teton Flats",
+        "Grand Valley"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gt-3",
+      "prompt": "Which glacially carved lake near the center of the park serves as a hub for shuttle boats and access to Cascade Canyon?",
+      "options": [
+        "Leigh Lake",
+        "String Lake",
+        "Jenny Lake",
+        "Jackson Lake"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gt-4",
+      "prompt": "A famous Ansel Adams photograph taken from which overlook in the park helped make the Teton Range iconic?",
+      "options": [
+        "Signal Mountain Summit",
+        "Snake River Overlook",
+        "Oxbow Bend",
+        "Willow Flats Overlook"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gt-5",
+      "prompt": "Which historic site along Antelope Flats Road features weathered wooden homestead barns set against the Teton backdrop?",
+      "options": [
+        "Mormon Row",
+        "Chapel of the Transfiguration",
+        "Cunningham Cabin",
+        "Menor's Ferry"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gt-6",
+      "prompt": "Which bend in the Snake River is famous for moose sightings and mirror-like reflections of the Teton Range?",
+      "options": [
+        "Moran Bend",
+        "Signal Bend",
+        "Schwabacher Landing",
+        "Oxbow Bend"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gt-7",
+      "prompt": "What type of geological fault gave the Teton Range its dramatic steep eastern face?",
+      "options": [
+        "Normal fault",
+        "Volcanic rift",
+        "Reverse thrust fault",
+        "Strike-slip fault"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gt-8",
+      "prompt": "Grand Teton's highest peak reaches approximately what elevation?",
+      "options": [
+        "13,775 feet",
+        "15,000 feet",
+        "11,500 feet",
+        "10,000 feet"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gt-9",
+      "prompt": "What parkway connects Grand Teton National Park directly to Yellowstone National Park?",
+      "options": [
+        "Bridger Wilderness Corridor",
+        "Snake River Canyon Pkwy",
+        "Rockefeller Memorial Pkwy",
+        "Teton Pass Highway"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gt-10",
+      "prompt": "Which road in the park offers a panoramic 360-degree view of the Tetons and Jackson Hole without a strenuous hike?",
+      "options": [
+        "Teton Park Road",
+        "Grassy Lake Road",
+        "Signal Mountain Summit Rd",
+        "String Lake Road"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gt-11",
+      "prompt": "Pronghorn, the fastest land mammal in North America, are commonly spotted in what habitat within the park?",
+      "options": [
+        "Sagebrush flats",
+        "Alpine tundra",
+        "Lodgepole pine forest",
+        "Riverside willow thickets"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gt-12",
+      "prompt": "In autumn, the park is famous for the elk rut. What does bugling by bull elk signal?",
+      "options": [
+        "Defense against bison",
+        "Mating competition",
+        "Predator warning",
+        "Migration call"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gt-13",
+      "prompt": "What ancient rock type forms the dramatic peaks of the Teton Range?",
+      "options": [
+        "Sandstone",
+        "Basalt",
+        "Limestone",
+        "Precambrian granite/gneiss"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gt-14",
+      "prompt": "Jackson Lake, the park's largest body of water, occupies a basin carved by what process?",
+      "options": [
+        "Volcanic caldera collapse",
+        "Glacial scour + moraine dam",
+        "Landslide blockage",
+        "Tectonic subsidence"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gt-15",
+      "prompt": "Which bird of prey, recognized by its white head and tail, can be spotted fishing along the Snake River in the park?",
+      "options": [
+        "Osprey",
+        "Peregrine Falcon",
+        "Golden Eagle",
+        "Bald Eagle"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gt-16",
+      "prompt": "The Laurance S. Rockefeller Preserve, a quieter corner of the park, is centered on which lake?",
+      "options": [
+        "Taggart Lake",
+        "Emma Matilda Lake",
+        "Bradley Lake",
+        "Phelps Lake"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gt-17",
+      "prompt": "Which large predator reintroduced to the greater Yellowstone ecosystem now occasionally ranges into Grand Teton?",
+      "options": [
+        "Wolverine",
+        "Mountain Lion",
+        "Gray Wolf",
+        "Grizzly Bear"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gt-18",
+      "prompt": "How do most hikers cross Jenny Lake to reach the Cascade Canyon trailhead on the far shore?",
+      "options": [
+        "Suspension footbridge",
+        "Concessionaire van",
+        "Shuttle boat ferry",
+        "Kayak rental"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gt-19",
+      "prompt": "Which area on the eastern shore of Jackson Lake has a marina and offers sweeping views of the Tetons reflected in the water?",
+      "options": [
+        "Colter Bay Village",
+        "Jenny Lake Lodge",
+        "Lupine Meadows",
+        "Leigh Lake Trailhead"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gt-20",
+      "prompt": "String Lake, popular for swimming and paddling, is connected by a short portage to which larger backcountry lake?",
+      "options": [
+        "Bradley Lake",
+        "Taggart Lake",
+        "Jenny Lake",
+        "Leigh Lake"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

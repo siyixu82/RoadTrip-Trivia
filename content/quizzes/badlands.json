@@ -1,0 +1,227 @@
+{
+  "slug": "badlands",
+  "title": "Badlands Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "bd-1",
+      "prompt": "What creates the dramatic spires, buttes, and pinnacles of the Badlands?",
+      "options": [
+        "Glacial carving",
+        "Volcanic uplift",
+        "Rapid erosion",
+        "Tectonic faulting"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bd-2",
+      "prompt": "The Badlands is one of the world's richest fossil beds. What ancient animals' remains are found here?",
+      "options": [
+        "Cretaceous dinosaurs",
+        "Prehistoric sea creatures",
+        "Oligocene mammals",
+        "Carboniferous insects"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bd-3",
+      "prompt": "The black-footed ferret, one of North America's most endangered mammals, was reintroduced to the Badlands. What is its primary prey?",
+      "options": [
+        "Meadow voles",
+        "Cottontail rabbits",
+        "Prairie dogs",
+        "Ground squirrels"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bd-4",
+      "prompt": "Prairie dog colonies in the Badlands are ecologically important because they:",
+      "options": [
+        "Control invasive plants",
+        "Create seasonal ponds",
+        "Pollinate native grasses",
+        "Aerate soil, shelter species"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bd-5",
+      "prompt": "Which large herd animal, once nearly extinct, has been restored to the Badlands and roams the mixed-grass prairie?",
+      "options": [
+        "Pronghorn",
+        "Elk",
+        "Bison",
+        "Wild horse"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bd-6",
+      "prompt": "The Lakota Sioux called this region 'mako sica,' meaning 'bad lands.' Why did both they and early European travelers give it this name?",
+      "options": [
+        "Soil unfit for building",
+        "Rugged, waterless terrain",
+        "Spiritually cursed land",
+        "Poisonous plants"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bd-7",
+      "prompt": "The Badlands Wall, a dramatic escarpment visible from the park's main road, separates which two distinct landscapes?",
+      "options": [
+        "Formations and prairie",
+        "Upper plateau and river valley",
+        "Park and ranching lands",
+        "Pine forest and open prairie"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bd-8",
+      "prompt": "Bighorn sheep were reintroduced to the Badlands in 1964. Where in the park are they most commonly seen?",
+      "options": [
+        "Forested southern boundary",
+        "Steep rocky formations",
+        "Near the visitor center",
+        "Open grasslands"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bd-9",
+      "prompt": "The Notch Trail is one of the park's most unique hikes because it:",
+      "options": [
+        "6-mile Badlands Wall ridge",
+        "Log ladder to a ledge overlook",
+        "Through a wind cave system",
+        "Crosses the White River"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bd-10",
+      "prompt": "What type of grassland ecosystem dominates the Badlands, and why is it ecologically significant?",
+      "options": [
+        "Tallgrass prairie",
+        "Alpine meadow",
+        "Shortgrass prairie",
+        "Mixed-grass prairie"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bd-11",
+      "prompt": "The Badlands formations display layers of rock in different colors. What do these color bands represent?",
+      "options": [
+        "Human habitation eras",
+        "Ceremonial paint",
+        "Alternating lava and rivers",
+        "Ancient environments over time"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bd-12",
+      "prompt": "What is the best time of day to see the Badlands at their most dramatic?",
+      "options": [
+        "Sunrise and sunset",
+        "Overcast days",
+        "Night",
+        "Noon"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bd-13",
+      "prompt": "The Roberts Prairie Dog Town along the park road is one of the largest prairie dog colonies in the park. These animals communicate using:",
+      "options": [
+        "Barks describing predators",
+        "Scent markings only",
+        "Tail and body signals",
+        "Underground vibrations"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bd-14",
+      "prompt": "The South Unit of the Badlands (Stronghold Unit) is jointly managed by the National Park Service and which neighboring nation?",
+      "options": [
+        "Northern Cheyenne Tribe",
+        "Cheyenne River Sioux Tribe",
+        "The Crow Nation",
+        "Oglala Sioux Tribe"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bd-15",
+      "prompt": "Swift foxes, once extirpated from the Badlands, have been reintroduced. What distinguishes this fox from the more common red fox?",
+      "options": [
+        "Tiny burrow-dwelling canid",
+        "Strictly nocturnal",
+        "Much larger, hunts calves",
+        "Migrates Canada to Mexico"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bd-16",
+      "prompt": "Badlands National Park experiences extreme temperature swings. What temperature range might visitors encounter between seasons?",
+      "options": [
+        "30°F to 100°F",
+        "10°F to 85°F",
+        "20°F to 70°F",
+        "-40°F to 116°F"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bd-17",
+      "prompt": "The Castle Trail is the longest trail in the park at 10 miles. What does it cross?",
+      "options": [
+        "Full Badlands Wall",
+        "Three geologic time periods",
+        "White River twice",
+        "Formations, prairie, creeks"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bd-18",
+      "prompt": "Fossils erode out of the Badlands formations constantly. What should visitors do if they find one?",
+      "options": [
+        "Leave it; report to a ranger",
+        "Take it to visitor center",
+        "Cover it with rocks",
+        "Photograph and sample it"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bd-19",
+      "prompt": "The Badlands is part of the Great Plains, a region once dominated by massive bison herds. Approximately how many bison were killed between 1870 and 1890?",
+      "options": [
+        "Roughly 5 million",
+        "Around 500,000",
+        "Roughly 30 million",
+        "Around 100,000"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bd-20",
+      "prompt": "At night, the Badlands offers spectacular stargazing. What recognition has it received for this?",
+      "options": [
+        "Most meteor showers/year",
+        "Gold-tier dark sky reserve",
+        "NASA Astronomy Reserve",
+        "UNESCO Stargazing Site"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

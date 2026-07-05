@@ -1,0 +1,227 @@
+{
+  "slug": "canyonlands",
+  "title": "Canyonlands Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "cy-1",
+      "prompt": "Canyonlands National Park is divided into four distinct districts. Which two rivers meet in the heart of the park?",
+      "options": [
+        "San Rafael & Green",
+        "Colorado & San Juan",
+        "Dirty Devil & Colorado",
+        "Green & Colorado"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cy-2",
+      "prompt": "What are the four districts of Canyonlands National Park?",
+      "options": [
+        "Rims, Spires, Mesa Top, River",
+        "Dome, Rim, Confluence, Loop",
+        "Maze, Needles, Sky, Horseshoe",
+        "Upper, Lower, Verde, Flats"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cy-3",
+      "prompt": "Mesa Arch in Island in the Sky district is one of the most photographed arches in the American Southwest. Why is sunrise particularly spectacular here?",
+      "options": [
+        "Arch frames the equinox sun",
+        "Morning mist creates a rainbow",
+        "Shadow shaped like the river",
+        "Glows orange from below"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cy-4",
+      "prompt": "The White Rim Road encircles Island in the Sky at a lower elevation. What type of vehicle and permits are required?",
+      "options": [
+        "Mountain bikes only",
+        "High-clearance 4WD + permit",
+        "Car + campsite reservation",
+        "Any vehicle with a guide"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cy-5",
+      "prompt": "The Needles district is named for its distinctive landscape. What does it look like?",
+      "options": [
+        "Basalt organ-pipe columns",
+        "Needle-thin slot canyons",
+        "Hoodoos, white sandstone tops",
+        "Red & white banded spires"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cy-6",
+      "prompt": "The Maze district is considered one of the most remote and challenging places in the entire US national park system. Why?",
+      "options": [
+        "4WD, nav, self-sufficiency",
+        "Accessible only by air",
+        "Trails vanish between seasons",
+        "New sinkholes form every year"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cy-7",
+      "prompt": "Horseshoe Canyon, a detached unit of Canyonlands, contains the Great Gallery — one of the most significant rock art panels in North America. What style is it?",
+      "options": [
+        "Barrier Canyon ghostly figures",
+        "Fremont petroglyphs, headdress",
+        "Anasazi red-black pictographs",
+        "Ute paintings of horses"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cy-8",
+      "prompt": "Upheaval Dome in Island in the Sky is a mysterious circular feature. Scientists have proposed two main theories for its formation. What are they?",
+      "options": [
+        "Sinkhole or glacial cirque",
+        "Volcanic caldera or salt dome",
+        "Meteor impact or salt collapse",
+        "Lava tube or salt anticline"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cy-9",
+      "prompt": "What is the Grand View Point Overlook at Island in the Sky famous for?",
+      "options": [
+        "View down into Cataract Canyon",
+        "Best view of the Needles",
+        "100+ miles of canyon panorama",
+        "Colorado River at sunset"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cy-10",
+      "prompt": "Cataract Canyon, in the River district where the Colorado and Green rivers meet, is known among river runners for what?",
+      "options": [
+        "Longest flatwater stretch",
+        "River goes underground",
+        "Calm water for beginners",
+        "Biggest whitewater in the US"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cy-11",
+      "prompt": "Cryptobiotic soil crust is found throughout Canyonlands. What is it and why must visitors avoid stepping on it?",
+      "options": [
+        "Salt crust; erodes sandstone",
+        "Clay releasing toxic minerals",
+        "Desert varnish; stops erosion",
+        "Living crust; slow to recover"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cy-12",
+      "prompt": "Free-roaming bison are found in Island in the Sky. What is unusual about their presence in Canyonlands?",
+      "options": [
+        "Desert-adapted subspecies",
+        "Ranch escapees gone wild",
+        "Reintroduced via tribal effort",
+        "Only wild bison herd in Utah"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cy-13",
+      "prompt": "The Confluence Overlook Trail in The Needles is 10 miles round trip. What does it reveal?",
+      "options": [
+        "Where river colors merge",
+        "Entrance to Cataract Canyon",
+        "Green & Colorado joining below",
+        "White Rim Road panorama"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cy-14",
+      "prompt": "Dead Horse Point State Park, just outside Canyonlands, offers what to visitors?",
+      "options": [
+        "Iconic Colorado River overlook",
+        "Replica cowboy camp",
+        "Colorado Plateau exhibits",
+        "White Rim Road without permit"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cy-15",
+      "prompt": "The four districts of Canyonlands are not connected by road within the park. What does this mean for visitors?",
+      "options": [
+        "Boat tours are the only link",
+        "20+ miles hiking per district",
+        "Each district is separate",
+        "Reservation-only shuttles"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cy-16",
+      "prompt": "Desert bighorn sheep in Canyonlands are expert climbers. What do their hooves have that allows them to navigate sheer canyon walls?",
+      "options": [
+        "Retractable claws",
+        "Hard edges + soft grip pads",
+        "Hollow suction-cup horns",
+        "Sticky resin from foot glands"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cy-17",
+      "prompt": "Tower Ruin in The Needles is a well-preserved Ancestral Puebloan granary. What was stored in these structures?",
+      "options": [
+        "Corn, beans, and squash",
+        "Water from canyon springs",
+        "Dried meat and herbs",
+        "Stone tools and pottery"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cy-18",
+      "prompt": "The Colorado Plateau, which includes all of Canyonlands, is a geological marvel. What was it 300 million years ago?",
+      "options": [
+        "An ancient mountain range",
+        "A vast glacial landscape",
+        "Seas, dunes, and river deltas",
+        "A shallow tropical sea"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cy-19",
+      "prompt": "Desert varnish, the dark reddish-brown coating on many canyon walls, is created by what process?",
+      "options": [
+        "Wind-blown silt fused by heat",
+        "Pigments from ancient algae",
+        "Minerals leaching & oxidizing",
+        "Iron & manganese via microbes"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cy-20",
+      "prompt": "The Green River Overlook in Island in the Sky sits 1,000 feet above the river below. What type of rock makes up the White Rim sandstone visible at mid-level in the canyon walls?",
+      "options": [
+        "Navajo Sandstone — dunes",
+        "White Rim — coastal tidal flat",
+        "Entrada Sandstone like Arches",
+        "Wingate Sandstone — deltas"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

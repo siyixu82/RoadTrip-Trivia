@@ -183,10 +183,10 @@
       "id": "ev-17",
       "prompt": "About how many visitors does Everglades receive each year?",
       "options": [
-        "About 50 million",
-        "About 100",
-        "About 1 million",
-        "About 20 million"
+        "~50 million",
+        "~100",
+        "~1 million",
+        "~20 million"
       ],
       "correct_index": 2
     },

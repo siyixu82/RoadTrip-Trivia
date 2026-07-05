@@ -1,0 +1,227 @@
+{
+  "slug": "pinnacles",
+  "title": "Pinnacles Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "pn-1",
+      "prompt": "Pinnacles National Park in California protects dramatic rock formations. What created them?",
+      "options": [
+        "Ancient ocean reef",
+        "Exposed granite plutons",
+        "Relocated ancient volcano",
+        "River-carved rock columns"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pn-2",
+      "prompt": "Pinnacles is one of only a few sites in the US where California condors are being reintroduced. Why are condors so important to protect?",
+      "options": [
+        "Largest land bird; scavenger",
+        "Pollinate chaparral plants",
+        "Last Pleistocene survivors",
+        "California's state bird"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pn-3",
+      "prompt": "The park has two sides — the east and west — that are NOT connected by road through the park. What does this mean for visitors?",
+      "options": [
+        "East hike-only; west by car",
+        "One visitor center, both sides",
+        "Must choose one side to visit",
+        "Seasonal shuttle April–October"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pn-4",
+      "prompt": "Talus caves are a unique feature of Pinnacles. How did they form?",
+      "options": [
+        "Acidic groundwater dissolution",
+        "Boulders wedged in canyons",
+        "Earthquake fissures",
+        "Ancient lava tubes"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pn-5",
+      "prompt": "The Bear Gulch Cave system can close seasonally to protect what animal?",
+      "options": [
+        "Western rattlesnakes",
+        "California black bears",
+        "Cave-adapted salamanders",
+        "Townsend's big-eared bats"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pn-6",
+      "prompt": "Pinnacles is best visited in spring or fall. Why is summer challenging?",
+      "options": [
+        "Afternoon thunderstorms",
+        "Fire season closes trails",
+        "Closed for condor nesting",
+        "Extreme heat — over 100°F"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pn-7",
+      "prompt": "The High Peaks Trail offers the most dramatic scenery in the park. What does it traverse?",
+      "options": [
+        "Technical ropes-required climb",
+        "Ridge along volcanic spires",
+        "Steps in sheer rock faces",
+        "Wildflower meadow route"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pn-8",
+      "prompt": "California condors were close to extinction before the recovery program began. How many were left in the wild in 1987?",
+      "options": [
+        "About 200",
+        "About 50",
+        "About 10",
+        "Zero — all in captivity"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pn-9",
+      "prompt": "Chaparral covers much of Pinnacles. What is chaparral?",
+      "options": [
+        "Mediterranean oak woodland",
+        "Fire-adapted dense shrubland",
+        "Coastal tropical cloud forest",
+        "Bison-grazed grassland"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pn-10",
+      "prompt": "The volcanic rocks at Pinnacles originated near what present-day location, before moving 195 miles northwest?",
+      "options": [
+        "Lancaster, CA (Mojave)",
+        "Baja California, Mexico",
+        "Tehachapi, CA",
+        "Death Valley, CA"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pn-11",
+      "prompt": "The Balconies Cave on the west side requires hikers to use flashlights. Why?",
+      "options": [
+        "Dark squeeze-through passages",
+        "Lights disturb nocturnal bats",
+        "Dangerous bat guano on path",
+        "Sealed — no natural openings"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pn-12",
+      "prompt": "Prairie falcons, American kestrels, and prairie falcons nest in the Pinnacles rock faces. What is a major threat to condors that falcons don't face?",
+      "options": [
+        "Lead poisoning from carcasses",
+        "Can't thermoregulate in heat",
+        "Golden eagles steal nest sites",
+        "No nesting sites in spires"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pn-13",
+      "prompt": "The park is in the Gabilan Range, which is part of California's Coast Ranges. What is the annual rainfall at Pinnacles?",
+      "options": [
+        "15–20 inches",
+        "About 40 inches",
+        "About 60 inches",
+        "About 5 inches"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pn-14",
+      "prompt": "Rock climbing is popular at Pinnacles. What type of rock makes up the formations?",
+      "options": [
+        "Sandstone",
+        "Volcanic breccia and rhyolite",
+        "Granite",
+        "Basalt columns"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "pn-15",
+      "prompt": "The Condor Gulch Trail leads to a great condor-spotting overlook. What are good signs that condors are nearby?",
+      "options": [
+        "Loud screech overhead",
+        "Feathers shed at feeding sites",
+        "Large stick nests on cliffs",
+        "9-10 ft wingspan, white marks"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pn-16",
+      "prompt": "Pinnacles became a National Park in 2013, upgraded from what status?",
+      "options": [
+        "National Forest",
+        "National Recreation Area",
+        "State Natural Reserve",
+        "National Monument"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pn-17",
+      "prompt": "The Visitor Center is on the east side at the Pinnacles Campground. What amenity does it have that is uncommon in rural national parks?",
+      "options": [
+        "Medical evacuation helipad",
+        "Year-round restaurant",
+        "Free EV charging stations",
+        "Swimming pool at campground"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "pn-18",
+      "prompt": "Turkey vultures are commonly confused with California condors at Pinnacles. How can you tell them apart?",
+      "options": [
+        "Condors: larger, flat wings",
+        "Vultures call; condors silent",
+        "Vultures have red heads",
+        "Condors fly in groups"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "pn-19",
+      "prompt": "Spring wildflower season at Pinnacles is spectacular. Which type of plant gives the chaparral its color in March and April?",
+      "options": [
+        "Poppies and lupines",
+        "Wild irises",
+        "Manzanita and ceanothus",
+        "Shooting stars and brodiaea"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "pn-20",
+      "prompt": "The park is close to the Salinas Valley agricultural region. What town serves as the main gateway?",
+      "options": [
+        "Soledad (west); King City (E)",
+        "Monterey, 40 miles west",
+        "Paso Robles, 30 miles SE",
+        "San Jose, 80 miles north"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

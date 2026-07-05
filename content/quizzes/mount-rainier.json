@@ -1,0 +1,227 @@
+{
+  "slug": "mount-rainier",
+  "title": "Mount Rainier Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "mr-1",
+      "prompt": "Mount Rainier is the highest peak in the Cascade Range. What is its elevation?",
+      "options": [
+        "14,411 feet",
+        "13,100 feet",
+        "12,276 feet",
+        "15,000 feet"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "mr-2",
+      "prompt": "Mount Rainier holds what distinction among peaks in the contiguous 48 states?",
+      "options": [
+        "Most climbed in the West",
+        "Most glaciated — 25+ glaciers",
+        "Most recently active volcano",
+        "Most annual precipitation"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mr-3",
+      "prompt": "Emmons Glacier on Mount Rainier is notable for what reason?",
+      "options": [
+        "Largest glacier in lower 48",
+        "Only WA glacier by road",
+        "Highest glacier in lower 48",
+        "Fastest-moving in N. America"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "mr-4",
+      "prompt": "The Paradise area of Mount Rainier is world-famous for its summer wildflower meadows. When do they typically peak?",
+      "options": [
+        "Late May – mid-June",
+        "Mid-July – mid-August",
+        "Early June – early July",
+        "September"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mr-5",
+      "prompt": "Paradise holds a world record for snowfall. What was the record seasonal snowfall recorded there?",
+      "options": [
+        "42 feet (1955–56)",
+        "65 feet (1998–99)",
+        "110 feet (1943–44)",
+        "93.5 feet (1971–72)"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mr-6",
+      "prompt": "Sunrise is the highest point in the park reachable by road. What is the key difference between Sunrise and Paradise for visitors?",
+      "options": [
+        "More facilities than Paradise",
+        "North-facing; different views",
+        "Sunrise snow-free year-round",
+        "Sunrise for ranger climbs only"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mr-7",
+      "prompt": "The Wonderland Trail encircles Mount Rainier for approximately how many miles?",
+      "options": [
+        "40 miles",
+        "60 miles",
+        "93 miles",
+        "130 miles"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mr-8",
+      "prompt": "Mount Rainier is an active stratovolcano. What is the greatest volcanic hazard it poses to surrounding communities?",
+      "options": [
+        "Lava flows on the flanks",
+        "Lahars down river valleys",
+        "Pyroclastic flows to Seattle",
+        "Months of ash fall"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mr-9",
+      "prompt": "The Carbon River area of the park contains a rare inland temperate rainforest. What makes it unique?",
+      "options": [
+        "Inland old-growth rainforest",
+        "100+ in. rain far inland",
+        "Unique endemic species",
+        "Trees taller than redwoods"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mr-10",
+      "prompt": "Which small mountain mammal, living in rocky alpine areas near Sunrise and Paradise, gives a high-pitched squeak and is a key indicator species for climate change?",
+      "options": [
+        "Ground squirrel",
+        "Snowshoe hare",
+        "Yellow-bellied marmot",
+        "American pika"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mr-11",
+      "prompt": "Longmire, the park's main entrance area, features a historic inn and museum. What is Longmire's significance in the park's history?",
+      "options": [
+        "National Park designation site",
+        "Longmire's mineral springs",
+        "John Muir's first campsite",
+        "First summit base camp"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mr-12",
+      "prompt": "Mountain goats are a common sight on Mount Rainier's upper slopes. What is their most impressive physical adaptation?",
+      "options": [
+        "High-altitude torpor ability",
+        "Lichen-digesting gut bacteria",
+        "Fur that turns gray in summer",
+        "Split hooves for gripping rock"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mr-13",
+      "prompt": "The park experiences a 'rain shadow' effect. What does this mean for visitors on the east versus west sides?",
+      "options": [
+        "Equal rain, different timing",
+        "East side gets more rain",
+        "West wet; east drier, sunnier",
+        "Desert on the north side"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mr-14",
+      "prompt": "Climbers attempting to summit Mount Rainier typically start from which high camp?",
+      "options": [
+        "Camp Schurman",
+        "Paradise base camp (5,400 ft)",
+        "Camp Muir (10,080 ft)",
+        "Both, depending on route"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mr-15",
+      "prompt": "What are 'glacial erratics,' which visitors can see scattered around the park's lower elevations?",
+      "options": [
+        "Volcanic bombs from eruptions",
+        "Boulders carried by glaciers",
+        "Rocks moving via freeze-thaw",
+        "Rocks from seismic events"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mr-16",
+      "prompt": "Myrtle Falls near Paradise is a popular short hike. What falls over the cascade?",
+      "options": [
+        "Carter Creek",
+        "The Nisqually River",
+        "Edith Creek",
+        "Stevens Creek"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mr-17",
+      "prompt": "The Tatoosh Range is visible from Paradise to the south. What type of rock makes up these peaks?",
+      "options": [
+        "Older metamorphic rock",
+        "Granite",
+        "Basalt lava flows",
+        "Sandstone and shale"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mr-18",
+      "prompt": "Christine Falls, near the road between Longmire and Paradise, flows through what type of geological feature?",
+      "options": [
+        "Natural basalt arch",
+        "Lava tube deepened by erosion",
+        "Glacially polished rock gorge",
+        "CCC stone bridge (1930s)"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "mr-19",
+      "prompt": "Black bears in Mount Rainier are most commonly seen doing what?",
+      "options": [
+        "Foraging on berries and grubs",
+        "Raiding campground garbage",
+        "Grazing at Paradise meadows",
+        "Fishing for salmon"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "mr-20",
+      "prompt": "Which Indigenous nations have deep cultural and historical ties to Mount Rainier, which they called 'Tahoma' or 'Tacoma'?",
+      "options": [
+        "The Chinook people",
+        "Nisqually/Puyallup/Muckleshoot",
+        "Yakama and Nez Perce nations",
+        "Makah and Quinault nations"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "denali",
+  "title": "Denali Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "dn-1",
+      "prompt": "What is the elevation of Denali, the highest peak in North America?",
+      "options": [
+        "18,500 feet",
+        "20,310 feet",
+        "22,841 feet",
+        "19,000 feet"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dn-2",
+      "prompt": "What does 'Denali' mean in the Koyukon Athabascan language?",
+      "options": [
+        "The Great One",
+        "The White Mountain",
+        "The High One",
+        "The Cold Peak"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dn-3",
+      "prompt": "Denali's park road stretches 92 miles into the wilderness. How much of it can private vehicles travel?",
+      "options": [
+        "15 miles to Savage River",
+        "50 miles to Wonder Lake",
+        "The full 92 miles",
+        "30 miles to Toklat River"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dn-4",
+      "prompt": "To travel beyond the private vehicle limit on Denali's park road, visitors must use what?",
+      "options": [
+        "Bicycles only",
+        "Helicopter tour",
+        "Lottery permit",
+        "NPS or concessionaire buses"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dn-5",
+      "prompt": "Wonder Lake, near the end of the park road, is famous because on clear days it reflects Denali's summit. How far is the lake from the summit?",
+      "options": [
+        "About 5 miles",
+        "About 10 miles",
+        "About 26 miles",
+        "About 50 miles"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dn-6",
+      "prompt": "Only about 30% of visitors to Denali actually see the summit clearly. Why?",
+      "options": [
+        "Creates its own weather",
+        "Cloudy-day road schedules",
+        "Hidden behind nearby peaks",
+        "Trees block road viewpoints"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dn-7",
+      "prompt": "Denali has one of the most dramatic vertical rises of any mountain on Earth. What makes its rise exceptional?",
+      "options": [
+        "Rises from sea level",
+        "Flat terrain 200 miles around",
+        "Base 2,000 ft; rise 18,000+ ft",
+        "Steeper per mile than Everest"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dn-8",
+      "prompt": "Grizzly bears in Denali are particularly visible from the park road. What are they most often seen doing?",
+      "options": [
+        "Resting in spruce shade",
+        "Fishing for salmon",
+        "Digging, grazing, roaming",
+        "Fighting wolves over kills"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dn-9",
+      "prompt": "What large herd animal undertakes dramatic seasonal migrations through Denali, sometimes crossing the park road?",
+      "options": [
+        "Bison",
+        "Reindeer",
+        "Caribou",
+        "Musk ox"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dn-10",
+      "prompt": "Dall sheep, white wild sheep unique to Alaska, are most often spotted where in the park?",
+      "options": [
+        "Valley floors near rivers",
+        "Open tundra with caribou",
+        "Boreal forest near entrance",
+        "Steep rocky ridges and cliffs"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dn-11",
+      "prompt": "Wolf packs live in Denali. The park is one of the best places in the world to observe wolves in the wild because:",
+      "options": [
+        "Open tundra + long daylight",
+        "Wolves gather near campsites",
+        "NPS supplements wolf food",
+        "Wolves don't fear vehicles"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dn-12",
+      "prompt": "What two major ecosystems are visible along Denali's park road as elevation and latitude change?",
+      "options": [
+        "Desert scrub to grassland",
+        "Wetlands and spruce-birch",
+        "Taiga transitioning to tundra",
+        "Rainforest and alpine meadow"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dn-13",
+      "prompt": "Polychrome Overlook, a popular bus stop along the park road, gets its name from what?",
+      "options": [
+        "Red, purple, orange rock bands",
+        "Wildflower meadows below",
+        "Colorful lichen on cliffs",
+        "Rainbow over Toklat River"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dn-14",
+      "prompt": "Denali experiences dramatic summer daylight. How many hours of daylight does the park receive near the summer solstice?",
+      "options": [
+        "~20 hours, no full darkness",
+        "About 16 hours",
+        "24 hours of daylight",
+        "About 20 hours"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dn-15",
+      "prompt": "Mountaineers who want to attempt the summit of Denali typically fly into which glacier as their base camp?",
+      "options": [
+        "Peters Glacier",
+        "Ruth Glacier",
+        "Kahiltna Glacier",
+        "Muldrow Glacier"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dn-16",
+      "prompt": "The town of Talkeetna, south of the park, serves as the gateway for mountaineers. It is also the base for what popular visitor activity?",
+      "options": [
+        "River rafting trips",
+        "Dogsled expeditions",
+        "Helicopter glacier tours",
+        "Flightseeing tours"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dn-17",
+      "prompt": "In most of Denali's backcountry, there are no trails. How do hikers navigate?",
+      "options": [
+        "Guided routes only",
+        "NPS cairn routes",
+        "GPS from visitor center",
+        "Cross-country map reading"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dn-18",
+      "prompt": "The northern lights (aurora borealis) are visible at Denali. When is the best time to see them?",
+      "options": [
+        "Late Aug through early Apr",
+        "From the summit only",
+        "December and January only",
+        "Midsummer peak activity"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dn-19",
+      "prompt": "Arctic ground squirrels are among the most visible mammals along Denali's road corridor. What remarkable feat do they accomplish each winter?",
+      "options": [
+        "Migrate to lower elevations",
+        "Body temp drops near freezing",
+        "Burrow to unfrozen roots",
+        "Cache food, no hibernation"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dn-20",
+      "prompt": "The Koyukon Athabascan people have lived near what is now Denali for thousands of years. What was their relationship with the mountain?",
+      "options": [
+        "Avoided it as a barrier",
+        "Navigation landmark only",
+        "Mined obsidian for tools",
+        "Revered spiritual presence"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

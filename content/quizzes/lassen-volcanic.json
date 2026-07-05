@@ -1,0 +1,227 @@
+{
+  "slug": "lassen-volcanic",
+  "title": "Lassen Volcanic Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "lv-1",
+      "prompt": "Lassen Volcanic National Park uniquely contains examples of all four types of volcanoes. Which four types are found here?",
+      "options": [
+        "Shield, strato, cinder, maar",
+        "Caldera, dome, cinder, shield",
+        "Shield, dome, cinder, strato",
+        "Composite, maar, dome, caldera"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "lv-2",
+      "prompt": "Lassen Peak is a plug dome volcano. When did it last erupt?",
+      "options": [
+        "1905–1907",
+        "1943–1944",
+        "1914–1917",
+        "1968–1969"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "lv-3",
+      "prompt": "Bumpass Hell is the largest hydrothermal area in the park. What features does it contain?",
+      "options": [
+        "Mudpots, fumaroles, springs",
+        "Ruins of Bumpass Mountain",
+        "A geothermal power plant",
+        "Lava dome and lava tubes"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lv-4",
+      "prompt": "How did Bumpass Hell get its unusual name?",
+      "options": [
+        "Named for a commanding officer",
+        "Bumpass fell in a boiling pool",
+        "Miners' name for sulfur smell",
+        "Maidu: 'steaming earth'"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "lv-5",
+      "prompt": "Cinder Cone is one of the most perfectly symmetrical cinder cones in the world. When did it last erupt?",
+      "options": [
+        "1914",
+        "Around 500 CE",
+        "Around 1666 CE",
+        "About 10,000 years ago"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "lv-6",
+      "prompt": "The Painted Dunes near Cinder Cone are famous for their vivid colors. What created them?",
+      "options": [
+        "Lava oxidized pumice deposits",
+        "Preserved algae pigments",
+        "Volcanic ash and mineral salts",
+        "Hydrothermal steam minerals"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lv-7",
+      "prompt": "The Devastated Area along the main road shows the landscape affected by the 1915 eruption. What happened there?",
+      "options": [
+        "Lahar buried the valley",
+        "Hot blast flattened the forest",
+        "Pyroclastic flow, 5-mile zone",
+        "Lava flows built a new plateau"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "lv-8",
+      "prompt": "Brokeoff Mountain, visible from the southern entrance, is a remnant of what ancient volcano?",
+      "options": [
+        "Mount Tehama",
+        "An unnamed shield volcano",
+        "A collapsed caldera",
+        "Proto-Lassen Peak"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lv-9",
+      "prompt": "Lake Helen near the summit is often ice-covered until well into summer. Why?",
+      "options": [
+        "High elevation, deep snowpack",
+        "Cold volcanic gases from vents",
+        "Too small for solar warming",
+        "North-facing shaded cirque"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lv-10",
+      "prompt": "Manzanita Lake at the north entrance is named for a shrub. What distinguishes manzanita plants?",
+      "options": [
+        "Deep taproots in volcanic soil",
+        "Red bark, evergreen, berries",
+        "Thorny stems for fish traps",
+        "Waxy leaves that collect dew"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "lv-11",
+      "prompt": "American pikas in Lassen's rocky alpine areas are called 'bellwethers of climate change.' Why?",
+      "options": [
+        "Fur color timing shifts",
+        "Heat-intolerant; upslope shift",
+        "Only eats cool-climate plants",
+        "Population crashes pre-drought"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "lv-12",
+      "prompt": "What is the main road through Lassen called?",
+      "options": [
+        "Highway 89",
+        "The Lassen Main Road",
+        "Volcanic Legacy Scenic Byway",
+        "The Lassen Scenic Byway"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lv-13",
+      "prompt": "Sulphur Works near the south entrance is easy to visit. What do rangers emphasize?",
+      "options": [
+        "Wear gas masks",
+        "No photography allowed",
+        "Stay on the boardwalk",
+        "Visit before 10 a.m."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "lv-14",
+      "prompt": "Kings Creek Falls is one of Lassen's most rewarding hikes. What volcanic rock makes up the creek bed?",
+      "options": [
+        "Andesite and basalt",
+        "Granite",
+        "Pumice",
+        "Rhyolite"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lv-15",
+      "prompt": "Lassen sits in the southern Cascade Range. What other famous volcanoes are part of this arc?",
+      "options": [
+        "Hawaii volcanoes, Yellowstone",
+        "Whitney, Shasta, Sierra Nevada",
+        "Popocatépetl and Mexican peaks",
+        "Shasta, Hood, Rainier, Helens"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "lv-16",
+      "prompt": "The Cascade Range volcanoes, including Lassen, are formed by what geological process?",
+      "options": [
+        "Juan de Fuca Plate subduction",
+        "A hotspot / mantle plume",
+        "Continental collision",
+        "A mid-ocean ridge on land"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lv-17",
+      "prompt": "Heavy snowfall closes the main road through Lassen for much of the year. When does it typically reopen?",
+      "options": [
+        "July 4th",
+        "Late May to mid-June",
+        "April 15th",
+        "March 1st"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "lv-18",
+      "prompt": "The Hat Creek Valley east of the park is home to a large radio telescope array. What is it used for?",
+      "options": [
+        "Volcanic activity monitoring",
+        "Allen Telescope Array (SETI)",
+        "Winter weather monitoring",
+        "NASA deep space tracking"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "lv-19",
+      "prompt": "Drakesbad Guest Ranch in the park's remote Warner Valley is notable for what?",
+      "options": [
+        "Geothermally heated pool",
+        "Only geo-heated pool in a park",
+        "Most remote park lodge",
+        "Oldest California guest ranch"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lv-20",
+      "prompt": "Which Indigenous peoples have the deepest connection to the land now known as Lassen Volcanic National Park?",
+      "options": [
+        "Shasta and Klamath peoples",
+        "The Modoc",
+        "Wintun and Pomo peoples",
+        "Pit River, Yana, Yahi, Maidu"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "north-cascades",
+  "title": "North Cascades Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "nc-1",
+      "prompt": "North Cascades National Park in Washington State has more of what feature than any other park in the contiguous US?",
+      "options": [
+        "Glaciers — over 300",
+        "Waterfalls — over 300 named",
+        "Alpine lakes — over 500",
+        "Named peaks — over 400"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "nc-2",
+      "prompt": "Highway 20 (North Cascades Highway) is the only road through the park. What happens to it each winter?",
+      "options": [
+        "Closes two weeks in January",
+        "Open year-round with snowplows",
+        "Closes November to April",
+        "One lane open year-round"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nc-3",
+      "prompt": "Lake Chelan, adjacent to the park, is one of the deepest lakes in the US. How deep is it?",
+      "options": [
+        "About 800 feet",
+        "About 1,486 feet",
+        "About 500 feet",
+        "About 2,000 feet"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "nc-4",
+      "prompt": "Stehekin is a remote community at the head of Lake Chelan accessible only by ferry, floatplane, or a very long trail. What services are there?",
+      "options": [
+        "Full resort with hospital",
+        "Ranger station, no residents",
+        "Completely uninhabited",
+        "Lodge, bakery, store, school"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "nc-5",
+      "prompt": "The Cascade Pass Trail is one of the most popular hikes in the park. What does it offer?",
+      "options": [
+        "Wildflower basin near Stehekin",
+        "Glaciated peaks, hanging ice",
+        "Ridge walk to Canada border",
+        "Waterfall canyon to Skagit"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "nc-6",
+      "prompt": "The park complex includes North Cascades National Park and two national recreation areas. What additional access do the recreation areas provide?",
+      "options": [
+        "Ski areas and resorts",
+        "Campgrounds and visitor access",
+        "Mining and logging access",
+        "Motorboats, hunting, sleds"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "nc-7",
+      "prompt": "Grizzly bears may occasionally be present in the North Cascades from Canada. What is unusual about the population?",
+      "options": [
+        "Distinct Cascade subspecies",
+        "A handful, recovery uncertain",
+        "Never seen south of border",
+        "200+ individuals in 2020"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "nc-8",
+      "prompt": "The Skagit River runs through the Ross Lake Recreation Area. What do bald eagles do there each winter?",
+      "options": [
+        "Compete with ospreys for fish",
+        "Migrate south to California",
+        "Gather to feed on chum salmon",
+        "Dive for hatchery trout"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nc-9",
+      "prompt": "The North Cascades has very few maintained trails relative to its size. What does this mean for visitors?",
+      "options": [
+        "Guides needed, limited access",
+        "Mostly confined to Hwy 20",
+        "Roadless wilderness, off-trail",
+        "Only accessible by helicopter"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nc-10",
+      "prompt": "The Picket Range within the park is considered one of the most technically demanding mountain areas in the lower 48. Why?",
+      "options": [
+        "Jagged peaks, rain, brutal",
+        "Unstable schist rock",
+        "Permanent whiteout conditions",
+        "Peaks above 14,000 feet"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "nc-11",
+      "prompt": "Ross Lake stretches north into Canada. It was created by what?",
+      "options": [
+        "A beaver dam foundation",
+        "A 1921 Skagit River landslide",
+        "Ross Dam",
+        "Glacial retreat depression"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nc-12",
+      "prompt": "Western red cedar and Douglas fir forests grow on the park's western slopes. Why are the western slopes so wet?",
+      "options": [
+        "Pacific fog up river valleys",
+        "Forest transpiration cycling",
+        "Glacial meltwater in the soil",
+        "Pacific storms, 100+ in/yr"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "nc-13",
+      "prompt": "Mountain goats are native to the North Cascades. Where are they most often spotted?",
+      "options": [
+        "Highway pullouts near humans",
+        "River valley meadows",
+        "Lower forest edges",
+        "Sheer cliffs and high ridges"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "nc-14",
+      "prompt": "The park is nicknamed 'the American Alps.' What makes the scenery so similar to the European Alps?",
+      "options": [
+        "Identical flower meadows",
+        "Same granite batholiths",
+        "Glaciated peaks, deep valleys",
+        "Same Pleistocene glaciation"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nc-15",
+      "prompt": "The park is adjacent to several large wilderness areas. What is the combined size of the North Cascades ecosystem?",
+      "options": [
+        "About 500,000 acres",
+        "About 2 million acres",
+        "About 9.5 million acres",
+        "About 5 million acres"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nc-16",
+      "prompt": "The Diablo Lake overlook from Highway 20 is one of the most photographed spots in the park. What gives the lake its extraordinary turquoise color?",
+      "options": [
+        "Blue-green algae blooms",
+        "Copper minerals in the rock",
+        "White quartz bottom",
+        "Glacial flour in suspension"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "nc-17",
+      "prompt": "The Pacific Crest Trail passes through the park. What does this trail connect overall?",
+      "options": [
+        "Denver to the Canadian border",
+        "Campo, CA to Manning Park, BC",
+        "Yosemite to Mt. Whitney",
+        "Olympic NP to Glacier NP"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "nc-18",
+      "prompt": "The North Cascades Visitor Center is in Newhalem, a small company town. Who owns the town?",
+      "options": [
+        "Cascade Pass Resort Company",
+        "National Park Service",
+        "Whatcom County",
+        "Seattle City Light"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "nc-19",
+      "prompt": "What is the best way to see the park's remote glaciers and high peaks without technical mountaineering?",
+      "options": [
+        "Summit Trail system",
+        "Fire lookout trails",
+        "Floatplanes and high passes",
+        "Guided horseback trips"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nc-20",
+      "prompt": "Wolves returned to the North Cascades naturally from Canada. What does their recovery mean ecologically?",
+      "options": [
+        "Trophic cascade, plant rebound",
+        "No ecological effect measured",
+        "Eliminating deer and elk",
+        "Grizzly and wolf food rivalry"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

@@ -18,7 +18,7 @@
       "id": "ol-2",
       "prompt": "Besides glaciated peaks and old-growth rainforest, Olympic protects what third ecosystem?",
       "options": [
-        "Rugged Pacific coastline",
+        "Pacific coastline",
         "Tundra plains",
         "Tropical reef",
         "Desert dunes"
@@ -194,7 +194,7 @@
       "id": "ol-18",
       "prompt": "The park's tidepools are home to which creatures?",
       "options": [
-        "Sea stars and anemones",
+        "Sea stars & anemones",
         "Cacti",
         "Tropical parrots",
         "Penguins"
@@ -205,12 +205,12 @@
       "id": "ol-19",
       "prompt": "The Elwha River is famous for a major what?",
       "options": [
-        "Dam removal and river restoration",
-        "Gold rush",
         "Dam expansion",
-        "Diversion to cities"
+        "Gold rush",
+        "City diversion",
+        "Dam removal"
       ],
-      "correct_index": 0
+      "correct_index": 3
     },
     {
       "id": "ol-20",

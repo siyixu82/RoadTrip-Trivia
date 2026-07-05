@@ -1,0 +1,227 @@
+{
+  "slug": "capitol-reef",
+  "title": "Capitol Reef Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "cr-1",
+      "prompt": "The central geological feature of Capitol Reef is the Waterpocket Fold. What is it?",
+      "options": [
+        "Parallel sandstone arches",
+        "100-mile buckled monocline",
+        "Canyon carved by Fremont River",
+        "Collapsed volcanic caldera"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cr-2",
+      "prompt": "The park's name comes from two features. What are they?",
+      "options": [
+        "Rock formations + fold knobs",
+        "Capital dome + rocky barrier",
+        "White domes + rocky barrier",
+        "Dome arch + gold-reef mine"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cr-3",
+      "prompt": "The historic village of Fruita, within the park, features something unique — orchards still tended by the NPS. What can visitors do from June through October?",
+      "options": [
+        "Harvest festival & cider press",
+        "Pick & eat orchard fruit free",
+        "Pioneer fruit-drying demos",
+        "Buy jam at the visitor center"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cr-4",
+      "prompt": "The Fremont people, who lived in this region about 700–1300 CE, left behind petroglyphs visible from a boardwalk near the visitor center. What distinguishes Fremont rock art?",
+      "options": [
+        "Elaborate star maps",
+        "Blue & yellow painted murals",
+        "Animal tracks in wet clay",
+        "Trapezoidal headdressed forms"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cr-5",
+      "prompt": "Hickman Bridge is one of Capitol Reef's most accessible natural arches. What type of rock is it?",
+      "options": [
+        "Entrada Sandstone",
+        "Kayenta siltstone",
+        "Wingate Sandstone — Triassic",
+        "Navajo Sandstone"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cr-6",
+      "prompt": "Cassidy Arch is named after Butch Cassidy. What is the connection to Capitol Reef?",
+      "options": [
+        "Cassidy surveyed the area",
+        "Cassidy named the Fold",
+        "Wild Bunch hid in canyons here",
+        "Cassidy was first park ranger"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cr-7",
+      "prompt": "Cathedral Valley, the park's remote northern district, features massive sandstone monoliths. How do most visitors access it?",
+      "options": [
+        "River raft only",
+        "Paved road — standard cars OK",
+        "High-clearance 4WD / tour",
+        "2-day wilderness hike"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cr-8",
+      "prompt": "The Chimney Rock formation near the park's western entrance is a dramatic spire. What type of rock caps the chimney, protecting it from erosion?",
+      "options": [
+        "Navajo Sandstone",
+        "Volcanic basalt",
+        "Shinarump conglomerate",
+        "Glacially deposited limestone"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cr-9",
+      "prompt": "The Scenic Drive through the park passes through a narrow canyon called the Grand Wash. What historical claim to fame does Grand Wash have?",
+      "options": [
+        "1909 floods found petroglyphs",
+        "Powell Expedition route",
+        "Utah's first paved road, 1932",
+        "Butch Cassidy's escape route"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cr-10",
+      "prompt": "Goosenecks Overlook shows the Sulphur Creek making dramatic meanders below the rim. What does this 'entrenched meander' reveal about the landscape's history?",
+      "options": [
+        "Ancient quake, banks collapsed",
+        "Lava forced the winding course",
+        "Plateau rose; creek cut down",
+        "Wind carved the dry channel"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cr-11",
+      "prompt": "Capitol Reef receives far fewer visitors than the other four Utah national parks (the 'Mighty Five'). What does this mean for those who go?",
+      "options": [
+        "Uncrowded; no reservations",
+        "No paved roads or campgrounds",
+        "Permit required 6 months ahead",
+        "Many areas closed to visitors"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cr-12",
+      "prompt": "The colors of Capitol Reef's rock layers are striking — red, white, cream, and chocolate brown. What causes the red color in much of the sandstone?",
+      "options": [
+        "Iron oxide in the sandstone",
+        "Manganese oxide from microbes",
+        "Volcanic minerals",
+        "Red algae from ancient lakes"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cr-13",
+      "prompt": "Petrified wood is found in parts of Capitol Reef. How does a log become petrified?",
+      "options": [
+        "Salt water deposits crystals",
+        "Freeze-thaw crystallizes cells",
+        "Volcanic heat bakes wood",
+        "Silica replaces organic matter"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cr-14",
+      "prompt": "The Burr Trail Scenic Backway connects the town of Boulder, Utah to Capitol Reef's southern end. What dramatic feature does the trail descend?",
+      "options": [
+        "Burr Trail Switchbacks",
+        "Slot canyon barely car-width",
+        "Shelf road above the Colorado",
+        "13 switchbacks down the Fold"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cr-15",
+      "prompt": "Mule deer are common in the Fruita area of the park. Why are they particularly tame near the visitor center?",
+      "options": [
+        "Rangers fed them for decades",
+        "Orchard food reduced fear",
+        "Wildlife habituation program",
+        "Pioneer livestock descendants"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cr-16",
+      "prompt": "The Temple of the Moon and Temple of the Sun are towering monoliths in Cathedral Valley. What type of rock are they made of?",
+      "options": [
+        "Volcanic plugs",
+        "Entrada Sandstone",
+        "Ancient salt pillars",
+        "Navajo Sandstone"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cr-17",
+      "prompt": "The Notom-Bullfrog Road runs along the base of the Waterpocket Fold. What does driving it reveal?",
+      "options": [
+        "Only Fremont River access",
+        "Rock layers & water pockets",
+        "Mountain lion corridor",
+        "All major slot canyons"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cr-18",
+      "prompt": "What are 'water pockets' — the feature that gives the Waterpocket Fold part of its name?",
+      "options": [
+        "Sandstone hollows collect rain",
+        "Pools after monsoons only",
+        "Springs at cliff bases",
+        "Dissolved-mineral cavities"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cr-19",
+      "prompt": "The Cohab Canyon Trail is a short, rewarding hike from Fruita. What does 'Cohab' mean in this context?",
+      "options": [
+        "Fremont for 'hidden valley'",
+        "Abbrev. for Colorado Habitat",
+        "Mormon polygamists hiding",
+        "Paiute clan who wintered here"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cr-20",
+      "prompt": "Capitol Reef's night skies are exceptional. The park is an International Dark Sky Park. What makes the Colorado Plateau generally good for stargazing?",
+      "options": [
+        "Sandstone reflects starlight",
+        "Canyon walls block light",
+        "High elevation, low humidity",
+        "Above city light pollution"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

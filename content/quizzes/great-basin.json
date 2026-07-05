@@ -1,0 +1,227 @@
+{
+  "slug": "great-basin",
+  "title": "Great Basin Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "grb-1",
+      "prompt": "Great Basin National Park is located in which state?",
+      "options": [
+        "Nevada",
+        "Idaho",
+        "Utah",
+        "Arizona"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "grb-2",
+      "prompt": "Lehman Caves is the main attraction for many visitors. What type of cave is it?",
+      "options": [
+        "Sandstone slot canyon",
+        "Lava tube",
+        "Limestone solution cave",
+        "Granite glacial cave"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "grb-3",
+      "prompt": "Lehman Caves contains rare cave formations called 'cave shields.' What are they?",
+      "options": [
+        "Disc-like calcite plates",
+        "Polished flowstone floors",
+        "Mineral crusts on crystals",
+        "Floor calcite shields"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "grb-4",
+      "prompt": "Wheeler Peak, at 13,063 feet, rises dramatically above the park's desert floor. What rare feature sits near its summit?",
+      "options": [
+        "High-altitude wildflower field",
+        "Active volcanic caldera",
+        "Frost-carved natural arch",
+        "A remnant glacier"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "grb-5",
+      "prompt": "Bristlecone pine trees in Great Basin National Park are among the oldest living organisms on Earth. How old can they get?",
+      "options": [
+        "Over 5,000 years",
+        "About 1,000 years",
+        "About 2,500 years",
+        "About 500 years"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "grb-6",
+      "prompt": "The 'Great Basin' geographic region gets its name from what hydrological feature?",
+      "options": [
+        "Massive underground aquifer",
+        "Basin-shaped landscape",
+        "No outlet to the ocean",
+        "Ancient Lake Bonneville"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "grb-7",
+      "prompt": "Great Basin is one of the least-visited national parks in the contiguous US. What makes it especially appealing for stargazers?",
+      "options": [
+        "Public observatory programs",
+        "Above most atmospheric haze",
+        "Dry air, low humidity",
+        "Extremely dark skies"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "grb-8",
+      "prompt": "The park preserves part of the Snake Range. What type of terrain dominates at lower elevations?",
+      "options": [
+        "Pinyon-juniper woodland",
+        "Grassland prairie",
+        "Sagebrush shrubland",
+        "Alkali flats"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "grb-9",
+      "prompt": "Lehman Creek flows year-round through the park. What fish species, once threatened, has been restored in it?",
+      "options": [
+        "Bonneville cutthroat trout",
+        "Rainbow trout",
+        "Brook trout",
+        "Lahontan cutthroat trout"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "grb-10",
+      "prompt": "The Alpine Lakes Loop Trail visits Teresa Lake and Stella Lake. What formed these lakes?",
+      "options": [
+        "Volcanic calderas",
+        "Limestone sinkholes",
+        "Glacial cirques",
+        "Landslide dams"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "grb-11",
+      "prompt": "Lehman Caves was named for Absalom Lehman, who discovered (or rediscovered) it in the 1880s. What was Lehman's occupation?",
+      "options": [
+        "Mormon pioneer",
+        "Rancher and miner",
+        "Government surveyor",
+        "Pony Express rider"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "grb-12",
+      "prompt": "The Wheeler Peak Scenic Drive ascends to about 10,000 feet. What breathtaking view does it offer?",
+      "options": [
+        "Valley, peaks, bristlecones",
+        "Salt flats of the basin",
+        "Down into Lehman Caves",
+        "Across to Sierra Nevada"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "grb-13",
+      "prompt": "The park offers cave tours year-round. Which tour requires the most physical effort?",
+      "options": [
+        "Grand Palace Tour",
+        "Wild Cave Tour",
+        "Intro to Caving Tour",
+        "Lodge Room Tour"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "grb-14",
+      "prompt": "Pronghorn, mule deer, and mountain lions all live in the park. Which predator is rarely seen but tracks confirm its presence?",
+      "options": [
+        "Black bear",
+        "Gray wolf",
+        "Mountain lion",
+        "Wolverine"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "grb-15",
+      "prompt": "The nearest town to Great Basin NP is Baker, Nevada (pop. ~60). What is the nearest large city?",
+      "options": [
+        "Elko, NV (~180 mi)",
+        "Salt Lake City, UT (~230 mi)",
+        "Las Vegas, NV (~290 mi)",
+        "Reno, NV (~300 mi)"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "grb-16",
+      "prompt": "The bristlecone pines at Great Basin look ancient and weathered. Why do they survive in such harsh conditions?",
+      "options": [
+        "Extremely slow growth",
+        "Geothermal root warmth",
+        "Antifreeze resin",
+        "Shed needles in winter"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "grb-17",
+      "prompt": "Prometheus, a bristlecone pine cut down in 1964, turned out to be how old?",
+      "options": [
+        "About 2,000 years",
+        "About 3,000 years",
+        "Nearly 5,000 years",
+        "About 1,500 years"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "grb-18",
+      "prompt": "The park's annual Astronomy Festival draws visitors from around the world. What can attendees do?",
+      "options": [
+        "Tour the research observatory",
+        "Sleep in reserved dune areas",
+        "Telescopes + ranger sky talks",
+        "Launch weather balloons"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "grb-19",
+      "prompt": "The cave temperature in Lehman Caves stays constant year-round. What is it?",
+      "options": [
+        "About 35°F",
+        "About 40°F",
+        "About 60°F",
+        "About 50°F"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "grb-20",
+      "prompt": "Great Basin NP preserves a transition zone between two major ecosystems. Which two?",
+      "options": [
+        "Great Basin Desert & Rocky Mtn",
+        "Sonoran Desert & CO Plateau",
+        "Mojave Desert & Great Plains",
+        "Columbia Plateau & Sierra Nev."
+      ],
+      "correct_index": 0
+    }
+  ]
+}

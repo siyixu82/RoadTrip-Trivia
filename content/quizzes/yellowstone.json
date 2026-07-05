@@ -183,10 +183,10 @@
       "id": "ys-17",
       "prompt": "The vivid colors of Yellowstone's hot springs are caused mainly by what?",
       "options": [
-        "Dyes",
-        "Nighttime algae",
-        "Thermophilic microorganisms",
-        "Gold minerals"
+        "Algae bloom",
+        "Gold minerals",
+        "Thermophilic microbes",
+        "Dyes"
       ],
       "correct_index": 2
     },
@@ -205,12 +205,12 @@
       "id": "ys-19",
       "prompt": "What type of eruption formed the Yellowstone Caldera ~640,000 years ago?",
       "options": [
-        "Caldera-forming supereruption",
-        "Phreatic",
+        "Hawaiian",
         "Strombolian",
-        "Hawaiian"
+        "Supereruption",
+        "Phreatic"
       ],
-      "correct_index": 0
+      "correct_index": 2
     },
     {
       "id": "ys-20",

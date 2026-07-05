@@ -1,0 +1,227 @@
+{
+  "slug": "joshua-tree",
+  "title": "Joshua Tree Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "jt-1",
+      "prompt": "Joshua Tree National Park sits at the intersection of which two distinct desert ecosystems?",
+      "options": [
+        "Chihuahuan & Mojave",
+        "Great Basin & Chihuahuan",
+        "Mojave & Colorado",
+        "Sonoran & Great Basin"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-2",
+      "prompt": "The Joshua tree is actually not a tree at all. What type of plant is it?",
+      "options": [
+        "Giant saguaro relative",
+        "Drought-adapted conifer",
+        "Yucca (agave family)",
+        "Aloe-family succulent"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-3",
+      "prompt": "Joshua trees depend almost entirely on which animal for pollination?",
+      "options": [
+        "Yucca moths",
+        "Desert bats",
+        "Honey bees",
+        "Hummingbirds"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "jt-4",
+      "prompt": "Why do Joshua trees grow primarily in the higher-elevation Mojave section of the park rather than the lower Colorado Desert?",
+      "options": [
+        "Lower soil is too sandy",
+        "Need frost to bloom",
+        "Need shade from shrubs",
+        "Lower desert is too wet"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "jt-5",
+      "prompt": "Keys View offers a sweeping panorama that can include which two distant landmarks on a clear day?",
+      "options": [
+        "Las Vegas & Colorado River",
+        "Palm Springs & San Andreas",
+        "Salton Sea & San Gorgonio Mtn",
+        "Mt. Whitney & Pacific Ocean"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-6",
+      "prompt": "The Cholla Cactus Garden features dense stands of which cactus, nicknamed 'teddy bear cholla' for its deceptively fuzzy appearance?",
+      "options": [
+        "Barrel cactus",
+        "Jumping cholla",
+        "Prickly pear",
+        "Saguaro"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "jt-7",
+      "prompt": "Why is cholla cactus nicknamed 'jumping cholla' even though it can't actually jump?",
+      "options": [
+        "Legend: it leaps at enemies",
+        "Spines vibrate, seem to move",
+        "Barbed spines latch on contact",
+        "Segments bounce on impact"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-8",
+      "prompt": "Hidden Valley, a popular hiking and picnicking area, is a rock-enclosed basin with what colorful local legend?",
+      "options": [
+        "Sacred Cahuilla site",
+        "1880s gold mining camp",
+        "Cattle rustlers' hideout",
+        "Entertainers' amphitheater"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-9",
+      "prompt": "Joshua Tree is world-renowned for rock climbing on its distinctive formations. What type of rock makes up these formations?",
+      "options": [
+        "Monzogranite",
+        "Sandstone",
+        "Rhyolite",
+        "Limestone"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "jt-10",
+      "prompt": "Barker Dam, built by early ranchers, was constructed to do what?",
+      "options": [
+        "Power a local generator",
+        "Hold back flash floods",
+        "Collect rain for livestock",
+        "Supply a mining camp"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-11",
+      "prompt": "The threatened desert tortoise lives in Joshua Tree. What is an important visitor rule regarding these animals?",
+      "options": [
+        "Offer small amounts of water",
+        "Stay 100 feet away always",
+        "Don't pick up — drains water",
+        "Report sightings to a ranger"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-12",
+      "prompt": "Which oasis in the park's southern section is home to a grove of native California fan palms and a year-round spring?",
+      "options": [
+        "Cottonwood Spring",
+        "Lost Palms Oasis",
+        "Fortynine Palms Oasis",
+        "Mastodon Peak Spring"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "jt-13",
+      "prompt": "Skull Rock, one of the park's most recognizable formations, was shaped primarily by which process?",
+      "options": [
+        "River erosion",
+        "Glacial carving",
+        "Chemical & wind weathering",
+        "Hardened lava flow"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-14",
+      "prompt": "Joshua Tree is one of the best places in California for stargazing. What makes it particularly dark?",
+      "options": [
+        "Mountains block city glow",
+        "High elevation above most haze",
+        "County dark-sky ordinances",
+        "Remote, sparse development"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "jt-15",
+      "prompt": "The park hosts summer monsoon storms (July–September). What danger do these bring for hikers?",
+      "options": [
+        "Toxic fungal spores",
+        "Lightning on rock formations",
+        "Lightning and flash floods",
+        "Flash floods in washes"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-16",
+      "prompt": "Which desert predator, related to the mongoose, hunts rattlesnakes and other prey in Joshua Tree?",
+      "options": [
+        "Coyote",
+        "Roadrunner",
+        "Kit fox",
+        "Badger"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "jt-17",
+      "prompt": "What is a 'wash' as hikers encounter them in Joshua Tree?",
+      "options": [
+        "Salt flat from dried lake",
+        "Rocky scrambling trail",
+        "Depression where water pools",
+        "Dry streambed, flood-prone"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "jt-18",
+      "prompt": "The Keys Ranch, open for guided tours, tells the story of homesteader Bill Keys. What made his desert ranch successful?",
+      "options": [
+        "Gold mining profits",
+        "Mining, ranching & a store",
+        "Growing cacti for botanists",
+        "Selling aquifer water"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "jt-19",
+      "prompt": "Ocotillo, a common desert plant in the Colorado Desert section of the park, is best described as:",
+      "options": [
+        "Ground-hugging succulent",
+        "Tall columnar cactus",
+        "Thorny cane; leafs after rain",
+        "Parasitic root plant"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "jt-20",
+      "prompt": "When visiting Joshua Tree in summer, rangers recommend hiking before 10 a.m. or after 4 p.m. What is the primary reason?",
+      "options": [
+        "Midday can top 110°F",
+        "Wildlife only out then",
+        "Roads close in peak heat",
+        "Better photography light"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

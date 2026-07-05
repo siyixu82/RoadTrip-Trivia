@@ -1,0 +1,227 @@
+{
+  "slug": "voyageurs",
+  "title": "Voyageurs Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "vo-1",
+      "prompt": "Voyageurs National Park in northern Minnesota is defined by water. What fraction of the park is lakes and waterways?",
+      "options": [
+        "About 25%",
+        "About 10%",
+        "About 40%",
+        "About 70%"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vo-2",
+      "prompt": "The park is named for the French-Canadian voyageurs. Who were they?",
+      "options": [
+        "French Great Lakes soldiers",
+        "Birchbark canoe fur traders",
+        "Hudson's Bay mapmakers",
+        "Jesuit missionaries"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "vo-3",
+      "prompt": "Rainy Lake, Kabetogama Lake, and Namakan Lake are the park's major lakes. What connects them?",
+      "options": [
+        "Early 1900s canal system",
+        "Natural waterways and portages",
+        "Locks on the Rainy River",
+        "Underground rivers"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "vo-4",
+      "prompt": "The park has no roads through it. How do visitors explore Voyageurs?",
+      "options": [
+        "Guided raft tours",
+        "Boat, canoe, kayak, houseboat",
+        "Snowmobile or mountain bike",
+        "Floatplane to island airstrip"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "vo-5",
+      "prompt": "The Kabetogama Peninsula is the heart of the park and accessible only by water. What lives there?",
+      "options": [
+        "Last woodland caribou herd",
+        "Transplanted Yellowstone elk",
+        "Wolves, moose, beaver, bears",
+        "Trumpeter swans"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vo-6",
+      "prompt": "The park borders Canada. The International Boundary runs through the lakes. What was this border used for historically?",
+      "options": [
+        "Access to iron ore deposits",
+        "Voyageurs' fur trade highway",
+        "Hudson's Bay southern limit",
+        "Webster-Ashburton Treaty line"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "vo-7",
+      "prompt": "Loons are abundant in the park's lakes. Why do they need large, undisturbed lake areas?",
+      "options": [
+        "Specific fish species only",
+        "Need long runways to take off",
+        "Deep water, fish, quiet shores",
+        "Must migrate in flocks of 50+"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vo-8",
+      "prompt": "The park lies on the Canadian Shield — some of the oldest exposed bedrock on Earth. How old is the rock?",
+      "options": [
+        "About 500 million years",
+        "About 1 billion years",
+        "About 100 million years",
+        "About 2.7 billion years"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "vo-9",
+      "prompt": "Northern lights (aurora borealis) are frequently visible from the park. Why is Voyageurs a great spot?",
+      "options": [
+        "Trees block city light",
+        "Lakes mirror the aurora",
+        "Magnetic anomaly amplifies it",
+        "Dark skies, high latitude"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "vo-10",
+      "prompt": "The Kettle Falls Hotel, accessible only by water, is a historic landmark in the park. What was it used for in the early 1900s?",
+      "options": [
+        "Logging camp dormitory",
+        "US Customs station",
+        "Hotel for loggers and traders",
+        "Railroad inn"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vo-11",
+      "prompt": "Fishing is extremely popular in Voyageurs. What fish species draws anglers to the park?",
+      "options": [
+        "Walleye, pike, smallmouth bass",
+        "Lake trout",
+        "Muskellunge (muskie)",
+        "Largemouth bass and crappie"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "vo-12",
+      "prompt": "Winter at Voyageurs transforms the park completely. What activity becomes possible when the lakes freeze?",
+      "options": [
+        "Snowmobiles and cars on ice",
+        "Ice fishing in heated shelters",
+        "All of the above",
+        "Dog sled tours"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vo-13",
+      "prompt": "The boreal forest surrounding the lakes is taiga — a biome characterized by what?",
+      "options": [
+        "Black spruce, jack pine, fir",
+        "Prairie grasses, scattered oak",
+        "Aspen and birch forest",
+        "Maple, basswood, ironwood"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "vo-14",
+      "prompt": "Bald eagles nest throughout the park. What is their primary food source here?",
+      "options": [
+        "Small mammals",
+        "Waterfowl",
+        "Fish",
+        "Carrion"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vo-15",
+      "prompt": "Black bears are common in the park. What do they eat most in late summer?",
+      "options": [
+        "Acorns from bur oaks",
+        "Spawning walleye",
+        "Moose calves",
+        "Wild berries and cherries"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "vo-16",
+      "prompt": "The park is a designated International Dark Sky Park. What can visitors see on a clear, moonless night?",
+      "options": [
+        "Meteor showers 300 nights/year",
+        "Light pillars from Canada",
+        "Milky Way and auroras",
+        "Bioluminescent algae blooms"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vo-17",
+      "prompt": "The park receives about 60 inches of snowfall per year. When does lake ice typically form?",
+      "options": [
+        "January",
+        "Lakes rarely freeze fully",
+        "Late November to December",
+        "Late September"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vo-18",
+      "prompt": "Houseboating is a unique way to experience Voyageurs. What is different about houseboat camping here versus a typical campground?",
+      "options": [
+        "Restricted to dock areas",
+        "Stationary on fixed moorings",
+        "Groups of 20+ only",
+        "Sleep, cook, explore on water"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "vo-19",
+      "prompt": "Wolves roam the Kabetogama Peninsula year-round. How do they cross the frozen lakes in winter?",
+      "options": [
+        "Walk across frozen lake ice",
+        "Stay on peninsula year-round",
+        "Swim the near-freezing water",
+        "Use submerged rock bars"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "vo-20",
+      "prompt": "The Ash River Visitor Center provides orientation for the south end of the park. What is the most important thing to do before boating in the park?",
+      "options": [
+        "Mandatory safety course",
+        "Get a backcountry water permit",
+        "Check charts and weather",
+        "Register boat with MN DNR"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

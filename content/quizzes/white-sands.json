@@ -1,0 +1,227 @@
+{
+  "slug": "white-sands",
+  "title": "White Sands Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "ws-1",
+      "prompt": "White Sands National Park in New Mexico protects the world's largest gypsum dunefield. What makes gypsum sand unusual?",
+      "options": [
+        "Stays cool in intense sun",
+        "Dissolves in rain over time",
+        "Turns red when wet",
+        "Glows green at night"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ws-2",
+      "prompt": "Where did the gypsum sand at White Sands originally come from?",
+      "options": [
+        "Chihuahuan Desert blown silt",
+        "San Andres Mountain runoff",
+        "Ancient Lake Otero bed",
+        "Jemez Mountains volcanic ash"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ws-3",
+      "prompt": "Lake Lucero is a seasonal dry lake on the western edge of the park. What role does it play in forming the dunes?",
+      "options": [
+        "Evaporates, deposits gypsum",
+        "Springs deposit gypsum",
+        "Dunefield-alkali flat boundary",
+        "Wind-blown dust source"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ws-4",
+      "prompt": "Several animals in White Sands have evolved a distinctive coloration. What is it, and why?",
+      "options": [
+        "Black-and-white — heat",
+        "Bright red — iron-rich soil",
+        "Transparent — gypsum diet",
+        "Pale white — sand camouflage"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ws-5",
+      "prompt": "The Dune Life Nature Trail is one of several trails in the park. What do visitors learn about yucca plants there?",
+      "options": [
+        "Night bloomer, bat-pollinated",
+        "Photosynthesizes via gypsum",
+        "Roots reach 30 ft deep",
+        "Grows up as sand buries it"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ws-6",
+      "prompt": "White Sands is surrounded by White Sands Missile Range, an active military installation. How does this affect visitors?",
+      "options": [
+        "Photography banned in the park",
+        "Park closes for missile tests",
+        "Military ID required to enter",
+        "Unannounced missile closures"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ws-7",
+      "prompt": "The park is located in the Tularosa Basin. What type of geological feature is this basin?",
+      "options": [
+        "Graben (fault-dropped valley)",
+        "Rio Grande river canyon",
+        "Meteor impact crater",
+        "Volcanic caldera"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ws-8",
+      "prompt": "White Sands became a National Park in 2019. What was it before that?",
+      "options": [
+        "A State Park",
+        "A National Forest",
+        "Bureau of Land Management land",
+        "A National Monument"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ws-9",
+      "prompt": "The bleached earless lizard found at White Sands is nearly white. What happens to individuals with darker coloration?",
+      "options": [
+        "Bleach white over a lifetime",
+        "Spotted by predators, killed",
+        "Migrate to darker desert areas",
+        "Survive better in wet winter"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ws-10",
+      "prompt": "Dune sledding is one of the most popular activities at White Sands. What works best for sledding?",
+      "options": [
+        "Cardboard",
+        "Metal snow sleds",
+        "Waxed plastic sleds or saucers",
+        "Inflatable tubes"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ws-11",
+      "prompt": "The Interdune Boardwalk Trail is wheelchair accessible. What unique ecosystem does it highlight?",
+      "options": [
+        "Post-monsoon bird ponds",
+        "Lichen on gypsum rock outcrops",
+        "Underground gypsum crystals",
+        "Moist interdune plant flats"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ws-12",
+      "prompt": "White Sands hosts ranger-led full moon walks. Why is the full moon especially magical here?",
+      "options": [
+        "Coyotes and owls only then",
+        "Bioluminescent insects emerge",
+        "Dunes shift by lunar gravity",
+        "Moonlight on gypsum glows"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ws-13",
+      "prompt": "The Alkali Flat Trail, the longest in the park at 5 miles, crosses what terrain?",
+      "options": [
+        "Historic wagon road route",
+        "Tops of the highest dunes",
+        "Open gypsum flats, no shade",
+        "Lake Lucero shoreline loop"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ws-14",
+      "prompt": "The Apache pocket mouse found in the park is also pale white. What does it eat that is unusual?",
+      "options": [
+        "Interdune plant seeds",
+        "Gypsum crystals for calcium",
+        "Insects and larvae in sand",
+        "Yucca resin"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ws-15",
+      "prompt": "Trinity Site, where the first atomic bomb was tested in 1945, is located on White Sands Missile Range nearby. How close is it to the national park?",
+      "options": [
+        "~60 mi north, open twice/year",
+        "~100 miles north",
+        "Adjacent to the north boundary",
+        "~200 miles, near Albuquerque"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ws-16",
+      "prompt": "The San Andres Mountains border the park to the west. What rare animal is being recovered there?",
+      "options": [
+        "Ocelot",
+        "Thick-billed parrot",
+        "Mexican gray wolf",
+        "Desert bighorn sheep"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ws-17",
+      "prompt": "Summer afternoon thunderstorms are common at White Sands. What weather danger do they bring to hikers on the open dunes?",
+      "options": [
+        "Sand storms that bury visitors",
+        "Lightning on exposed dunes",
+        "Injury-causing hail",
+        "Flash floods in interdunes"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ws-18",
+      "prompt": "Dunes at White Sands move slowly northwest. What happens to plants caught in a moving dune?",
+      "options": [
+        "Exposed on back side, may live",
+        "Buried and killed by sand",
+        "Roots anchor the sand in place",
+        "Go dormant until dune passes"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ws-19",
+      "prompt": "What is the best time of day to visit White Sands to avoid the intense desert heat?",
+      "options": [
+        "Afternoon only",
+        "Night visits only",
+        "Early morning or evening",
+        "Midday"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ws-20",
+      "prompt": "The park's visitor center explains how the dune field migrates. At what rate do dunes move per year?",
+      "options": [
+        "~300 feet per year",
+        "~5 feet per year",
+        "~30 feet per year",
+        "~1 inch per year"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

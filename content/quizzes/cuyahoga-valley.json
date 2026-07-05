@@ -1,0 +1,227 @@
+{
+  "slug": "cuyahoga-valley",
+  "title": "Cuyahoga Valley Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "cv-1",
+      "prompt": "Cuyahoga Valley National Park lies between which two Ohio cities?",
+      "options": [
+        "Toledo and Youngstown",
+        "Cleveland and Akron",
+        "Canton and Sandusky",
+        "Columbus and Dayton"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cv-2",
+      "prompt": "What does the name 'Cuyahoga' mean in the Haudenosaunee (Iroquois) language?",
+      "options": [
+        "Clear Water",
+        "Winding Path",
+        "River of Life",
+        "Crooked River"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cv-3",
+      "prompt": "Brandywine Falls is Cuyahoga Valley's most popular waterfall. What makes it impressive for Ohio?",
+      "options": [
+        "Only year-round Ohio waterfall",
+        "Largest volume east of MS",
+        "Flows underground via arch",
+        "67 feet, one of Ohio's tallest"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cv-4",
+      "prompt": "The Ohio & Erie Canal once ran through the valley. What is the best way to experience its history today?",
+      "options": [
+        "Canal locks museum",
+        "Walk or bike the Towpath Trail",
+        "Kayak the canal section",
+        "Replica canal boat ride"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cv-5",
+      "prompt": "The Cuyahoga Valley Scenic Railroad runs through the park. What unique option does it offer hikers?",
+      "options": [
+        "Ride one way, hike back",
+        "Fall foliage dinner train",
+        "Winter-only steam train",
+        "One-way with shuttle bus back"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cv-6",
+      "prompt": "Beaver Marsh, accessible from the Towpath Trail, is a wildlife viewing hotspot. What created this marsh?",
+      "options": [
+        "NPS-built dams",
+        "Permanent spring flood pools",
+        "Canal lock malfunction",
+        "Beavers re-flooded a junkyard"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cv-7",
+      "prompt": "Great blue herons nest in a large rookery in the park. What does a great blue heron rookery look like?",
+      "options": [
+        "Ground nests in meadows",
+        "Platform nests on lodges",
+        "Nests in cliff faces",
+        "Stick nests high in trees"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cv-8",
+      "prompt": "The Cuyahoga River famously caught fire in 1969. Why was this historically significant for conservation?",
+      "options": [
+        "Revealed riverbed oil deposits",
+        "First pollution river fire",
+        "Closed all riverside factories",
+        "Galvanized the Clean Water Act"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cv-9",
+      "prompt": "The Virginia Kendall area features unusual rock formations called the Ledges. What type of rock are they?",
+      "options": [
+        "Limestone carved by water",
+        "Glacial erratics",
+        "Ancient basalt columns",
+        "Sharon Conglomerate"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cv-10",
+      "prompt": "Ice Box Cave near the Ledges stays cold enough to preserve ice even in summer. Why?",
+      "options": [
+        "Reflective quartz rejects heat",
+        "High-altitude spring stream",
+        "Cold winter air trapped inside",
+        "Limestone releases cool air"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cv-11",
+      "prompt": "Hale Farm & Village, inside the park, offers what type of experience?",
+      "options": [
+        "Visitor harvest organic farm",
+        "1850s living history museum",
+        "Pioneer canal-era museum",
+        "Reconstructed Erie village"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cv-12",
+      "prompt": "Bald eagles have returned to nest along the Cuyahoga River after being absent for decades. What brought them back?",
+      "options": [
+        "Relocation from Alaska",
+        "DDT ban + cleaner water",
+        "NPS nesting platforms",
+        "North-end eagle sanctuary"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cv-13",
+      "prompt": "What geological force shaped Cuyahoga Valley, carving the river valley and leaving behind the bedrock visible in the ledges and waterfalls?",
+      "options": [
+        "Colorado River cutting uplift",
+        "Tectonic faulting",
+        "Pre-Cuyahoga river system",
+        "Pleistocene glaciers"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cv-14",
+      "prompt": "Blue Hen Falls is a popular short hike in the park. What surrounds the trail?",
+      "options": [
+        "Old-growth beech-maple forest",
+        "Restored meadows",
+        "Hemlock ravines",
+        "Restored tallgrass prairie"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cv-15",
+      "prompt": "Eastern hemlock trees in Cuyahoga Valley face a serious threat. What is it?",
+      "options": [
+        "Deer browsing seedlings",
+        "Hemlock woolly adelgid",
+        "Dutch elm disease",
+        "Fungal root rot"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cv-16",
+      "prompt": "Cuyahoga Valley has an active farm program on park land. What does 'Countryside Initiative' farming support?",
+      "options": [
+        "Large-scale industrial farms",
+        "Community garden plots",
+        "University research farms",
+        "Small sustainable leased farms"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cv-17",
+      "prompt": "The park is one of the most visited in the US despite being relatively small and urban. Why do millions of visitors come each year?",
+      "options": [
+        "Near 4 million people",
+        "Top heritage railroad",
+        "Midwest's largest music fest",
+        "World-class rock climbing"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cv-18",
+      "prompt": "Covered bridges still span streams within the Cuyahoga Valley. Why were covered bridges built with a roof and walls?",
+      "options": [
+        "Shelter livestock in weather",
+        "Shelter timbers, last 80+ yrs",
+        "Create wind tunnels for horses",
+        "Prevent bridge deck flooding"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cv-19",
+      "prompt": "What migratory bird spectacle makes Cuyahoga Valley a destination for birdwatchers in May?",
+      "options": [
+        "Raptor migration, Lake Erie",
+        "Shorebirds at Beaver Marsh",
+        "Canada goose and tundra swan",
+        "Dozens of warbler species"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cv-20",
+      "prompt": "Oak Hill area in the park connects to the Buckeye Trail. What is the Buckeye Trail?",
+      "options": [
+        "Cleveland Metroparks connector",
+        "Buckeye tree education trail",
+        "Main mountain bike trail",
+        "1,444-mi loop around Ohio"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

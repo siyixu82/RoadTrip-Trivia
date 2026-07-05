@@ -1,0 +1,227 @@
+{
+  "slug": "death-valley",
+  "title": "Death Valley Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "dv-1",
+      "prompt": "Badwater Basin in Death Valley holds what distinction?",
+      "options": [
+        "Lowest point in North America",
+        "Hottest lake in North America",
+        "Driest spot on Earth",
+        "Largest salt flat in the world"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dv-2",
+      "prompt": "What natural phenomenon can transform Death Valley's desert floor into a carpet of wildflowers?",
+      "options": [
+        "Water table rise",
+        "Wet winter + warm spring",
+        "Summer thunderstorm season",
+        "Mountain snowmelt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dv-3",
+      "prompt": "The colorful rock layers of Artist's Palette get their vivid reds, greens, and purples from what?",
+      "options": [
+        "Iron, mica, and chlorite",
+        "Lava flows of different ages",
+        "Compressed pollen layers",
+        "Flash flood staining"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dv-4",
+      "prompt": "What eerie phenomenon occurs at Racetrack Playa, where rocks leave trails across the dry lakebed?",
+      "options": [
+        "Underground springs push rocks",
+        "Nocturnal animals carry rocks",
+        "Vibrations shake clay surface",
+        "Ice sheets + wind move rocks"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dv-5",
+      "prompt": "What is Ubehebe Crater, one of Death Valley's dramatic features?",
+      "options": [
+        "Collapsed salt dome",
+        "Underground river sinkhole",
+        "Meteor impact crater",
+        "Maar volcano"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dv-6",
+      "prompt": "Devil's Golf Course gets its name from the jagged surface of what material?",
+      "options": [
+        "Salt pinnacles",
+        "Eroded volcanic basalt",
+        "Crystallized borax",
+        "Sharp obsidian fragments"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dv-7",
+      "prompt": "What historic industry shaped Death Valley's economy in the late 1800s, leaving behind ruins still visible in the park?",
+      "options": [
+        "Salt harvesting",
+        "Copper smelting",
+        "Cattle ranching",
+        "Gold, silver, and borax mining"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dv-8",
+      "prompt": "The iconic '20-mule teams' of Death Valley were used to haul which mineral out of the desert?",
+      "options": [
+        "Gold ore",
+        "Borax",
+        "Sulfur",
+        "Rock salt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dv-9",
+      "prompt": "Telescope Peak is the highest point in Death Valley National Park. Roughly how tall is it?",
+      "options": [
+        "8,000 feet",
+        "5,000 feet",
+        "11,049 feet",
+        "14,000 feet"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dv-10",
+      "prompt": "Zabriskie Point is famous for its surreal landscape of eroded golden badlands. What type of rock creates these formations?",
+      "options": [
+        "Compressed volcanic ash",
+        "Lakebed mudstone and siltstone",
+        "Wind-eroded sandstone",
+        "Salt and gypsum"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dv-11",
+      "prompt": "Death Valley is one of the best places in the US for stargazing. What designation recognizes its exceptionally dark skies?",
+      "options": [
+        "UNESCO Dark Heritage Site",
+        "NASA Night Sky Reserve",
+        "International Dark Sky Park",
+        "Federal Astronomy Corridor"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dv-12",
+      "prompt": "The endangered Death Valley pupfish survives in a few isolated springs. What makes its existence remarkable?",
+      "options": [
+        "Survives below-freezing temps",
+        "Migrates between springs",
+        "Near-saltwater, extreme heat",
+        "Breathes air, walks on land"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dv-13",
+      "prompt": "Mesquite Flat Sand Dunes, the park's most accessible dunes, are best visited at what time of day?",
+      "options": [
+        "Midnight under starlight",
+        "Noon in summer",
+        "Midday when shadows vanish",
+        "Sunrise or sunset"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dv-14",
+      "prompt": "What desert animal, adapted to extreme heat, can be seen in Death Valley and is known for sprinting on its hind legs?",
+      "options": [
+        "Greater roadrunner",
+        "Sidewinder rattlesnake",
+        "Kangaroo rat",
+        "Gila monster"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dv-15",
+      "prompt": "What safety precaution do rangers strongly recommend when hiking in Death Valley during summer?",
+      "options": [
+        "Stick to valley floor trails",
+        "Hike only after 10 a.m.",
+        "1 gallon of water per hour",
+        "Wear dark clothing"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dv-16",
+      "prompt": "Which spring-fed oasis in the park is home to native California fan palms and a small population of rare pupfish?",
+      "options": [
+        "Saline Valley Warm Springs",
+        "Salt Creek",
+        "Scotty's Castle Spring",
+        "Darwin Falls"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dv-17",
+      "prompt": "Scotty's Castle, a lavish 1920s mansion in the park, was built as a desert retreat for which man?",
+      "options": [
+        "John D. Rockefeller Jr.",
+        "Brigham Young",
+        "Death Valley Scotty",
+        "William Randolph Hearst"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dv-18",
+      "prompt": "The Panamint Range forms the western boundary of Death Valley. Bighorn sheep navigate its rocky cliffs. What do these sheep eat in such a harsh environment?",
+      "options": [
+        "Seasonal water holes only",
+        "Cacti, grasses, desert shrubs",
+        "Daily valley floor water trips",
+        "Salt deposits"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dv-19",
+      "prompt": "Badwater Road offers access to most of the park's southern attractions. What does the name 'Badwater' refer to?",
+      "options": [
+        "Salty, undrinkable spring",
+        "Poisonous underground springs",
+        "Toxic flash flood minerals",
+        "Mirage that lured travelers"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dv-20",
+      "prompt": "What is the main reason Death Valley experiences such extreme heat?",
+      "options": [
+        "No plants, bare evaporation",
+        "Volcanic hotspot below",
+        "Winds compress descending air",
+        "Low elevation + mountain walls"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

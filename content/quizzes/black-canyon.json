@@ -1,0 +1,227 @@
+{
+  "slug": "black-canyon",
+  "title": "Black Canyon of the Gunnison Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "bc-1",
+      "prompt": "Black Canyon of the Gunnison National Park is in Colorado. What gives the canyon its name?",
+      "options": [
+        "Only 33 min. of sunlight daily",
+        "Black metamorphic schist",
+        "River black with mine sediment",
+        "Dark basalt lava rock"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bc-2",
+      "prompt": "The Gunnison River carved this canyon through some of the hardest rock on Earth. What type of rock is exposed in the deepest walls?",
+      "options": [
+        "Granite and quartzite",
+        "Cenozoic black basalt",
+        "Heat-compressed black shale",
+        "Precambrian schist and gneiss"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bc-3",
+      "prompt": "The canyon is 2,722 feet deep at its deepest point. What makes it feel even more dramatic than that number suggests?",
+      "options": [
+        "Heat shimmer from dark rock",
+        "Perfectly vertical walls",
+        "River hidden — only audible",
+        "Less than 40 ft wide at river"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bc-4",
+      "prompt": "The Painted Wall in the park is Colorado's tallest cliff. How tall is it?",
+      "options": [
+        "About 1,500 feet",
+        "About 1,000 feet",
+        "About 3,000 feet",
+        "About 2,250 feet"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bc-5",
+      "prompt": "Pink pegmatite dikes cross the Painted Wall in streaks. How did they form?",
+      "options": [
+        "Compressed ancient reef bands",
+        "Iron oxide mineral seepage",
+        "Molten rock in cracked schist",
+        "Hot spring quartz veins"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bc-6",
+      "prompt": "The South Rim Drive has 12 overlooks. What is the most important safety rule at all of them?",
+      "options": [
+        "Stay behind the rim edge",
+        "Dogs on leash at all times",
+        "No photography from vehicles",
+        "Never throw rocks"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bc-7",
+      "prompt": "Inner canyon trails (called 'routes') descend to the Gunnison River. What makes them unusual for a national park?",
+      "options": [
+        "Require a park-hired guide",
+        "Require tribal permit and fee",
+        "Accessible only by boat",
+        "Unmaintained; fixed chains"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bc-8",
+      "prompt": "The Gunnison River below the canyon is considered one of the best wild trout fisheries in the US. What type of fishing is it?",
+      "options": [
+        "Catch-and-release fly fishing",
+        "Spin fishing by boat",
+        "Fly fishing for cutthroat only",
+        "Ice fishing in winter"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bc-9",
+      "prompt": "Peregrine falcons nest on the canyon walls. What do they prey on inside the canyon?",
+      "options": [
+        "Trout from the river",
+        "Bats from cave crevices",
+        "Prairie dogs on the mesa",
+        "Swifts and swallows"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bc-10",
+      "prompt": "The North Rim is much less visited than the South Rim. Why?",
+      "options": [
+        "Requires a separate permit",
+        "Closed June–October",
+        "No visitor center; dirt road",
+        "Less dramatic overlooks"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bc-11",
+      "prompt": "The canyon receives little precipitation. What is the rim environment like?",
+      "options": [
+        "Lush mountain forest",
+        "Sagebrush, pinyon, juniper",
+        "Open grassland",
+        "Subalpine meadows"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bc-12",
+      "prompt": "Mule deer and Steller's jays are common rim residents. What large predator occasionally roams the canyon area?",
+      "options": [
+        "Mountain lion",
+        "Grizzly bear",
+        "Canadian lynx",
+        "Black-footed ferret"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bc-13",
+      "prompt": "The Curecanti National Recreation Area is upstream. What does it provide that the national park does not?",
+      "options": [
+        "Visitor center and paved road",
+        "Boating on three reservoirs",
+        "Inner canyon river access",
+        "The only campground nearby"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bc-14",
+      "prompt": "The canyon is a designated dark sky park. What can you see from the rim on a clear night?",
+      "options": [
+        "Milky Way and naked-eye stars",
+        "Meteor showers channeled down",
+        "Milky Way reflected in river",
+        "Montrose city lights below"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bc-15",
+      "prompt": "Rock climbing is possible in the inner canyon. What makes it so demanding?",
+      "options": [
+        "Fragile lichen on all holds",
+        "120°F heat; night-only climbs",
+        "Hard rock, remote, long routes",
+        "Fully overhanging walls"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bc-16",
+      "prompt": "The Tomichi Point overlook looks into what is called the 'Narrows.' What is this section?",
+      "options": [
+        "Valley that narrows again",
+        "40 ft wide, 1,800 ft walls",
+        "Sharpest river bend — 270°",
+        "Slot canyon seen by boat only"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bc-17",
+      "prompt": "Visitor Center is at the South Rim. What elevation is it at?",
+      "options": [
+        "About 8,200 feet",
+        "About 10,000 feet",
+        "About 6,500 feet",
+        "About 5,200 feet"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bc-18",
+      "prompt": "The park is near Montrose, Colorado. What is the drive like from the entrance to the first overlooks?",
+      "options": [
+        "30-mile steep switchback road",
+        "Tunnel through canyon wall",
+        "Short 6-mile South Rim Road",
+        "2-hour unpaved forest drive"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bc-19",
+      "prompt": "Visitors often compare Black Canyon to the Grand Canyon. What makes Black Canyon feel more intense despite being smaller?",
+      "options": [
+        "Entirely black walls",
+        "No railings at any overlook",
+        "Louder river audible from rim",
+        "Extreme steepness and width"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bc-20",
+      "prompt": "The rim has a campground where you can sleep at the canyon edge. What is the most memorable thing about camping there?",
+      "options": [
+        "Complete darkness in canyon",
+        "Warm temps even in winter",
+        "Bears visiting nightly",
+        "River roar echoing up at night"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

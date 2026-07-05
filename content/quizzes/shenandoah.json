@@ -1,0 +1,227 @@
+{
+  "slug": "shenandoah",
+  "title": "Shenandoah Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "sh-1",
+      "prompt": "Skyline Drive runs the entire length of Shenandoah National Park. How long is it?",
+      "options": [
+        "75 miles",
+        "130 miles",
+        "105 miles",
+        "55 miles"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sh-2",
+      "prompt": "The Appalachian Trail passes through Shenandoah for about 101 miles. What are the huts (shelters) along this stretch called?",
+      "options": [
+        "Wayside shelters",
+        "PATC huts/shelters",
+        "Lean-tos",
+        "Backcountry cabins"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sh-3",
+      "prompt": "Old Rag Mountain is the most popular hike in the park and Virginia. What makes it distinctive?",
+      "options": [
+        "Glacial lake at the top",
+        "4,000-ft climb to highest peak",
+        "Boulder scramble near summit",
+        "Technical ropes climbing"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sh-4",
+      "prompt": "Shenandoah is famous for fall foliage. When does it typically peak in the park?",
+      "options": [
+        "Mid-September",
+        "Late October–early November",
+        "Early November",
+        "Mid-October"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sh-5",
+      "prompt": "White-tailed deer are extremely abundant in Shenandoah — sometimes called a 'deer park.' Why has their population grown so large?",
+      "options": [
+        "NPS feeds deer at stations",
+        "Failed predator reintroduction",
+        "No predators; ideal habitat",
+        "Deer migrate from farmland"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sh-6",
+      "prompt": "The park's forests are recovering from a period of farming and logging. What were many of the park's current forest areas before the park was established in 1935?",
+      "options": [
+        "Old-growth forest",
+        "WWI military grounds",
+        "Farmland and logged land",
+        "Cattle ranch pastureland"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sh-7",
+      "prompt": "Dark Hollow Falls is one of the park's most popular short hikes. What makes it a good introduction to Shenandoah?",
+      "options": [
+        "Paved path to 70-ft falls",
+        "1.4-mi round trip to falls",
+        "Self-guided geology trail",
+        "0.3 miles from Skyline Drive"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sh-8",
+      "prompt": "Hawksbill Mountain is the highest point in Shenandoah National Park. What is its elevation?",
+      "options": [
+        "3,200 feet",
+        "4,051 feet",
+        "3,600 feet",
+        "4,800 feet"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sh-9",
+      "prompt": "The peregrine falcon, once eliminated from Shenandoah by DDT pesticide, has been successfully reintroduced. Where do they nest in the park?",
+      "options": [
+        "Stone bridge crevices",
+        "Rocky cliff ledges on peaks",
+        "Old-growth oak cavities",
+        "NPS nest boxes on towers"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sh-10",
+      "prompt": "The Shenandoah Valley (outside the park) stretches west of the Blue Ridge. What lies to the east of the park's ridge?",
+      "options": [
+        "The Ohio River valley",
+        "DC suburbs and Potomac River",
+        "Piedmont and Chesapeake",
+        "The Allegheny Mountains"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sh-11",
+      "prompt": "The park's forests suffered a devastating blow in the early 20th century when which tree species was largely wiped out?",
+      "options": [
+        "Eastern hemlock",
+        "Flowering dogwood",
+        "White ash",
+        "American chestnut"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sh-12",
+      "prompt": "Eastern box turtles are frequently seen crossing Skyline Drive. What important behavior makes it critical for drivers to stop rather than swerve?",
+      "options": [
+        "Federally endangered species",
+        "Homing instinct; moving kills",
+        "Swerving pushes it to forest",
+        "Swerving causes more crashes"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sh-13",
+      "prompt": "Skyline Drive has a posted speed limit of 35 mph throughout the park. The main reason for this low speed limit is:",
+      "options": [
+        "1930s historic designation",
+        "Wildlife and visitor safety",
+        "Sharp hairpin turns",
+        "Reduce fuel and emissions"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sh-14",
+      "prompt": "The Civilian Conservation Corps (CCC) built much of Shenandoah's infrastructure during the 1930s. What did these young workers construct?",
+      "options": [
+        "Fire towers statewide",
+        "Thornton Gap to Swift Run Gap",
+        "Drive, lodges, trails, cabins",
+        "The AT route through the park"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sh-15",
+      "prompt": "Visitors often spot black bears in Shenandoah. What should you do if a bear approaches you on the trail?",
+      "options": [
+        "Run downhill",
+        "Lie flat and play dead",
+        "Climb a tree",
+        "Stand firm; look big; retreat"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sh-16",
+      "prompt": "Spring in Shenandoah brings spectacular wildflower blooms. Which wildflower, with three white petals and a dark center, blooms in profusion along shady trails in April?",
+      "options": [
+        "Virginia bluebells",
+        "Large-flowered trillium",
+        "Jack-in-the-pulpit",
+        "Bloodroot"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sh-17",
+      "prompt": "The park is sometimes described as having 'a haze on the mountains.' What causes this historic haze?",
+      "options": [
+        "Tree VOCs + air pollution",
+        "Morning fog on the ridges",
+        "Distant forest fires",
+        "Great Plains dust"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sh-18",
+      "prompt": "Bearfence Mountain is known as the only off-trail scramble on the Appalachian Trail in Shenandoah. What reward does it offer?",
+      "options": [
+        "View of last fire lookout",
+        "Best sunset over the valley",
+        "Above the thermal inversion",
+        "360-degree east-west panorama"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sh-19",
+      "prompt": "The park stretches across which mountain range in Virginia?",
+      "options": [
+        "The Appalachian Plateau",
+        "The Cumberland Plateau",
+        "The Blue Ridge Mountains",
+        "The Allegheny Mountains"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sh-20",
+      "prompt": "Eastern timber rattlesnakes live in Shenandoah. What is the best approach if you encounter one on a trail?",
+      "options": [
+        "Give wide berth; let it move",
+        "Notify a ranger station",
+        "Step quickly past it",
+        "Throw rocks to drive it off"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

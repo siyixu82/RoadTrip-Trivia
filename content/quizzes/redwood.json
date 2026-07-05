@@ -1,0 +1,227 @@
+{
+  "slug": "redwood",
+  "title": "Redwood Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "rw-1",
+      "prompt": "Coast redwoods are the tallest trees on Earth. What is the tallest known living tree, and where is it?",
+      "options": [
+        "Del Norte Titan — 350 ft",
+        "General Sherman — 275 ft",
+        "Stratosphere Giant — 370 ft",
+        "Hyperion — 380.3 ft"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "rw-2",
+      "prompt": "Redwood National and State Parks is a partnership between the NPS and which state agencies?",
+      "options": [
+        "Coastal and Lands Commissions",
+        "CA Dept. of Forestry",
+        "Three state park districts",
+        "No state involvement"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rw-3",
+      "prompt": "Coast redwoods depend on a unique climate condition to thrive. What is it?",
+      "options": [
+        "Hard winter frosts",
+        "Annual flooding",
+        "Summer Pacific fog",
+        "Frequent wildfires"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rw-4",
+      "prompt": "Why is the redwood's ability to resprout from the base after fire or cutting remarkable?",
+      "options": [
+        "Fairy ring from root crown",
+        "Trees this size can't regrow",
+        "Resprouts grow 10× faster",
+        "Burned soil boosts regrowth"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "rw-5",
+      "prompt": "Roosevelt elk (the largest elk subspecies) live in Prairie Creek Redwoods. Where are they most reliably seen?",
+      "options": [
+        "Deep in old-growth forest",
+        "Rocky coastal headlands",
+        "Elk Prairie Campground meadows",
+        "Along the Smith River"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rw-6",
+      "prompt": "Fern Canyon in Prairie Creek Redwoods is a slot canyon with walls covered in what?",
+      "options": [
+        "Mosses and liverworts",
+        "Old-growth redwood roots",
+        "Five-finger ferns",
+        "Sandstone curtain folds"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rw-7",
+      "prompt": "Jedediah Smith Redwoods is named for an explorer. What is Jedediah Smith known for?",
+      "options": [
+        "Measured tallest redwoods",
+        "Mapped redwood range",
+        "First American overland to CA",
+        "Spanish missionary-explorer"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rw-8",
+      "prompt": "The old-growth redwood forest floor feels dark and cathedral-like. Why is it so dimly lit?",
+      "options": [
+        "Dense tanoak understory",
+        "300-ft canopy blocks sunlight",
+        "Bark absorbs sunlight",
+        "Coastal fog blocks the sun"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rw-9",
+      "prompt": "Marbled murrelets are seabirds found nesting far from the ocean in old-growth redwoods. Why?",
+      "options": [
+        "Resin attracts their fish",
+        "Nest on large flat branches",
+        "Canopy shelter from storms",
+        "Trunks as navigation landmarks"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rw-10",
+      "prompt": "About 96% of original coast redwood forests were logged before protections. What drove this?",
+      "options": [
+        "Gold beneath redwood roots",
+        "Rot-proof, insect-proof timber",
+        "Ideal telegraph poles",
+        "Key pharmaceutical ingredient"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rw-11",
+      "prompt": "Lady Bird Johnson Grove was dedicated by the First Lady. Why is she significant in redwood history?",
+      "options": [
+        "Highway Beautification Act",
+        "Donated family land",
+        "Authored the park legislation",
+        "Lobbied Congress for the park"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "rw-12",
+      "prompt": "The Tall Trees Grove contains some of the world's tallest trees. How do visitors access it?",
+      "options": [
+        "Kayak up Redwood Creek",
+        "Free permit, 8-mi hike",
+        "Easy 2-mile paved trail",
+        "Ranger-guided tours only"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rw-13",
+      "prompt": "Coast redwoods can live 2,000+ years. What protects them from wildfire?",
+      "options": [
+        "Canopy above ground fires",
+        "Fire-retardant chemical",
+        "Moisture-laden wood",
+        "Thick, resin-free fibrous bark"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "rw-14",
+      "prompt": "The Newton B. Drury Scenic Parkway passes through 10 miles of old-growth forest. What makes it special?",
+      "options": [
+        "Pull-outs for 15 tallest trees",
+        "Multiple groves and wildlife",
+        "No motorized vehicles allowed",
+        "Canopy overhead full length"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rw-15",
+      "prompt": "Banana slugs are iconic on the redwood forest floor. What important role do they play?",
+      "options": [
+        "Predators of bark beetles",
+        "Prey for forest invertebrates",
+        "Slime shields roots from fungi",
+        "Decomposers, spore spreaders"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "rw-16",
+      "prompt": "What restoration project has the NPS undertaken along Redwood Creek?",
+      "options": [
+        "Invasive removal, floodplain",
+        "Reintroduce coho salmon",
+        "Build steelhead fish ladders",
+        "Replant logged hillsides"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "rw-17",
+      "prompt": "What movie franchise used Prairie Creek Redwoods as a filming location for an alien moon forest?",
+      "options": [
+        "Lord of the Rings",
+        "Avatar",
+        "Star Wars: Return of the Jedi",
+        "Jurassic Park"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "rw-18",
+      "prompt": "What color are the rhododendron flowers that bloom in the redwood understory each spring?",
+      "options": [
+        "Pale yellow",
+        "Pure white",
+        "Deep purple",
+        "Brilliant pink to magenta"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "rw-19",
+      "prompt": "The park protects Pacific coastline. What marine animals can visitors commonly see from shore?",
+      "options": [
+        "Sea lions near visitor center",
+        "Gray whales, seals, sea otters",
+        "Humpback whales bubble-netting",
+        "Great whites hunting seals"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "rw-20",
+      "prompt": "Old-growth redwood forests accumulate tremendous amounts of carbon. Why does this matter?",
+      "options": [
+        "Fog cools coastal California",
+        "Trees reflect sunlight",
+        "Roots lock CO₂ underground",
+        "Most carbon per acre on Earth"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

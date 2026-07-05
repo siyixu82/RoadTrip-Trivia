@@ -1,0 +1,227 @@
+{
+  "slug": "new-river-gorge",
+  "title": "New River Gorge Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "nr-1",
+      "prompt": "New River Gorge became a national park in 2020. It is in which state?",
+      "options": [
+        "Virginia",
+        "North Carolina",
+        "West Virginia",
+        "Kentucky"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nr-2",
+      "prompt": "The New River is one of the oldest rivers in North America. Why is this remarkable?",
+      "options": [
+        "Formed from glacial melt",
+        "Pre-dates the Appalachians",
+        "It flows northward",
+        "Never dammed in 320 miles"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "nr-3",
+      "prompt": "The New River Gorge Bridge is an iconic part of the park. What is notable about it?",
+      "options": [
+        "Longest steel arch bridge",
+        "Highest bridge in the US",
+        "Longest suspension bridge",
+        "Pedestrian walkway under deck"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "nr-4",
+      "prompt": "Bridge Day is a famous annual event at the gorge. What happens during it?",
+      "options": [
+        "Car show on the bridge deck",
+        "Structural maintenance closure",
+        "Rim-to-rim bridge race",
+        "Largest BASE jumping event"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "nr-5",
+      "prompt": "Whitewater rafting on the New River is world-renowned. Which section has the biggest rapids?",
+      "options": [
+        "Grandview — class IV narrows",
+        "Gauley tributary — class VI",
+        "Lower Gorge — class III–V",
+        "Upper New — class I–II"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nr-6",
+      "prompt": "Rock climbing at New River Gorge is world-class. What type of rock are the famous routes on?",
+      "options": [
+        "Limestone",
+        "Granite",
+        "Nuttall sandstone",
+        "Quartzite"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nr-7",
+      "prompt": "Coal mining shaped the gorge's history. What remains of the mining era can visitors explore?",
+      "options": [
+        "Ghost towns and Thurmond",
+        "Smithers mine visitor center",
+        "Outdoor coal tipple sculptures",
+        "Active underground mine tours"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "nr-8",
+      "prompt": "Thurmond was a major railroad and coal town in the early 1900s. What is it like today?",
+      "options": [
+        "Ghost town with historic depot",
+        "Thriving town of 2,000 people",
+        "Completely demolished",
+        "Living-history museum"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "nr-9",
+      "prompt": "The gorge is 1,000 feet deep in places. What wildlife can hikers encounter in the dense forest?",
+      "options": [
+        "Bear, deer, turkey, rattler",
+        "Hellbender salamanders",
+        "Elk, mountain lion, otter",
+        "Bobcats and fishers"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "nr-10",
+      "prompt": "The Long Point Trail is one of the most popular day hikes. What does it offer?",
+      "options": [
+        "Fire tower overlook",
+        "Scramble to gorge wall base",
+        "View of the gorge bridge",
+        "Views of class IV rapids"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nr-11",
+      "prompt": "The Grandview area offers rim overlooks. What is visible from the Grandview Rim Trail?",
+      "options": [
+        "Three states at once",
+        "New River horseshoe bend",
+        "Bridge from 10 miles away",
+        "Full gorge length"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "nr-12",
+      "prompt": "The New River is actually classified as old, not new. What geological evidence shows it is ancient?",
+      "options": [
+        "Exceptionally deep gorge",
+        "Jurassic fossils in riverbed",
+        "Cretaceous buried wood dating",
+        "Flows against rock-layer tilt"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "nr-13",
+      "prompt": "Mountain biking is a major draw at the park. What kind of riding is available?",
+      "options": [
+        "Paved rail-trail cycling",
+        "Singletrack, all skill levels",
+        "Lift-served downhill trails",
+        "Cross-country dirt road routes"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "nr-14",
+      "prompt": "The Canyon Rim Visitor Center sits near the bridge. What is the best view from there?",
+      "options": [
+        "Bridge from below",
+        "Bridge over gorge, 876 ft drop",
+        "Three-state panorama",
+        "Coal mine on opposite wall"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "nr-15",
+      "prompt": "The Appalachian forest in the gorge is known for its biodiversity. What kind of forest covers the slopes?",
+      "options": [
+        "Mixed mesophytic forest",
+        "Oak-hickory",
+        "Northern hardwood",
+        "Southern cove hardwood"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "nr-16",
+      "prompt": "The Gauley River — a separate NPS unit adjacent to the park — is famous for what?",
+      "options": [
+        "Wild brook trout fishing",
+        "Waterfall-only kayak routes",
+        "Dam-release whitewater",
+        "Historic logging flumes"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nr-17",
+      "prompt": "The New River Gorge became America's most recent national park (as of 2020). What was it before?",
+      "options": [
+        "State Park",
+        "BLM recreation area",
+        "National River",
+        "National Forest"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "nr-18",
+      "prompt": "Peregrine falcons nest on the gorge's cliffs. What happened to them in the mid-20th century?",
+      "options": [
+        "Pigeon-spread viral disease",
+        "DDT thinned eggshells",
+        "Hunted out by coal workers",
+        "Acid rain poisoned prey"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "nr-19",
+      "prompt": "The park's name is a bit misleading. The 'New' River doesn't actually flow into what you might expect. Where does it go?",
+      "options": [
+        "North via Gauley, then east",
+        "East to the Atlantic, Norfolk",
+        "West via the Big Sandy",
+        "Into the Ohio via the Kanawha"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "nr-20",
+      "prompt": "Fall is a spectacular season in the New River Gorge. What transforms the view?",
+      "options": [
+        "Migrating hawks on thermals",
+        "Morning fog fills the gorge",
+        "Forest turns red, orange, gold",
+        "Low water bares rock beds"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "crater-lake",
+  "title": "Crater Lake Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "cl-1",
+      "prompt": "Crater Lake holds what record among all lakes in the United States?",
+      "options": [
+        "Clearest (143 ft visibility)",
+        "Highest above sea level",
+        "Deepest at 1,943 feet",
+        "Largest by surface area"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cl-2",
+      "prompt": "Crater Lake sits in a caldera — not a crater. What is the difference?",
+      "options": [
+        "Craters are larger, older",
+        "Different wall steepness",
+        "Meteor crater vs. collapse",
+        "Terms are interchangeable"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cl-3",
+      "prompt": "How was the caldera that holds Crater Lake formed?",
+      "options": [
+        "Lava flows trapped a basin",
+        "Mount Mazama's collapse",
+        "Ancient glaciers carved it",
+        "Meteor impact, 7,700 yr ago"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cl-4",
+      "prompt": "What gives Crater Lake its famous deep sapphire blue color?",
+      "options": [
+        "Glacial rock flour",
+        "Blue-pigment algae",
+        "Copper minerals in rock",
+        "Exceptional depth and clarity"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cl-5",
+      "prompt": "Wizard Island is a distinctive feature of Crater Lake. What is it?",
+      "options": [
+        "Remnant of Mount Mazama",
+        "Sediment island",
+        "Cinder cone volcano",
+        "Wave-eroded spire"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cl-6",
+      "prompt": "Crater Lake has no inlet or outlet streams. How does the water level remain relatively stable?",
+      "options": [
+        "NPS pumps from Rogue River",
+        "Snow/rain minus evaporation",
+        "Underground aquifer springs",
+        "Impermeable basalt seals it"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cl-7",
+      "prompt": "Cleetwood Cove Trail is the only trail that descends to the water's edge. What is notable about it?",
+      "options": [
+        "Paved, wheelchair accessible",
+        "Passes through a lava tube",
+        "Requires a permit",
+        "Steep 700 ft descent, 1.1 mi"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cl-8",
+      "prompt": "The 'Old Man of the Lake' is a famous Crater Lake curiosity. What is it?",
+      "options": [
+        "Log floating vertical 100+ yrs",
+        "A 40-year veteran ranger",
+        "A rock face on Wizard Island",
+        "A fir on the caldera wall"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cl-9",
+      "prompt": "Rim Drive encircles the caldera for about 33 miles. When does it typically open for the season?",
+      "options": [
+        "Late June or July, post-snow",
+        "May 15 per regulations",
+        "April 1 as temps rise",
+        "Late March from the south"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cl-10",
+      "prompt": "Crater Lake has no native fish population. Which species were introduced and are now present?",
+      "options": [
+        "Brown trout, largemouth bass",
+        "Lake trout, yellow perch",
+        "Brook trout, channel catfish",
+        "Kokanee salmon, rainbow trout"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cl-11",
+      "prompt": "The Pumice Desert, a flat expanse north of the lake, has very sparse vegetation. Why?",
+      "options": [
+        "Deep pumice blocks growth",
+        "Volcanic gases acidify soil",
+        "Summer frost pocket",
+        "Recently burned"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cl-12",
+      "prompt": "Mount Scott, the highest point in the park at 8,929 feet, offers what on a clear day?",
+      "options": [
+        "Pacific Ocean and the lake",
+        "8 Cascade volcanoes + lake",
+        "Klamath River canyon view",
+        "Wizard Island full caldera"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cl-13",
+      "prompt": "The Klamath people have oral traditions about the creation of Crater Lake. What do they describe?",
+      "options": [
+        "Flood survivors at the rim",
+        "Lake formed at chief's death",
+        "Lake formed overnight",
+        "Battle between Skell and Llao"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cl-14",
+      "prompt": "Clark's nutcracker, a bird commonly seen at Crater Lake's rim, plays what ecological role?",
+      "options": [
+        "Caches whitebark pine seeds",
+        "Disperses pumice seeds",
+        "Aerates timberline soil",
+        "Controls introduced trout"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cl-15",
+      "prompt": "The Phantom Ship is a small island in the southern part of the lake. What is it?",
+      "options": [
+        "Ancient volcanic dike",
+        "Early settler lighthouse",
+        "Rock appearing in mist",
+        "Drifting pumice raft"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cl-16",
+      "prompt": "Crater Lake National Park is known for exceptional snow accumulation. What is the average annual snowfall at park headquarters?",
+      "options": [
+        "About 6 feet per year",
+        "About 30 feet per year",
+        "About 44 feet per year",
+        "About 15 feet per year"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cl-17",
+      "prompt": "Boat tours operate on Crater Lake during summer. What is the only way to reach the tour boats?",
+      "options": [
+        "Tour-bus-only road",
+        "Shuttle from Mazama Village",
+        "Cable car from the rim",
+        "Cleetwood Cove Trail"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cl-18",
+      "prompt": "The Watchman Peak trail leads to a historic fire lookout. What can you see from the summit?",
+      "options": [
+        "Wizard Island, western wall",
+        "Eastern rim and Sun Notch",
+        "Pumice Desert, Klamath River",
+        "360° view with Mt. Shasta"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cl-19",
+      "prompt": "What type of ecosystem surrounds Crater Lake at lower elevations below the caldera rim?",
+      "options": [
+        "Sagebrush and juniper",
+        "Ponderosa and mixed conifer",
+        "Old-growth Douglas fir",
+        "Coastal rainforest"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cl-20",
+      "prompt": "Winter at Crater Lake offers a dramatically different experience. What winter activity is available for visitors?",
+      "options": [
+        "Dog sledding on Rim Drive",
+        "Snowcat tours to Wizard Island",
+        "Ice fishing on frozen lake",
+        "Snowshoeing and skiing"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

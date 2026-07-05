@@ -1,0 +1,227 @@
+{
+  "slug": "indiana-dunes",
+  "title": "Indiana Dunes Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "id-1",
+      "prompt": "Indiana Dunes National Park sits on the southern shore of which Great Lake?",
+      "options": [
+        "Lake Michigan",
+        "Lake Erie",
+        "Lake Huron",
+        "Lake Superior"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "id-2",
+      "prompt": "Indiana Dunes is one of the most biodiverse national parks in the country. Why is this surprising given its small size?",
+      "options": [
+        "Bird migration funnel",
+        "Industrial pollution",
+        "Multiple climate zones meet",
+        "Underground aquifer"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "id-3",
+      "prompt": "Mount Baldy is a large 'living' dune at Indiana Dunes. What makes it 'living'?",
+      "options": [
+        "Biological crust releases O₂",
+        "Unstable underground spring",
+        "Year-round green plant cover",
+        "Moves ~4 ft inland per year"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "id-4",
+      "prompt": "Cowles Bog is a National Natural Landmark within the park. What type of rare ecosystem is it?",
+      "options": [
+        "Seasonally flooded forest",
+        "Coastal lagoon",
+        "Acidic sphagnum bog",
+        "Mineral-spring fen"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "id-5",
+      "prompt": "Indiana Dunes is remarkably close to a major US city. How far is it from Chicago?",
+      "options": [
+        "About 150 miles",
+        "About 25 miles",
+        "About 100 miles",
+        "About 50 miles"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "id-6",
+      "prompt": "The park's beach on Lake Michigan is a popular summer destination. What is Lake Michigan's water temperature like in summer?",
+      "options": [
+        "80–85°F (tropical)",
+        "Typically 60–70°F",
+        "Never above 55°F",
+        "Warm surface, frigid depth"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "id-7",
+      "prompt": "Henry Cowles, a botanist who studied Indiana Dunes in the early 1900s, made a foundational discovery. What was it?",
+      "options": [
+        "Great Lakes fish inventory",
+        "First native carnivorous plant",
+        "Ecological succession theory",
+        "Underground spring system"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "id-8",
+      "prompt": "The park contains several distinct plant communities within a very short distance. Walking from the beach inland, what sequence do you cross?",
+      "options": [
+        "Beach→marram→cottonwood→oak",
+        "Beach→marsh→hackberry→maple",
+        "Sand→pine→hardwood→prairie",
+        "Shore→dune→pine→oak→bog"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "id-9",
+      "prompt": "Indiana Dunes became a National Park in 2019, upgraded from what status?",
+      "options": [
+        "National Recreation Area",
+        "National Monument",
+        "National Lakeshore",
+        "State Park"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "id-10",
+      "prompt": "The Paul H. Douglas Trail is named for a senator who championed the park's creation for decades. What is the trail like?",
+      "options": [
+        "3-mile beach & dune trail",
+        "Ridge walk with Chicago views",
+        "Paved dunefield path",
+        "6-mile loop of all communities"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "id-11",
+      "prompt": "The park shares a boundary with Indiana Dunes State Park. What is the main difference between the two?",
+      "options": [
+        "Larger national park, separate",
+        "State camping; NPS none",
+        "State = dunes; NPS = woods",
+        "Same entity, jointly managed"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "id-12",
+      "prompt": "Shorebirds and waterfowl use Indiana Dunes as a critical stopover. When is the best time for birdwatching?",
+      "options": [
+        "Midsummer breeding season",
+        "Early morning, all seasons",
+        "Winter (owls & hawks)",
+        "Spring & fall migration"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "id-13",
+      "prompt": "Steel mills and industrial facilities border the park to the west. What impact has industry had on the park's air and water?",
+      "options": [
+        "None — buffer zones protect it",
+        "Issues; cleanup agreements",
+        "Swimming permanently banned",
+        "Mills went solar; no impact"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "id-14",
+      "prompt": "The dunes along Lake Michigan formed from sand carried by wind and wave action. Where did the sand originally come from?",
+      "options": [
+        "Glacial outwash",
+        "Ancient seabed sediments",
+        "Wind-blown prairie sand",
+        "Eroded Niagara limestone"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "id-15",
+      "prompt": "Indiana Dunes has over 15 miles of trails. The Ly-co-ki-we Trail offers what experience?",
+      "options": [
+        "Full shoreline beach walk",
+        "Wooded trail past ponds",
+        "Ridge walk, Chicago views",
+        "Active dune sand-hiking"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "id-16",
+      "prompt": "Marram grass (American beach grass) plays a critical role at Indiana Dunes. What does it do?",
+      "options": [
+        "Piping plover nesting habitat",
+        "Pumps groundwater to surface",
+        "Roots stabilize young dunes",
+        "Seeds feed migratory birds"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "id-17",
+      "prompt": "A rare geological curiosity at the park is the 'singing sands.' What causes this phenomenon?",
+      "options": [
+        "Round quartz grains squeak",
+        "Hollow beach amplifies waves",
+        "Minerals vibrate in cold air",
+        "Wind over quartz creates tone"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "id-18",
+      "prompt": "The Great Marsh in the western part of the park is one of the largest coastal wetlands in the region. What wildlife does it harbor?",
+      "options": [
+        "Herons, cranes & bitterns",
+        "American alligators",
+        "Chinook salmon runs",
+        "Nesting common terns"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "id-19",
+      "prompt": "The 'Century of Progress' exhibit homes in the park were relocated there from the 1933 Chicago World's Fair. What do they demonstrate?",
+      "options": [
+        "Regional steel industry",
+        "Art Deco & Streamline Moderne",
+        "Native American longhouses",
+        "1930s experimental home styles"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "id-20",
+      "prompt": "What is the unique experience of swimming at Indiana Dunes compared to an ocean beach?",
+      "options": [
+        "Fresh water, no salt or stings",
+        "East-facing sunrise beach",
+        "Clear via zebra mussels",
+        "Perfectly calm, no waves"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

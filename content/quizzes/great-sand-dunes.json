@@ -1,0 +1,227 @@
+{
+  "slug": "great-sand-dunes",
+  "title": "Great Sand Dunes Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "gs-1",
+      "prompt": "Great Sand Dunes National Park contains the tallest sand dunes in North America. How tall is the tallest?",
+      "options": [
+        "About 500 feet",
+        "About 300 feet",
+        "About 1,200 feet",
+        "About 750 feet"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-2",
+      "prompt": "The dunes sit at the base of which mountain range in southern Colorado?",
+      "options": [
+        "San Juan Mountains",
+        "Front Range",
+        "Sangre de Cristo Mountains",
+        "Sawatch Range"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-3",
+      "prompt": "Medano Creek flows seasonally along the eastern edge of the dunes. What unusual phenomenon occurs in this creek?",
+      "options": [
+        "Bright red mineral color",
+        "Disappears underground",
+        "Water flows uphill",
+        "Surge flows — natural waves"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-4",
+      "prompt": "Where did the sand in Great Sand Dunes originally come from?",
+      "options": [
+        "Ancient ocean floor",
+        "Volcanic ash",
+        "San Juan Mountains sediment",
+        "Great Plains prairie"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-5",
+      "prompt": "Sand in Great Sand Dunes is constantly recycled. What mechanism returns sand blown away from the dunefield?",
+      "options": [
+        "Underground water pressure",
+        "Reversed spring winds",
+        "Medano and Mosca Creeks",
+        "Seasonal valley flooding"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-6",
+      "prompt": "The sand surface can reach extreme temperatures on sunny days. How hot can the dune surface get in summer?",
+      "options": [
+        "About 90°F",
+        "About 100°F",
+        "About 150°F",
+        "About 120°F"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-7",
+      "prompt": "The adjacent Baca National Wildlife Refuge protects what large wetland feature?",
+      "options": [
+        "Rio Grande headwaters",
+        "Whooping crane nesting grounds",
+        "Wetlands, playas, and lakes",
+        "Geothermal hot springs"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-8",
+      "prompt": "The dunes are open for hiking with no trails. What is the main physical challenge of hiking them?",
+      "options": [
+        "Sharp sand crystals",
+        "Altitude above 9,000 feet",
+        "Rapid temperature swings",
+        "Shifting sand, tiring steps"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-9",
+      "prompt": "Sandboarding and sand sledding are popular activities at the dunes. What equipment works best?",
+      "options": [
+        "Inflatable tubes",
+        "Snow skis with sand wax",
+        "Boogie boards or foam pads",
+        "Plastic sleds or sandboards"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gs-10",
+      "prompt": "The San Luis Valley, where the dunes sit, is one of the highest alpine valleys in the world. What is its approximate elevation?",
+      "options": [
+        "About 7,500 feet",
+        "About 10,000 feet",
+        "About 5,000 feet",
+        "About 6,000 feet"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gs-11",
+      "prompt": "Star Dune is the highest dune in the park. Why is it called a 'star dune'?",
+      "options": [
+        "Radiating star-shaped ridges",
+        "Catches starlight uniquely",
+        "Named for a Native legend",
+        "Visible from space"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gs-12",
+      "prompt": "The Sangre de Cristo Wilderness, adjacent to the park, includes two prominent peaks. Which is the highest?",
+      "options": [
+        "Crestone Needle",
+        "Blanca Peak",
+        "Kit Carson Peak",
+        "Culebra Peak"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-13",
+      "prompt": "Visitors often find Medano Creek is dry by mid-summer. Why does it disappear?",
+      "options": [
+        "Dammed by the NPS",
+        "Diverted for irrigation",
+        "Absorbed into the sandy bed",
+        "Evaporated by summer heat"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-14",
+      "prompt": "Great Sand Dunes was a National Monument before becoming a National Park in 2004. What significant addition came with park status?",
+      "options": [
+        "Sangre de Cristo wilderness",
+        "Baca Ranch as a Preserve",
+        "Wilderness on the dunes",
+        "Helicopter tour ban"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-15",
+      "prompt": "The dunefield is home to several insects found nowhere else on Earth. What makes these insects specially adapted?",
+      "options": [
+        "Navigate by magnetic fields",
+        "Feed only on dune slack plants",
+        "Extreme heat tolerance",
+        "Survive below-freezing nights"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-16",
+      "prompt": "The park protects a rare plant community in 'dune slacks' — low areas between dunes. What plants grow there?",
+      "options": [
+        "Willows and sedges",
+        "Flood-tolerant cacti",
+        "Alpine tundra grasses",
+        "Petrified tree stumps"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gs-17",
+      "prompt": "The dunes are remarkably stable over time despite constant wind. What geological factor keeps them in place?",
+      "options": [
+        "Bedrock beneath the sand",
+        "Opposing winds + creek sand",
+        "Mountain barrier traps sand",
+        "Biological soil crusts"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-18",
+      "prompt": "Pinyon-juniper woodland surrounds the base of the dunes. As you gain elevation into the Sangre de Cristos, the vegetation transitions to what?",
+      "options": [
+        "Desert scrub and cacti",
+        "Aspen then ponderosa pine",
+        "Spruce-fir then alpine tundra",
+        "Grassland and sage steppe"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gs-19",
+      "prompt": "The Zapata Falls, a short drive from the park, hide behind what unusual feature?",
+      "options": [
+        "An underground cavern",
+        "A narrow slot canyon",
+        "A geothermal pool",
+        "A natural stone arch"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gs-20",
+      "prompt": "The park's dark skies make it ideal for stargazing. What designation does it hold?",
+      "options": [
+        "National Stargazing Reserve",
+        "International Dark Sky Park",
+        "Gold Tier Astrotourism Dest.",
+        "UNESCO Dark Sky Zone"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

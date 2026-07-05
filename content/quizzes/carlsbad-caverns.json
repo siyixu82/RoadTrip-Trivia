@@ -1,0 +1,227 @@
+{
+  "slug": "carlsbad-caverns",
+  "title": "Carlsbad Caverns Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "cc-1",
+      "prompt": "The caves at Carlsbad Caverns formed in an unusual way. What dissolved the limestone to create them?",
+      "options": [
+        "Glacial meltwater",
+        "Acidic rainwater",
+        "An underground river",
+        "Sulfuric acid from below"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cc-2",
+      "prompt": "The Big Room in Carlsbad Caverns is one of the largest cave chambers in North America. How large is it?",
+      "options": [
+        "8.2 acres, 255 ft ceiling",
+        "About 1 acre",
+        "About 3 acres",
+        "About 15 acres"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cc-3",
+      "prompt": "One of the most spectacular experiences at Carlsbad Caverns happens at dusk from April through October. What is it?",
+      "options": [
+        "Sunset through a rock window",
+        "Bioluminescent algae",
+        "Visible mist at dusk",
+        "Bats spiraling out to feed"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cc-4",
+      "prompt": "Approximately how many Mexican free-tailed bats live in Carlsbad Caverns during summer?",
+      "options": [
+        "Over 1 million",
+        "Around 400,000",
+        "Around 100,000",
+        "Around 10,000"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cc-5",
+      "prompt": "The constant temperature inside Carlsbad Caverns is a key feature. What temperature should visitors expect?",
+      "options": [
+        "About 68°F",
+        "About 75°F",
+        "About 40°F",
+        "About 56°F"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cc-6",
+      "prompt": "Stalactites hang from cave ceilings while stalagmites rise from the floor. What is the simplest way to remember which is which?",
+      "options": [
+        "Ti=top in; mi=mite above",
+        "Tight=ceiling; might=floor",
+        "Stalactites are always longer",
+        "C for ceiling; G for ground"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cc-7",
+      "prompt": "Cave pearls, cave popcorn, and cave bacon are all speleothems (cave formations) found in the park. What are they made of?",
+      "options": [
+        "Sulfur deposits",
+        "Calcite from seeping water",
+        "Iron oxide and manganese",
+        "Gypsum crystals"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cc-8",
+      "prompt": "The Natural Entrance to the caves is a massive opening. What was it famously used for in the early 20th century before becoming a national park?",
+      "options": [
+        "Bat guano mining",
+        "Mescalero Apache shelter",
+        "WWI equipment storage",
+        "Pumping underground water"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cc-9",
+      "prompt": "Lechuguilla Cave, within the park boundary but not open to the public, is famous in the caving world for what?",
+      "options": [
+        "Deepest cave, W. Hemisphere",
+        "Selenite crystals, alien life",
+        "World's longest cave (400+ mi)",
+        "Subterranean lake, blind fish"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cc-10",
+      "prompt": "Above ground, Carlsbad Caverns sits in the Chihuahuan Desert. What type of landscape does the surface portion of the park feature?",
+      "options": [
+        "Pine and juniper forest",
+        "Grasslands with desert plants",
+        "Sand dunes",
+        "Sotol, lechuguilla, yucca"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cc-11",
+      "prompt": "The King's Palace tour is a ranger-guided experience. What makes it different from the self-guided Big Room tour?",
+      "options": [
+        "Largest bat colony section",
+        "10°F warmer than Big Room",
+        "Deeper, denser formations",
+        "Accessed entirely by canoe"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cc-12",
+      "prompt": "What do Mexican free-tailed bats eat during their nightly flights from the cave?",
+      "options": [
+        "Moths, beetles, flying insects",
+        "Fish from the Pecos River",
+        "Desert plant fruit",
+        "Agave and yucca nectar"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "cc-13",
+      "prompt": "Visitors can take an elevator down to the Big Room instead of using the Natural Entrance trail. How far below the surface does the elevator descend?",
+      "options": [
+        "100 feet",
+        "750 feet",
+        "250 feet",
+        "400 feet"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cc-14",
+      "prompt": "Ringtail cats are sometimes seen in the cave entrance area at night. What type of animal is a ringtail?",
+      "options": [
+        "Weasel family, ferret relative",
+        "Raccoon family, striped tail",
+        "Marsupial, related to opossum",
+        "Rodent in the squirrel family"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cc-15",
+      "prompt": "Spider Cave is one of the park's 'wild cave' tours. What distinguishes it from the main cave experience?",
+      "options": [
+        "Scuba equipment required",
+        "Only open after dark",
+        "No formations — tunnel only",
+        "Crawl through tight passages"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "cc-16",
+      "prompt": "The cave's formations are still actively growing — but very slowly. How long does it take for a typical stalactite to grow one inch?",
+      "options": [
+        "About 1,000 years",
+        "About 1 year",
+        "100+ years",
+        "About 10 years"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "cc-17",
+      "prompt": "Walnut Canyon Desert Drive, an unpaved road accessible by car, circles through what landscape outside the cave?",
+      "options": [
+        "Permian-era fossil site",
+        "Chihuahuan Desert scrub",
+        "Pecos River corridor",
+        "Pinyon-juniper highlands"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cc-18",
+      "prompt": "The Guadalupe Mountains, which the park sits within, were once a massive reef. What kind of reef?",
+      "options": [
+        "Sandstone desert dune reef",
+        "Permian coral reef, ~265M yrs",
+        "Cretaceous freshwater reef",
+        "Ancient volcanic atoll"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cc-19",
+      "prompt": "What important rule must visitors follow to protect the cave formations?",
+      "options": [
+        "Whisper only",
+        "Stay on trails, don't touch",
+        "No food or drink in the cave",
+        "No photography"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cc-20",
+      "prompt": "Cave swallows, birds that nest inside the cave entrance, coexist with the bat colony. How do the bats and swallows avoid collision during the nightly bat flight?",
+      "options": [
+        "Swallows leave before bats",
+        "Opposite sides of the entrance",
+        "Swallows roost before dusk",
+        "Rangers spotlight guide bats"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

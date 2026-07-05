@@ -1,0 +1,227 @@
+{
+  "slug": "channel-islands",
+  "title": "Channel Islands Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "ci-1",
+      "prompt": "Channel Islands National Park is sometimes called the 'Galapagos of North America.' Why does it earn this nickname?",
+      "options": [
+        "Same latitude as the Galapagos",
+        "Darwin visited both chains",
+        "Sits on a volcanic hotspot",
+        "Isolation drove unique species"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ci-2",
+      "prompt": "The park consists of five islands off the coast of Southern California. Which is the largest and most visited?",
+      "options": [
+        "Santa Cruz Island",
+        "Santa Rosa Island",
+        "San Miguel Island",
+        "Anacapa Island"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ci-3",
+      "prompt": "The island fox is unique to the Channel Islands, with a distinct subspecies on each island. What was the near-extinction event they faced in the 1990s–2000s?",
+      "options": [
+        "Feral pigs outcompeted foxes",
+        "Distemper from dogs",
+        "Golden eagles preyed on foxes",
+        "Toxic algae bloom"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ci-4",
+      "prompt": "The recovery of the island fox is considered one of the fastest wildlife recoveries in US history. What was the key to saving them?",
+      "options": [
+        "Breeding, eagle & pig removal",
+        "Immune boosting supplements",
+        "Captive breeding + eagle swap",
+        "Vaccination + pig removal"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ci-5",
+      "prompt": "Painted Cave on Santa Cruz Island is one of the world's largest sea caves. How big is it?",
+      "options": [
+        "50 ft wide, 100 ft deep",
+        "30 ft wide, 1,000+ ft deep",
+        "200 ft wide, hundreds deep",
+        "130 ft wide, quarter-mile deep"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ci-6",
+      "prompt": "Kelp forests surrounding the Channel Islands are among the most productive marine ecosystems on Earth. What do they provide?",
+      "options": [
+        "Habitat for 100s of species",
+        "Massive CO2 absorption",
+        "Food for blue whales",
+        "Storm barrier for the islands"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ci-7",
+      "prompt": "California sea lions are abundant on the Channel Islands. What distinguishes male sea lions from female sea lions in appearance?",
+      "options": [
+        "7x heavier with sagittal crest",
+        "Females spotted, males brown",
+        "Males orange, females brown",
+        "Males have visible ear flaps"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ci-8",
+      "prompt": "Northern elephant seals breed on several of the islands in winter. What is remarkable about their diving ability?",
+      "options": [
+        "300 ft dives for squid",
+        "Males reach 8,000 ft depth",
+        "2-hr breath hold, 5,000 ft",
+        "20-min dives to 1,500 ft"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ci-9",
+      "prompt": "The Channel Islands are on one of the planet's most productive ocean upwelling systems. What does upwelling bring to the surface?",
+      "options": [
+        "Cold, nutrient-rich deep water",
+        "Warm tropical water",
+        "Fresh water from springs",
+        "Dissolved seafloor gold"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ci-10",
+      "prompt": "Blue whales, the largest animals on Earth, feed near the Channel Islands in summer. What do they eat?",
+      "options": [
+        "Giant squid",
+        "Sardines and anchovies",
+        "Krill",
+        "Jellyfish"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ci-11",
+      "prompt": "Pygmy mammoth bones have been found on several Channel Islands. What do they tell us about the prehistoric islands?",
+      "options": [
+        "Mastodons crossed at low tide",
+        "Isolation shrank mammoths",
+        "Swam over, shrank over time",
+        "Chumash pack animals"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ci-12",
+      "prompt": "Anacapa Island, the closest to the mainland, is composed of what?",
+      "options": [
+        "Three small islets",
+        "Ancient coral reef limestone",
+        "Two islets, tidal land bridge",
+        "Single volcanic island"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ci-13",
+      "prompt": "The Chumash people paddled between the mainland and the islands in what type of canoe?",
+      "options": [
+        "Tule reed boats",
+        "Dugout redwood canoes",
+        "Hide coracles with whale bone",
+        "Tomol — tar-sealed plank canoe"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "ci-14",
+      "prompt": "Scorpion Ranch on Santa Cruz Island was a historic sheep and cattle ranch. What did the removal of sheep accomplish for the island's ecology?",
+      "options": [
+        "Native plants recovered",
+        "Plant recovery + fewer eagles",
+        "Reduced fox competition",
+        "Little ecological impact"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ci-15",
+      "prompt": "San Miguel Island, the westernmost of the park's islands, is home to one of the world's largest gatherings of which marine mammal?",
+      "options": [
+        "Six pinniped species, 15K+",
+        "Orca pods birthing calves",
+        "Blue whales",
+        "Humpback whales"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ci-16",
+      "prompt": "There is no bridge or ferry connecting the islands to each other. How do visitors typically reach the Channel Islands?",
+      "options": [
+        "Island Packers ferry",
+        "Charter kayak expedition",
+        "Floatplane from Santa Barbara",
+        "Private boat only"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ci-17",
+      "prompt": "What critical conservation achievement happened on Santa Cruz Island regarding Torrey pines?",
+      "options": [
+        "Trees genetically modified",
+        "Wild population discovered",
+        "Ancient seeds germinated",
+        "Transplanted from mainland"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ci-18",
+      "prompt": "Western gulls, abundant on Anacapa Island, nest on flat terraces. What should visitors know about nesting season (April–August)?",
+      "options": [
+        "Most of Anacapa is closed",
+        "Gulls dive-bomb visitors",
+        "Rangers feed gulls at stations",
+        "$500 monitoring fee charged"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ci-19",
+      "prompt": "Santa Rosa Island has extensive dune systems. What are 'foredunes' and why are they ecologically important?",
+      "options": [
+        "First dune row, native plants",
+        "Seasonally flooded dunes",
+        "Seaward offshore dune ridges",
+        "Ancient buried dunes"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ci-20",
+      "prompt": "The Channel Islands are a key stopover for migrating birds on the Pacific Flyway. When does migration peak?",
+      "options": [
+        "Summer, Arctic birds fly south",
+        "Winter, Canadian arrivals",
+        "Year-round equally",
+        "Spring and fall"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

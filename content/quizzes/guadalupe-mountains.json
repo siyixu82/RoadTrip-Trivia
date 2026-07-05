@@ -1,0 +1,227 @@
+{
+  "slug": "guadalupe-mountains",
+  "title": "Guadalupe Mountains Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "gm-1",
+      "prompt": "Guadalupe Peak in Texas is the highest point in the state. How tall is it?",
+      "options": [
+        "8,749 feet",
+        "6,198 feet",
+        "7,255 feet",
+        "9,100 feet"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gm-2",
+      "prompt": "El Capitan is the park's most iconic landmark — a sheer limestone cliff visible for miles. What is it, geologically?",
+      "options": [
+        "A granite dome",
+        "A sandstone mesa",
+        "Ancient Permian reef",
+        "An eroded volcanic plug"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gm-3",
+      "prompt": "McKittrick Canyon is famous for what rare natural event in the Chihuahuan Desert?",
+      "options": [
+        "A monsoon waterfall",
+        "A spring-fed stream",
+        "Fall foliage",
+        "Night-blooming cacti"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gm-4",
+      "prompt": "The Guadalupe Mountains preserve one of the world's best examples of an ancient marine fossil reef. How old is it?",
+      "options": [
+        "~265 million years",
+        "~65 million years",
+        "~500 million years",
+        "~100 million years"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gm-5",
+      "prompt": "The Guadalupe Mountains are one of the least-visited national parks. What makes the hiking experience here unique?",
+      "options": [
+        "Guided horse tours",
+        "Paved, accessible trails",
+        "Rugged, primitive backcountry",
+        "Shuttle bus network"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gm-6",
+      "prompt": "The Permian Reef Trail descends into McKittrick Canyon. What was this environment 265 million years ago?",
+      "options": [
+        "A high-altitude glacier",
+        "A tropical rainforest",
+        "A shallow inland sea",
+        "A volcanic island"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gm-7",
+      "prompt": "The Bowl is a high-elevation forested area within the park. What makes it feel unlike the surrounding desert?",
+      "options": [
+        "Ice-age relict forest",
+        "Perpetually shaded slope",
+        "A lake at 8,000 feet",
+        "Year-round springs"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gm-8",
+      "prompt": "The Pinery Trail passes the ruins of the Butterfield Overland Mail relay station. What was the Butterfield route?",
+      "options": [
+        "US Army supply road",
+        "Santa Fe–San Antonio fur trade",
+        "St. Louis–SF stagecoach mail",
+        "Pony Express branch route"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gm-9",
+      "prompt": "American black bears live in the Guadalupe Mountains. What draws them to higher elevations in summer?",
+      "options": [
+        "Fewer biting insects",
+        "Camper food scraps",
+        "Cool temps and springs",
+        "Berries and acorns ripen there"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gm-10",
+      "prompt": "The park has no developed lodging and only one small visitor center. What should visitors plan ahead for?",
+      "options": [
+        "Shuttle reservations",
+        "Trail permits",
+        "Carrying all water",
+        "High-clearance vehicle"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gm-11",
+      "prompt": "The Chihuahuan Desert surrounds the park at lower elevations. What is the Chihuahuan Desert known for botanically?",
+      "options": [
+        "Largest desert grassland",
+        "Most diverse agave species",
+        "Largest Joshua tree range",
+        "Most diverse cactus species"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gm-12",
+      "prompt": "Manzanita Spring is a rare desert oasis in the park. Why is it a birdwatching hotspot?",
+      "options": [
+        "Canyon migration funnel",
+        "Hummingbird migration stop",
+        "Only TX Mexican species site",
+        "Only water source for miles"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gm-13",
+      "prompt": "The Guadalupe Peak trail is 8.4 miles round trip with 3,000 feet of elevation gain. What does the summit offer?",
+      "options": [
+        "NPS ranger station",
+        "360° view to NM and Davis Mtns",
+        "Emergency shelter",
+        "Steel pyramid monument"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gm-14",
+      "prompt": "Peregrine falcons nest in the park's limestone cliffs. What makes them the fastest birds in the world?",
+      "options": [
+        "Near-zero drag wing shape",
+        "Cliff updraft speed boost",
+        "200+ mph stooping dive",
+        "Hollow bones, huge heart"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gm-15",
+      "prompt": "The park straddles the Texas-New Mexico border. The Sitting Bull Falls recreation area is located just outside the park in which direction?",
+      "options": [
+        "North in New Mexico",
+        "East in the Delaware Mtns",
+        "South toward Carlsbad",
+        "West along the escarpment"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gm-16",
+      "prompt": "The park is a dark-sky location with minimal light pollution. What is visible from the high ridges on clear nights?",
+      "options": [
+        "Milky Way core",
+        "Bioluminescent insects",
+        "El Paso and Carlsbad glow",
+        "Ciudad Juárez glow"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gm-17",
+      "prompt": "The Frijole Ranch History Museum tells the story of ranching in the Guadalupe Mountains. What did early ranchers struggle with most?",
+      "options": [
+        "Butterfield land disputes",
+        "Annual flash floods",
+        "Water scarcity",
+        "Apache raids"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gm-18",
+      "prompt": "The park receives few visitors partly because of its remote location. What is the nearest major city?",
+      "options": [
+        "Albuquerque, ~200 mi north",
+        "El Paso, ~110 mi west",
+        "Midland/Odessa, ~130 mi east",
+        "San Antonio, ~300 mi east"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gm-19",
+      "prompt": "The park is adjacent to Carlsbad Caverns National Park. What connects them geologically?",
+      "options": [
+        "Shared cave network",
+        "Guadalupe fault system",
+        "Same Permian reef system",
+        "Same magma chamber"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gm-20",
+      "prompt": "Fall is considered the best time to visit Guadalupe Mountains. What happens in the park in October?",
+      "options": [
+        "Monarch butterfly migration",
+        "McKittrick Canyon foliage",
+        "Autumn wildflower bloom",
+        "Peak dark-sky conditions"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "mesa-verde",
+  "title": "Mesa Verde Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "mv-1",
+      "prompt": "Who built the cliff dwellings preserved at Mesa Verde National Park?",
+      "options": [
+        "The Aztec people",
+        "The Fremont people",
+        "The Hohokam people",
+        "Ancestral Puebloans"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mv-2",
+      "prompt": "Cliff Palace, the park's most famous dwelling, is the largest cliff dwelling in North America. Approximately how many rooms does it contain?",
+      "options": [
+        "50 rooms",
+        "150 rooms",
+        "300 rooms",
+        "100 rooms"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mv-3",
+      "prompt": "Why did the Ancestral Puebloans build their homes in the cliffs rather than on the mesa top?",
+      "options": [
+        "Too windy on the mesa top",
+        "Shelter, defense, and springs",
+        "Invasion by rival tribes",
+        "Mesa soil reserved for farming"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mv-4",
+      "prompt": "What important crops did the Ancestral Puebloans cultivate on the mesa tops?",
+      "options": [
+        "Potatoes, tomatoes, peppers",
+        "Wheat, barley, and rye",
+        "Rice and sorghum",
+        "Corn, beans, and squash"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mv-5",
+      "prompt": "What are the circular underground chambers called that appear throughout the cliff dwellings?",
+      "options": [
+        "Kivas",
+        "Granaries",
+        "Pithouses",
+        "Cenotes"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "mv-6",
+      "prompt": "The Ancestral Puebloans left Mesa Verde around 1300 CE. What factor likely contributed to their departure?",
+      "options": [
+        "Volcanic eruption",
+        "Major earthquake",
+        "23-year drought, 1276–1299",
+        "Spanish explorer conflict"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mv-7",
+      "prompt": "The Balcony House tour requires visitors to climb a 32-foot ladder and crawl through a tunnel. What does this reveal about the original occupants?",
+      "options": [
+        "Escape route from floods",
+        "Intentional defensive design",
+        "Much smaller stature",
+        "Ladder added by archaeologists"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mv-8",
+      "prompt": "The name 'Mesa Verde' is Spanish. What does it mean, and why is it appropriate?",
+      "options": [
+        "Ancient land",
+        "Green table",
+        "High desert",
+        "Stone fortress"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mv-9",
+      "prompt": "What construction material, abundant on the mesa, did the Ancestral Puebloans use to build the cliff dwellings?",
+      "options": [
+        "Logs from distant forests",
+        "Sandstone with mud mortar",
+        "Adobe mud bricks",
+        "Reeds plastered with clay"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mv-10",
+      "prompt": "Spruce Tree House, once open to self-guided tours, was temporarily closed for safety stabilization. What does it demonstrate about the cliff dwellings?",
+      "options": [
+        "Rebuilt by archaeologists",
+        "Ongoing preservation needs",
+        "Spanish removed the roofs",
+        "Tourist traffic broke walls"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mv-11",
+      "prompt": "Wetherill Mesa, a less-visited section of the park, is home to Long House — the park's second-largest dwelling. How does visiting it differ from Cliff Palace?",
+      "options": [
+        "Tram-only access",
+        "Self-guided; Cliff Palace not",
+        "Two-day backcountry permit",
+        "Longer drive, fewer visitors"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mv-12",
+      "prompt": "Mesa top sites in the park, like Sun Temple and Far View Sites Complex, show evidence of what?",
+      "options": [
+        "Temporary harvest camps",
+        "Spanish mission architecture",
+        "Mesa-top life before cliff era",
+        "A competing rival tribe"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mv-13",
+      "prompt": "What wildlife is commonly spotted on the mesa today, particularly at dawn and dusk?",
+      "options": [
+        "Bison and pronghorn",
+        "Wild turkeys",
+        "Black bears",
+        "Mule deer"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mv-14",
+      "prompt": "The park preserves over 5,000 archaeological sites. Besides cliff dwellings, what other types of sites does this include?",
+      "options": [
+        "Petroglyphs, dams, reservoirs",
+        "Mine shafts and smelters",
+        "Burial mounds and earthworks",
+        "Spanish missions, trade posts"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "mv-15",
+      "prompt": "Who are the descendants of the Ancestral Puebloans of Mesa Verde?",
+      "options": [
+        "The Navajo Nation",
+        "Hopi, Zuni, and Pueblo peoples",
+        "Ute Mountain Ute Tribe",
+        "Apache tribes"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mv-16",
+      "prompt": "The Ancestral Puebloans traded with distant cultures. What does the presence of shells and macaw feathers in Mesa Verde suggest?",
+      "options": [
+        "Pet parrots and shellfish",
+        "Flash floods from the south",
+        "Gulf of CA, Mesoamerica trade",
+        "Tribute from conquered groups"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mv-17",
+      "prompt": "Chapin Mesa Archeological Museum, the oldest national park museum still in its original building, displays what type of artifact most prominently?",
+      "options": [
+        "Spanish colonial tools",
+        "Geological specimens",
+        "Dinosaur fossils",
+        "Puebloan pottery and tools"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mv-18",
+      "prompt": "Why are ranger-led tours required to enter Cliff Palace and Balcony House, rather than allowing self-guided access?",
+      "options": [
+        "Tours fund conservation",
+        "UNESCO law requires it",
+        "Trails too dangerous alone",
+        "Protect irreplaceable ruins"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mv-19",
+      "prompt": "The park sits at elevations between 6,000 and 8,500 feet. How does this affect the experience for visitors?",
+      "options": [
+        "Climbs too dangerous in summer",
+        "Snow only at highest points",
+        "Mild summers; altitude fatigue",
+        "Sparse wildlife at elevation"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mv-20",
+      "prompt": "What is the Petroglyph Point Trail famous for within the park?",
+      "options": [
+        "Largest petroglyph panel",
+        "Views of all four dwellings",
+        "Self-guided geology walk",
+        "Descent to a hidden dwelling"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

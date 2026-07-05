@@ -1,0 +1,227 @@
+{
+  "slug": "kings-canyon",
+  "title": "Kings Canyon Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "kc-1",
+      "prompt": "Kings Canyon National Park is often paired with which neighboring park, and the two are jointly managed by the NPS?",
+      "options": [
+        "Yosemite National Park",
+        "Death Valley National Park",
+        "Joshua Tree National Park",
+        "Sequoia National Park"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kc-2",
+      "prompt": "The Kings Canyon itself is one of the deepest canyons in North America. What carved it?",
+      "options": [
+        "Glaciers alone",
+        "Ancient lava flows",
+        "Glacial and river erosion",
+        "A massive fault drop"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "kc-3",
+      "prompt": "Grant Grove is home to the General Grant Tree, which holds what honorific title?",
+      "options": [
+        "The Oldest Living Thing",
+        "Mother Tree of the Sierra",
+        "The World's Tallest Tree",
+        "The Nation's Christmas Tree"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kc-4",
+      "prompt": "Roads End, at the bottom of Kings Canyon near Cedar Grove, is a trailhead for what classic multi-day backpacking loop?",
+      "options": [
+        "The Rae Lakes Loop",
+        "The Muir Trail Ranch circuit",
+        "JMT southern terminus",
+        "The High Sierra Trail"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "kc-5",
+      "prompt": "Mist Falls, the park's largest waterfall, drops about 100 feet on Paradise Creek. When is the best time to see it at full force?",
+      "options": [
+        "Late summer after storms",
+        "Winter concentrated flow",
+        "Early fall after first rains",
+        "Late spring / snowmelt"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kc-6",
+      "prompt": "Zumwalt Meadows in Cedar Grove is a beloved short hike. What makes this meadow ecologically important?",
+      "options": [
+        "Yokuts archaeological site",
+        "Emergency helicopter flat",
+        "Rich riparian ecosystem",
+        "Last unforested meadow"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "kc-7",
+      "prompt": "John Muir Rock, a flat granite boulder in the Kings River near Roads End, gets its name because:",
+      "options": [
+        "Muir proposed a park here",
+        "Muir gave talks from it",
+        "Rock resembles Muir's portrait",
+        "Muir carved his initials in it"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kc-8",
+      "prompt": "The Cedar Grove area of Kings Canyon is accessible by road only in summer. What closes Kings Canyon Highway in winter?",
+      "options": [
+        "Bear denning closures",
+        "Rockfall danger",
+        "Kings River flooding",
+        "Heavy snow on steep road"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kc-9",
+      "prompt": "Kings Canyon is in the Sierra Nevada range, which John Muir called 'The Range of Light.' What gave Muir this inspiration?",
+      "options": [
+        "Bioluminescent alpine lakes",
+        "Cloudless starry nights",
+        "Granite glowing at sunset",
+        "Glacial granite radiating sun"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kc-10",
+      "prompt": "Which endangered amphibian, declining across the Sierra Nevada, lives in the lakes and streams of Kings Canyon's high country?",
+      "options": [
+        "Pacific giant salamander",
+        "Mountain yellow-legged frog",
+        "Cascades frog",
+        "Foothill yellow-legged frog"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kc-11",
+      "prompt": "The high country of Kings Canyon is part of the largest roadless wilderness in the contiguous US. What is the name of this wilderness area?",
+      "options": [
+        "Sierra Nevada Backcountry",
+        "Kings Canyon Wilderness",
+        "John Muir Wilderness",
+        "John Muir + Kings Canyon"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kc-12",
+      "prompt": "Black bears in Kings Canyon have learned to look for food in campsites. What are all overnight campers and backpackers required to use?",
+      "options": [
+        "Bags buried underground",
+        "Food locked in vehicles",
+        "Bear-resistant canisters",
+        "Bear spray and fences"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "kc-13",
+      "prompt": "The Panoramic Point trail near Grant Grove offers what view?",
+      "options": [
+        "Grant Tree and Kings River",
+        "Central Valley & Sierra crest",
+        "Full depth of Kings Canyon",
+        "180° High Sierra panorama"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kc-14",
+      "prompt": "The Kings River, which carved Kings Canyon, is a wild and scenic river. What makes it popular with adventure seekers?",
+      "options": [
+        "Fly fishing for golden trout",
+        "Class IV–V rapids",
+        "Flat-water kayaking",
+        "Swimming below Mist Falls"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kc-15",
+      "prompt": "The Fallen Monarch, a massive toppled giant sequoia near Grant Grove, has been used for what purpose over the years?",
+      "options": [
+        "A bridge over the trail",
+        "Horse stable, saloon, hotel",
+        "200-person amphitheater",
+        "Old-growth research lab"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kc-16",
+      "prompt": "Boyden Cavern, a cave accessible from Kings Canyon Highway, differs from Carlsbad Caverns in what key way?",
+      "options": [
+        "It's a marble cave",
+        "Formed by glacial action",
+        "Privately managed, not NPS",
+        "Above ground in canyon wall"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "kc-17",
+      "prompt": "The Monarch Divide, visible from Kings Canyon overlooks, separates what two drainages?",
+      "options": [
+        "Kings Canyon and Sequoia",
+        "South Fork & Middle Fork Kings",
+        "West Sierra & Great Basin",
+        "Kings River and San Joaquin"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kc-18",
+      "prompt": "Wolverines, one of North America's rarest and most elusive mammals, occasionally appear in Kings Canyon's high country. What is known about their range?",
+      "options": [
+        "Above 12,000 feet only",
+        "Hundreds of square miles each",
+        "Shifted lower with less snow",
+        "Southernmost breeding colony"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kc-19",
+      "prompt": "The North Fork of the Kings River drains into what body of water outside the park?",
+      "options": [
+        "Millerton Lake / Friant Dam",
+        "Shasta Lake",
+        "San Francisco Bay",
+        "Pine Flat Reservoir"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kc-20",
+      "prompt": "The Muir Trail Ranch, accessible only by trail or horseback near the southern end of the JMT in Kings Canyon wilderness, is known among long-distance hikers for what?",
+      "options": [
+        "Only Sierra wilderness helipad",
+        "Resupply point for hikers",
+        "Most remote ranger station",
+        "Private Sierra Club lodge"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

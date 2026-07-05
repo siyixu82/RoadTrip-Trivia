@@ -1,0 +1,227 @@
+{
+  "slug": "saguaro",
+  "title": "Saguaro Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "sa-1",
+      "prompt": "Saguaro National Park is divided into two districts flanking which city?",
+      "options": [
+        "Flagstaff, AZ",
+        "Yuma, AZ",
+        "Tucson, AZ",
+        "Phoenix, AZ"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-2",
+      "prompt": "The saguaro cactus is the park's iconic plant. Where in the world does it grow wild?",
+      "options": [
+        "All of SW US & N. Mexico",
+        "Chihuahuan & Sonoran deserts",
+        "Sonoran Desert only",
+        "Only in Saguaro Nat'l Park"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-3",
+      "prompt": "Saguaro cacti grow slowly. How long does it typically take for a saguaro to grow its first arm?",
+      "options": [
+        "25–35 years",
+        "About 50 years",
+        "5–10 years",
+        "75–100 years"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sa-4",
+      "prompt": "The white flowers of the saguaro bloom in May and June. What pollinates them?",
+      "options": [
+        "Wind",
+        "Honeybees",
+        "Bats & white-winged doves",
+        "Hummingbirds"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-5",
+      "prompt": "The Tohono O'odham have harvested saguaro fruit for thousands of years. What do they make from it?",
+      "options": [
+        "Ceremonial dye",
+        "Fermented wine (nawait)",
+        "Medicinal tea",
+        "Seed flour"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sa-6",
+      "prompt": "Saguaros can store large amounts of water. How do they store it?",
+      "options": [
+        "Hollow central chamber",
+        "Underground root tank",
+        "Accordion-like pleats in stem",
+        "Waxy condensing skin"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-7",
+      "prompt": "The Rincon Mountain District rises to 8,666 feet at Mica Mountain. How does vegetation change with elevation?",
+      "options": [
+        "Grassland → mesquite bosque",
+        "Saguaro → oak woodland → pine",
+        "Saguaro → scrub → bare granite",
+        "Stays constant"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sa-8",
+      "prompt": "Gila woodpeckers excavate nest holes in saguaro cacti. What happens to abandoned holes?",
+      "options": [
+        "Homes for elf owls & kestrels",
+        "Cactus tissue seals the hole",
+        "Bees colonize them",
+        "Weakens and topples cactus"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sa-9",
+      "prompt": "The Valley View Overlook Trail at the Tucson Mountain District offers what view?",
+      "options": [
+        "Saguaro-filled basin",
+        "Downtown Tucson skyline",
+        "Santa Catalina Mountains",
+        "Cactus wren nesting colony"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sa-10",
+      "prompt": "The Sonoran Desert has two rainy seasons. When are they?",
+      "options": [
+        "Spring & fall",
+        "Winter & summer monsoon",
+        "Winter & spring only",
+        "Spring & mid-summer"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sa-11",
+      "prompt": "Javelinas (collared peccaries) roam the park. What is their most important food source?",
+      "options": [
+        "Prickly pear & tubers",
+        "Small mammals & reptiles",
+        "Saguaro fruits only",
+        "Mesquite beans & seeds"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sa-12",
+      "prompt": "The woody interior structure of a dead saguaro is called saguaro ribs. What are they and what were they used for?",
+      "options": [
+        "Calcium deposits",
+        "Inward-growing spines",
+        "Woody vascular bundles",
+        "Silica deposits"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-13",
+      "prompt": "The Cactus Forest Drive in the Rincon Mountain District is an 8-mile loop. What should visitors know?",
+      "options": [
+        "Separate fee & reservation",
+        "Floods close it in monsoon",
+        "One-way; best at sunrise",
+        "Bikes & horses only"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-14",
+      "prompt": "Saguaro fruit ripens in June — just before the monsoon begins. What do the Tohono O'odham believe this signifies?",
+      "options": [
+        "Signals pollinator migration",
+        "Dry season has ended",
+        "Harvest ceremony invites rain",
+        "Harvest must precede rain"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-15",
+      "prompt": "Sonoran Desert toads emerge after monsoon rains. What is their dry-season survival strategy?",
+      "options": [
+        "Live in saguaro trunks",
+        "Estivation underground",
+        "Full dehydration & rehydration",
+        "Migrate to aquifers"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sa-16",
+      "prompt": "Cactus wrens, Arizona's state bird, build bulky nests in cholla and saguaro. What makes them distinctive?",
+      "options": [
+        "Only migratory N. Am. wren",
+        "Snake skins deter predators",
+        "Largest wren in N. America",
+        "Hollow dead saguaro tissue"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-17",
+      "prompt": "The Sendero Esperanza Trail connects the mountain ranges in the Tucson Mountain District. What does 'Esperanza' mean?",
+      "options": [
+        "Journey",
+        "Desert",
+        "Hope",
+        "Cactus"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-18",
+      "prompt": "Summer temperatures regularly exceed 100°F. What do rangers strongly advise for summer hiking?",
+      "options": [
+        "Avoid June–September entirely",
+        "Rent a misting cooling vest",
+        "Hike before 8 am or after 5 pm",
+        "Paved loop only above 90°F"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sa-19",
+      "prompt": "The western Tucson Mountain District is adjacent to what popular cultural attraction?",
+      "options": [
+        "San Xavier del Bac Mission",
+        "Old Tucson Studios",
+        "Tumacácori Nat'l Hist. Park",
+        "Arizona-Sonora Desert Museum"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sa-20",
+      "prompt": "Western diamondback rattlesnakes live in the park. What should hikers do if they encounter one?",
+      "options": [
+        "Make loud noise to scare it",
+        "Freeze completely",
+        "Give space; let it move on",
+        "Step aside and pass quickly"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

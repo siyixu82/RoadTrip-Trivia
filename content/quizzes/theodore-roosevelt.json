@@ -1,0 +1,227 @@
+{
+  "slug": "theodore-roosevelt",
+  "title": "Theodore Roosevelt Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "tr-1",
+      "prompt": "Theodore Roosevelt National Park is divided into three units in which state?",
+      "options": [
+        "North Dakota",
+        "Wyoming",
+        "South Dakota",
+        "Montana"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-2",
+      "prompt": "The park preserves the badlands where Theodore Roosevelt ranched in the 1880s. What personal losses brought him to Dakota Territory?",
+      "options": [
+        "1884 presidential defeat",
+        "Mother and wife died same day",
+        "His brother Elliott's death",
+        "Business bankruptcy"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "tr-3",
+      "prompt": "The park's rugged landscape belongs to which geological region?",
+      "options": [
+        "The Black Hills",
+        "The Missouri Plateau",
+        "The Great Plains",
+        "The Northern Badlands"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "tr-4",
+      "prompt": "Wild horses roam the South Unit. Where did these horses originally come from?",
+      "options": [
+        "NPS reintroduction (1950s)",
+        "Early settlers and ranchers",
+        "Roosevelt's Elkhorn Ranch herd",
+        "Tribal horses gone feral"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "tr-5",
+      "prompt": "Theodore Roosevelt credited his time in the badlands with shaping his conservation legacy. What did he say it gave him?",
+      "options": [
+        "'I'd never been President'",
+        "Scientific ecology knowledge",
+        "Political connections",
+        "'Eyes to see' what to save"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-6",
+      "prompt": "Bison were reintroduced to the park in 1956. What had happened to the original Northern Plains bison?",
+      "options": [
+        "Commercial hunting (1800s)",
+        "Migrated south",
+        "Disease in early 1900s",
+        "Displaced by cattle ranching"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-7",
+      "prompt": "The Elkhorn Ranch Unit, the 'third unit,' preserves what?",
+      "options": [
+        "Reconstructed frontier ranch",
+        "Roosevelt's cattle ranch ruins",
+        "Original ranch foundations",
+        "Roosevelt's first ND cabin"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "tr-8",
+      "prompt": "Prairie dogs are a keystone species in the park. What animal depends heavily on prairie dog towns for habitat?",
+      "options": [
+        "Golden eagle",
+        "Black-footed ferret",
+        "Badger",
+        "Pronghorn"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "tr-9",
+      "prompt": "The badlands landscape formed from what geological process?",
+      "options": [
+        "Meteor impact",
+        "Ancient volcanism",
+        "Glacial scouring",
+        "Wind and water erosion"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "tr-10",
+      "prompt": "The Little Missouri River flows through the park. What direction does it flow?",
+      "options": [
+        "North into the Missouri River",
+        "South into the Cheyenne River",
+        "West into the Yellowstone",
+        "East into the Missouri River"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-11",
+      "prompt": "Petrified wood is scattered throughout the park. What type of tree produced most of it?",
+      "options": [
+        "Ancient redwood-like conifers",
+        "Giant Jurassic tree ferns",
+        "Hardwood oaks",
+        "Subtropical palms"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-12",
+      "prompt": "Roosevelt owned two ranches in the Dakotas. What were their names?",
+      "options": [
+        "Chimney Butte & Elkhorn",
+        "Rough Rider & Dakota",
+        "Badlands & Little Missouri",
+        "Maltese Cross & Elkhorn"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "tr-13",
+      "prompt": "The park protects more than wildlife — it also protects what rare type of geological feature visible as glowing seams in hillsides?",
+      "options": [
+        "Burning coal seams (clinker)",
+        "Quartz crystal formations",
+        "Ancient lava tubes",
+        "Uranium ore deposits"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-14",
+      "prompt": "The Painted Canyon Visitor Center, on the South Unit, offers what?",
+      "options": [
+        "Overlook right off I-94",
+        "Entrance to a cave system",
+        "Only electric hookup camp",
+        "Ranger-led canyon hike"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-15",
+      "prompt": "Elk were reintroduced to the park in 1985. They were locally extinct since when?",
+      "options": [
+        "1870s — overhunted",
+        "1950s — last ones relocated",
+        "Early 1900s — ranching",
+        "1930s Dust Bowl"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-16",
+      "prompt": "Roosevelt's experience watching bison slaughtered and game disappear influenced his later conservation actions as president. How many national monuments did he designate?",
+      "options": [
+        "18",
+        "51",
+        "32",
+        "6"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-17",
+      "prompt": "The North Unit, about 70 miles from the South Unit, is known for what wildlife sighting opportunity?",
+      "options": [
+        "Largest prairie dog towns",
+        "Bighorn sheep on river breaks",
+        "Prairie chickens at dawn",
+        "Longhorn cattle demonstration"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "tr-18",
+      "prompt": "What is the name of Roosevelt's cattle brand, visible in the park's museum?",
+      "options": [
+        "Maltese Cross brand",
+        "Rough Rider brand",
+        "Elkhorn brand",
+        "Dakota Star brand"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-19",
+      "prompt": "The park's dark night skies are well-preserved. What certification does it hold?",
+      "options": [
+        "Gold Tier Dark Sky Park",
+        "No official certification",
+        "National Dark Sky Sanctuary",
+        "Certified Stargazing Reserve"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "tr-20",
+      "prompt": "In the park's visitor center, Roosevelt's original Maltese Cross Cabin is displayed. Where was it originally located?",
+      "options": [
+        "On Medora's main street",
+        "Chimney Butte Ranch, Medora",
+        "Elkhorn Ranch site",
+        "North Unit near Missouri River"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

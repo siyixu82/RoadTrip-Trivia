@@ -1,0 +1,227 @@
+{
+  "slug": "virgin-islands",
+  "title": "Virgin Islands Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "vi-1",
+      "prompt": "Virgin Islands National Park covers most of which island in the US Virgin Islands?",
+      "options": [
+        "St. Croix",
+        "Water Island",
+        "St. Thomas",
+        "St. John"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "vi-2",
+      "prompt": "Trunk Bay is one of the most photographed beaches in the Caribbean. What unique feature does it offer snorkelers?",
+      "options": [
+        "Underwater labeled trail",
+        "Shallow shipwreck",
+        "Coral arch tunnel",
+        "Bioluminescent plankton"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "vi-3",
+      "prompt": "Laurence Rockefeller donated the land for Virgin Islands National Park. When was it established?",
+      "options": [
+        "1936",
+        "1972",
+        "1956",
+        "1948"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vi-4",
+      "prompt": "The park protects coral reef ecosystems around St. John. What percentage of the island does the park cover?",
+      "options": [
+        "About 25%",
+        "About 60%",
+        "About 40%",
+        "About 80%"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "vi-5",
+      "prompt": "Annaberg Sugar Mill ruins within the park preserve what history?",
+      "options": [
+        "First chocolate processing",
+        "Spanish colonial fort",
+        "1700s Danish slave plantation",
+        "1800s rum distillery"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vi-6",
+      "prompt": "The park's Reef Bay Trail descends to Reef Bay through lush forest. What ancient features does it pass?",
+      "options": [
+        "Drowned mangrove stumps",
+        "Danish colonial milestones",
+        "Taíno petroglyphs",
+        "Volcanic rock formations"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vi-7",
+      "prompt": "Green sea turtles and hawksbill turtles nest on park beaches. Hawksbill turtles eat what unusual food?",
+      "options": [
+        "Sea sponges",
+        "Small fish and crabs",
+        "Jellyfish",
+        "Seagrass"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "vi-8",
+      "prompt": "Hurricane Irma and Maria devastated the Virgin Islands in 2017. What was the park's biggest loss?",
+      "options": [
+        "Trunk Bay buried by sand",
+        "Reefs smothered by sediment",
+        "Annaberg ruins destroyed",
+        "Forest and facilities wrecked"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "vi-9",
+      "prompt": "The park includes both land and underwater areas. What is unusual about its submerged boundary?",
+      "options": [
+        "Covers seafloor to St. Thomas",
+        "Marked by buoys sailors avoid",
+        "Extends 1,000 ft deep offshore",
+        "Biosphere reserve 1.5 mi out"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "vi-10",
+      "prompt": "The dry forest on St. John's north side differs dramatically from the moist forest on the south. What drives this difference?",
+      "options": [
+        "Trade winds; windward wet side",
+        "North slopes; more direct sun",
+        "Agriculture cleared north side",
+        "Freshwater springs, south side"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "vi-11",
+      "prompt": "The West Indian manatee occasionally visits park waters. What do they need that limits their range?",
+      "options": [
+        "Freshwater seeps to drink",
+        "Warm seagrass shallows",
+        "Rocky reef shelter",
+        "Shaded mangrove lagoons"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "vi-12",
+      "prompt": "Mongooses are an invasive species on St. John. What impact have they had on native wildlife?",
+      "options": [
+        "Reduced iguana populations",
+        "Spread fungal disease to trees",
+        "Wiped out native fruit bats",
+        "Killed ground-nesters, lizards"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "vi-13",
+      "prompt": "The park's Cruz Bay Visitor Center is a good starting point. What is Cruz Bay?",
+      "options": [
+        "Danish colonial capital",
+        "Main town and ferry terminal",
+        "Named for Spanish explorer",
+        "Small west-end fishing village"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "vi-14",
+      "prompt": "The island's tropical forest includes several native tree species. What is the poisonous manchineel tree called locally?",
+      "options": [
+        "The death apple",
+        "The tide tree",
+        "The fire tree",
+        "The ghost tree"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "vi-15",
+      "prompt": "Camping is available at Cinnamon Bay, one of the oldest NPS campgrounds in the Caribbean. What can campers find there?",
+      "options": [
+        "Elevated tree house platforms",
+        "Glamping with A/C",
+        "Bare sites and beach cottages",
+        "Overwater float platforms"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vi-16",
+      "prompt": "American crocodiles were historically present in the Virgin Islands but are now locally extinct. What displaced them?",
+      "options": [
+        "Rising sea levels",
+        "Habitat loss and hunting",
+        "Iguana competition",
+        "Mongoose-introduced disease"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "vi-17",
+      "prompt": "The US acquired the Virgin Islands from which country in 1917?",
+      "options": [
+        "The Netherlands",
+        "The United Kingdom",
+        "Denmark",
+        "France"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vi-18",
+      "prompt": "The park's coral reefs face a major threat from a disease called Stony Coral Tissue Loss Disease. What does it do?",
+      "options": [
+        "Rapidly kills coral tissue",
+        "Dissolves coral skeletons",
+        "Bleaches coral white",
+        "Spreads invasive algae"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "vi-19",
+      "prompt": "What activity is the most popular way for visitors to explore the park?",
+      "options": [
+        "Kayaking mangrove lagoons",
+        "Helicopter tours",
+        "Hiking and snorkeling",
+        "Glass-bottom boat tours"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "vi-20",
+      "prompt": "How do most visitors get to St. John and Virgin Islands National Park?",
+      "options": [
+        "Cruise ship to Coral Bay",
+        "Ferry from San Juan, PR",
+        "Short ferry from St. Thomas",
+        "Charter plane to grass strip"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "gateway-arch",
+  "title": "Gateway Arch Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "gwa-1",
+      "prompt": "The Gateway Arch in St. Louis is an iconic monument. How tall is it?",
+      "options": [
+        "630 feet",
+        "400 feet",
+        "780 feet",
+        "500 feet"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gwa-2",
+      "prompt": "The arch represents westward expansion. What historical event does it specifically commemorate?",
+      "options": [
+        "The Louisiana Purchase",
+        "Transcontinental railroad",
+        "Battle of St. Louis",
+        "Lewis & Clark's departure"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gwa-3",
+      "prompt": "Visitors can ride to the top of the arch. How do they get up?",
+      "options": [
+        "Conventional elevator",
+        "Glass-enclosed escalator",
+        "Spiral staircase",
+        "Pod-shaped trams"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gwa-4",
+      "prompt": "The arch was designed by Eero Saarinen. What shape is it, mathematically?",
+      "options": [
+        "Weighted catenary curve",
+        "Perfect circle arc",
+        "Hyperbolic arc",
+        "Parabola"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gwa-5",
+      "prompt": "The Museum at the Gateway Arch beneath the monument tells what story?",
+      "options": [
+        "Immigration through St. Louis",
+        "Arch engineering history",
+        "Westward expansion",
+        "St. Louis city history"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gwa-6",
+      "prompt": "The Old Courthouse adjacent to the arch is part of the national park. What landmark legal case was argued there?",
+      "options": [
+        "First Indian land rights case",
+        "Missouri Compromise case",
+        "Plessy v. Ferguson",
+        "Dred Scott case"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gwa-7",
+      "prompt": "The arch sways in strong winds. How much can it move at the top?",
+      "options": [
+        "About 1 inch",
+        "Up to 18 inches",
+        "It does not move",
+        "Up to 3 feet"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gwa-8",
+      "prompt": "The arch stands on the west bank of the Mississippi River. What does this location symbolize?",
+      "options": [
+        "Louisiana Purchase border",
+        "Eastern Santa Fe Trail end",
+        "MO-MS river confluence",
+        "East meets frontier West"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gwa-9",
+      "prompt": "Gateway Arch became a National Park in 2018. What was it before?",
+      "options": [
+        "A National Memorial",
+        "A National Monument",
+        "A National Historic Site",
+        "A National Recreation Area"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gwa-10",
+      "prompt": "Lewis and Clark departed from near St. Louis on their famous expedition. What were they trying to find?",
+      "options": [
+        "Trade route to Alaska",
+        "Source of the Missouri River",
+        "Mountains of gold",
+        "Water route to the Pacific"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gwa-11",
+      "prompt": "The arch is made of stainless steel. How much does it weigh?",
+      "options": [
+        "About 50,000 tons",
+        "About 17,246 tons",
+        "About 5,000 tons",
+        "About 1,000 tons"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gwa-12",
+      "prompt": "The observation deck at the top of the arch has small windows. What can you see on a clear day?",
+      "options": [
+        "Three states",
+        "Up to 30 miles away",
+        "MO-MS river confluence",
+        "River, Illinois & skyline"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gwa-13",
+      "prompt": "The Dred Scott decision from the Old Courthouse had enormous historical consequences. What did the Supreme Court ultimately rule?",
+      "options": [
+        "Slavery legal in MO, not IL",
+        "Scott was free",
+        "Owners could reclaim escapees",
+        "Black Americans not citizens"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gwa-14",
+      "prompt": "The park offers riverboat cruises on the Mississippi. What does a cruise provide that the arch does not?",
+      "options": [
+        "Access to Illinois side",
+        "View of river confluence",
+        "Night views of the arch",
+        "Arch seen from water level"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gwa-15",
+      "prompt": "The construction of the arch in 1965 required extraordinary engineering precision. What had to be exactly right?",
+      "options": [
+        "Both ends built simultaneously",
+        "Steel panels cut to 1/64 inch",
+        "Legs at identical lean angles",
+        "Foundation reaching bedrock"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gwa-16",
+      "prompt": "Manifest Destiny was the 19th-century belief that shaped westward expansion. What did it hold?",
+      "options": [
+        "Protect tribes on reservations",
+        "West for Protestants only",
+        "Develop the East, not the West",
+        "God-given right to expand west"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gwa-17",
+      "prompt": "The museum addresses the displacement of Native peoples during westward expansion. Which tribes were most directly affected by settlement of the Great Plains?",
+      "options": [
+        "Shoshone and Paiute",
+        "Sioux, Cheyenne, Comanche",
+        "Five Civilized Tribes",
+        "Iroquois Confederacy"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gwa-18",
+      "prompt": "The park grounds between the arch and the Old Courthouse were redesigned in 2018. What changed?",
+      "options": [
+        "Riverbank raised for flooding",
+        "Visitor center in arch legs",
+        "Courthouse moved closer",
+        "Highway placed underground"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gwa-19",
+      "prompt": "St. Louis was a major hub for the fur trade in the early 1800s. What made it ideal?",
+      "options": [
+        "French legal trading tradition",
+        "MO-MS river confluence",
+        "Proximity to Great Lakes",
+        "Distance from East Coast"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gwa-20",
+      "prompt": "The Gateway Arch is the most visited national park site east of the Mississippi. What makes it distinctive among national parks?",
+      "options": [
+        "Urban park in a major city",
+        "Entirely man-made landmark",
+        "No entry fee charged",
+        "Fully seen in under 2 hours"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

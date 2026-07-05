@@ -1,0 +1,227 @@
+{
+  "slug": "big-bend",
+  "title": "Big Bend Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "bb-1",
+      "prompt": "Big Bend National Park forms the southern boundary of the United States along what major river?",
+      "options": [
+        "The Rio Grande",
+        "The Devils River",
+        "The Colorado River",
+        "The Pecos River"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bb-2",
+      "prompt": "The park sits in the Chihuahuan Desert. Which distinction does Big Bend hold in terms of this desert?",
+      "options": [
+        "Northernmost extent",
+        "Driest US section",
+        "Oldest rock formations",
+        "Largest US portion"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bb-3",
+      "prompt": "Santa Elena Canyon is one of Big Bend's most dramatic features. What makes it so spectacular?",
+      "options": [
+        "Volcanic, lava-diverted walls",
+        "Flash-carved slot canyon",
+        "Cretaceous fossil walls",
+        "1,500-ft limestone walls"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bb-4",
+      "prompt": "The Chisos Mountains rise dramatically from the desert floor in the center of the park. What type of habitat do they create?",
+      "options": [
+        "Salt marsh",
+        "Sky island forest",
+        "Alpine tundra",
+        "Desert grassland island"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bb-5",
+      "prompt": "The Colima warbler, a bird that breeds in Big Bend's Chisos Mountains, is found nowhere else in the United States. Where else does it live?",
+      "options": [
+        "Davis Mountains, TX",
+        "Guadalupe Mountains, TX",
+        "Central American cloud forests",
+        "Northern Mexico highlands"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bb-6",
+      "prompt": "Javelinas (collared peccaries) roam Big Bend in family groups. What are they?",
+      "options": [
+        "Prehistoric 'hell pig' kin",
+        "Native pig-like mammals",
+        "Capybara relatives",
+        "Introduced Spanish pigs"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bb-7",
+      "prompt": "The Lost Mine Trail is the most popular hike in Big Bend. What does it reward hikers with?",
+      "options": [
+        "Chisos Basin views, 6,850 ft",
+        "Abandoned mercury mine",
+        "Bear and lion watering hole",
+        "Santa Elena Canyon descent"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bb-8",
+      "prompt": "Big Bend is one of the best birding parks in the US, with over 450 species recorded. Why does it attract such diversity?",
+      "options": [
+        "Artificial feeding stations",
+        "Isolated mountain subspecies",
+        "Major migratory flyway",
+        "Many ecosystems near Mexico"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bb-9",
+      "prompt": "Visitors can legally cross the Rio Grande into Mexico from Big Bend at the Boquillas crossing. What makes this crossing unique?",
+      "options": [
+        "Rowboat to Boquillas village",
+        "No passport required",
+        "Border Patrol rowboat escort",
+        "Donkey ford crossing"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bb-10",
+      "prompt": "The Hot Springs Historic District features ruins of a resort and a riverside hot spring. What temperature is the water?",
+      "options": [
+        "Around 150°F",
+        "About 105°F",
+        "About 95°F",
+        "Around 80°F"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bb-11",
+      "prompt": "Big Bend is a Gold Tier International Dark Sky Park. On a clear night, what is visible in the sky?",
+      "options": [
+        "Milky Way core, naked eye",
+        "Aurora borealis",
+        "Faint Milky Way, haze",
+        "Saturn's rings, naked eye"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bb-12",
+      "prompt": "Lechuguilla, a common plant throughout Big Bend, plays what role in the desert ecosystem?",
+      "options": [
+        "Monarch butterfly food",
+        "Shade for wildlife",
+        "Blooms once, then dies",
+        "Deep roots lift water"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bb-13",
+      "prompt": "The Mexican long-nosed bat visits Big Bend in summer. Why is this bat critical to the Chihuahuan Desert?",
+      "options": [
+        "Agave pollinator",
+        "Moth predator",
+        "Soil fertilization",
+        "Scorpion control"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bb-14",
+      "prompt": "The South Rim Trail offers one of the most dramatic views in the park. What can you see from this high Chisos vantage point?",
+      "options": [
+        "Santa Elena Canyon top-down",
+        "Desert west to El Paso",
+        "Mariscal Canyon below",
+        "100+ miles into Mexico"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bb-15",
+      "prompt": "The Window, a notch in the Chisos Mountains rim, funnels all water from the Chisos Basin. What happens when it rains heavily?",
+      "options": [
+        "Temporary basin lake forms",
+        "220-ft waterfall pours out",
+        "Flash floods roar through",
+        "Campground floods, evacuates"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bb-16",
+      "prompt": "Big Bend has the most extensive fossil record of any national park in the US. What types of creatures lived here during the age of dinosaurs?",
+      "options": [
+        "Mammoths and mastodons",
+        "Sauropods in tropical swamps",
+        "Pterosaurs, dinos, sea reptile",
+        "Small mammals only"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bb-17",
+      "prompt": "The painted bunting, one of North America's most colorful birds, passes through Big Bend during migration. What makes the male unmistakable?",
+      "options": [
+        "Red body, black wings",
+        "Iridescent purple-blue",
+        "Yellow body, black stripes",
+        "Blue head, red breast, green"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bb-18",
+      "prompt": "Big Bend is extremely remote — the nearest major city is over 100 miles away. What should visitors do before entering the park?",
+      "options": [
+        "Gas up, stock water and food",
+        "Book advance reservations",
+        "Fill gas, carry water and food",
+        "Download the offline map"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bb-19",
+      "prompt": "The Rio Grande Wild and Scenic River corridor extends downstream from Big Bend. What makes float trips through Mariscal Canyon memorable?",
+      "options": [
+        "Class V rapids",
+        "1,000-ft walls, no people",
+        "Hot springs in the river",
+        "Jaguar prints on banks"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bb-20",
+      "prompt": "Emory Peak is the highest point in the park at 7,825 feet. Who was it named after, and why is that historically significant?",
+      "options": [
+        "John Emory, first to summit",
+        "Lt. William H. Emory, surveyor",
+        "Ralph Emory, naturalist",
+        "Thomas Emory, Texas Ranger"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

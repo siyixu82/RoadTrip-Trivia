@@ -1,0 +1,227 @@
+{
+  "slug": "sequoia",
+  "title": "Sequoia Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "sq-1",
+      "prompt": "Giant sequoias hold what record among the world's trees?",
+      "options": [
+        "Largest by volume",
+        "Widest root systems",
+        "Tallest trees",
+        "Oldest trees"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sq-2",
+      "prompt": "General Sherman Tree, located in the Giant Forest, holds which specific record?",
+      "options": [
+        "Oldest tree (5,000+ yrs)",
+        "Tallest tree (380 ft)",
+        "Largest volume (~52,500 cu ft)",
+        "Widest trunk (150 ft around)"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sq-3",
+      "prompt": "Where in the world do giant sequoias naturally grow?",
+      "options": [
+        "Pacific Northwest coast",
+        "Rocky Mountain groves",
+        "Sierra Nevada west slopes",
+        "California fog coast"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sq-4",
+      "prompt": "Fire plays a crucial role in giant sequoia reproduction. How does fire help the sequoia?",
+      "options": [
+        "Opens canopy and cones",
+        "Charred soil spurs germination",
+        "Ash fertilizes the soil",
+        "Kills rivals; bark shields"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sq-5",
+      "prompt": "What is the approximate maximum age a giant sequoia can reach?",
+      "options": [
+        "500–800 years",
+        "1,000–1,500 years",
+        "5,000 years",
+        "3,000+ years"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sq-6",
+      "prompt": "Moro Rock is a prominent granite dome in the park. What do hikers gain by climbing it?",
+      "options": [
+        "View of General Sherman base",
+        "View of Great Western Divide",
+        "Backcountry trail access",
+        "Bighorn sheep sightings"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sq-7",
+      "prompt": "Crystal Cave in Sequoia is a marble cave. What is it made of and how was it formed?",
+      "options": [
+        "Sandstone; Kaweah erosion",
+        "Volcanic rock; lava tubes",
+        "Marble; acidic groundwater",
+        "Limestone; rainwater deposits"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "sq-8",
+      "prompt": "The Tunnel Log is a fallen sequoia that visitors can drive through. Why does it still draw visitors rather than being removed?",
+      "options": [
+        "Protects a 3,500-year-old tree",
+        "Wildlife nesting habitat",
+        "Too massive to remove",
+        "Beloved size landmark"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sq-9",
+      "prompt": "Black bears are common in Sequoia. What is the single most important food-storage rule for visitors?",
+      "options": [
+        "Bear canisters or bear boxes",
+        "Hang food 20 ft up",
+        "Sealed cooler in tent",
+        "Never bring food in"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sq-10",
+      "prompt": "The Foothills zone at the western entrance to Sequoia has a very different ecosystem than the giant forest above. What characterizes it?",
+      "options": [
+        "Old-growth Douglas fir",
+        "Willows and cottonwoods",
+        "Mixed conifer forest",
+        "Chaparral and blue oak"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sq-11",
+      "prompt": "Tokopah Valley, accessible from Lodgepole Campground, features what at its head?",
+      "options": [
+        "Tokopah Falls (1,200 ft)",
+        "General Sherman viewpoint",
+        "Largest subalpine lake",
+        "Mt. Whitney trailhead"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sq-12",
+      "prompt": "Generals Highway, the main road through the park, is closed periodically. When and why?",
+      "options": [
+        "Spring; protect wildflowers",
+        "Winter; snow and ice",
+        "Weekends; reduce disturbance",
+        "Summer; fire danger"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sq-13",
+      "prompt": "Pika and yellow-bellied marmots are commonly seen in the high-elevation areas of Sequoia. What is a pika?",
+      "options": [
+        "Hibernating ground squirrel",
+        "High-altitude snowshoe hare",
+        "Insectivore related to shrew",
+        "Rabbit-like talus mammal"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sq-14",
+      "prompt": "Sequoia and adjacent Kings Canyon National Park are jointly administered. What separates them?",
+      "options": [
+        "Only a boundary sign",
+        "Kings Canyon Hwy / Grant Grove",
+        "The Kings River canyon",
+        "A timber inholding"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sq-15",
+      "prompt": "Why can sequoias survive fires that would kill other trees?",
+      "options": [
+        "Bark 2 ft thick; tannins",
+        "Roots pump water to bark",
+        "Canopy grows above fires",
+        "Resin smothers flames"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sq-16",
+      "prompt": "The Big Trees Trail near the Giant Forest Museum is one of the most accessible walks in the park. It loops through what?",
+      "options": [
+        "Meadow ringed by sequoias",
+        "Original logging camp site",
+        "Five record-holder sequoias",
+        "Restored former parking lot"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sq-17",
+      "prompt": "Mount Whitney, the highest peak in the contiguous 48 states at 14,505 feet, sits on the eastern boundary of Sequoia National Park. What is required to hike to its summit?",
+      "options": [
+        "Oxygen equipment",
+        "Whitney Zone wilderness permit",
+        "Mandatory guided group",
+        "Proof of climbing experience"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "sq-18",
+      "prompt": "Steller's jays are a common sight in Sequoia's forests. How do they differ from blue jays?",
+      "options": [
+        "Smaller and brighter blue",
+        "Mimic other birds' calls",
+        "Migratory; blue jays aren't",
+        "Black crest; western species"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "sq-19",
+      "prompt": "Giant sequoia seeds are remarkably small relative to the tree they produce. Approximately how many seeds does one cone contain?",
+      "options": [
+        "3–5 seeds",
+        "About 50 seeds",
+        "Up to 1,000 seeds",
+        "Around 200 seeds"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "sq-20",
+      "prompt": "The John Muir Trail passes through the high country of Sequoia National Park. Where does it begin and end?",
+      "options": [
+        "Mt. Whitney to Oregon border",
+        "Ash Mountain to Yosemite",
+        "Sequoia to Kings Canyon",
+        "Yosemite to Mt. Whitney"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

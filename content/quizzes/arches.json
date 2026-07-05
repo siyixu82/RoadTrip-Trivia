@@ -141,7 +141,7 @@
       "options": [
         "Wetland",
         "Tundra",
-        "High (cold) desert",
+        "High desert",
         "Tropical rainforest"
       ],
       "correct_index": 2
@@ -150,7 +150,7 @@
       "id": "ar-14",
       "prompt": "Which fragile living desert soil is important to protect here?",
       "options": [
-        "Cryptobiotic soil crust",
+        "Cryptobiotic crust",
         "Permafrost",
         "Lava flows",
         "Coral"

@@ -1,0 +1,227 @@
+{
+  "slug": "biscayne",
+  "title": "Biscayne Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "bsc-1",
+      "prompt": "Biscayne National Park is unusual among US national parks because it is mostly what?",
+      "options": [
+        "95% open water",
+        "Mangrove swamp",
+        "Underground caves",
+        "Private inholdings"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bsc-2",
+      "prompt": "Biscayne National Park is located just south of Miami. What four ecosystems does it protect?",
+      "options": [
+        "Forest, saltmarsh, estuary",
+        "Beach, dunes, grassland, marsh",
+        "Seagrass, flats, ridges, keys",
+        "Mangrove, bay, keys, reef"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bsc-3",
+      "prompt": "The park protects the northernmost living coral reef in the continental US. Why are coral reefs so ecologically important?",
+      "options": [
+        "Best hurricane protection",
+        "Only sea turtle nesting site",
+        "Top ocean oxygen source",
+        "1% ocean, 25% marine species"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bsc-4",
+      "prompt": "Mangrove forests line the park's shoreline. What special adaptation allows mangroves to grow in saltwater?",
+      "options": [
+        "Roots drop through the air",
+        "Leaves excrete excess salt",
+        "Bark neutralizes salt",
+        "Aerial roots collect dew"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bsc-5",
+      "prompt": "The endangered Florida manatee lives in Biscayne Bay. What do manatees eat?",
+      "options": [
+        "Fish and crustaceans",
+        "Jellyfish and invertebrates",
+        "Mangrove leaves and roots",
+        "Seagrass — herbivores"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bsc-6",
+      "prompt": "The Maritime Heritage Trail at Biscayne lets divers explore what?",
+      "options": [
+        "Spanish mission ruins",
+        "Tequesta canoe routes",
+        "Rum-running wreckage",
+        "Six historic shipwrecks"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bsc-7",
+      "prompt": "Stiltsville, a collection of houses built on stilts in Biscayne Bay, is now part of the park. What are these structures?",
+      "options": [
+        "Seven 1930s–1970s bay homes",
+        "Historic ranger fishing camps",
+        "Hurricane storm shelters",
+        "Coral restoration stations"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bsc-8",
+      "prompt": "The Florida reef tract is threatened by multiple stressors. Which is considered the greatest threat to coral health?",
+      "options": [
+        "Reef fish overfishing",
+        "Ocean warming & acidification",
+        "Miami stormwater runoff",
+        "Boat anchor damage"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bsc-9",
+      "prompt": "How do most visitors access Biscayne's islands and reefs since there are no roads into the park?",
+      "options": [
+        "Boat from Convoy Point",
+        "Ferry from Key Largo",
+        "Helicopter from Homestead",
+        "Kayak only"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bsc-10",
+      "prompt": "Elliott Key is the largest island in the park. What historical land use shaped its interior?",
+      "options": [
+        "Seminole reservation",
+        "Limestone quarry",
+        "WWII military base",
+        "Pineapple & tomato farming"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bsc-11",
+      "prompt": "The American crocodile, an endangered species, lives in Biscayne. How does it differ from the American alligator?",
+      "options": [
+        "Seasonal migrant",
+        "Smaller, darker, freshwater",
+        "Narrower snout, tolerates salt",
+        "More aggressive, larger teeth"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bsc-12",
+      "prompt": "Snorkeling and glass-bottom boat tours at Biscayne reveal colorful reef fish. Which species is an invasive threat to the reef?",
+      "options": [
+        "Mahi-mahi",
+        "Barracuda",
+        "Lionfish",
+        "Snook"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bsc-13",
+      "prompt": "The Adams Key day-use area was once a private club called the Cocolobo Club. What notable visitors came there?",
+      "options": [
+        "4 US Presidents visited",
+        "The Wright brothers",
+        "Frank Lloyd Wright",
+        "Ernest Hemingway"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bsc-14",
+      "prompt": "Seagrass beds in Biscayne Bay serve as critical nursery habitat. What large fish species begin their lives there?",
+      "options": [
+        "Tuna and sailfish",
+        "Mahi-mahi and wahoo",
+        "Goliath grouper, reef sharks",
+        "Bonefish, snook, tarpon"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bsc-15",
+      "prompt": "Hurricane Andrew in 1992 devastated South Florida including Biscayne. What was the major ecological impact?",
+      "options": [
+        "Permanent Everglades damage",
+        "Invasive species introduced",
+        "Mangrove & reef destruction",
+        "Full reef bleaching"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bsc-16",
+      "prompt": "The park's visitor center is at Dante Fascell Visitor Center in Homestead. Who was Dante Fascell?",
+      "options": [
+        "Developer who sold the land",
+        "First park superintendent",
+        "FL congressman, park champion",
+        "Marine biologist, reef mapper"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bsc-17",
+      "prompt": "Coral restoration is underway in Biscayne. How do scientists regrow coral?",
+      "options": [
+        "Pacific reef transplants",
+        "Red Sea heat-resistant species",
+        "3D-printed reef structures",
+        "Nursery-grown, transplanted"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bsc-18",
+      "prompt": "Green sea turtles and loggerhead sea turtles nest on the park's islands. When is turtle nesting season?",
+      "options": [
+        "January–March",
+        "May–October",
+        "March–June only",
+        "Year-round, peak August"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bsc-19",
+      "prompt": "The park is adjacent to Everglades National Park to the west. What connects the two ecosystems?",
+      "options": [
+        "Florida Bay freshwater flow",
+        "Shared mangrove buffer zone",
+        "Shared freshwater canals",
+        "Connecting hiking trail"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bsc-20",
+      "prompt": "The park's coral reef was once threatened by a proposed oil terminal and residential development. What saved it?",
+      "options": [
+        "Activists pushed 1968 monument",
+        "Court landmark ruling",
+        "Florida bought & donated land",
+        "Hurricane wrecked the project"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

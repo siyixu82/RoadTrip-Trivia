@@ -1,0 +1,227 @@
+{
+  "slug": "wrangell-st-elias",
+  "title": "Wrangell-St. Elias Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "we-1",
+      "prompt": "Wrangell-St. Elias is the largest national park in the United States. How big is it?",
+      "options": [
+        "~8 million acres",
+        "~13.2 million acres",
+        "~5.5 million acres",
+        "~20 million acres"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "we-2",
+      "prompt": "The park has four mountain ranges within its boundaries. Which major Alaskan ranges does it include?",
+      "options": [
+        "St. Elias, Yukon, Rocky",
+        "St. Elias, Brooks, Kenai",
+        "Wrangell, St. Elias, Chugach",
+        "Alaska, Chugach, Talkeetna"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "we-3",
+      "prompt": "Mount St. Elias is the second-highest peak in the United States. How tall is it?",
+      "options": [
+        "18,008 feet",
+        "20,310 feet",
+        "16,237 feet",
+        "14,505 feet"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "we-4",
+      "prompt": "The Kennecott Mines National Historic Landmark is inside the park. What was mined there?",
+      "options": [
+        "Silver and lead",
+        "Copper (1903–1938)",
+        "Coal",
+        "Gold"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "we-5",
+      "prompt": "The Kennecott Mines are a ghost town today. How do visitors get there?",
+      "options": [
+        "By boat up the Chitina River",
+        "McCarthy Rd, then walk/shuttle",
+        "Railroad grade from Cordova",
+        "Helicopter from Glennallen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "we-6",
+      "prompt": "The Bagley Icefield and Malaspina Glacier are among the largest in North America. The Malaspina is a piedmont glacier — what does that mean?",
+      "options": [
+        "Spills out onto coastal plain",
+        "Sits atop a plateau",
+        "Calves icebergs into the ocean",
+        "Layered by freeze-thaw cycles"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "we-7",
+      "prompt": "The park borders Kluane National Park in Canada. Together they are part of a World Heritage Site. What does this combined area protect?",
+      "options": [
+        "Largest non-polar icefield",
+        "Porcupine caribou corridors",
+        "Most pristine subarctic delta",
+        "Last woolly mammoth habitat"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "we-8",
+      "prompt": "The town of McCarthy is the main hub inside the park. What is it like?",
+      "options": [
+        "Tourist town; 2,000 residents",
+        "Ghost town; no residents",
+        "~40 residents; unpaved road",
+        "Native subsistence village"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "we-9",
+      "prompt": "Mountaineering is a major draw. The Wrangell Mountains contain several giant volcanoes. Which is the most active?",
+      "options": [
+        "Mt. Wrangell — active volcano",
+        "Mount Sanford",
+        "Mount Blackburn",
+        "Mount Drum"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "we-10",
+      "prompt": "The Copper River runs through the park to the Gulf of Alaska. What is it famous for?",
+      "options": [
+        "World's largest salmon run",
+        "State's only guided whitewater",
+        "Native copper in the riverbed",
+        "Copper River sockeye & kings"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "we-11",
+      "prompt": "Dall sheep, grizzly bears, wolves, and moose all live in the park. What is the park's approximate grizzly bear population?",
+      "options": [
+        "About 300 bears",
+        "About 1,000 bears",
+        "About 100 bears",
+        "Unknown — never censused"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "we-12",
+      "prompt": "The Root Glacier near Kennecott can be hiked. What do visitors experience on it?",
+      "options": [
+        "NPS-groomed ski route",
+        "Moulins — shafts through ice",
+        "Smooth, featureless surface",
+        "Blue ice & crevasses"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "we-13",
+      "prompt": "The Nabesna Road provides access to the north side of the park. What is it like?",
+      "options": [
+        "42-mile unpaved; trailheads",
+        "Paved road to visitor center",
+        "Seasonal; 4WD permit required",
+        "Historic railroad grade"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "we-14",
+      "prompt": "The park is mostly wilderness with no maintained trails. How do backcountry travelers navigate?",
+      "options": [
+        "Glacier surfaces as routes",
+        "Licensed guides only; no solo",
+        "NPS GPS waypoint system",
+        "River bars, ridgelines, maps"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "we-15",
+      "prompt": "The Ahtna people have lived in the Copper River region for thousands of years. What were they known for?",
+      "options": [
+        "Reindeer herders from Siberia",
+        "Ocean-going canoe builders",
+        "First to trade with Russians",
+        "Traded native copper widely"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "we-16",
+      "prompt": "The park's combination of massive glaciers and active volcanoes creates rare events. What is a jokulhlaup?",
+      "options": [
+        "Volcano erupts; glacial flood",
+        "Subglacial lake draining flood",
+        "Ice cave from volcanic steam",
+        "Glacial surge; rapid advance"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "we-17",
+      "prompt": "Flightseeing is the best way to grasp the park's scale. What is typically seen on a flightseeing tour from McCarthy?",
+      "options": [
+        "Full park circumnavigation",
+        "Bagley Icefield & St. Elias",
+        "Grizzlies fishing from the air",
+        "Kennecott; glacier landing"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "we-18",
+      "prompt": "Wrangell-St. Elias has only about 80,000 visitors per year despite its size. What most limits visitation?",
+      "options": [
+        "Highest NPS entrance fee",
+        "Volcano flight restrictions",
+        "Required fitness certification",
+        "Distance, cost & few services"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "we-19",
+      "prompt": "The McCarthy Road crosses the Kuskulana Bridge, a historic railroad trestle. What is it like to drive over it?",
+      "options": [
+        "Modern bridge built in 1985",
+        "Single lane; 238 ft up",
+        "Wooden planks; 5 mph limit",
+        "Seasonal; closed in high water"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "we-20",
+      "prompt": "The Wrangell-St. Elias is called the 'mountain kingdom of North America.' What superlatives justify this name?",
+      "options": [
+        "Fastest glacier; top volcano",
+        "Widest delta, deepest fjord",
+        "Tallest peak, deepest valley",
+        "9 of 16 highest US peaks"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

@@ -62,7 +62,7 @@
       "id": "gc-6",
       "prompt": "The oldest rocks exposed in the Grand Canyon are roughly how old?",
       "options": [
-        "Nearly 2 billion years",
+        "~2 billion years",
         "500 million years",
         "200 million years",
         "4 billion years"
@@ -131,7 +131,7 @@
         "About half a mile",
         "About 100 feet",
         "About 3 miles",
-        "About 1 mile (over 6,000 ft)"
+        "About 1 mile (6,000+ ft)"
       ],
       "correct_index": 3
     },

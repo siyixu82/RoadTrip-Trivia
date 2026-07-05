@@ -1,0 +1,227 @@
+{
+  "slug": "mammoth-cave",
+  "title": "Mammoth Cave Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "mc-1",
+      "prompt": "Mammoth Cave holds what world record?",
+      "options": [
+        "Oldest continuously used cave",
+        "Largest chamber in N. America",
+        "World's longest cave (420+ mi)",
+        "Deepest cave in the West"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mc-2",
+      "prompt": "Mammoth Cave formed in which type of rock?",
+      "options": [
+        "Marble, sulfuric acid",
+        "Sandstone, underground river",
+        "Granite, acidic rainwater",
+        "Limestone, CO₂-rich water"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mc-3",
+      "prompt": "The cave maintains a constant temperature year-round. What is it?",
+      "options": [
+        "About 45°F",
+        "About 35°F",
+        "About 70°F",
+        "About 54°F"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mc-4",
+      "prompt": "Cave tours at Mammoth Cave are led by NPS rangers. Which tour takes visitors to see 'frozen Niagara,' one of the cave's most stunning flowstone formations?",
+      "options": [
+        "The Wild Cave Tour",
+        "The Domes and Dripstones Tour",
+        "The Frozen Niagara Tour",
+        "The Historic Tour"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mc-5",
+      "prompt": "What role did enslaved African Americans play in the early history of Mammoth Cave?",
+      "options": [
+        "Stephen Bishop led tours only",
+        "Free-labor scientific guides",
+        "Saltpeter miners only",
+        "Guides, explorers, and miners"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mc-6",
+      "prompt": "Saltpeter was mined from Mammoth Cave during the War of 1812. What was it used for?",
+      "options": [
+        "Wartime crop fertilizer",
+        "Food preservative",
+        "Gunpowder ingredient",
+        "Medicine for wounds"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mc-7",
+      "prompt": "Eyeless cave fish (Southern cavefish) live in the underground streams of Mammoth Cave. Why have they lost their eyes?",
+      "options": [
+        "Eyes costly in total darkness",
+        "Predators targeted eyes",
+        "Acidic water damaged eyes",
+        "Flood debris destroyed eyes"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "mc-8",
+      "prompt": "The Indiana bat is a rare, federally endangered species that hibernates in Mammoth Cave. What threatens it?",
+      "options": [
+        "Lead poisoning from cave water",
+        "White-nose syndrome (fungus)",
+        "Insect loss from pesticides",
+        "Cave-adapted owl predation"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mc-9",
+      "prompt": "The park sits in a karst landscape. What does 'karst' mean and how can you recognize it above ground?",
+      "options": [
+        "Lava tubes and steam vents",
+        "Gypsum formations, eroded",
+        "Sinkholes, streams, caves",
+        "Glacial valleys, kettle lakes"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "mc-10",
+      "prompt": "The Green River flows through Mammoth Cave National Park. What unique fish species live in this river?",
+      "options": [
+        "Atlantic salmon",
+        "Fanshell mussel, arrow darter",
+        "Paddlefish",
+        "Blind cave fish"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mc-11",
+      "prompt": "The Historic Entrance to Mammoth Cave has been known to humans for how long?",
+      "options": [
+        "About 200 years",
+        "Over 4,000 years",
+        "About 100 years",
+        "About 500 years"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mc-12",
+      "prompt": "The cave contains ancient Native American artifacts including reed torches, moccasins, and even human mummies. What were Native Americans doing deep in the cave?",
+      "options": [
+        "Burial of the dead inside",
+        "Mining mirabilite and gypsum",
+        "Shelter in defensive passages",
+        "Preserving food at 54°F"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mc-13",
+      "prompt": "What is the 'Wild Cave Tour' experience like compared to a standard tour?",
+      "options": [
+        "Self-paced Historic Route walk",
+        "Helmet, coveralls, crawling",
+        "Nighttime unlit tour",
+        "Private caves outside the park"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mc-14",
+      "prompt": "The Rotunda is one of the cave's largest rooms, visited on the Historic Tour. What gives the cave its 'mammoth' name?",
+      "options": [
+        "Passages shaped like mammoths",
+        "Vast scale, 'mammoth' = huge",
+        "Indigenous term for great size",
+        "Mammoth fossils in the Rotunda"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mc-15",
+      "prompt": "Cave gypsum flowers are among the most beautiful formations in Mammoth Cave. How are they different from stalactites?",
+      "options": [
+        "Form only in lit sections",
+        "Curl outward, crystal growth",
+        "Grow a full flower in months",
+        "Fossilized coral, ancient sea"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mc-16",
+      "prompt": "The park above ground has significant forest habitat. Which woodland ecosystem predominates?",
+      "options": [
+        "Mixed mesophytic forest",
+        "Old-growth tulip-poplar, pine",
+        "Pine savanna",
+        "Bottomland hardwood forest"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "mc-17",
+      "prompt": "Visitors should dress for the cave even in summer. What is the recommended attire?",
+      "options": [
+        "Dark formal clothing",
+        "Closed shoes, pants, jacket",
+        "Full rain gear",
+        "Swimsuit and sandals"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "mc-18",
+      "prompt": "The cave system continues to be explored and new passages are still being discovered. Who does most of this exploration today?",
+      "options": [
+        "Cave Research Foundation (CRF)",
+        "Univ. of Kentucky students",
+        "NPS geologists",
+        "Commercial cavers"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "mc-19",
+      "prompt": "White-nose syndrome, which kills bats in Mammoth Cave and beyond, is caused by what?",
+      "options": [
+        "A virus from infected guano",
+        "A bacterium",
+        "A parasitic mite",
+        "Pseudogymnoascus destructans"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "mc-20",
+      "prompt": "Above ground, what bird known for its distinctive drumming on dead trees is commonly seen in the park's forests?",
+      "options": [
+        "Hairy woodpecker",
+        "Pileated woodpecker",
+        "Red-headed woodpecker",
+        "Northern flicker"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

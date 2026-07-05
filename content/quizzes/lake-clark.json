@@ -1,0 +1,227 @@
+{
+  "slug": "lake-clark",
+  "title": "Lake Clark Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "lc-1",
+      "prompt": "Lake Clark National Park in Alaska is called 'Alaska's wild heart.' How do visitors get there?",
+      "options": [
+        "By small plane only",
+        "Via the Sterling Highway",
+        "By ferry from Homer",
+        "By seasonal winter road"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lc-2",
+      "prompt": "The park preserves an extraordinary diversity of landscapes in one place. Which combination best describes it?",
+      "options": [
+        "Rainforest, meadow, and fjord",
+        "Arctic tundra and taiga",
+        "Volcanic plateau and canyons",
+        "Glaciers, volcanoes, and coast"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "lc-3",
+      "prompt": "The park's coast on Cook Inlet and Lake Clark is famous for what wildlife viewing?",
+      "options": [
+        "Beluga whales",
+        "Steller sea lions",
+        "Polar bears",
+        "Bears on tidal flats"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "lc-4",
+      "prompt": "Mount Redoubt and Mount Iliamna are active volcanoes in the park. What happened when Redoubt last erupted?",
+      "options": [
+        "2009 — ash reached Lower 48",
+        "2009 — ash over Anchorage",
+        "1989 — shut down air traffic",
+        "2019 — destroyed a lodge"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "lc-5",
+      "prompt": "The Neacola and Alaska Range mountains in the park have extensive glaciers. What feeds them?",
+      "options": [
+        "Cook Inlet Pacific moisture",
+        "Permafrost meltwater",
+        "Arctic Ocean moisture",
+        "Cold temps, low snowfall"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lc-6",
+      "prompt": "Lake Clark itself is a turquoise glacial lake. What is the water color from?",
+      "options": [
+        "Extreme lake depth",
+        "Blue-green algae",
+        "Glacial flour",
+        "Volcanic minerals"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "lc-7",
+      "prompt": "The Tlikakila River is one of Alaska's premier wilderness rivers. What is the experience of floating it?",
+      "options": [
+        "Gentle flatwater for beginners",
+        "Tidal bore river",
+        "Multi-day whitewater trip",
+        "Ice-choked with portages"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "lc-8",
+      "prompt": "The park was established to protect one of the largest sockeye salmon spawning systems. Why do salmon matter beyond fish?",
+      "options": [
+        "Marine nutrients to the forest",
+        "Ecosystem health indicator",
+        "Athabascan cultural economy",
+        "Nutrients and subsistence use"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "lc-9",
+      "prompt": "Port Alsworth is the small community at the heart of the park where the visitor center is located. What is it like?",
+      "options": [
+        "Modern tourist town",
+        "Athabascan Native village",
+        "Former military base",
+        "~150 people with NPS center"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "lc-10",
+      "prompt": "Richard Proenneke built a handcrafted cabin in the park and lived there alone for 30 years. What did he document?",
+      "options": [
+        "Salmon migration patterns",
+        "\"Alone in the Wilderness\"",
+        "Brown bear population decline",
+        "Twin Lakes geology"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "lc-11",
+      "prompt": "The park is adjacent to Katmai National Park across the Alaska Peninsula. Together they form what?",
+      "options": [
+        "Largest connected wilderness",
+        "Largest brown bear habitat",
+        "A UNESCO World Heritage Site",
+        "Largest temperate ecosystem"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "lc-12",
+      "prompt": "Dall sheep live in the park's high mountain terrain. How do they survive the winter at elevation?",
+      "options": [
+        "Enter torpor / hibernation",
+        "Eat bark and lichens",
+        "Migrate to lower elevations",
+        "Windswept ridges, dried grass"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "lc-13",
+      "prompt": "Lake Clark is one of Alaska's least-visited national parks. What is the approximate annual visitation?",
+      "options": [
+        "About 200,000",
+        "About 80,000",
+        "Fewer than 30,000",
+        "About 1 million"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "lc-14",
+      "prompt": "The coast of the park on Cook Inlet has some of the world's largest tides. How high can they get?",
+      "options": [
+        "About 12 feet",
+        "About 20 feet",
+        "About 5 feet",
+        "Up to 30 feet"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "lc-15",
+      "prompt": "Wolves roam the park's river valleys. How large are wolf pack territories in this remote wilderness?",
+      "options": [
+        "About 50 sq miles",
+        "About 500 sq miles",
+        "Largely unknown",
+        "Hundreds–thousands of sq miles"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "lc-16",
+      "prompt": "The park has extensive wetlands that are critical for migratory birds. What birds breed here?",
+      "options": [
+        "Terns, cranes, swans, waders",
+        "Pacific loons only",
+        "Snow geese only",
+        "White-fronted geese"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lc-17",
+      "prompt": "The park was created under ANILCA in 1980. What was the political debate at the time?",
+      "options": [
+        "Native land rights",
+        "Blocking commercial fishing",
+        "Conservation vs. subsistence",
+        "Oil and gas development rights"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "lc-18",
+      "prompt": "Float trips on the Chilikadrotna River require starting with a floatplane drop-off. What does the multi-day trip involve?",
+      "options": [
+        "Whitewater then flatwater",
+        "Technical fly fishing only",
+        "Calm river through wetland",
+        "Elk migration route"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "lc-19",
+      "prompt": "The Kenai Peninsula is visible across Cook Inlet from the park's coast. What is the closest city?",
+      "options": [
+        "Kodiak",
+        "Soldotna",
+        "Anchorage",
+        "Homer"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "lc-20",
+      "prompt": "What is the best season to visit Lake Clark?",
+      "options": [
+        "Summer (June–September)",
+        "Spring",
+        "Winter",
+        "Fall"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "gates-of-the-arctic",
+  "title": "Gates of the Arctic Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "gta-1",
+      "prompt": "Gates of the Arctic National Park is entirely above the Arctic Circle. How remote is it?",
+      "options": [
+        "Dalton Hwy on east edge",
+        "Paved road + visitor center",
+        "Gravel road (seasonal)",
+        "No roads, bush plane only"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gta-2",
+      "prompt": "Explorer Robert Marshall named the park. What did he call the two peaks he named 'the gates'?",
+      "options": [
+        "Arctic & Subarctic Peak",
+        "Frigid Crags & Boreal Mtn",
+        "Grizzly & Wolverine Peak",
+        "Gates North & Gates South"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gta-3",
+      "prompt": "The Brooks Range runs through the park. What makes it different from the Rockies or Sierra Nevada?",
+      "options": [
+        "All volcanic rock",
+        "No peaks above 8,000 ft",
+        "Purely sedimentary rock",
+        "Northernmost range, roadless"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gta-4",
+      "prompt": "Western Arctic caribou is the largest herd in Alaska. What happens during their migration through the park?",
+      "options": [
+        "Hundreds of thousands cross",
+        "Stay year-round, no migration",
+        "Migrate east-west, bypass park",
+        "~5,000 caribou pass through"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gta-5",
+      "prompt": "Grizzly bears in the park are different from interior Alaska grizzlies. What is the Arctic grizzly's life like?",
+      "options": [
+        "No hibernation needed",
+        "Largest N. American grizzlies",
+        "Smaller, lighter-colored",
+        "Hibernate 8-9 months/year"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gta-6",
+      "prompt": "The park has no maintained trails. What does this mean for navigation?",
+      "options": [
+        "Follow river valley corridors",
+        "Park guides lead all groups",
+        "Follow caribou trails",
+        "Map, compass, or GPS only"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gta-7",
+      "prompt": "The midnight sun is visible from the park in summer. How long does it last above the Arctic Circle?",
+      "options": [
+        "About one week",
+        "About 3 weeks",
+        "About 18 hours/day",
+        "About 8 weeks"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gta-8",
+      "prompt": "Dall sheep live on the rocky ridges of the Brooks Range. What distinguishes them from bighorn sheep?",
+      "options": [
+        "Pure white vs. brown",
+        "Inward horns vs. outward",
+        "Arctic range vs. southern",
+        "Can swim; bighorns can't"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gta-9",
+      "prompt": "The Noatak River flows through the park into the Kotzebue Sound. What makes it one of Alaska's most important rivers?",
+      "options": [
+        "Only Arctic salmon run",
+        "Largest undammed wild basin",
+        "Subsistence communities",
+        "Largest permafrost lakes"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gta-10",
+      "prompt": "Mosquitoes are notoriously fierce in the park in summer. Why are they so abundant?",
+      "options": [
+        "Insecticides banned",
+        "Wet tundra breeding habitat",
+        "Cold helps eggs survive",
+        "Caribou attract them"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gta-11",
+      "prompt": "Visitors fly in to the park from Bettles or Coldfoot. What are these towns like?",
+      "options": [
+        "Native villages, need permit",
+        "Tiny bush plane outposts",
+        "Small cities on road system",
+        "Major hubs with airports"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gta-12",
+      "prompt": "The park has an unusual feature for a national park — subsistence hunting and fishing. Who is allowed?",
+      "options": [
+        "Indigenous members only",
+        "Rural Alaskan residents",
+        "No one",
+        "All visitors with a license"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gta-13",
+      "prompt": "The park sits on permafrost. What is permafrost and why does it matter?",
+      "options": [
+        "Ice layer below soil",
+        "Frozen ground, traps carbon",
+        "Frozen rock, no water",
+        "Freezes & thaws each year"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "gta-14",
+      "prompt": "Wolverines live in the park. They have a reputation for what behavior?",
+      "options": [
+        "Running 24 hrs straight",
+        "Swimming any river",
+        "Caching food everywhere",
+        "Fighting bears for food"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "gta-15",
+      "prompt": "The northern lights (aurora borealis) are spectacular at Gates of the Arctic in winter. What causes them?",
+      "options": [
+        "Methane from permafrost",
+        "Static from blowing snow",
+        "Solar particles hit atmosphere",
+        "Reflected sunlight on ice"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gta-16",
+      "prompt": "River rafting is the most common way visitors explore the park. What rivers are popular?",
+      "options": [
+        "Noatak & Kobuk",
+        "Colville & Chandler",
+        "Koyukuk & Alatna",
+        "John & Tinayguk"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gta-17",
+      "prompt": "The park is adjacent to other protected areas. What is the full extent of the connected protected landscape?",
+      "options": [
+        "Surrounded by state lands",
+        "Gates + Denali (10M acres)",
+        "With Noatak & Kobuk Valley",
+        "Arctic Natl Wildlife Refuge"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gta-18",
+      "prompt": "In winter, the park is in near-total darkness. How many hours of daylight are there at the winter solstice?",
+      "options": [
+        "About 6 hours",
+        "About 9 hours",
+        "Nearly zero",
+        "About 3 hours of twilight"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "gta-19",
+      "prompt": "The park was established by ANILCA in 1980. At over 8 million acres, how does its size compare to other US national parks?",
+      "options": [
+        "Second-largest",
+        "Largest national park",
+        "Third-largest",
+        "Largest (if rec areas counted)"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "gta-20",
+      "prompt": "What type of traveler is Gates of the Arctic best suited for?",
+      "options": [
+        "Families with children",
+        "First-time Alaska visitors",
+        "Wildlife photographers",
+        "Expert backcountry travelers"
+      ],
+      "correct_index": 3
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "dry-tortugas",
+  "title": "Dry Tortugas Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "dt-1",
+      "prompt": "Dry Tortugas National Park sits 70 miles west of Key West, Florida. How can visitors get there?",
+      "options": [
+        "Ferry or seaplane only",
+        "Via the Overseas Highway",
+        "Private ferry from Miami",
+        "Helicopter from Key West"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dt-2",
+      "prompt": "Fort Jefferson dominates Garden Key. What makes it architecturally remarkable?",
+      "options": [
+        "World's longest masonry wall",
+        "16M bricks; largest US fort",
+        "Only US fort below sea level",
+        "Built from quarried coral rock"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dt-3",
+      "prompt": "The park is called 'Dry' Tortugas because there is no fresh water on the islands. What does 'Tortugas' mean in Spanish?",
+      "options": [
+        "Dry rocks",
+        "Treasure",
+        "Islands",
+        "Turtles"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dt-4",
+      "prompt": "Dr. Samuel Mudd was imprisoned at Fort Jefferson after the Civil War. Why?",
+      "options": [
+        "Army fund embezzlement",
+        "Deserted the Union Army",
+        "Set Booth's broken leg",
+        "Confederate spy for England"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dt-5",
+      "prompt": "The Dry Tortugas is one of the best spots in the US for what activity, due to its remote, clear water?",
+      "options": [
+        "Snorkeling and diving",
+        "Storm-bird watching",
+        "Windsurfing",
+        "Deep-sea fishing"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dt-6",
+      "prompt": "Bush Key, adjacent to Garden Key, is closed seasonally to protect what?",
+      "options": [
+        "Frigatebird nests",
+        "Nesting bald eagles",
+        "Sea turtle nesting beaches",
+        "Sooty tern nesting colony"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dt-7",
+      "prompt": "Loggerhead Key has the only trees in the park and a historic lighthouse. What species dominates its vegetation?",
+      "options": [
+        "Invasive Australian pine",
+        "Buttonwood and sea grape",
+        "Coastal mangroves",
+        "Coconut palms"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "dt-8",
+      "prompt": "The park is a crucial stopover for migratory birds. Why do birds accumulate here in spring?",
+      "options": [
+        "Insects in warm shallows",
+        "Frigatebird food scraps",
+        "Lighthouse guides them in",
+        "Only land for 100s of miles"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dt-9",
+      "prompt": "Fort Jefferson was never finished despite decades of construction. Why was it abandoned?",
+      "options": [
+        "Coral foundation sinking",
+        "Rifled cannons + yellow fever",
+        "1873 hurricane destroyed walls",
+        "Congress cut funding post-war"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dt-10",
+      "prompt": "The Dry Tortugas lies on the edge of the Gulf Stream. What does this mean for marine life there?",
+      "options": [
+        "Currents prevent coral growth",
+        "Mississippi runoff",
+        "Cold upwelling nutrients",
+        "Tropical fish, coral, turtles"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dt-11",
+      "prompt": "Camping is available on Garden Key — one of the most remote campsites in any US national park. What must campers bring?",
+      "options": [
+        "Bear canister for raccoons",
+        "All food, water, and supplies",
+        "Wilderness permit + compass",
+        "Flame-resistant tent"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dt-12",
+      "prompt": "The moat surrounding Fort Jefferson was intended to be a defensive water barrier. What became of it?",
+      "options": [
+        "Collapsed; visible at low tide",
+        "Filled in after Civil War",
+        "Snorkeling habitat with fish",
+        "Never held water; fishing spot"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dt-13",
+      "prompt": "Magnificent frigatebirds roost in the park. What is remarkable about their appearance?",
+      "options": [
+        "Black with white wingtips",
+        "Red inflatable throat pouch",
+        "7-foot wingspan",
+        "Fully waterproof feathers"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dt-14",
+      "prompt": "Ponce de León named the islands 'Las Tortugas' in 1513. What did he find here?",
+      "options": [
+        "The Fountain of Youth",
+        "Vast numbers of sea turtles",
+        "Fresh water springs",
+        "Illegal Spanish settlement"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dt-15",
+      "prompt": "The water surrounding the park is exceptionally clear. What visibility can snorkelers expect?",
+      "options": [
+        "2–100 feet, varies by hour",
+        "5–10 feet on good days",
+        "20–30 feet year-round",
+        "60–80 feet on calm days"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dt-16",
+      "prompt": "What is the best way to experience the park since most of it is underwater?",
+      "options": [
+        "Low seaplane flight over reef",
+        "Snorkeling the fort and reef",
+        "Boat tour of all seven islands",
+        "Glass-bottom kayak tours"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "dt-17",
+      "prompt": "The park is one of the most remote and least-visited in the NPS system. What's the annual visitor count?",
+      "options": [
+        "About 750,000",
+        "About 2 million",
+        "About 25,000",
+        "About 75,000"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dt-18",
+      "prompt": "President Franklin Roosevelt designated the area a National Monument in 1935. What drew his attention to it?",
+      "options": [
+        "Personal sailing trip stopover",
+        "Audubon Society seabird report",
+        "Most biodiverse reef survey",
+        "Military history + wildlife"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dt-19",
+      "prompt": "The coral reefs at Dry Tortugas are considered some of the healthiest in Florida. Why are they in better condition than mainland reefs?",
+      "options": [
+        "Fishing limits, more predators",
+        "Military sonar kills invasives",
+        "Remote, pristine, low fishing",
+        "Deeper, cooler water"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "dt-20",
+      "prompt": "What should visitors know about the ferry ride from Key West to Dry Tortugas?",
+      "options": [
+        "Summer only; winter charter",
+        "30 min on a hydrofoil",
+        "~2.5 hours; rough open water",
+        "Requires a wildlife permit"
+      ],
+      "correct_index": 2
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "slug": "kenai-fjords",
+  "title": "Kenai Fjords Trivia",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": "kf-1",
+      "prompt": "Kenai Fjords National Park in Alaska centers on what massive feature?",
+      "options": [
+        "Harding Icefield",
+        "Volcanic peaks",
+        "The Kenai River",
+        "Fjords along Gulf of Alaska"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "kf-2",
+      "prompt": "The Harding Icefield spawns many tidewater glaciers. What happens when a tidewater glacier reaches the ocean?",
+      "options": [
+        "Melts into a shallow delta",
+        "Calving — ice chunks break off",
+        "Salt water halts its advance",
+        "Fans into a piedmont glacier"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kf-3",
+      "prompt": "Exit Glacier is the only part of the park accessible by road. What can visitors do there?",
+      "options": [
+        "Year-round snowmobile tours",
+        "Kayak the meltwater lake",
+        "Crampon tours on the ice",
+        "Hike to the glacier face"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kf-4",
+      "prompt": "Seward, Alaska is the gateway town to Kenai Fjords. What is notable about Seward's location?",
+      "options": [
+        "Alaska Railroad terminus",
+        "Road, rail, and cruise access",
+        "Original Alaska capital",
+        "Head of Resurrection Bay"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kf-5",
+      "prompt": "Marine wildlife is a highlight of boat tours in the park. Which species is a symbol of the park's rich ocean ecosystem?",
+      "options": [
+        "Steller sea lions",
+        "Migrating walruses",
+        "Polar bears",
+        "Pacific gray whales"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "kf-6",
+      "prompt": "Sea otters float in large groups called rafts in the park's bays. Why are they a keystone species?",
+      "options": [
+        "Eat urchins, protecting kelp",
+        "Build salmon shelters",
+        "Coat water to protect fish",
+        "Fertilize coastal forest soils"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "kf-7",
+      "prompt": "Humpback whales feed in the park's rich waters. What feeding technique are they famous for?",
+      "options": [
+        "Ramming fish at high speed",
+        "Deep diving to 2,000 feet",
+        "Cooperating with orcas",
+        "Bubble-net feeding"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kf-8",
+      "prompt": "The Harding Icefield Trail climbs steeply from Exit Glacier. What does it offer at the top?",
+      "options": [
+        "Overnight cabin on the ice",
+        "Helicopter tour landing pad",
+        "Icefield view with nunataks",
+        "Ski route across icefield"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "kf-9",
+      "prompt": "Orcas (killer whales) are frequently spotted in the park. What are the two main types seen here?",
+      "options": [
+        "Northern and Southern orcas",
+        "Arctic and resident orcas",
+        "Resident and transient orcas",
+        "Solitary and pod orcas"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "kf-10",
+      "prompt": "Puffins nest on rocky islands in the park. Which type is more commonly seen in Alaska?",
+      "options": [
+        "Marbled murrelets",
+        "Horned and tufted puffins",
+        "Rhinoceros auklets",
+        "Atlantic puffins"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kf-11",
+      "prompt": "The park's fjords were carved by glaciers during the last ice age. What has happened to sea level as glaciers retreated?",
+      "options": [
+        "Sea level fell, land rebounded",
+        "Fell — meltwater diluted salt",
+        "Rose globally, flooded valleys",
+        "Unchanged — carved below today"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "kf-12",
+      "prompt": "Black bears and brown bears both live in the park. Where would you most likely encounter a brown bear?",
+      "options": [
+        "On the Harding Icefield",
+        "Rocky sea cliffs on islands",
+        "Forest above Exit Glacier",
+        "Salmon streams in late summer"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kf-13",
+      "prompt": "Glaciers in the park are retreating. Exit Glacier's 'Retreat' trail markers show how far the glacier extended in past years. What trend do they show?",
+      "options": [
+        "Stable after 1990s retreat",
+        "Over a mile lost, accelerating",
+        "Little change in 50 years",
+        "Advancing ~30 feet per year"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kf-14",
+      "prompt": "Kayaking is a popular activity near Seward in the park's bays. What is the primary hazard kayakers must watch for?",
+      "options": [
+        "Underwater volcanic vents",
+        "Orcas capsizing kayaks",
+        "Rip tides at fjord mouths",
+        "Waves from calving glaciers"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "kf-15",
+      "prompt": "The park has no roads beyond Exit Glacier. How do most visitors reach the fjords?",
+      "options": [
+        "Boat tour from Seward",
+        "Helicopter from Seward",
+        "Floatplane from Anchorage",
+        "Backcountry trails"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "kf-16",
+      "prompt": "Harbor seals pup on floating ice in the park. Why is calving glacier ice important to their survival?",
+      "options": [
+        "Keeps pups away from predators",
+        "Crustacean habitat on ice",
+        "Pups need cold surface to rest",
+        "Only haul-out surface for pups"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "kf-17",
+      "prompt": "The park is near Anchorage. How long does it take to drive there from Anchorage?",
+      "options": [
+        "~2.5 hours via Seward Hwy",
+        "~6 hours through wilderness",
+        "~1 hour on a spur road",
+        "~4 hours with a ferry crossing"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "kf-18",
+      "prompt": "Alaska's salmon runs fuel the entire Kenai ecosystem. Which salmon species is most abundant in the park's coastal waters?",
+      "options": [
+        "Pink and chum salmon",
+        "Sockeye (red) salmon",
+        "Coho (silver) salmon",
+        "King (Chinook) salmon"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "kf-19",
+      "prompt": "Ice worms are real animals found living inside glaciers at Kenai Fjords. What are they?",
+      "options": [
+        "Ice-adapted flatworms",
+        "Annelid worms on surface ice",
+        "Glacier beetle larvae",
+        "Microscopic nematodes"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "kf-20",
+      "prompt": "The park was established in 1980 under the Alaska National Interest Lands Conservation Act (ANILCA). What was ANILCA significant for?",
+      "options": [
+        "Protected 100M+ Alaska acres",
+        "Gave tribes control of parks",
+        "Required winter access plans",
+        "Banned oil drilling near parks"
+      ],
+      "correct_index": 0
+    }
+  ]
+}
