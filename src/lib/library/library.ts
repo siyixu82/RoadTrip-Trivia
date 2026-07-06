@@ -36,6 +36,7 @@ import {
   putHistory,
   putQuiz,
   putSave,
+  removeQuizContent,
   replaceSaves,
   setMeta,
   wipe,
@@ -311,7 +312,18 @@ export function setDownloaded(quizId: string, value: boolean): void {
   // Downloading means the *content* must be cached locally — not just a flag.
   // ensureContentCached surfaces real progress via download_status, so the
   // badge can't claim "Downloaded" until the questions are actually stored.
-  if (value) void ensureContentCached(quizId);
+  // Deleting a download frees the cached questions so it's genuinely removed
+  // from the offline cache (the save/bookmark itself is untouched).
+  if (value) {
+    void ensureContentCached(quizId);
+  } else {
+    const m = metaMap.get(quizId);
+    if (m?.questions?.length) {
+      metaMap.set(quizId, { ...m, questions: undefined });
+      recompute();
+    }
+    void removeQuizContent(quizId);
+  }
 }
 
 /**

@@ -146,9 +146,10 @@ function DownloadButton({ quiz }: { quiz: SavedQuiz }) {
           type="button"
           onClick={() => setDownloaded(quiz.id, false)}
           aria-pressed
-          className={`${base} border-green-600 bg-green-50 text-green-700`}
+          aria-label={`Delete download of ${quiz.title}`}
+          className={`${base} border-red-400 bg-red-50 text-red-600 hover:border-red-500`}
         >
-          Downloaded ✓
+          🗑 Delete
         </button>
       );
     case "downloading":

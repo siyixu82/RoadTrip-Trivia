@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { recordCompletion } from "@/lib/library/library";
+import { deleteProgress, getProgress, putProgress } from "@/lib/db/idb";
 import { parkIcon, parkName } from "@/lib/parkIcon";
 import type { Quiz } from "@/lib/types";
 
@@ -72,10 +73,65 @@ export function QuizPlayer({ quiz }: Props) {
   );
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Persist progress whenever it changes so a resume restores the exact state.
+  // Gate persistence until we've had a chance to pull any durable (IndexedDB)
+  // progress. This avoids the mount-time persist effect clobbering a saved
+  // attempt with the empty initial state before rehydration finishes. When
+  // sessionStorage already restored live progress, we're rehydrated immediately.
+  const [rehydrated, setRehydrated] = useState(() => {
+    const p = loadProgress(quiz.id, total);
+    return !!(p && (p.finished || p.answers.some((a) => a !== null)));
+  });
+
+  // On a cold launch sessionStorage is empty, so restore an unfinished attempt
+  // from the durable cache (survives app termination and works offline). Runs
+  // once on mount; skipped when sessionStorage already restored live progress.
+  useEffect(() => {
+    if (rehydrated) return;
+    let cancelled = false;
+    getProgress(quiz.id)
+      .then((p) => {
+        if (cancelled) return;
+        if (p && p.answers.length === total && p.answers.some((a) => a !== null)) {
+          setAnswers(p.answers);
+          setCurrentIndex(Math.min(Math.max(0, p.current_index), total - 1));
+        }
+        setRehydrated(true);
+      })
+      .catch(() => !cancelled && setRehydrated(true));
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Fast resume layer: sessionStorage gives an instant restore on a background/
+  // resume. The initial state was read from here, so re-writing is idempotent
+  // and always safe (no rehydration gate needed).
   useEffect(() => {
     saveProgress(quiz.id, { answers, currentIndex, finished });
   }, [quiz.id, answers, currentIndex, finished]);
+
+  // Durable layer: IndexedDB survives a cold launch and works offline, powering
+  // Home's Resume card. Only unfinished attempts are kept; finishing or retrying
+  // clears the row. Gated on rehydration so the empty initial state can't clobber
+  // a saved attempt before we've read it back on a cold launch.
+  useEffect(() => {
+    if (!rehydrated) return;
+    const started = answers.some((a) => a !== null);
+    if (finished || !started) {
+      void deleteProgress(quiz.id);
+    } else {
+      void putProgress({
+        quiz_id: quiz.id,
+        slug: quiz.slug,
+        title: quiz.title,
+        question_count: total,
+        answers,
+        current_index: currentIndex,
+        updated_at: new Date().toISOString(),
+      });
+    }
+  }, [rehydrated, quiz, answers, currentIndex, finished, total]);
 
   const clearTimer = useCallback(() => {
     if (timer.current) {

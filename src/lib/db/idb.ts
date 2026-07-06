@@ -38,6 +38,22 @@ export interface HistoryRow {
   completed_at: string;
 }
 
+/**
+ * An in-progress (unfinished) quiz attempt, persisted durably so it survives a
+ * cold launch and is available offline. Unlike the sessionStorage copy (which
+ * is cleared when the app is terminated), this powers the Home "Resume" card.
+ * Rows exist only while an attempt is unfinished — deleted on finish/retry.
+ */
+export interface ProgressRow {
+  quiz_id: string;
+  slug: string | null;
+  title: string;
+  question_count: number;
+  answers: (number | null)[];
+  current_index: number;
+  updated_at: string;
+}
+
 /** A mutation made locally, queued to push to Supabase when online. */
 export type OutboxOp =
   | { kind: "save_upsert"; row: SaveRow }
@@ -60,10 +76,11 @@ interface RTTSchema extends DBSchema {
   };
   outbox: { key: string; value: OutboxItem };
   meta: { key: string; value: { key: string; value: unknown } };
+  progress: { key: string; value: ProgressRow };
 }
 
 const DB_NAME = "roadtrip-trivia";
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 
 function idbAvailable(): boolean {
   return typeof indexedDB !== "undefined";
@@ -75,15 +92,20 @@ function getDb(): Promise<IDBPDatabase<RTTSchema>> | null {
   if (!idbAvailable()) return null;
   if (!dbPromise) {
     dbPromise = openDB<RTTSchema>(DB_NAME, DB_VERSION, {
-      upgrade(db) {
-        const quizzes = db.createObjectStore("quizzes", { keyPath: "id" });
-        quizzes.createIndex("by_slug", "slug");
-        const saves = db.createObjectStore("saves", { keyPath: "quiz_id" });
-        saves.createIndex("by_saved_at", "saved_at");
-        const history = db.createObjectStore("history", { keyPath: "id" });
-        history.createIndex("by_completed_at", "completed_at");
-        db.createObjectStore("outbox", { keyPath: "localId" });
-        db.createObjectStore("meta", { keyPath: "key" });
+      upgrade(db, oldVersion) {
+        if (oldVersion < 1) {
+          const quizzes = db.createObjectStore("quizzes", { keyPath: "id" });
+          quizzes.createIndex("by_slug", "slug");
+          const saves = db.createObjectStore("saves", { keyPath: "quiz_id" });
+          saves.createIndex("by_saved_at", "saved_at");
+          const history = db.createObjectStore("history", { keyPath: "id" });
+          history.createIndex("by_completed_at", "completed_at");
+          db.createObjectStore("outbox", { keyPath: "localId" });
+          db.createObjectStore("meta", { keyPath: "key" });
+        }
+        if (oldVersion < 2) {
+          db.createObjectStore("progress", { keyPath: "quiz_id" });
+        }
       },
     }).catch((e) => {
       // If the DB can't open (private mode, quota), disable the cache rather
@@ -190,6 +212,46 @@ export async function getAllCachedQuizzes(): Promise<CachedQuiz[]> {
   return db.getAll("quizzes");
 }
 
+/**
+ * Drop a quiz's downloaded questions from the cache (keeping its metadata so it
+ * still renders in lists). Used when the user deletes a download.
+ */
+export async function removeQuizContent(id: string): Promise<void> {
+  const db = await getDb()?.catch(() => null);
+  if (!db) return;
+  const existing = await db.get("quizzes", id);
+  if (!existing) return;
+  await db.put("quizzes", { ...existing, questions: undefined });
+}
+
+// --- progress (durable in-progress attempts) -------------------------------
+
+export async function putProgress(row: ProgressRow): Promise<void> {
+  const db = await getDb()?.catch(() => null);
+  if (!db) return;
+  await db.put("progress", row);
+}
+
+export async function getProgress(
+  quizId: string,
+): Promise<ProgressRow | undefined> {
+  const db = await getDb()?.catch(() => null);
+  if (!db) return undefined;
+  return db.get("progress", quizId);
+}
+
+export async function deleteProgress(quizId: string): Promise<void> {
+  const db = await getDb()?.catch(() => null);
+  if (!db) return;
+  await db.delete("progress", quizId);
+}
+
+export async function getAllProgress(): Promise<ProgressRow[]> {
+  const db = await getDb()?.catch(() => null);
+  if (!db) return [];
+  return db.getAll("progress");
+}
+
 // --- outbox ----------------------------------------------------------------
 
 export async function enqueue(op: OutboxOp): Promise<void> {
@@ -222,7 +284,7 @@ export async function wipe(): Promise<void> {
   const db = await getDb()?.catch(() => null);
   if (!db) return;
   const tx = db.transaction(
-    ["quizzes", "saves", "history", "outbox", "meta"],
+    ["quizzes", "saves", "history", "outbox", "meta", "progress"],
     "readwrite",
   );
   await Promise.all([
@@ -231,6 +293,7 @@ export async function wipe(): Promise<void> {
     tx.objectStore("history").clear(),
     tx.objectStore("outbox").clear(),
     tx.objectStore("meta").clear(),
+    tx.objectStore("progress").clear(),
   ]);
   await tx.done;
 }

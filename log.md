@@ -8,6 +8,28 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 
 ## 2026-07-05
 
+### Phase 6 — Resume, offline Home, delete-download ✅
+
+Three UX requests, all offline-durable:
+
+- **Resume unfinished quiz (Home card).** In-progress attempts are now persisted
+  to a new durable IndexedDB `progress` store (DB bumped to v2), not just
+  sessionStorage. `QuizPlayer` writes the row on every change and deletes it on
+  finish/retry; on a cold launch it rehydrates from IndexedDB (gated so the empty
+  initial state can't clobber a saved attempt). Home shows a **Resume** card
+  (park, "Question X of N", progress bar) linking back into the quiz — works
+  offline since a played quiz's content is already cached.
+- **Downloaded quizzes on Home when offline.** The full catalog needs the
+  network, so when it can't load Home now falls back to quizzes whose questions
+  are cached locally (`getAllCachedQuizzes` → playable), under a "Downloaded
+  quizzes" heading, instead of being stuck on "Loading…".
+- **Download button → Delete.** A downloaded save now shows a red **🗑 Delete**
+  button (was "Downloaded ✓"). Clicking it clears `is_offline` (synced to
+  Supabase) *and* strips the cached questions from IndexedDB
+  (`removeQuizContent`), genuinely freeing the offline copy.
+
+`wipe()` now clears `progress` too (shared-device safety). All 24 tests pass.
+
 ### Phase 3 — Complete 63-park quiz catalog with phone-friendly answer options ✅
 
 - **Full catalog:** all 63 U.S. National Parks now have quiz files in
