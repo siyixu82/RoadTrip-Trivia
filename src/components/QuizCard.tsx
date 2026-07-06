@@ -20,8 +20,10 @@ export function QuizCard({ quiz }: { quiz: QuizSummary }) {
       </div>
 
       <div className="min-w-0 flex-1">
-        <div className="font-mono text-[11px] font-bold uppercase tracking-wide text-[#F5A623]">
-          {tag} · {quiz.question_count} QS
+        {/* "20 Q" is the PRD's own card shorthand — the spelled-out form wraps
+            at phone width and pushes the park name down a line. */}
+        <div className="whitespace-nowrap font-mono text-[11px] font-bold uppercase tracking-wide text-[#F5A623]">
+          {tag} · {quiz.question_count} Q
         </div>
         <div className="line-clamp-2 text-[15px] font-bold leading-tight text-[#1a1a1a]">
           {parkName(quiz.title)}

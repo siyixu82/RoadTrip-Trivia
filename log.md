@@ -8,6 +8,32 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 
 ## 2026-07-05
 
+### Phase 6 — Hands-on UX audit (headless click-through) ✅
+
+Drove the real app in headless Chromium at phone size (375×667), screenshotting
+every screen/state, and fixed what looked wrong on screen:
+
+- **Park icons completed for all 63 parks.** Only 12 had entries; the other 51
+  fell back to 🏞, which renders as a "framed picture" that reads as a broken
+  image (American Samoa/Badlands showed identical frames). Every slug now has a
+  fitting emoji (🦞 Acadia, 🌺 American Samoa, 🦬 Badlands, 🐻 Katmai, …).
+- **Quiz footer no longer wraps.** After answering, "Next →" broke onto two
+  lines (tall blob) and "AUTO-ADVANCING…" wrapped; both now `whitespace-nowrap`.
+- **Remove-confirm no longer flips the ✕ glyph's meaning.** Trigger is ✕; the
+  confirm step used ✕ again but meaning *cancel*. Now confirm shows labeled
+  "Remove" / "Keep" pills.
+- **Saved card shows offline state again.** With the button now "Delete"
+  (action), nothing said the quiz *was* downloaded — added a green
+  "· Offline ✓" badge by the question count, which also gives Delete its
+  referent (you're deleting the offline copy, not the save).
+- **Score screen celebration matches the result.** 🏆 "Outstanding!" ≥80%,
+  👏 "Nice work!" ≥50%, 🌲 "Quiz complete!" below — a trophy on 6/20 rang hollow.
+- **Card tag:** "20 QS" → "EASY · 20 Q" (PRD's own shorthand), nowrap —
+  spelled-out "QUESTIONS" wrapped at phone width and pushed the title down.
+
+Zero console errors across the full flow (save → download → play → auto-advance
+→ resume → finish → history → delete download → remove confirm).
+
 ### Phase 6 — Resume, offline Home, delete-download ✅
 
 Three UX requests, all offline-durable:

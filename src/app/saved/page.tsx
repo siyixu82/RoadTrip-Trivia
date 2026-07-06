@@ -107,6 +107,11 @@ function SavedList({ saves }: { saves: SavedQuiz[] }) {
               </div>
               <div className="font-mono text-[11px] uppercase tracking-wide text-[#1a1a1a]/45">
                 {quiz.question_count} questions
+                {/* State lives here so the Delete *action* button below has a
+                    visible referent: what you'd be deleting is the offline copy. */}
+                {quiz.download_status === "ready" && (
+                  <span className="ml-1.5 text-green-700">· Offline ✓</span>
+                )}
               </div>
             </div>
             <RemoveButton quiz={quiz} />
@@ -145,22 +150,23 @@ function RemoveButton({ quiz }: { quiz: SavedQuiz }) {
   }, [confirming]);
 
   if (confirming) {
+    // Both choices are labeled words: the trigger was a ✕, so reusing ✕ here
+    // for "cancel" would flip the glyph's meaning between two adjacent taps.
     return (
       <div className="flex shrink-0 items-center gap-1.5">
         <button
           type="button"
           onClick={() => removeSave(quiz.id)}
-          className="rounded-full border-2 border-red-500 bg-red-500 px-3 py-1.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
+          className="whitespace-nowrap rounded-full border-2 border-red-500 bg-red-500 px-3 py-1.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
         >
           Remove
         </button>
         <button
           type="button"
           onClick={() => setConfirming(false)}
-          aria-label="Cancel remove"
-          className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#1a1a1a]/15 text-sm font-bold text-[#1a1a1a]/50 transition-colors hover:border-[#1a1a1a]/30"
+          className="whitespace-nowrap rounded-full border-2 border-[#1a1a1a]/15 px-3 py-1.5 text-sm font-bold text-[#1a1a1a]/55 transition-colors hover:border-[#1a1a1a]/30"
         >
-          ✕
+          Keep
         </button>
       </div>
     );

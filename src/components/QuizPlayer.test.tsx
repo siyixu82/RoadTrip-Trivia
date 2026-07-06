@@ -103,7 +103,8 @@ describe("QuizPlayer", () => {
       advance();
     }
     expect(screen.getByText("3/3")).toBeInTheDocument();
-    expect(screen.getByText("Quiz complete!")).toBeInTheDocument();
+    // Perfect score earns the top-tier headline (low scores get a plain one).
+    expect(screen.getByText("Outstanding!")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Retry" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Home" })).toBeInTheDocument();
   });

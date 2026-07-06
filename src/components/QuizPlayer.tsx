@@ -221,13 +221,21 @@ export function QuizPlayer({ quiz }: Props) {
   if (finished) {
     const score = scoreOf(answers);
     const pct = Math.round((score / total) * 100);
+    // Match the celebration to the result — a trophy on 6/20 rings hollow and
+    // cheapens the trophy earned on a genuinely good run.
+    const { emoji, headline } =
+      pct >= 80
+        ? { emoji: "🏆", headline: "Outstanding!" }
+        : pct >= 50
+          ? { emoji: "👏", headline: "Nice work!" }
+          : { emoji: "🌲", headline: "Quiz complete!" };
     return (
       <div className="flex flex-1 flex-col items-center justify-center gap-6 bg-[#FFF8EC] p-6 text-center">
         <div className="flex flex-col items-center gap-1">
           <span className="text-5xl" aria-hidden>
-            🏆
+            {emoji}
           </span>
-          <h1 className="text-2xl font-bold">Quiz complete!</h1>
+          <h1 className="text-2xl font-bold">{headline}</h1>
           <p className="font-mono text-[11px] uppercase tracking-widest text-[#1a1a1a]/45">
             {quiz.title}
           </p>
@@ -358,7 +366,7 @@ export function QuizPlayer({ quiz }: Props) {
           {currentIndex > 0 ? (
             <button
               onClick={goBack}
-              className="rounded-full border-2 border-[#1a1a1a]/15 bg-white px-5 py-2 font-bold text-[#1a1a1a] transition-colors hover:border-[#1a1a1a]/30"
+              className="whitespace-nowrap rounded-full border-2 border-[#1a1a1a]/15 bg-white px-5 py-2 font-bold text-[#1a1a1a] transition-colors hover:border-[#1a1a1a]/30"
             >
               ← Back
             </button>
@@ -368,18 +376,18 @@ export function QuizPlayer({ quiz }: Props) {
             </span>
           )}
           {answered ? (
-            <span className="font-mono text-[10px] uppercase tracking-widest text-[#1a1a1a]/35">
+            <span className="whitespace-nowrap font-mono text-[10px] uppercase tracking-widest text-[#1a1a1a]/35">
               {isLast ? "Tap finish" : "Auto-advancing…"}
             </span>
           ) : (
-            <span className="font-mono text-[10px] uppercase tracking-widest text-[#1a1a1a]/25">
+            <span className="whitespace-nowrap font-mono text-[10px] uppercase tracking-widest text-[#1a1a1a]/25">
               Pick an answer
             </span>
           )}
           <button
             onClick={goNext}
             disabled={!answered}
-            className="rounded-full border-2 border-[#1a1a1a] bg-[#F5A623] px-6 py-2 font-bold text-[#1a1a1a] transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
+            className="whitespace-nowrap rounded-full border-2 border-[#1a1a1a] bg-[#F5A623] px-6 py-2 font-bold text-[#1a1a1a] transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
           >
             {isLast ? "Finish" : "Next →"}
           </button>
