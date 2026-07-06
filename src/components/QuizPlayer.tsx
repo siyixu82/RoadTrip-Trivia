@@ -350,15 +350,23 @@ export function QuizPlayer({ quiz }: Props) {
           );
         })}
 
-        {/* Manual navigation — Back/Next let you review answers at your own pace */}
+        {/* Manual navigation — Back/Next let you review answers at your own pace.
+            On Q1 there is nothing to go back to, so no Back button at all (a
+            disabled one just advertises an impossible action); an invisible
+            placeholder keeps the hint centered and Next in place. */}
         <div className="mt-auto flex items-center justify-between gap-3 pt-3">
-          <button
-            onClick={goBack}
-            disabled={currentIndex === 0}
-            className="rounded-full border-2 border-[#1a1a1a]/15 bg-white px-5 py-2 font-bold text-[#1a1a1a] transition-colors hover:border-[#1a1a1a]/30 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            ← Back
-          </button>
+          {currentIndex > 0 ? (
+            <button
+              onClick={goBack}
+              className="rounded-full border-2 border-[#1a1a1a]/15 bg-white px-5 py-2 font-bold text-[#1a1a1a] transition-colors hover:border-[#1a1a1a]/30"
+            >
+              ← Back
+            </button>
+          ) : (
+            <span aria-hidden className="invisible rounded-full border-2 px-5 py-2 font-bold">
+              ← Back
+            </span>
+          )}
           {answered ? (
             <span className="font-mono text-[10px] uppercase tracking-widest text-[#1a1a1a]/35">
               {isLast ? "Tap finish" : "Auto-advancing…"}

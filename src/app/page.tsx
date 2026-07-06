@@ -71,19 +71,15 @@ export default function Home() {
 
   return (
     <main className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-5 p-5">
-      {/* Brand header */}
-      <header className="flex items-center justify-between gap-3">
-        <div>
-          <h1 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
-            <span aria-hidden>🗺️</span> RoadTrip Trivia
-          </h1>
-          <p className="font-mono text-[11px] uppercase tracking-wide text-[#1a1a1a]/45">
-            Trivia for the open road
-          </p>
-        </div>
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#F5A623] bg-[#FFF8EC] text-lg">
-          🧭
-        </div>
+      {/* Brand header. No ornaments on the right: a decorative icon there reads
+          as a tappable control (users see a mystery button that does nothing). */}
+      <header>
+        <h1 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
+          <span aria-hidden>🗺️</span> RoadTrip Trivia
+        </h1>
+        <p className="font-mono text-[11px] uppercase tracking-wide text-[#1a1a1a]/45">
+          Trivia for the open road
+        </p>
       </header>
 
       {/* Passive search → Explore */}

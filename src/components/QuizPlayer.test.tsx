@@ -174,7 +174,10 @@ describe("QuizPlayer", () => {
 
   it("Back returns to the previous question with its answer preserved", () => {
     render(<QuizPlayer quiz={quiz} />);
-    expect(screen.getByRole("button", { name: "← Back" })).toBeDisabled();
+    // Q1 has nothing to go back to, so no Back button is shown at all.
+    expect(
+      screen.queryByRole("button", { name: "← Back" }),
+    ).not.toBeInTheDocument();
     fireEvent.click(optionButtons()[0]); // Q1 wrong pick (correct is 1)
     fireEvent.click(screen.getByRole("button", { name: /Next/ }));
     fireEvent.click(screen.getByRole("button", { name: "← Back" }));
