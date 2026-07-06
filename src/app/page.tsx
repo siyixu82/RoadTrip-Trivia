@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { QuizCard } from "@/components/QuizCard";
+import { CatalogError, CatalogSkeleton } from "@/components/CatalogState";
 import { useCatalog } from "@/lib/useCatalog";
 import { getAllCachedQuizzes, getAllProgress, type ProgressRow } from "@/lib/db/idb";
 import { parkIcon, parkName } from "@/lib/parkIcon";
@@ -64,7 +65,7 @@ function useOfflineQuizzes(): QuizSummary[] {
 }
 
 export default function Home() {
-  const state = useCatalog();
+  const { state, reload } = useCatalog();
   const resume = useResume();
   const offlineQuizzes = useOfflineQuizzes();
 
@@ -120,10 +121,20 @@ export default function Home() {
             </Link>
           )}
         </>
+      ) : state.status === "loading" ? (
+        <>
+          <div>
+            <h2 className="text-lg font-bold">Recommended for you</h2>
+            <p className="text-sm text-[#1a1a1a]/45">
+              Hand-picked parks to quiz on your next trip.
+            </p>
+          </div>
+          <CatalogSkeleton count={RECOMMENDED_COUNT} />
+        </>
       ) : offlineQuizzes.length > 0 ? (
-        // Offline (or the catalog failed to load): the full catalog needs the
-        // network, so fall back to the quizzes already downloaded to this device
-        // instead of leaving Home stuck on "Loading…".
+        // Catalog failed (typically offline): the full catalog needs a network,
+        // so fall back to quizzes already downloaded to this device instead of
+        // showing an error over content the user can actually play.
         <>
           <div>
             <h2 className="text-lg font-bold">Downloaded quizzes</h2>
@@ -137,10 +148,8 @@ export default function Home() {
             ))}
           </ul>
         </>
-      ) : state.status === "error" ? (
-        <p className="text-red-600">Error: {state.message}</p>
       ) : (
-        <p className="text-[#1a1a1a]/45">Loading…</p>
+        <CatalogError message={state.message} onRetry={reload} />
       )}
     </main>
   );

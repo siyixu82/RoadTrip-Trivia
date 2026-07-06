@@ -34,7 +34,7 @@ export function QuizCard({ quiz }: { quiz: QuizSummary }) {
           onClick={() => toggleSave(quiz)}
           aria-pressed={saved}
           aria-label={saved ? "Remove from saved" : "Save quiz"}
-          className={`flex h-9 w-9 items-center justify-center rounded-full border-2 text-lg transition-colors ${
+          className={`flex h-11 w-11 items-center justify-center rounded-full border-2 text-lg transition-colors ${
             saved
               ? "border-[#F5A623] bg-[#F5A623] text-white"
               : "border-[#1a1a1a]/15 text-[#1a1a1a]/40 hover:border-[#F5A623] hover:text-[#F5A623]"

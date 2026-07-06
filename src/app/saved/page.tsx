@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
   removeSave,
@@ -109,14 +109,7 @@ function SavedList({ saves }: { saves: SavedQuiz[] }) {
                 {quiz.question_count} questions
               </div>
             </div>
-            <button
-              type="button"
-              onClick={() => removeSave(quiz.id)}
-              aria-label={`Remove ${quiz.title}`}
-              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-[#1a1a1a]/12 text-[#1a1a1a]/40 transition-colors hover:border-red-500 hover:text-red-500"
-            >
-              ✕
-            </button>
+            <RemoveButton quiz={quiz} />
           </div>
 
           <div className="mt-3 flex items-center gap-2 border-t-2 border-dashed border-[#1a1a1a]/10 pt-3">
@@ -133,6 +126,55 @@ function SavedList({ saves }: { saves: SavedQuiz[] }) {
         </li>
       ))}
     </ul>
+  );
+}
+
+/**
+ * Removing a save is destructive (and, if downloaded, drops the offline copy),
+ * so it asks for a second tap to confirm instead of firing on the first — with
+ * an explicit Cancel and a 4s auto-revert so a stray tap can't lose a bookmark.
+ * The trigger is a full 44px target per mobile touch guidelines.
+ */
+function RemoveButton({ quiz }: { quiz: SavedQuiz }) {
+  const [confirming, setConfirming] = useState(false);
+
+  useEffect(() => {
+    if (!confirming) return;
+    const t = setTimeout(() => setConfirming(false), 4000);
+    return () => clearTimeout(t);
+  }, [confirming]);
+
+  if (confirming) {
+    return (
+      <div className="flex shrink-0 items-center gap-1.5">
+        <button
+          type="button"
+          onClick={() => removeSave(quiz.id)}
+          className="rounded-full border-2 border-red-500 bg-red-500 px-3 py-1.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
+        >
+          Remove
+        </button>
+        <button
+          type="button"
+          onClick={() => setConfirming(false)}
+          aria-label="Cancel remove"
+          className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#1a1a1a]/15 text-sm font-bold text-[#1a1a1a]/50 transition-colors hover:border-[#1a1a1a]/30"
+        >
+          ✕
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={() => setConfirming(true)}
+      aria-label={`Remove ${quiz.title}`}
+      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-[#1a1a1a]/12 text-[#1a1a1a]/40 transition-colors hover:border-red-500 hover:text-red-500"
+    >
+      ✕
+    </button>
   );
 }
 

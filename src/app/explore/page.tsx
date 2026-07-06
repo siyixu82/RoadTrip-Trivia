@@ -2,10 +2,11 @@
 
 import { useMemo, useState } from "react";
 import { QuizCard } from "@/components/QuizCard";
+import { CatalogError, CatalogSkeleton } from "@/components/CatalogState";
 import { useCatalog } from "@/lib/useCatalog";
 
 export default function ExplorePage() {
-  const state = useCatalog();
+  const { state, reload } = useCatalog();
   const [query, setQuery] = useState("");
 
   const results = useMemo(() => {
@@ -41,11 +42,9 @@ export default function ExplorePage() {
       </div>
 
       {state.status === "error" && (
-        <p className="text-red-600">Error: {state.message}</p>
+        <CatalogError message={state.message} onRetry={reload} />
       )}
-      {state.status === "loading" && (
-        <p className="text-[#1a1a1a]/45">Loading…</p>
-      )}
+      {state.status === "loading" && <CatalogSkeleton count={5} />}
 
       {state.status === "ready" && (
         <>
