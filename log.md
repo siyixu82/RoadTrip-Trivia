@@ -6,6 +6,33 @@ Phased plan: Phase 0 scaffold → Phase 1 schema + 3 sample quizzes → Phase 2 
 
 ---
 
+## 2026-07-05
+
+### Phase 3 — Complete 63-park quiz catalog with phone-friendly answer options ✅
+
+- **Full catalog:** all 63 U.S. National Parks now have quiz files in
+  `content/quizzes/`. 19 new parks written this session: american-samoa,
+  badlands, big-bend, biscayne, black-canyon, canyonlands, capitol-reef,
+  carlsbad-caverns, channel-islands, congaree, crater-lake, cuyahoga-valley,
+  death-valley, denali, dry-tortugas, gates-of-the-arctic, gateway-arch,
+  glacier-bay, grand-teton, great-basin, great-sand-dunes, guadalupe-mountains,
+  haleakala, hawaii-volcanoes, hot-springs, indiana-dunes, isle-royale,
+  joshua-tree, katmai, kenai-fjords, kings-canyon, kobuk-valley, lake-clark,
+  lassen-volcanic, mammoth-cave, mesa-verde, mount-rainier, new-river-gorge,
+  north-cascades, petrified-forest, pinnacles, redwood, saguaro, sequoia,
+  shenandoah, theodore-roosevelt, virgin-islands, voyageurs, white-sands,
+  wind-cave, wrangell-st-elias.
+- **Ultra-short answer options:** all 5,040 options (63 parks × 20 questions × 4
+  choices) rewritten to ≤30 characters (most ≤20). Options are now brief noun
+  phrases, names, or numbers — not explanatory sentences — so they display on a
+  single line at large font size on a phone screen.
+- **Supabase:** `node --env-file=.env.local scripts/load-quizzes.mjs` — upserted
+  all 63 quizzes (1,260 questions) to the live database after shuffling.
+- **Tooling:** `scripts/shuffle-options.mjs` randomises answer positions
+  (idempotent); re-run after any bulk content edit.
+
+---
+
 ## 2026-07-03
 
 ### Phase 6 — PWA install affordance + storage durability + offline banner ✅
